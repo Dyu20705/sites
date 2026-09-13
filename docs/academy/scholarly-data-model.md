@@ -49,15 +49,21 @@ To design a robust ingestion and canonicalization platform, data engineers must 
 
 ### 2.1 arXiv (The Bleeding Edge Preprint Repository)
 * **FACT**: Established in 1991, arXiv is the primary preprint repository for Physics, Mathematics, Computer Science, Quantitative Biology, and Machine Learning.
+* **FACT**: The official OAI-PMH endpoint is `https://oaipmh.arxiv.org/oai` (protocol v2.0).
 * **FACT**: Identifiers follow two conventions:
   - *Modern format* (post-2007): `YYMM.NNNNN` (e.g., `1706.03762`), with optional version suffix `vN` (e.g., `1706.03762v5`).
   - *Legacy format* (pre-2007): `arch-ive/YYMMNNN` (e.g., `hep-th/9901001`).
-* **FACT**: arXiv exposes metadata via OAI-PMH (XML) and bulk JSON metadata dumps.
+* **FACT**: arXiv exposes metadata via OAI-PMH (XML) across metadata formats: `arXiv` (standard), `arXivRaw` (version history), and `oai_dc` (Dublin Core).
+* **Preprint Identity Semantics (Work != Version)**:
+  - An arXiv contribution progresses through version states (`v1`, `v2`, `v3`).
+  - **Canonical Work Identity**: Minted deterministically from the unversioned identifier (`arxiv:YYMM.NNNNN`), ensuring that all versions resolve to the exact same canonical work entity.
+  - **Version Observations**: Captured losslessly in the Silver layer (`source_work_observations`), preserving the temporal evolution of abstracts, titles, and author revisions.
 * **Semantics & Idiosyncrasies**:
   - Contains no native citation graph.
-  - Author entries are raw strings with no institutional IDs and rare ORCIDs.
-  - Abstract text frequently contains embedded LaTeX markup (e.g., `$\mathcal{O}(n \log n)$`, `\textbf{Transformer}`).
-  - Publication date represents the submission timestamp of the specific version, not peer-reviewed publication.
+  - Author entries are raw strings with no institutional IDs and rare ORCIDs; XML parsing extracts keynames, forenames, and uncurated affiliation strings.
+  - Abstract text frequently contains embedded LaTeX markup (e.g., `$\mathcal{O}(n \log n)$`, `\textbf{Transformer}`). Parsers must employ non-destructive normalization (preserving equations while decoding XML entities).
+  - Resumption tokens expire daily and omit cursor/total length metadata; pagination halts when an empty `<resumptionToken/>` element is returned.
+  - Deletions are signaled via `<header status="deleted">` tombstones.
 * **Role in Pipeline**: Earliest temporal detector of technological breakthroughs and rising architectural paradigms.
 
 ### 2.2 OpenAlex (The Comprehensive Open Academic Graph)

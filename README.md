@@ -20,19 +20,38 @@ Rather than a generic literature search, this pipeline is highly opinionated. It
 | **arXiv (OAI-PMH)** | The primary source for bleeding-edge preprints in CS, AI, and Systems. |
 | **DBLP** | Verified metadata for top-tier computer science conferences and journals. |
 
-## Pipeline Architecture
+## Pipeline Architecture (Canonical Scholarly Data Platform)
 
 ```text
-[1. Targeted Ingestion]
-      │ Fetch recent literature matching seed concepts from OpenAlex/arXiv/DBLP
+[1. arXiv OAI-PMH Harvester]
+      │ Incremental harvesting (Watermark + lookback window, bounded retries, resumptionToken)
       ▼
-[2. Impact & Semantic Pruning]
-      │ ├── Alignment Check: Vector similarity against target domain vectors
-      │ └── Authority Check: Filter by venue tier, author impact, citation velocity
+[2. Bronze Layer: Raw Landing & Manifest]
+      │ ├── Immutable Raw Storage: data/raw/arxiv/YYYY/MM/...
+      │ ├── raw_source_manifest: SHA-256 payload deduplication & audit trail
+      │ └── ingestion_quarantine: Malformed XML & DQ-02 isolated routing
       ▼
-[3. Temporal Trend Mining]
-      │ ├── Entity Extraction (NLP): Identify novel architectures, frameworks, algorithms
-      │ └── Time-Series Analysis: Track Year-over-Year growth of extracted entities
+[3. Silver Layer: Source Work Observations]
+      │ ├── High-fidelity XML parser: arXiv, arXivRaw, oai_dc
+      │ ├── Preserves LaTeX/TeX equations non-destructively ($\mathcal{O}(n \log n)$)
+      │ └── Captures preprints, revisions (v1, v2), withdrawals, categories, licenses
       ▼
-[4. Trend Digest & Output]
-      └── Curated report of trending technologies + the foundational papers driving them
+[4. Gold Layer: Canonical Entity Resolution]
+      │ ├── Deterministic UUIDv5 Work Identity (Work != Version)
+      │ ├── In-place revision updates with Source Authority Priority Matrix
+      │ └── Lossless lineage tracking in canonical_work_provenance
+```
+
+## Quick Start & Verification
+
+### Run End-to-End Pipeline Verification
+Execute the automated 7-step verification suite (XML parsing, manifest calculation, Medallion ingestion, idempotent replay, watermark safety, quarantine isolation, layer summary):
+```bash
+uv run python scripts/verify_arxiv_pipeline.py
+```
+
+### Run Test Suite
+Execute the full test suite (57 tests covering Harvester, Parser, Watermark, Idempotency, Schema, Resolution):
+```bash
+uv run pytest -v
+```

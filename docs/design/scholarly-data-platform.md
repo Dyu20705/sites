@@ -668,4 +668,45 @@ The subsystem implementation is complete and verified only when all of the follo
 | **ADR-03** | Dangling Citations | A) Strict physical FK (reject dangling)<br/>B) Soft unconstrained text links<br/>C) Automatic Stub Entities with in-place upgrade | **Option C: Stub Entities with Upgrade** | Preserves referential integrity for graph queries while preventing ingestion crashes when cited works are unindexed. In-place upgrade preserves inbound edges. |
 | **ADR-04** | Engine Selection | A) Postgres<br/>B) SQLite<br/>C) DuckDB | **Option C: DuckDB** | Columnar vectorized execution, native Parquet/Arrow interop, SIMD speed, zero-infrastructure footprint. |
 | **ADR-05** | DuckDB Foreign Key Strategy | A) Strict physical FKs across all tables<br/>B) No constraints<br/>C) Enforce FKs on immutable Bronze/Silver; enforce PK/UNIQUE on Gold; logical references on mutable graph entities | **Option C: Targeted Constraints** | DuckDB executes `UPDATE` as `DELETE` + `INSERT`. When tables have reciprocal or multiple foreign keys to parent entities, physical FK checks trigger false violation locks on row updates/stub upgrades. Enforcing PKs and UNIQUE constraints on Gold while keeping referential integrity validation in `EntityResolver` enables high-throughput in-place upgrades. |
+| **ADR-06** | ArXiv OAI-PMH Transport & Raw Landing | A) Ephemeral in-memory XML<br/>B) Flattened JSON-only landing<br/>C) Immutable Raw XML on Disk + SHA-256 Manifest | **Option C: Immutable Raw XML + Manifest** | OAI-PMH native payloads must remain unmutated on disk (`data/raw/arxiv/YYYY/MM/...`) with SHA-256 hashes registered in `raw_source_manifest` to enable deterministic replay and offline auditability. |
+| **ADR-07** | Preprint Versioning Model | A) One canonical work per version (`v1`, `v2`)<br/>B) Unify versions into single canonical work; retain versions in Silver observations | **Option B: Work != Version Separation** | Preprints represent evolving states of a single conceptual scientific contribution. Versions are tracked as distinct observations in Silver, while Gold maintains a single canonical work updated in-place with latest attributes and audit provenance. |
+
+---
+
+## 13. Phase 1: ArXiv-First Acquisition Pipeline
+
+### 13.1 Acquisition Architecture & OAI-PMH Harvester
+The arXiv acquisition subsystem implements a fully reproducible, incremental, idempotent, and replayable ingestion pipeline targeting the official arXiv OAI-PMH endpoint (`https://oaipmh.arxiv.org/oai`).
+
+Key Harvester capabilities (`ArxivOaiHarvester`):
+* **Protocol Conformance**: Full implementation of OAI-PMH v2.0 protocol supporting `ListRecords`, `GetRecord`, and `Identify` verbs across `arXiv`, `arXivRaw`, and `oai_dc` metadata prefixes.
+* **Bounded Retries & Backoff**: Automatically handles transient network dropouts and HTTP 429/503 responses, respecting `Retry-After` headers and applying jittered exponential backoff.
+* **Cursorless Resumption Tokens**: Reliably paginates through multi-page result sets until an empty resumptionToken is encountered (indicating EOF).
+* **Immutable Disk Landing**: Every harvested XML batch is immutably persisted to disk under hierarchical directory paths (`data/raw/arxiv/YYYY/MM/...`) prior to parsing.
+
+### 13.2 Raw Source Manifest & Immutability Guarantees
+The Bronze layer features `raw_source_manifest`, recording:
+* `raw_record_id`: Deterministically minted hash (`raw_{payload_hash[:16]}`).
+* `payload_hash`: SHA-256 cryptographic digest of the unmutated record XML.
+* `payload`: Full JSON-serialized raw extraction.
+* `raw_path`: Absolute filesystem path to the immutable raw XML file.
+* `source_datestamp`: OAI-PMH header datestamp of the record.
+
+### 13.3 High-Fidelity XML Parser (`ArxivXmlParser`)
+* **Non-Destructive LaTeX Preservation**: Mathematical notation (e.g., `$\mathcal{O}(n \log n)$`, `\textbf{Transformer}`) is strictly preserved in titles, abstracts, and comments. Whitespace is sanitized, and standard XML entities are safely decoded without corrupting TeX commands.
+* **Structured Authors**: Extracts author keynames, forenames, affiliations, and positions into structured `ParsedAuthor` models.
+* **Version & Status Detection**: Correctly parses version suffixes (`v1`, `v2`), flags withdrawn papers (`is_withdrawn = TRUE`), and handles OAI-PMH deletion tombstones (`<header status="deleted">`).
+
+### 13.4 Incremental Watermarks & Overlap Safety Window
+Watermark state is tracked in `ingestion_watermarks`:
+* **Atomic Watermark Advance**: Watermarks advance **only** when an ingestion batch commits successfully inside DuckDB's transaction block. If an ingestion fails, the watermark remains at the previous checkpoint, enabling automatic replay.
+* **Lookback Overlap Window**: In incremental mode, the harvester applies a configurable safety overlap (default: 1 day lookback) to guarantee no records are omitted due to upstream indexing delays or timezone offsets. Deduplication by `payload_hash` in `raw_source_manifest` guarantees that re-ingesting overlapping records is completely idempotent.
+
+### 13.5 Quarantine Routing & Partial Batch Recovery
+* **Malformed XML**: Entirely broken or unparseable XML files fail fast and divert to `ingestion_quarantine` with `error_type = 'MALFORMED_XML'`, leaving Silver and Gold untouched.
+* **Isolated Record DQ Failures**: If a single record in a multi-record batch fails validation (e.g., DQ-02 title rule: length < 3 or `[untitled]`), that specific record is routed to `ingestion_quarantine`, while valid records in the same batch succeed to Silver and Gold.
+
+### 13.6 Preprint Entity Resolution (Work != Version)
+* **Canonical Work Identity**: Unversioned arXiv IDs (e.g., `2301.01234`) serve as the primary anchor for deterministic UUIDv5 canonical work generation. Versions `2301.01234v1` and `2301.01234v2` resolve to the exact same `canonical_work_id`.
+* **In-Place Updates**: When a newer version (e.g., `v2`) is ingested, Gold attributes (title, abstract, venue) are updated in-place according to the Source Authority Priority Matrix, and `canonical_work_provenance` records the winning `source_observation_id` with resolution rule `PRIORITY_OVERRIDE`.
 
