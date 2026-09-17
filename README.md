@@ -1,4 +1,6 @@
-# Data Pipeline: Technological Trend Mining
+# sites - Scholar intelligant & tech evolution system
+
+(English)[/README.md] | (Tiếng Việt)[/docs/vietnamese/README.md]
 
 This repository implements an automated data mining pipeline designed to extract, analyze, and forecast **technology development trends** from large-scale bibliographic and scholarly databases. 
 
