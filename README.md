@@ -1,5 +1,7 @@
 # SITES — Scholar Intelligent Trend Evolution System
 
+[English](README.md) · [Tiếng Việt](docs/vietnamese/README.md) · [日本語](docs/japanese/README.md)
+
 **SITES** is a research-oriented scholarly intelligence project for studying how scientific and technological concepts evolve from evidence.
 
 The long-term vision is broader than scientific papers or trend dashboards. Scholarly literature is the starting domain, while future work may expand to additional evidence sources and higher-level capabilities.
@@ -11,26 +13,22 @@ evidence acquisition → monitoring → mining → trend detection
 
 ## Current focus
 
-The repository is currently at **M0 — project definition**. The active tree does not contain a current product implementation or executable test suite.
+The repository is currently at **M0 — project definition**. The active tree does not contain a current product implementation or executable product test suite.
 
 For **Month 1 (17 Sep–17 Oct 2026)**, the committed direction is deliberately narrower:
 
 - start from scholarly evidence;
 - focus on detection and descriptive trend intelligence;
 - build one small, reproducible end-to-end slice;
-- keep forecasting, recommendation, optimization, autonomous agents, and large-scale infrastructure outside the committed M1 scope unless a later decision explicitly changes that boundary.
+- keep forecasting, recommendation, optimization, autonomous agents, and large-scale infrastructure outside the committed M1 scope unless a later accepted decision changes that boundary.
 
-Specific choices such as the target user, data provider, corpus, signal definition, storage, framework, dashboard technology, and deployment model remain subject to evidence and decision gates.
+Specific choices such as the primary user, data provider, corpus, signal definition, storage, framework, dashboard technology, and deployment model remain subject to evidence and decision gates.
 
 ## Documentation
 
-The repository documentation separates long-term vision, proposed decisions, accepted decisions, and verified current state so that plans are not mistaken for implemented capabilities.
+Start from the [documentation index](docs/README.md).
 
-- **English:** this README is the public project introduction. A full English documentation mirror will live under **docs/english/** as the documentation set stabilizes.
-- **Tiếng Việt:** [docs/vietnamese/README.md](docs/vietnamese/README.md) is the Vietnamese translation of this README and links to the current detailed M0/M1 documents.
-- **日本語:** a Japanese mirror is planned under **docs/japanese/**; it will be added when an actual reviewed translation exists rather than as empty scaffolding.
-
-Current detailed project-definition documents are available in Vietnamese:
+Current detailed project-definition documents are available in Vietnamese while the English and Japanese sets are being translated and reviewed:
 
 - [Month-1 definition](docs/vietnamese/baseline/M1.md)
 - [Project charter](docs/vietnamese/master/00_PROJECT_CHARTER.md)
@@ -43,6 +41,8 @@ Current detailed project-definition documents are available in Vietnamese:
 - [Decision log](docs/vietnamese/master/07_DECISION_LOG.md)
 - [Month-1 backlog](docs/vietnamese/master/08_MONTH1_BACKLOG.md)
 - [Verified current state](docs/vietnamese/master/09_CURRENT_STATE.md)
+
+The language directories are intended to remain semantically equivalent, not word-for-word copies. Decision IDs, dates, status labels, requirements, and technical meaning must stay aligned across translations.
 
 ## Repository status and history
 
