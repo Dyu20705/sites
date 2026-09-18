@@ -1,20 +1,55 @@
-# 09 — Verified Current State
+# 09 — Trạng thái hiện tại đã xác minh
 
-**VERIFIED snapshot ngày 18/09/2026**, trước commit documentation M0 của lượt này; repository audit tại HEAD `12eccab8558b788e4bdee8a282a02c8373279f7f`. Đây là mốc quan sát cố định, không tuyên bố PR/trạng thái bên ngoài luôn giữ nguyên. Trong lượt soạn thảo, commit `b923e2f6898cd934041268f4c0cede1771e4de0d` chuyển bộ 00–09 vào `docs/vietnamese/master/`; chủ dự án xác nhận giữ cấu trúc này. Commit M0 sẽ nối tiếp mốc đó, không sửa lịch sử. Nội dung M0 trong changeset này là tài liệu đang review, chưa là kết quả implementation.
+**Ngày review:** 18/09/2026.  
+**PR đang review:** [#62](https://github.com/Dyu20705/sites/pull/62)  
+**Branch:** chore/design-baseline-reset
 
-| Quan sát | Evidence đã kiểm tra |
+Tài liệu này mô tả trạng thái được kiểm tra trong quá trình review PR #62. Nó không cố ghi chính SHA của commit chứa chính file này vì mỗi lần cập nhật tài liệu sẽ làm SHA thay đổi.
+
+## Trạng thái repository
+
+| Quan sát | Bằng chứng đã kiểm tra |
 | --- | --- |
-| Branch hiện tại `chore/design-baseline-reset`; [PR #62](https://github.com/Dyu20705/sites/pull/62) OPEN, base `master`, head `12eccab8558b788e4bdee8a282a02c8373279f7f` lúc audit | `git branch --show-current`, `git rev-parse HEAD`, `gh pr view 62 --repo Dyu20705/sites --json state,baseRefName,headRefName,headRefOid` |
-| Reset đang trong PR, chưa merge | PR state OPEN; base lịch sử `9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7` |
-| Cây hiện tại không có implementation, executable tests, scripts hoặc package/dependency config | `git ls-files`; không có thư mục code/test hoặc manifest implementation trong danh sách tracked files |
-| Không có active GitHub issue roadmap | GitHub API toàn bộ issues: 0 open issues, không tính PR |
-| #36–#56 và #58–#61 đã đóng `not_planned`; #57 đóng `completed` từ lịch sử | API issue state/state_reason; không reopen hoặc sửa issue trong lượt M0 |
-| Historical implementation còn trong Git history, không có trong current tree | `git log` và commit `f110e2a` có historical implementation; không chạy lại để chứng nhận code cũ |
-| Architecture/stack hiện hành chưa được chọn | D02; không có accepted stack/provider/formula decision trong M0 log |
-| M1 definition đang review; chưa có evidence pass gate | Draft M1 trước lượt này thiếu RQ/DoD/exit criteria; changeset này đề xuất contract/protocol, không có experiment/demo result |
+| PR #62 đang OPEN và chưa merge vào master | GitHub PR metadata |
+| Current tree không có implementation, executable test suite, scripts hoặc package/dependency manifest cho sản phẩm | Recursive repository tree của branch PR |
+| README gốc và bộ tài liệu M0/M1 là nội dung chính của current tree | Repository tree |
+| Code và thiết kế cũ vẫn còn trong Git history | Git history; snapshot 9b9f8ee và các commit lịch sử |
+| Issue graph #36–#61 không còn là active roadmap | Các issue lịch sử đã được retire; #57 completed chỉ phản ánh lịch sử |
+| Chưa có architecture/stack/provider/formula được chấp thuận cho implementation mới | D02, D07–D09 |
+| Chưa có experiment, dataset audit, detection evaluation hoặc user validation của M1 | Current tree và Decision Log |
 
-**Gate state:** define-ready chưa được xác nhận; research-ready, preimplementation-ready, feature-ready và product-ready v1 chưa đạt. Không suy ra trạng thái gate từ ngày lịch hoặc số lượng tài liệu.
+## Trạng thái các gate
 
-Bản đồ prior art có ba nguồn sơ cấp đã xác minh bước đầu; chưa có literature review hoàn chỉnh, provider audit, dataset mẫu, đánh giá detection hoặc user validation. Không có test count/performance/capability claim được kế thừa từ lịch sử.
+- **define-ready:** chưa được xác nhận cuối cùng cho tới khi PR #62 qua review;
+- **research-ready:** chưa đạt;
+- **preimplementation-ready:** chưa đạt;
+- **feature-ready:** chưa đạt;
+- **product-ready v1:** chưa đạt.
 
-File này chỉ cập nhật bằng quan sát có mốc commit/ngày và command/artifact. Kế hoạch nằm tại [backlog](08_MONTH1_BACKLOG.md), đề xuất tại [decision log](07_DECISION_LOG.md), không ghi chúng như current capability.
+Không suy ra trạng thái gate từ ngày, số lượng tài liệu hoặc việc PR merge.
+
+## Điều đã có
+
+- M1 problem statement và primary research question ở dạng đề xuất;
+- scope/non-goals;
+- bản đồ prior art bước đầu;
+- kiến trúc và data model ở mức conceptual;
+- evaluation protocol;
+- decision log;
+- backlog theo gate.
+
+Ba nguồn học thuật chính trong Prior Art Map đã được kiểm tra ở mức được ghi rõ trong tài liệu; **chưa có literature review hoàn chỉnh**.
+
+## Điều chưa có
+
+- provider audit;
+- sample dataset đã freeze;
+- signal comparison thực nghiệm;
+- threshold/quality criterion đã chấp thuận;
+- implementation hiện hành;
+- executable tests;
+- demo;
+- replay report;
+- user validation.
+
+Tài liệu này chỉ ghi điều đã kiểm tra. Kế hoạch nằm ở [Month-1 Backlog](08_MONTH1_BACKLOG.md); quyết định nằm ở [Decision Log](07_DECISION_LOG.md).
