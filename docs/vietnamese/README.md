@@ -1,57 +1,18 @@
-# sites - Hệ thống Trí tuệ Học thuật & Tiến hóa Công nghệ (Scholar Intelligence & Tech Evolution System)
+# SITES — Scholar Intelligent Trend Evolution System
 
-Kho lưu trữ (repository) này triển khai một pipeline khai phá dữ liệu tự động, được thiết kế để trích xuất, phân tích và dự báo **các xu hướng phát triển công nghệ** từ các cơ sở dữ liệu học thuật và thư mục quy mô lớn.
+[English](../../README.md)
 
-Thay vì chỉ tìm kiếm tài liệu học thuật thông thường, pipeline này hoạt động theo các nguyên tắc chọn lọc định hướng chặt chẽ (highly opinionated). Hệ thống lọc ra **các nghiên cứu uy tín, có tầm ảnh hưởng cao** và chủ động định hướng quá trình khám phá tri thức theo các hướng nghiên cứu cụ thể do người dùng xác định (ví dụ: Hệ thống đa tác tử - Multi-Agent Systems, MLOps, Kiến trúc phân tán - Distributed Architecture).
+SITES hướng tới nghiên cứu các hệ thống giúp hiểu sự tiến hóa của khoa học và công nghệ dựa trên bằng chứng. Bài báo khoa học là lĩnh vực nghiên cứu ban đầu, không phải giới hạn lâu dài.
 
-## Mục tiêu Cốt lõi
-
-* **Phân tích Xu hướng Trọng tâm (Targeted Trend Analysis):** Khai phá đồ thị trích dẫn và siêu dữ liệu văn bản để xác định các công nghệ đang lên, các bước chuyển dịch mô hình (paradigm shifts), và các phương pháp luận đang suy thoái theo thời gian.
-* **Lọc theo Mức độ Ảnh hưởng & Độ tin cậy (Impact & Authority Filtering):** Loại bỏ nhiễu bằng cách ưu tiên tài liệu học thuật dựa trên "tốc độ tăng trưởng trích dẫn" (citation velocity), các chỉ số trích dẫn có tầm ảnh hưởng (influential citations), cùng uy tín lịch sử của tác giả và hội thảo/tạp chí (venue).
-* **Căn chỉnh Ngữ nghĩa Chặt chẽ (Strict Semantic Alignment):** Đảm bảo các xu hướng được khai phá bám sát các hướng kỹ thuật cụ thể bằng cách sử dụng vector embeddings và điểm tương đồng ngữ nghĩa đối với các prompt mục tiêu.
-* **Tổng hợp Tri thức & Thông tin Chi tiết (Insight Synthesis):** Tự động tạo các báo cáo xu hướng theo thời gian, bản đồ nhiệt khái niệm (concept heatmaps), và làm nổi bật các bài báo tiên phong ("frontier" papers) đang dẫn dắt các làn sóng công nghệ hiện tại.
-
-## Nguồn Dữ liệu (Data Sources)
-
-| Nguồn | Vai trò trong Pipeline |
-| :--- | :--- |
-| **Semantic Scholar (S2AG)** | Lọc dữ liệu tín hiệu cao (high-signal) sử dụng nhãn "trích dẫn có tầm ảnh hưởng" (influential citation) và phân loại ý định trích dẫn (citation intent). |
-| **OpenAlex** | Đồ thị học thuật toàn diện để theo dõi sự phát triển theo thời gian của các khái niệm công nghệ cụ thể. |
-| **arXiv (OAI-PMH)** | Nguồn chính cho các bài báo tiền ấn bản (preprints) tiên phong trong lĩnh vực Khoa học Máy tính, Trí tuệ Nhân tạo và Hệ thống. |
-| **DBLP** | Siêu dữ liệu đã được xác thực cho các hội thảo và tạp chí khoa học máy tính hàng đầu. |
-
-## Kiến trúc Pipeline (Nền tảng Dữ liệu Học thuật Chuẩn hóa - Canonical Scholarly Data Platform)
+Chuỗi năng lực tiềm năng:
 
 ```text
-[1. arXiv OAI-PMH Harvester]
-      │ Thu thập dữ liệu tăng dần (Watermark + cửa sổ hồi quy, giới hạn số lần thử lại, resumptionToken)
-      ▼
-[2. Tầng Bronze: Lưu trữ Thô & Manifest (Raw Landing & Manifest)]
-      │ ├── Lưu trữ thô bất biến (Immutable): data/raw/arxiv/YYYY/MM/...
-      │ ├── raw_source_manifest: Khử trùng lặp payload qua SHA-256 & lưu vết kiểm toán (audit trail)
-      │ └── ingestion_quarantine: Định tuyến cô lập XML lỗi định dạng & vi phạm DQ-02
-      ▼
-[3. Tầng Silver: Quan sát Bản ghi Nguồn (Source Work Observations)]
-      │ ├── Trình phân tích cú pháp XML độ chính xác cao: arXiv, arXivRaw, oai_dc
-      │ ├── Bảo toàn nguyên vẹn công thức LaTeX/TeX ($\mathcal{O}(n \log n)$)
-      │ └── Thu thập preprints, các bản sửa đổi (v1, v2), bài rút (withdrawals), phân loại, bản quyền
-      ▼
-[4. Tầng Gold: Phân giải Thực thể Chuẩn hóa (Canonical Entity Resolution)]
-      │ ├── Định danh Work xác định bằng UUIDv5 (Work != Version)
-      │ ├── Cập nhật bản sửa đổi tại chỗ (in-place) với Ma trận Ưu tiên Nguồn thẩm quyền
-      │ └── Truy vết nguồn gốc không mất mát thông tin trong canonical_work_provenance
+thu thập bằng chứng → giám sát → khai phá → phát hiện xu hướng
+→ dự báo → hỗ trợ quyết định / tối ưu hóa
 ```
 
-## Bắt đầu Nhanh & Kiểm thử Xác thực (Quick Start & Verification)
+Kho lưu trữ hiện ở **giai đoạn nghiên cứu / xác định bài toán / thiết lập nền tảng thiết kế**. Cây thư mục hiện tại chưa có phần mềm thực thi, ứng dụng đóng gói hay bộ kiểm thử đang hoạt động. Các năng lực trên là định hướng dài hạn, chưa phải tính năng đã hoàn thành.
 
-### Chạy Xác thực Pipeline Đầu-Cuối (End-to-End)
-Chạy bộ kiểm thử xác thực 7 bước tự động (phân tích cú pháp XML, tính toán manifest, nạp dữ liệu Medallion, phát lại idempotent, an toàn watermark, cô lập quarantine, tóm tắt các tầng):
-```bash
-uv run python scripts/verify_arxiv_pipeline.py
-```
+Kiến trúc triển khai được chủ ý để ngỏ. Lưu trữ, nhà cung cấp dữ liệu, mô hình dữ liệu, phân giải thực thể, xử lý, triển khai và phương pháp phân tích đều là các quyết định mở, cần bằng chứng, kiểm chứng và các mốc quyết định rõ ràng trước khi được chấp thuận.
 
-### Chạy Toàn bộ Test Suite
-Thực thi toàn bộ bộ kiểm thử (57 bài test bao gồm Harvester, Parser, Watermark, Idempotency, Schema, Resolution):
-```bash
-uv run pytest -v
-```
+Lịch sử Git và các issue đã đóng lưu giữ những hướng thiết kế từng được khám phá. Các issue #36–#61 là tư liệu thiết kế lịch sử, không phải đồ thị phụ thuộc hay lộ trình triển khai hiện hành. Quyết định trước đây không có tính ràng buộc và chỉ trở thành một phần của nền tảng hiện hành khi được đánh giá lại độc lập và chấp thuận rõ ràng.
