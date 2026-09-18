@@ -1,8 +1,11 @@
-# Title
+## Why
 
-# Screen shot
+Describe the problem or research question motivating this change.
 
-# Check list
+## What changed
 
-[] Title
-[] Screen shot
+Summarize the changes and any decisions explicitly proposed for review.
+
+## Validation
+
+Describe the evidence or checks performed and any unresolved questions.

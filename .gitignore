@@ -1,5 +1,3 @@
-docs/quy-trinh/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -13,10 +11,6 @@ ENV/
 # Testing & cache directories
 .pytest_cache/
 .coverage
-
-# Databases & local storage
-*.duckdb
-*.duckdb.wal
 
 # Build artifacts
 build/
