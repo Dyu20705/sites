@@ -1,30 +1,55 @@
-# 04 — Conceptual System Architecture
+# 04 — Kiến trúc khái niệm
 
-**PROPOSED — HUMAN DECISION REQUIRED (D09).** Đây là phân chia trách nhiệm để kiểm tra [M1 slice](../baseline/M1.md), không phải services, package layout hoặc topology đã chọn. Có thể thực hiện tất cả trong một chương trình; các mũi tên không đòi hỏi queue/network.
+**PROPOSED — D09.** Tài liệu này chỉ chia trách nhiệm cho M1 slice. Nó **không** quy định microservice, package layout, queue, network topology hay framework.
 
-```text
-Evidence Source → Acquisition → Observation Preservation → Normalization
-→ Signal Extraction → Trend Assessment → Evidence Bundle → Query → Presentation
-```
+Tất cả các bước có thể được hiện thực trong một chương trình nếu đó là phương án nhỏ nhất đáp ứng yêu cầu.
 
-| Stage | Trách nhiệm; input → output | Invariant đề xuất | Quyết định còn mở |
+~~~text
+nguồn bằng chứng
+→ thu thập
+→ lưu observation
+→ chuẩn hóa
+→ tính chỉ báo
+→ đánh giá mô tả
+→ tạo gói bằng chứng
+→ truy vấn
+→ trình bày
+~~~
+
+## Trách nhiệm theo giai đoạn
+
+| Giai đoạn | Trách nhiệm | Bất biến đề xuất | Còn mở |
 | --- | --- | --- | --- |
-| Evidence Source | Cung cấp metadata/snapshot → records và mô tả khả năng truy cập | Nguồn bên ngoài không phải kết luận SITES | Provider, license, snapshot availability |
-| Acquisition | Bounded query/export → corpus cùng query, thời điểm lấy và coverage report | Công bố giới hạn, truncation, missing pages; lỗi không được giả như corpus đủ | API vs export, retry, format |
-| Observation Preservation | Records nhận được → observations và dấu vết nguồn/version | Derived processing không âm thầm thay đổi điều nguồn đã báo | Storage, định danh snapshot, retention |
-| Normalization | Observations → trường tối thiểu và báo cáo invalid/missing/duplicates | Giữ liên kết tới observation và lý do loại record; không đồng nhất unknown với zero | Time fields, alias rules, duplicate semantics |
-| Signal Extraction | Corpus hợp lệ + definition/config/cutoff → signal values | Cùng input/config cho cùng kết quả; không dùng evidence ngoài cutoff được phép | Công thức, window, denominator |
-| Trend Assessment | Signals + rule/threshold → candidate status hoặc insufficient evidence | Nhãn kèm lý do, phạm vi và hạn chế; không phải phán quyết về toàn công nghệ | Nhãn, threshold, minimum support |
-| Evidence Bundle | Assessment + lineage → artifact có thể inspect/replay | Bao gồm input reference, definition, config, code version và output | Serialization, hash/canonicalization |
-| Query | Bundle + lựa chọn concept/window → kết quả có provenance | Không trả một score tách rời evidence | In-process query vs API; network API có thể hoãn |
-| Presentation | Kết quả query → bảng/biểu đồ và evidence drill-down | Hiện corpus, cutoff, đơn vị, missingness và giới hạn claim | Dashboard stack, local vs hosted |
+| Nguồn bằng chứng | Cung cấp record/snapshot và điều kiện truy cập | Nguồn ngoài không phải kết luận của SITES | Provider, license, snapshot availability |
+| Thu thập | Query/export → corpus + metadata thu thập | Phải công bố truncation, missing page và lỗi | API hay export, retry, format |
+| Lưu observation | Giữ record như nguồn đã cung cấp cùng provenance/version | Derived processing không được âm thầm ghi đè observation | Storage, snapshot identity, retention |
+| Chuẩn hóa | Tạo các field tối thiểu và báo invalid/missing/duplicate | Unknown khác zero; record bị loại phải có reason | Time fields, alias rules, duplicate semantics |
+| Tính chỉ báo | Corpus + definition/config/cutoff → giá trị | Cùng input/config phải cho cùng semantic result | Công thức, window, denominator |
+| Đánh giá mô tả | Chỉ báo + rule → label hoặc insufficient evidence | Label phải có reason, phạm vi và limitation | Label, threshold, minimum support |
+| Gói bằng chứng | Gom assessment + lineage thành artifact có thể kiểm tra | Phải có input, definition, config, code version và output | Serialization, hash/canonicalization |
+| Truy vấn | Đọc kết quả theo concept/window | Không trả score tách rời evidence | In-process hay API |
+| Trình bày | Bảng/biểu đồ + evidence drill-down | Hiện corpus, cutoff, unit, missingness và limitation | Dashboard stack, local/hosted |
 
-## Failure semantics và giới hạn
+## Xử lý lỗi và dữ liệu thiếu
 
-Đề xuất: acquisition chưa đủ hoặc normalization thiếu thời gian phải phát sinh coverage/quality report. Signal không xác định trả `insufficient evidence` với lý do, không gán “declining”. Chạy lại cùng snapshot không được tăng count chỉ vì nạp lại; cơ chế cụ thể chờ design. Thay đổi upstream là một observation mới, không phải replay cùng input.
+- acquisition không đầy đủ → phải có coverage/quality report;
+- thiếu time field cần thiết → không âm thầm thay bằng giá trị giả;
+- chỉ báo không đủ điều kiện → trả **insufficient evidence**, không tự gán declining;
+- chạy lại cùng snapshot → không được làm tăng count do duplicate ingestion;
+- upstream thay đổi → được xem là observation mới, không phải replay cùng input.
 
-## Open architecture decisions
+## Quyết định kiến trúc còn mở
 
-**OPEN — resolved during Research Gate / Preimplementation Gate:** provider, one-source vs multi-source, storage/database, framework, query interface, dashboard, deployment, identity và serialization. Các alternatives và recommendation có điều kiện nằm ở D07–D09 trong [Decision Log](07_DECISION_LOG.md). Không chọn công nghệ chỉ vì đã dùng trong lịch sử.
+Research Gate / Preimplementation Gate mới được phép chốt:
 
-Không thiết kế distribution, plugin registry, service mesh hoặc schema đầy đủ ở M0. Chỉ thêm boundary vật lý khi workload hoặc failure case đã đo yêu cầu nó.
+- provider;
+- one-source hay multi-source;
+- storage/database;
+- framework;
+- query interface;
+- dashboard;
+- deployment;
+- identity strategy;
+- serialization.
+
+M0 không thiết kế distribution, plugin registry, service mesh hoặc schema đầy đủ. Chỉ thêm boundary vật lý khi workload hoặc failure case đã đo cho thấy cần thiết.
