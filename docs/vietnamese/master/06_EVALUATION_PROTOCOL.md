@@ -2,9 +2,9 @@
 
 **PROPOSED — D05/D08.** Đây là kế hoạch kiểm chứng, chưa phải kết quả test.
 
-Protocol phải được chốt **trước implementation và trước khi xem kết quả holdout**.
+Protocol phải được chốt **trước khi triển khai và trước khi xem kết quả holdout**.
 
-## 1. Claim cần kiểm tra
+## 1. Điều M1 cần kiểm tra
 
 M1 chỉ kiểm tra khả năng mô tả thay đổi trong corpus đã định nghĩa.
 
@@ -13,38 +13,38 @@ M1 **không** kiểm tra:
 - dự báo tương lai;
 - công nghệ nào tốt hơn;
 - mức độ thành công ngoài thị trường;
-- khả năng scale production.
+- khả năng scale ở production.
 
-Cần báo riêng bốn loại kết quả:
+Kết quả đánh giá phải tách bốn vấn đề:
 
-1. correctness của phép tính;
-2. chất lượng và đầy đủ của evidence;
-3. explainability;
-4. mức phù hợp của detection với case đã chọn.
+1. phép tính có đúng không;
+2. bằng chứng có đầy đủ và phù hợp không;
+3. kết quả có giải thích được không;
+4. detection có phù hợp với trường hợp đánh giá đã xác định không.
 
 Demo chạy được không đồng nghĩa detection có giá trị.
 
 ## 2. Thiết kế đánh giá
 
-1. Chốt user task, domain/query, corpus/window, đơn vị đếm, chỉ báo, threshold và minimum support; freeze trước holdout.
-2. Tạo synthetic examples có expected result được tính độc lập: tăng, giảm, không đổi, zero/missing, duplicate/revision và future-dated observation.
-3. Chọn một historical case và một control case; ghi tiêu chí chọn trước khi xem system output.
-4. Với **as-of evaluation**, mọi field dùng tại cutoff T phải có evidence cho thấy field đó đã available không muộn hơn T.
+1. Chốt user task, domain/query, corpus/window, đơn vị đếm, chỉ báo, ngưỡng và minimum support; freeze trước holdout.
+2. Tạo synthetic examples có kết quả mong đợi được tính độc lập: tăng, giảm, không đổi, zero/missing, duplicate/revision và future-dated observation.
+3. Chọn một trường hợp lịch sử và một control case; ghi tiêu chí chọn trước khi xem system output.
+4. Với **as-of evaluation**, mọi field dùng tại cutoff T phải có bằng chứng cho thấy field đó đã available không muộn hơn T.
 5. Nếu không có availability evidence, chỉ được gọi là **retrospective case analysis**; không gọi là backtest.
-6. Chạy sensitivity analysis cho window/threshold hợp lý và khi loại record thiếu field; giữ negative results.
+6. Chạy sensitivity analysis khi thay đổi window/threshold trong phạm vi hợp lý và khi loại record thiếu field; giữ cả negative results.
 7. Replay phải dùng frozen input, không phụ thuộc live API.
 
 ## 3. Ma trận chấp nhận
 
-| ID | Kiểm tra | Evidence cần lưu | Điều kiện đạt |
+| ID | Kiểm tra | Bằng chứng cần lưu | Điều kiện đạt |
 | --- | --- | --- | --- |
 | E1 | Deterministic correctness | Fixture nhỏ, expected value độc lập, actual value và diff | 100% case đã định nghĩa đúng; tolerance số thực chốt trước |
 | E2 | Historical case + explainability | Case protocol, control, components, annotation, disagreement, sensitivity | Có ≥1 case và ≥1 control; reviewer giải thích được mọi label; quality threshold được chốt trước |
 | E3 | Temporal isolation | Availability audit, cutoff/config/vocabulary record, injected future records | Không có input trái cutoff; future records không làm đổi output trước T; thiếu availability evidence ⇒ NOT PASSED |
 | E4 | Reproducibility | Snapshot identity, config, code version, metric definition, environment, output | Hai lần chạy độc lập cho cùng semantic output |
-| E5 | Traceability | Full lineage + evidence bundle | 100% assessment demo truy được tới signal và observations đóng góp |
+| E5 | Traceability | Full lineage + evidence bundle | 100% assessment demo truy được tới signal và toàn bộ observations đóng góp |
 | E6 | Idempotency | Replay cùng input và so sánh count/signal | Không có đóng góp bị nhân đôi; semantic output không đổi |
-| E7 | Usability | Task-based walkthrough | Reviewer chọn concept/window, xem kết quả, hiểu chỉ báo và mở evidence mà không sửa code |
+| E7 | Usability | Task-based walkthrough | Reviewer chọn concept/window, xem kết quả, hiểu chỉ báo và mở bằng chứng mà không sửa code |
 | E8 | Bounded operation | Corpus size, coverage, missingness, runtime, resource usage nếu đo được | Đạt budget được chốt trước; không suy diễn scalability |
 
 ## 4. Lưu ý về E2
