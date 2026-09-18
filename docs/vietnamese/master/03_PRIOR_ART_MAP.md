@@ -1,48 +1,68 @@
-# 03 — Prior Art Map
+# 03 — Bản đồ nghiên cứu liên quan
 
-Đây là bản đồ khảo sát cho [RQs](02_RESEARCH_QUESTIONS.md), không phải literature review hoàn chỉnh. Ngày kiểm tra nguồn: 18/09/2026. VERIFIED ở đây chỉ nói citation và nội dung tóm tắt đã đối chiếu với nguồn; không khẳng định phương pháp phù hợp SITES.
+Tài liệu này là **bản đồ khảo sát**, chưa phải literature review hoàn chỉnh.
 
-## Nguồn học thuật đã xác minh bước đầu
+**Ngày kiểm tra nguồn:** 18/09/2026.  
+Nhãn **VERIFIED** ở đây chỉ có nghĩa citation và nội dung được mô tả đã được đối chiếu với nguồn; nó không có nghĩa phương pháp đã được chứng minh phù hợp với SITES.
 
-| Nguồn sơ cấp | Nội dung đã đối chiếu | Liên hệ nghiên cứu SITES — chưa phải quyết định |
+## 1. Nguồn học thuật đã kiểm tra bước đầu
+
+| Nguồn | Điều đã kiểm tra | Liên hệ với SITES |
 | --- | --- | --- |
-| Rotolo, Hicks & Martin (2015), [What Is an Emerging Technology?](https://arxiv.org/abs/1503.00673) | Abstract phân biệt novelty, growth, coherence, impact và uncertainty/ambiguity; không chỉ một chỉ số tăng trưởng. Đã đọc abstract, chưa critical-review toàn bài | R1: hạn chế việc gọi mọi tăng trưởng là emergence; cần operational definition nhỏ hơn |
-| Kleinberg (2002), [Bursty and Hierarchical Structure in Streams — trang tác giả và kết quả mẫu](https://www.cs.cornell.edu/home/kleinber/kdd02.html) | Trang tác giả mô tả burst theo thay đổi tần suất và các ví dụ trên dòng tài liệu. Đã kiểm tra mô tả và citation, chưa đánh giá thuật toán trên corpus SITES | R2: burst detection là candidate, không đồng nghĩa với phát hiện công nghệ có giá trị |
-| Sandve, Nekrutenko, Taylor & Hovig (2013), [Ten Simple Rules for Reproducible Computational Research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285) | Hướng dẫn theo dõi cách tạo kết quả, phiên bản phần mềm, input và tham số. Đã đọc các rule liên quan, không có experiment SITES | R5/R6: thiết kế replay record; chưa chọn tool hay storage |
+| Rotolo, Hicks & Martin (2015), [What Is an Emerging Technology?](https://arxiv.org/abs/1503.00673) | Abstract nêu năm đặc trưng: radical novelty, relatively fast growth, coherence, prominent impact, uncertainty/ambiguity | R1: không nên đồng nhất “tăng số lượng” với “emerging technology” |
+| Kleinberg (2002), [Bursty and Hierarchical Structure in Streams](https://www.cs.cornell.edu/home/kleinber/kdd02.html) | Trang tác giả mô tả burst là giai đoạn feature xuất hiện với cường độ cao trong một khoảng thời gian; model dựa trên thay đổi tần suất | R2: burst detection là candidate, không phải bằng chứng trực tiếp rằng một công nghệ có giá trị |
+| Sandve et al. (2013), [Ten Simple Rules for Reproducible Computational Research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285) | Các rule yêu cầu ghi lại workflow, input, parameter và software version để tái lập kết quả | R5/R6: hỗ trợ yêu cầu về replay record và provenance |
 
-## Research families và việc còn phải đọc
+Giới hạn hiện tại:
 
-| Family | Cần khảo sát / evidence artifact | Liên hệ | Trạng thái |
+- Rotolo: mới kiểm tra abstract, chưa critical review toàn bài;
+- Kleinberg: mới kiểm tra mô tả thuật toán và sample page, chưa chạy trên corpus SITES;
+- Sandve: đã kiểm tra các rule liên quan, chưa có experiment SITES.
+
+## 2. Các nhóm nghiên cứu cần tiếp tục khảo sát
+
+| Nhóm | Evidence cần tạo | Liên hệ | Trạng thái |
 | --- | --- | --- | --- |
-| Scientometrics / bibliometrics | Bias độ phủ, field/age normalization; bảng giới hạn của count/citation | R1–R3 | TO RESEARCH |
-| Science mapping | Co-word/co-citation, đơn vị phân tích, rủi ro interpret cluster | R1/R3 | TO RESEARCH |
-| Emerging technology detection | Đọc đầy đủ Rotolo và phương pháp thực nghiệm liên quan; operationalization matrix | R1/R2 | Nguồn đầu đã xác minh; TO RESEARCH |
-| Burst detection | Đọc paper Kleinberg, assumptions, tuning và baseline đơn giản | R2/R6 | Nguồn đầu đã xác minh; TO RESEARCH |
-| Temporal citation dynamics | Censoring, delay, as-of metric availability và cohort bias | R2/R4 | TO RESEARCH |
-| Topic/concept evolution | Alias drift, vocabulary theo cutoff và dictionary vs learned topics | R3/R4 | TO RESEARCH |
-| Technology forecasting | Phân biệt detection với prediction; ghi boundary, chưa chọn phương pháp | Sau M1 | DEFERRED |
-| Scholarly knowledge graphs | Work/version identity và provenance; chỉ đọc phần cần cho corpus | R3/R5/R7 | TO RESEARCH; full graph DEFERRED |
-| Reproducible computational research | Chuyển rule sang replay/trace checks có thể chạy | R5/R6 | Nguồn đầu đã xác minh; chưa thực nghiệm |
+| Scientometrics / bibliometrics | Coverage bias, field/age normalization, giới hạn của count/citation | R1–R3 | TO RESEARCH |
+| Science mapping | Co-word/co-citation, đơn vị phân tích, rủi ro diễn giải cluster | R1/R3 | TO RESEARCH |
+| Emerging technology detection | Đọc đầy đủ Rotolo và các operationalization thực nghiệm | R1/R2 | TO RESEARCH |
+| Burst detection | Đọc paper Kleinberg, assumptions, tuning, baseline | R2/R6 | TO RESEARCH |
+| Temporal citation dynamics | Censoring, delay, as-of availability, cohort bias | R2/R4 | TO RESEARCH |
+| Topic/concept evolution | Alias drift, vocabulary cutoff, dictionary vs learned topics | R3/R4 | TO RESEARCH |
+| Technology forecasting | Tách detection khỏi prediction | Sau M1 | DEFERRED |
+| Scholarly knowledge graphs | Work/version identity, provenance | R3/R5/R7 | TO RESEARCH; full graph DEFERRED |
+| Reproducible computational research | Biến các rule thành replay/trace checks có thể chạy | R5/R6 | TO RESEARCH |
 
-Mỗi research note tiếp theo cần citation/version, câu hỏi, phương pháp/data gốc, finding, limitation, applicability và decision liên quan. Không coi abstract hoặc citation count là bằng chứng đã tái lập nghiên cứu. Research Gate yêu cầu evidence cho lựa chọn cụ thể, không yêu cầu đọc hết mọi family.
+Mỗi research note tiếp theo cần ghi: nguồn/version, câu hỏi, phương pháp và dữ liệu gốc, finding, limitation, mức áp dụng cho SITES và quyết định liên quan.
 
-## Internal historical design lessons
+## 3. Bài học từ thiết kế lịch sử
 
-**HISTORICAL — không phải prior academic art.** Đã inspect README và cả bốn design/academy documents tại snapshot [9b9f8ee](https://github.com/Dyu20705/sites/tree/9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7), cùng toàn bộ issues #36–#61. Có thể đọc lại bằng `git show 9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7:<path>`; không khôi phục file cũ vào HEAD.
+**HISTORICAL — không phải prior academic art.**
 
-Các tài liệu gốc: [English design](https://github.com/Dyu20705/sites/blob/9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7/docs/english/design/scholarly-data-platform.md), [English academy](https://github.com/Dyu20705/sites/blob/9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7/docs/english/academy/scholarly-data-model.md), [Vietnamese design](https://github.com/Dyu20705/sites/blob/9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7/docs/vietnamese/design/scholarly-data-platform.md), [Vietnamese academy](https://github.com/Dyu20705/sites/blob/9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7/docs/vietnamese/academy/scholarly-data-model.md).
+Đã kiểm tra README, bốn design/academy documents tại snapshot [9b9f8ee](https://github.com/Dyu20705/sites/tree/9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7) và issues #36–#61.
 
-| Insight tìm lại | Evidence lịch sử | Cách xử lý trong M0 |
+Tài liệu gốc:
+
+- [English design](https://github.com/Dyu20705/sites/blob/9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7/docs/english/design/scholarly-data-platform.md)
+- [English academy](https://github.com/Dyu20705/sites/blob/9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7/docs/english/academy/scholarly-data-model.md)
+- [Vietnamese design](https://github.com/Dyu20705/sites/blob/9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7/docs/vietnamese/design/scholarly-data-platform.md)
+- [Vietnamese academy](https://github.com/Dyu20705/sites/blob/9b9f8ee1dabde0df26c42e0f9d5feb11a4fd1bb7/docs/vietnamese/academy/scholarly-data-model.md)
+
+| Bài học lịch sử | Evidence | Cách dùng trong M0 |
 | --- | --- | --- |
-| Observation không đồng nhất với derived claim; provenance cần trace được | [#47](https://github.com/Dyu20705/sites/issues/47), [#57](https://github.com/Dyu20705/sites/issues/57), [#59](https://github.com/Dyu20705/sites/issues/59) | Durable domain insight ứng viên; PROPOSED requirement D05, không lấy dataclass/table cũ |
-| Nhiều loại timestamp và nguy cơ look-ahead leakage | [#46](https://github.com/Dyu20705/sites/issues/46) | PROPOSED temporal invariant và evaluation checks; chưa có chứng cứ dataset hỗ trợ |
-| Replay phải gắn input/config/code/metric/output; chạy lại không nhân đôi signal | [#45](https://github.com/Dyu20705/sites/issues/45), [#55](https://github.com/Dyu20705/sites/issues/55) | PROPOSED reproducibility/idempotency D05; mechanism OPEN |
-| Identifier, version, relation và identity không tương đương | [#48](https://github.com/Dyu20705/sites/issues/48), [#60](https://github.com/Dyu20705/sites/issues/60) | Durable insight ứng viên; minimum duplicate semantics cần research, global canonical identity DEFERRED |
-| Velocity, acceleration, influential growth, emergence, persistence, diffusion, frontier papers | [#52](https://github.com/Dyu20705/sites/issues/52), [#53](https://github.com/Dyu20705/sites/issues/53), [#54](https://github.com/Dyu20705/sites/issues/54) | HYPOTHESIS/candidate signal; không nhận composite score như truth |
-| Extensibility và performance cần empirical evidence | [#56](https://github.com/Dyu20705/sites/issues/56), [#58](https://github.com/Dyu20705/sites/issues/58), [#61](https://github.com/Dyu20705/sites/issues/61) | Candidate design concern; kiểm tra thời gian/tài nguyên của demo là PROPOSED, generic registry và large benchmark DEFERRED |
+| Observation phải tách khỏi derived claim; provenance phải truy được | #47, #57, #59 | PROPOSED requirement D05; không kế thừa dataclass/table cũ |
+| Có nhiều loại timestamp và nguy cơ look-ahead leakage | #46 | PROPOSED temporal invariant; cần dataset audit mới |
+| Replay cần gắn input/config/code/metric/output; chạy lại không được nhân đôi | #45, #55 | PROPOSED reproducibility/idempotency requirement |
+| Identifier, version, relation và identity không tương đương | #48, #60 | Cần semantics tối thiểu; global canonical identity DEFERRED |
+| Velocity, acceleration, influential growth, emergence, persistence, diffusion, frontier papers | #52–#54 | Candidate/HYPOTHESIS; không coi composite score là truth |
+| Extensibility và performance cần bằng chứng thực nghiệm | #56, #58, #61 | Chỉ kiểm tra workload M1; generic registry/large benchmark DEFERRED |
 
-## Lựa chọn lịch sử không được kế thừa
+## 4. Những lựa chọn cũ chưa được kế thừa
 
-**HISTORICAL CANDIDATE — NOT ACCEPTED IN CURRENT BASELINE:** DuckDB/DuckDB 1.5.5; Medallion (Bronze/Silver/Gold); Parquet; uv; schema 13 bảng; canonical UUIDv5; stub lifecycle; Source Authority Priority Matrix; exact `canonical_*` schemas; kiến trúc bốn provider; arXiv-first; vai trò cố định của OpenAlex/Crossref/Semantic Scholar; SourceRegistry, Observation dataclasses và provider adapters cũ.
+**HISTORICAL CANDIDATE — NOT ACCEPTED IN CURRENT BASELINE:**
 
-Không kết luận các công nghệ đó sai; chỉ bác bỏ việc kế thừa tự động. Mọi lựa chọn mới phải qua evidence và decision gate. Issue graph #36–#61 đã retired; #57 đóng `completed` chỉ phản ánh lịch sử, không chứng minh implementation hiện hành. Không tái tạo graph đó dưới tên mới.
+DuckDB, Medallion (Bronze/Silver/Gold), Parquet, uv, schema 13 bảng, canonical UUIDv5, stub lifecycle, Source Authority Priority Matrix, các schema canonical cũ, kiến trúc bốn provider, arXiv-first, vai trò cố định của OpenAlex/Crossref/Semantic Scholar, SourceRegistry, Observation dataclasses và provider adapters cũ.
+
+Điều này **không có nghĩa các lựa chọn đó sai**. Chúng chỉ không được tự động mang sang baseline mới.
+
+Issue graph #36–#61 là tài liệu lịch sử. Việc #57 từng ở trạng thái completed không chứng minh implementation hiện tại còn tồn tại.
