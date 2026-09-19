@@ -1,57 +1,53 @@
-# sites - Hệ thống Trí tuệ Học thuật & Tiến hóa Công nghệ (Scholar Intelligence & Tech Evolution System)
+# SITES — Scholar Intelligent Trend Evolution System
 
-Kho lưu trữ (repository) này triển khai một pipeline khai phá dữ liệu tự động, được thiết kế để trích xuất, phân tích và dự báo **các xu hướng phát triển công nghệ** từ các cơ sở dữ liệu học thuật và thư mục quy mô lớn.
+[English](../../README.md) · Tiếng Việt · [日本語](../japanese/README.md)
 
-Thay vì chỉ tìm kiếm tài liệu học thuật thông thường, pipeline này hoạt động theo các nguyên tắc chọn lọc định hướng chặt chẽ (highly opinionated). Hệ thống lọc ra **các nghiên cứu uy tín, có tầm ảnh hưởng cao** và chủ động định hướng quá trình khám phá tri thức theo các hướng nghiên cứu cụ thể do người dùng xác định (ví dụ: Hệ thống đa tác tử - Multi-Agent Systems, MLOps, Kiến trúc phân tán - Distributed Architecture).
+**SITES** là một dự án nghiên cứu về scholarly intelligence, hướng tới việc phân tích sự thay đổi của các khái niệm khoa học và công nghệ theo thời gian dựa trên bằng chứng có thể kiểm tra.
 
-## Mục tiêu Cốt lõi
+Tầm nhìn dài hạn của SITES không dừng ở bài báo khoa học hay dashboard xu hướng. Tài liệu học thuật là miền dữ liệu khởi đầu; về sau dự án có thể mở rộng sang các nguồn bằng chứng khác và các năng lực phân tích, hỗ trợ quyết định ở mức cao hơn.
 
-* **Phân tích Xu hướng Trọng tâm (Targeted Trend Analysis):** Khai phá đồ thị trích dẫn và siêu dữ liệu văn bản để xác định các công nghệ đang lên, các bước chuyển dịch mô hình (paradigm shifts), và các phương pháp luận đang suy thoái theo thời gian.
-* **Lọc theo Mức độ Ảnh hưởng & Độ tin cậy (Impact & Authority Filtering):** Loại bỏ nhiễu bằng cách ưu tiên tài liệu học thuật dựa trên "tốc độ tăng trưởng trích dẫn" (citation velocity), các chỉ số trích dẫn có tầm ảnh hưởng (influential citations), cùng uy tín lịch sử của tác giả và hội thảo/tạp chí (venue).
-* **Căn chỉnh Ngữ nghĩa Chặt chẽ (Strict Semantic Alignment):** Đảm bảo các xu hướng được khai phá bám sát các hướng kỹ thuật cụ thể bằng cách sử dụng vector embeddings và điểm tương đồng ngữ nghĩa đối với các prompt mục tiêu.
-* **Tổng hợp Tri thức & Thông tin Chi tiết (Insight Synthesis):** Tự động tạo các báo cáo xu hướng theo thời gian, bản đồ nhiệt khái niệm (concept heatmaps), và làm nổi bật các bài báo tiên phong ("frontier" papers) đang dẫn dắt các làn sóng công nghệ hiện tại.
+~~~text
+thu thập bằng chứng → theo dõi → khai phá → phát hiện xu hướng
+→ dự báo → khuyến nghị / hỗ trợ quyết định → tự động hóa / tối ưu hóa
+~~~
 
-## Nguồn Dữ liệu (Data Sources)
+## Trọng tâm hiện tại
 
-| Nguồn | Vai trò trong Pipeline |
-| :--- | :--- |
-| **Semantic Scholar (S2AG)** | Lọc dữ liệu tín hiệu cao (high-signal) sử dụng nhãn "trích dẫn có tầm ảnh hưởng" (influential citation) và phân loại ý định trích dẫn (citation intent). |
-| **OpenAlex** | Đồ thị học thuật toàn diện để theo dõi sự phát triển theo thời gian của các khái niệm công nghệ cụ thể. |
-| **arXiv (OAI-PMH)** | Nguồn chính cho các bài báo tiền ấn bản (preprints) tiên phong trong lĩnh vực Khoa học Máy tính, Trí tuệ Nhân tạo và Hệ thống. |
-| **DBLP** | Siêu dữ liệu đã được xác thực cho các hội thảo và tạp chí khoa học máy tính hàng đầu. |
+Repository đang ở **M0 — định nghĩa dự án**. Nhánh hiện tại chưa chứa một phiên bản triển khai của sản phẩm hay bộ kiểm thử thực thi tương ứng.
 
-## Kiến trúc Pipeline (Nền tảng Dữ liệu Học thuật Chuẩn hóa - Canonical Scholarly Data Platform)
+Trong **Month 1 (17/09–17/10/2026)**, phạm vi cam kết được cố ý thu hẹp:
 
-```text
-[1. arXiv OAI-PMH Harvester]
-      │ Thu thập dữ liệu tăng dần (Watermark + cửa sổ hồi quy, giới hạn số lần thử lại, resumptionToken)
-      ▼
-[2. Tầng Bronze: Lưu trữ Thô & Manifest (Raw Landing & Manifest)]
-      │ ├── Lưu trữ thô bất biến (Immutable): data/raw/arxiv/YYYY/MM/...
-      │ ├── raw_source_manifest: Khử trùng lặp payload qua SHA-256 & lưu vết kiểm toán (audit trail)
-      │ └── ingestion_quarantine: Định tuyến cô lập XML lỗi định dạng & vi phạm DQ-02
-      ▼
-[3. Tầng Silver: Quan sát Bản ghi Nguồn (Source Work Observations)]
-      │ ├── Trình phân tích cú pháp XML độ chính xác cao: arXiv, arXivRaw, oai_dc
-      │ ├── Bảo toàn nguyên vẹn công thức LaTeX/TeX ($\mathcal{O}(n \log n)$)
-      │ └── Thu thập preprints, các bản sửa đổi (v1, v2), bài rút (withdrawals), phân loại, bản quyền
-      ▼
-[4. Tầng Gold: Phân giải Thực thể Chuẩn hóa (Canonical Entity Resolution)]
-      │ ├── Định danh Work xác định bằng UUIDv5 (Work != Version)
-      │ ├── Cập nhật bản sửa đổi tại chỗ (in-place) với Ma trận Ưu tiên Nguồn thẩm quyền
-      │ └── Truy vết nguồn gốc không mất mát thông tin trong canonical_work_provenance
-```
+- bắt đầu từ bằng chứng học thuật;
+- tập trung vào phát hiện và mô tả xu hướng;
+- xây một luồng end-to-end nhỏ nhưng có thể tái lập;
+- chưa đưa forecasting, recommendation, optimization, autonomous agents hoặc hạ tầng quy mô lớn vào phạm vi M1, trừ khi có quyết định mới được chấp thuận rõ ràng.
 
-## Bắt đầu Nhanh & Kiểm thử Xác thực (Quick Start & Verification)
+Các lựa chọn cụ thể như người dùng chính, nguồn dữ liệu, tập tài liệu phân tích, định nghĩa chỉ báo, cách lưu trữ, framework, công nghệ dashboard và cách triển khai vẫn phải đi qua bước nghiên cứu và các điểm phê duyệt.
 
-### Chạy Xác thực Pipeline Đầu-Cuối (End-to-End)
-Chạy bộ kiểm thử xác thực 7 bước tự động (phân tích cú pháp XML, tính toán manifest, nạp dữ liệu Medallion, phát lại idempotent, an toàn watermark, cô lập quarantine, tóm tắt các tầng):
-```bash
-uv run python scripts/verify_arxiv_pipeline.py
-```
+## Tài liệu
 
-### Chạy Toàn bộ Test Suite
-Thực thi toàn bộ bộ kiểm thử (57 bài test bao gồm Harvester, Parser, Watermark, Idempotency, Schema, Resolution):
-```bash
-uv run pytest -v
-```
+Bắt đầu từ [mục lục tài liệu](../README.md).
+
+Bộ tài liệu định nghĩa M0/M1 hiện đang được review bằng tiếng Việt:
+
+- [Định nghĩa Month 1](baseline/M1.md)
+- [Tuyên bố dự án](master/00_PROJECT_CHARTER.md)
+- [Phạm vi và các nội dung không thực hiện](master/01_SCOPE_AND_NON_GOALS.md)
+- [Câu hỏi nghiên cứu](master/02_RESEARCH_QUESTIONS.md)
+- [Bản đồ nghiên cứu liên quan](master/03_PRIOR_ART_MAP.md)
+- [Kiến trúc khái niệm](master/04_SYSTEM_ARCHITECTURE.md)
+- [Mô hình dữ liệu khái niệm](master/05_DATA_MODEL.md)
+- [Quy trình đánh giá](master/06_EVALUATION_PROTOCOL.md)
+- [Nhật ký quyết định](master/07_DECISION_LOG.md)
+- [Kế hoạch Month 1](master/08_MONTH1_BACKLOG.md)
+- [Trạng thái hiện tại đã xác minh](master/09_CURRENT_STATE.md)
+
+Các bản tiếng Anh, tiếng Việt và tiếng Nhật phải tương đương về **nội dung**, không phải từng câu từng chữ. Decision ID, ngày, trạng thái, yêu cầu và ý nghĩa kỹ thuật phải giữ nhất quán giữa các bản dịch.
+
+## Trạng thái repository và lịch sử
+
+Code, thiết kế và issue cũ vẫn được giữ trong Git history. Chúng là bằng chứng và tư liệu thiết kế có thể tham khảo, nhưng **không tự động trở thành kiến trúc hoặc roadmap hiện tại**.
+
+Baseline mới không mặc định rằng phần triển khai, nguồn dữ liệu, schema, metric hay công nghệ từng được sử dụng trong lịch sử vẫn còn phù hợp. Muốn sử dụng lại phải đánh giá lại theo yêu cầu và bằng chứng hiện hành.
+
+Xem [PR #62](https://github.com/Dyu20705/sites/pull/62) để theo dõi quá trình reset repository và review bộ tài liệu M0.
