@@ -6,7 +6,7 @@ Phạm vi tham chiếu [Định nghĩa M1](../baseline/M1.md); cách đánh giá
 
 ## Câu hỏi nghiên cứu chính — P0
 
-> Trong một miền kỹ thuật và corpus học thuật được giới hạn rõ, 1–2 chỉ báo có thể mô tả sự thay đổi mức độ hiện diện của một khái niệm theo thời gian theo cách giải thích được, truy nguyên được và tái lập được hay không?
+> Trong một tập tài liệu học thuật thuộc một lĩnh vực kỹ thuật cụ thể, liệu 1–2 chỉ báo đơn giản có đủ để xác định một khái niệm đang xuất hiện nhiều hơn hay ít hơn theo thời gian, đồng thời cho phép kiểm tra nguồn dữ liệu, cách tính và tái tạo lại kết quả hay không?
 
 Mục tiêu là kiểm tra một nhận định nhỏ trước khi dùng các nhãn lớn như “emerging technology”.
 
