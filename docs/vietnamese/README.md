@@ -1,6 +1,6 @@
 # SITES — Scholar Intelligent Trend Evolution System
 
-[English](../../README.md) · Tiếng Việt · [日本語](../japanese/README.md)
+[English](../../README.md) · Tiếng Việt
 
 **SITES** là một dự án nghiên cứu về scholarly intelligence, hướng tới việc phân tích sự thay đổi của các khái niệm khoa học và công nghệ theo thời gian dựa trên bằng chứng có thể kiểm tra.
 
@@ -42,7 +42,7 @@ Bộ tài liệu định nghĩa M0/M1 hiện đang được review bằng tiến
 - [Kế hoạch Month 1](master/08_MONTH1_BACKLOG.md)
 - [Trạng thái hiện tại đã xác minh](master/09_CURRENT_STATE.md)
 
-Các bản tiếng Anh, tiếng Việt và tiếng Nhật phải tương đương về **nội dung**, không phải từng câu từng chữ. Decision ID, ngày, trạng thái, yêu cầu và ý nghĩa kỹ thuật phải giữ nhất quán giữa các bản dịch.
+Các bản tiếng Anh và tiếng Việt phải tương đương về **nội dung**, không phải từng câu từng chữ. Decision ID, ngày, trạng thái, yêu cầu và ý nghĩa kỹ thuật phải giữ nhất quán giữa hai bản dịch.
 
 ## Trạng thái repository và lịch sử
 
