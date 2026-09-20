@@ -27,16 +27,26 @@ None of these sources establishes that a particular metric is suitable for SITES
 | Area | Evidence to produce | Relevance | Status |
 | --- | --- | --- | --- |
 | Scientometrics / bibliometrics | Coverage bias, field and age normalization, limits of counts and citations | R1–R3 | TO RESEARCH |
-| Science mapping | Co-word and co-citation methods, unit of analysis, and risks when interpreting clusters | R1/R3 | TO RESEARCH |
+| Science mapping | Only evidence needed to resolve a specific R1/R3 gap | R1/R3 | CONDITIONAL; not a standalone work package |
 | Emerging-technology detection | Full reading of Rotolo and methods that operationalize emergence | R1/R2 | TO RESEARCH |
 | Burst detection | Kleinberg paper, assumptions, tuning, and a simple baseline | R2/R6 | TO RESEARCH |
-| Temporal citation dynamics | Censoring, delay, as-of availability, and cohort bias | R2/R4 | TO RESEARCH |
+| Temporal citation dynamics | Censoring, delay, as-of availability, and cohort bias | R2/R4 | CONDITIONAL on required historical observations |
 | Topic and concept evolution | Alias drift, vocabulary cutoff, and dictionary-based versus learned topics | R3/R4 | TO RESEARCH |
 | Technology forecasting | Clear separation between detection and prediction | After M1 | DEFERRED |
-| Scholarly knowledge graphs | Work/version identity and provenance | R3/R5/R7 | TO RESEARCH; full graph DEFERRED |
+| Scholarly knowledge graphs | Work/version identity and provenance only where required by an unresolved RQ | R3/R5/R7 | CONDITIONAL; full graph DEFERRED |
 | Reproducible computational research | Turn the principles into executable replay and trace checks | R5/R6 | TO RESEARCH |
 
-Each subsequent research note should record the source and version, question, original method and data, finding, limitation, applicability to SITES, and related decision.
+Each subsequent research note uses the [evidence ledger](../research/01_EVIDENCE_LEDGER.md), including source location, population/period, directness and counterevidence. Existing reading limits above remain unchanged.
+
+### Bounded work packages
+
+| Package | Families and output | Stop condition | Decision |
+| --- | --- | --- | --- |
+| A — Evidence and candidate signals | Scientometrics, emergence, count/share, burst/persistence and evaluation; candidate comparison with definitions, alternatives and confounders | Main method, serious alternative, failure modes and applicability documented; enough literature plus B data evidence for a proposal, or an explicit insufficient-evidence report | R1/R2/R6 → D08 |
+| B — Source and corpus feasibility | Scholarly temporal semantics, coverage and concept/vocabulary evolution; provider screening and bounded sample audit | One candidate has adequate measured support for a proposal and alternatives have screening outcomes, or material gaps are documented with the next discriminating test | R3/R4/R7 → D07 |
+| Shared requirement, not a third active item | Reproducibility, work/version semantics and claim lineage | Every material claim has provenance; empirical checks remain scheduled for the relevant later gate | R5 verifies D05 and informs D09 |
+
+The [protocol](../research/00_RESEARCH_PROTOCOL.md) defines search and stopping rules; the [backlog](08_MONTH1_BACKLOG.md) links the issues. R8 waits for a usable prototype and remains unvalidated. No paper-count target is used.
 
 ## 3. Lessons from Historical Designs
 
@@ -53,9 +63,9 @@ Historical documents:
 
 | Historical lesson | Evidence | Use in M0 |
 | --- | --- | --- |
-| Observations must remain separate from derived claims, with traceable provenance | [#47](https://github.com/Dyu20705/sites/issues/47), [#57](https://github.com/Dyu20705/sites/issues/57), [#59](https://github.com/Dyu20705/sites/issues/59) | PROPOSED D05 requirement; do not inherit old dataclasses or tables |
-| Timestamp types differ and can introduce look-ahead leakage | [#46](https://github.com/Dyu20705/sites/issues/46) | PROPOSED temporal invariant; the new dataset still requires an audit |
-| Replay must bind input, configuration, code, metric, and output; reruns must not duplicate contributions | [#45](https://github.com/Dyu20705/sites/issues/45), [#55](https://github.com/Dyu20705/sites/issues/55) | PROPOSED reproducibility and idempotency requirement |
+| Observations must remain separate from derived claims, with traceable provenance | [#47](https://github.com/Dyu20705/sites/issues/47), [#57](https://github.com/Dyu20705/sites/issues/57), [#59](https://github.com/Dyu20705/sites/issues/59) | D05 principle ACCEPTED on 20 September; no old dataclasses or tables inherited |
+| Timestamp types differ and can introduce look-ahead leakage | [#46](https://github.com/Dyu20705/sites/issues/46) | D05 temporal invariant ACCEPTED; the new dataset still requires an audit |
+| Replay must bind input, configuration, code, metric, and output; reruns must not duplicate contributions | [#45](https://github.com/Dyu20705/sites/issues/45), [#55](https://github.com/Dyu20705/sites/issues/55) | D05 reproducibility and idempotency ACCEPTED; implementation unverified |
 | Identifiers, versions, relations, and identity are not interchangeable | [#48](https://github.com/Dyu20705/sites/issues/48), [#60](https://github.com/Dyu20705/sites/issues/60) | Minimum semantics are required; global canonical identity is DEFERRED |
 | Velocity, acceleration, influential growth, emergence, persistence, diffusion, and frontier papers | [#52](https://github.com/Dyu20705/sites/issues/52), [#53](https://github.com/Dyu20705/sites/issues/53), [#54](https://github.com/Dyu20705/sites/issues/54) | Candidate/HYPOTHESIS; do not treat a composite score as ground truth |
 | Extensibility and performance require empirical evidence | [#56](https://github.com/Dyu20705/sites/issues/56), [#58](https://github.com/Dyu20705/sites/issues/58), [#61](https://github.com/Dyu20705/sites/issues/61) | Test only the M1 workload; generic registries and large benchmarks are DEFERRED |

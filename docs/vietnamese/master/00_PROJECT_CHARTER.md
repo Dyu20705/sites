@@ -45,11 +45,11 @@ D04 là quyết định về phạm vi, không phải kết luận rằng bài b
 
 Đến 17/10/2026, SITES cần có một demo nhỏ, có thể tái lập, đi từ corpus giới hạn tới một kết luận mô tả có bằng chứng.
 
-[Định nghĩa M1](../baseline/M1.md) quy định đầu vào, đầu ra và tiêu chí hoàn thành. Người dùng chính, corpus, chỉ báo và công nghệ triển khai vẫn còn chờ quyết định.
+[Định nghĩa M1](../baseline/M1.md) quy định đầu vào, đầu ra và tiêu chí hoàn thành. D06 chọn researcher khảo sát một chủ đề kỹ thuật; corpus, chỉ báo và công nghệ triển khai vẫn còn chờ quyết định.
 
-## 4. Các nguyên tắc đang đề xuất
+## 4. Các nguyên tắc đã chấp thuận
 
-**PROPOSED — D05:**
+**ACCEPTED — D05, 20/09/2026:**
 
 - mọi kết luận phải truy ngược được tới bằng chứng;
 - observation của nguồn và suy luận của hệ thống phải được tách rõ;
@@ -58,7 +58,9 @@ D04 là quyết định về phạm vi, không phải kết luận rằng bài b
 - chạy lại cùng input không được làm nhân đôi đóng góp;
 - chỉ báo phải giải thích được.
 
-Đây là các yêu cầu ứng viên rút ra từ tư liệu lịch sử và nghiên cứu liên quan; chưa có phần triển khai hiện tại chứng minh rằng chúng đã được đáp ứng.
+Thiếu bằng chứng được phép dẫn tới **insufficient evidence**. Thiếu historical availability evidence thì phân tích chỉ là retrospective và E3 vẫn NOT PASSED.
+
+Chủ dự án đã chấp thuận các nguyên tắc này trong [Nhật ký quyết định](07_DECISION_LOG.md). Chưa có phần triển khai hiện tại chứng minh rằng chúng đã được đáp ứng.
 
 ## 5. Thứ tự ưu tiên bằng chứng
 

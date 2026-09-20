@@ -1,6 +1,6 @@
 # 06 — Evaluation Protocol
 
-**PROPOSED — D05/D08.** This is a validation plan, not a test result.
+**D05 principles ACCEPTED; D08 evaluation choices PROPOSED.** This is a validation plan, not a test result. E1–E8 remain required; formulas, reference labels, thresholds and sensitivity settings still require D08 acceptance. Calling an analysis retrospective does not pass E3 or M1.
 
 The protocol must be fixed **before implementation and before inspecting holdout results**.
 

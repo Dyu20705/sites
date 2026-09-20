@@ -32,6 +32,23 @@ Bằng chứng tối thiểu cần có:
 | R7 | Một nguồn đã đủ hay nguồn thứ hai giải quyết thiếu hụt có thể đo được? | Coverage audit, chi phí reconciliation, temporal consistency | One-source vs multi-source D07 |
 | R8 | Người dùng chính có hiểu và dùng được đầu ra cho nhiệm vụ khảo sát không? | Task-based walkthrough và misunderstanding log | User/use case D06 |
 
+## Kiểm tra cụ thể và phụ trách
+
+Bằng chứng và decision mappings ở trên vẫn là câu hỏi nghiên cứu mở. Chấp thuận D05/D06 xác định yêu cầu và người dùng mục tiêu, chưa trả lời R5/R8. A và B là hai [research work packages](08_MONTH1_BACKLOG.md); [research protocol](../research/00_RESEARCH_PROTOCOL.md) quy định cách ghi bằng chứng.
+
+| RQ | Construct cần đo/làm rõ | Failure / falsifier cần kiểm tra | Phụ trách và bàn giao |
+| --- | --- | --- | --- |
+| R1 | Activity/frequency/share so với novelty/impact | Định nghĩa được chọn suy ra emergence hoặc impact chỉ từ count | A → phạm vi claim D08 |
+| R2 | Độ nhạy chỉ báo với activity và confounders | Kết luận đổi chủ yếu do denominator, coverage, alias, query hoặc window | A với field evidence từ B → D08 |
+| R3 | Field fitness và corpus coverage | Field thiết yếu thiếu, không hợp lệ hoặc lệch theo thời gian khiến metric dự định không có đủ dữ liệu | B → D07 và requirements cho A |
+| R4 | Availability từng giá trị tại cutoff T | Chỉ có metadata hiện tại hoặc event dates; không chứng minh được khả năng biết trong quá khứ | B → D07/D08; chỉ retrospective, E3 NOT PASSED |
+| R5 | Traceability và reproducibility của claim | Không tái tạo được record đóng góp, phép biến đổi hoặc phiên bản input/config | A+B xuyên suốt; sau đó executable checks D05 và thiết kế D09 |
+| R6 | Đánh giá độc lập không hindsight selection/tuning | Case hoặc reference labels phụ thuộc output chỉ báo, hoặc đổi ngưỡng sau khi xem holdout | A cùng feasibility từ B → D08 |
+| R7 | Mức đủ của một nguồn | Thiếu hụt bắt buộc vẫn tồn tại sau khi thu hẹp chỉ báo/corpus; nguồn khác phải có lợi ích đo được | B → D07; không tự mở rộng multi-source |
+| R8 | Hiểu nhiệm vụ và giá trị sử dụng | Researcher không giải thích được chỉ báo, tìm bằng chứng hoặc nhận biết giới hạn claim | Walkthrough khi có prototype → xem lại D06 nếu cần; acceptance chưa hoàn thành R8 |
+
+P0 thất bại trong phạm vi kiểm tra nếu không có chỉ báo khả thi vượt qua các kiểm tra này mà vẫn giữ trace/replay và temporal evidence. Giữ kết quả âm thay vì đổi câu hỏi sau đánh giá.
+
 ## Giả thuyết về chỉ báo
 
 **HYPOTHESIS:** count/share theo thời gian là baseline dễ kiểm tra nhưng có thể tạo trend giả khi kích thước corpus hoặc cách gọi khái niệm thay đổi.

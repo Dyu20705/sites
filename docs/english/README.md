@@ -22,7 +22,7 @@ For **Month 1 (17 September–17 October 2026)**, the committed scope is intenti
 - build one small, reproducible end-to-end flow;
 - exclude forecasting, recommendation, optimization, autonomous agents, and large-scale infrastructure unless a later decision explicitly accepts them into M1.
 
-The primary user, data source, analysis corpus, signal definition, storage, framework, dashboard technology, and deployment model still require research and approval at the relevant decision gates.
+D05 evidence/correctness principles and D06's primary user—a researcher surveying a technical topic—were accepted on 20 September 2026. User value remains unvalidated. The data source, corpus, signal definition and implementation technology still require evidence and approval at the relevant decision gates.
 
 ## Documentation
 
@@ -41,6 +41,15 @@ The English M0/M1 documentation set includes:
 - [Decision log](master/07_DECISION_LOG.md)
 - [Month-1 gate plan](master/08_MONTH1_BACKLOG.md)
 - [Verified current state](master/09_CURRENT_STATE.md)
+
+Research preparation:
+
+- [Research protocol](research/00_RESEARCH_PROTOCOL.md)
+- [Evidence ledger](research/01_EVIDENCE_LEDGER.md)
+- [Source audit plan](research/02_SOURCE_AUDIT_PLAN.md)
+- [Case selection protocol](research/03_CASE_SELECTION_PROTOCOL.md)
+- [Signal candidates](research/04_SIGNAL_CANDIDATES.md)
+- [Research Entry checklist](research/05_RESEARCH_ENTRY_CHECKLIST.md)
 
 The English and Vietnamese sets are equivalent in meaning, not sentence-by-sentence wording. Decision IDs, dates, statuses, requirements, and technical meaning must remain consistent across both versions.
 

@@ -7,14 +7,15 @@ The [M1 Definition](../baseline/M1.md) controls the Month-1 scope. This document
 | Horizon | Content | Status |
 | --- | --- | --- |
 | Long term | Capability chain from evidence acquisition to automation and optimization | Direction, not an implementation commitment |
-| Month 1 | Bounded corpus → provenance → minimal normalization → one or two signals → query → dashboard demo | M1 direction accepted; D06–D09 details remain PROPOSED |
+| Month 1 | Bounded corpus → provenance → minimal normalization → one or two signals → query → dashboard demo | M1 direction and D05/D06 accepted; D07–D09 details remain PROPOSED |
 | After Month 1 | Forecasting, recommendation, optimization, automation, and additional data sources | DEFERRED |
 
 ## 2. Proposed M1 Scope
 
-**PROPOSED — D06–D09:**
+**ACCEPTED — D06:** one researcher surveying a technical topic.
 
-- one researcher surveying a technical topic;
+**PROPOSED — D07–D09:**
+
 - one technical field;
 - one data source;
 - no more than 5,000 records;

@@ -5,7 +5,7 @@
 **WIP limit:** no more than two active work items.
 
 ~~~text
-define-ready → research-ready → preimplementation-ready
+define-ready → Research Entry → research phase → research-ready → preimplementation-ready
 → feature-ready → product-ready v1
 ~~~
 
@@ -23,6 +23,19 @@ A stage does not become complete merely because its date has arrived. Every stat
 | 8–13 October — Evaluation/Demo | Test the case, control, and usability | E1–E8 reports, limitation/disagreement log, reviewer replay | Frozen criteria pass; no post-hoc tuning to hide failure |
 | 14–16 October — Packaging | Make the demo reproducible | Replay guide, shareable data, environment record, demo package | Another reviewer completes the replay |
 | 17 October — Final | Review M1 and answer the primary research question | Gate checklist, demo, research result, updated current state | Contract and E1–E8 confirmed within the M1 boundary |
+
+## Research work queue
+
+Entry preparation is one work item. Finish its review before activating research execution. The two new issues below are the complete initial queue; historical #36–#61 remain reference material.
+
+| Package | Issue | Deliverables and completion boundary |
+| --- | --- | --- |
+| A — Evidence and candidate signals | Publication pending | R1/R2/R6 ledger, definitions and counterevidence, signal comparison, case/control and freeze proposal, limitations, supported D08 proposal or explicit insufficient-evidence report |
+| B — Source and corpus feasibility | Publication pending | R3/R4/R7 provider screening, bounded sample/query/snapshot record, field mapping, missingness/coverage, temporal and access/replay evidence, supported D07 proposal or explicit insufficient-evidence report |
+
+A first shares signal field requirements from [signal candidates](../research/04_SIGNAL_CANDIDATES.md); B returns feasible fields, denominator constraints and time semantics from the [audit plan](../research/02_SOURCE_AUDIT_PLAN.md). A cannot finalize D08 without B's findings. R5 lineage is required in both packages. R8 remains a later prototype walkthrough with a misunderstanding log; it is not validated by D06 acceptance and is not a third active item.
+
+Follow the [research protocol](../research/00_RESEARCH_PROTOCOL.md) and [entry checklist](../research/05_RESEARCH_ENTRY_CHECKLIST.md). Each issue is complete when its evidence or negative findings are reviewable, limitations and next action are explicit, and its proposal is ready for the owner. Closing an investigation does not accept D07/D08 or pass research-ready. That gate also requires empirical artifacts, a freeze proposal and explicit owner acceptance of D07/D08. D09 remains a later decision.
 
 ## If a Gate Fails
 

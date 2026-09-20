@@ -7,14 +7,15 @@
 | Mức | Nội dung | Trạng thái |
 | --- | --- | --- |
 | Dài hạn | Chuỗi năng lực từ thu thập bằng chứng tới tự động hóa/tối ưu hóa | Định hướng, chưa phải cam kết triển khai |
-| Month 1 | Corpus giới hạn → provenance → chuẩn hóa tối thiểu → 1–2 chỉ báo → truy vấn → dashboard demo | Hướng M1 đã được chấp thuận; chi tiết D06–D09 vẫn là PROPOSED |
+| Month 1 | Corpus giới hạn → provenance → chuẩn hóa tối thiểu → 1–2 chỉ báo → truy vấn → dashboard demo | Hướng M1 và D05/D06 đã được chấp thuận; chi tiết D07–D09 vẫn là PROPOSED |
 | Sau Month 1 | Forecasting, recommendation, optimization, automation, mở rộng nguồn dữ liệu | DEFERRED |
 
 ## 2. Phạm vi M1 đang đề xuất
 
-**PROPOSED — D06–D09:**
+**ACCEPTED — D06:** một researcher khảo sát một chủ đề kỹ thuật.
 
-- 1 researcher khảo sát một chủ đề kỹ thuật;
+**PROPOSED — D07–D09:**
+
 - 1 lĩnh vực kỹ thuật;
 - 1 nguồn dữ liệu;
 - tối đa 5.000 bản ghi;

@@ -17,11 +17,11 @@ Một quyết định ở trạng thái ACCEPTED chỉ có nghĩa lựa chọn �
 
 ## 2. D05 — Bằng chứng và tính đúng
 
-**Trạng thái:** PROPOSED.
+**Trạng thái:** ACCEPTED — 20/09/2026, bởi chủ dự án.
 
 **Vấn đề:** cần giữ những bài học bền vững từ thiết kế cũ mà không kéo theo schema/stack cũ.
 
-**Đề xuất:**
+**Nguyên tắc đã chấp thuận:**
 
 - truy nguyên từ kết luận về bằng chứng;
 - tách observation khỏi derived result;
@@ -30,15 +30,19 @@ Một quyết định ở trạng thái ACCEPTED chỉ có nghĩa lựa chọn �
 - idempotency;
 - explainability.
 
+Thiếu bằng chứng được phép dẫn tới **insufficient evidence**. Phép tính deterministic phải cho cùng semantic result từ cùng frozen input/config/code; replay không được nhân đôi đóng góp. Mỗi kết luận phải truy qua derived results và signals tới observations đóng góp và source evidence.
+
+**Bản ghi chấp thuận:** trong cuộc trao đổi lập kế hoạch Research Entry ngày 20/09/2026, chủ dự án đã chọn chấp thuận D05, gồm idempotency và yêu cầu E3 hiện tại, sau đó yêu cầu triển khai kế hoạch. Bản ghi này lưu quyết định, không phải kết quả thí nghiệm.
+
 **Căn cứ:** [Bản đồ nghiên cứu liên quan](03_PRIOR_ART_MAP.md) và tư liệu lịch sử; chưa có experiment M1.
 
-**Khuyến nghị hiện tại:** demo phải có các kiểm tra E1–E8, không chỉ có dashboard.
+**Hệ quả:** demo M1 vẫn phải đáp ứng E1–E8. Nếu không chứng minh historical availability của field, dùng thuật ngữ retrospective analysis; E3 vẫn NOT PASSED. Đây không phải cách thay thế tự động để M1 đạt. Công thức metric, reference labels, ngưỡng và sensitivity settings vẫn mở ở D08; D05 không chọn schema hoặc stack.
 
-**Xem xét lại:** Define/Research Gate. Nếu dữ liệu không hỗ trợ temporal evidence, phải thu hẹp phạm vi kết luận.
+**Phương án khác và xem xét lại:** hoãn evidence contract sẽ khiến research thiếu yêu cầu correctness rõ ràng; kế thừa thiết kế vật lý cũ sẽ khóa D09 quá sớm. Lựa chọn đã chấp thuận chỉ giữ invariants. Nếu R4 không chứng minh temporal evidence, review scope với chủ dự án; không âm thầm nới E3.
 
 ## 3. D06 — Người dùng chính và nhiệm vụ
 
-**Trạng thái:** PROPOSED.
+**Trạng thái:** ACCEPTED — 20/09/2026, bởi chủ dự án.
 
 **Các phương án:**
 
@@ -46,13 +50,15 @@ Một quyết định ở trạng thái ACCEPTED chỉ có nghĩa lựa chọn �
 - engineer ra quyết định công nghệ;
 - người dùng phổ thông xem xu hướng.
 
-**Khuyến nghị hiện tại:** researcher khảo sát một chủ đề kỹ thuật.
+**Lựa chọn đã chấp thuận:** researcher khảo sát một chủ đề kỹ thuật. Trong corpus xác định, researcher chọn concept/khoảng thời gian, xem thay đổi, hiểu chỉ báo, mở bằng chứng hỗ trợ và hiểu giới hạn kết luận.
+
+**Bản ghi chấp thuận:** chủ dự án đã chấp thuận rõ user/task này trong cuộc trao đổi lập kế hoạch Research Entry ngày 20/09/2026 và yêu cầu triển khai kế hoạch đã chấp thuận. Quyết định cho phép research có ranh giới, chưa xác nhận giá trị người dùng.
 
 Lý do: phù hợp trực tiếp với scholarly evidence và giữ phạm vi hẹp hơn use case ra quyết định công nghệ.
 
 **Thiếu:** chưa có user validation.
 
-**Xem xét lại:** Define Gate hoặc khi R8 cho thấy nhiệm vụ không tạo ra giá trị.
+**Xem xét lại:** R8 sau khi có prototype dùng được. Ghi task walkthrough và misunderstanding; nếu researcher không dùng hoặc diễn giải được output, xem lại nhiệm vụ với chủ dự án. Engineer và người dùng phổ thông vẫn là alternative, không phải nhóm M1 bổ sung.
 
 ## 4. D07 — Lĩnh vực, nguồn dữ liệu và corpus
 

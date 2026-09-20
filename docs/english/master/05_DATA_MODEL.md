@@ -1,6 +1,6 @@
 # 05 — Conceptual Data Model
 
-**PROPOSED — D05/D09.** The concepts below form a vocabulary for research and design. They are **not** accepted classes, tables, or a SQL schema.
+**PROPOSED — D09, constrained by ACCEPTED D05 principles.** The concepts below form a vocabulary for research and design. They are **not** accepted classes, tables, or a SQL schema.
 
 Implement only the concepts required by the M1 signal.
 

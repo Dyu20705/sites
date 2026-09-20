@@ -1,6 +1,6 @@
 # SITES Documentation
 
-This directory contains the English and Vietnamese documentation for SITES.
+This directory contains the English and Vietnamese documentation for SITES, including the paired M0/M1 and Research Entry sets. Start research preparation at the [English checklist](english/research/05_RESEARCH_ENTRY_CHECKLIST.md) or [checklist tiếng Việt](vietnamese/research/05_RESEARCH_ENTRY_CHECKLIST.md). Research Entry does not mean the later research-ready gate has passed.
 
 ## Languages
 

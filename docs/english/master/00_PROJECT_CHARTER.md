@@ -45,11 +45,11 @@ D04 sets a scope boundary; it does not conclude that papers are always the best 
 
 By 17 October 2026, SITES should have a small, reproducible demo that moves from a bounded corpus to an evidence-backed descriptive conclusion.
 
-The [M1 Definition](../baseline/M1.md) specifies the inputs, outputs, and completion criteria. The primary user, corpus, signal, and implementation technology remain undecided.
+The [M1 Definition](../baseline/M1.md) specifies the inputs, outputs, and completion criteria. D06 selects a researcher surveying a technical topic; the corpus, signal and implementation technology remain undecided.
 
-## 4. Proposed Principles
+## 4. Accepted Principles
 
-**PROPOSED — D05:**
+**ACCEPTED — D05, 20 September 2026:**
 
 - every conclusion must be traceable to its evidence;
 - source observations and system-derived claims must remain distinct;
@@ -58,7 +58,9 @@ The [M1 Definition](../baseline/M1.md) specifies the inputs, outputs, and comple
 - replaying the same input must not duplicate contributions;
 - signals must be explainable.
 
-These candidate requirements come from historical material and related research. No current implementation has demonstrated that SITES satisfies them.
+Missing evidence may produce **insufficient evidence**. Without historical availability evidence, the analysis is retrospective only and E3 remains NOT PASSED.
+
+The project owner accepted these principles in the [Decision Log](07_DECISION_LOG.md). No current implementation has demonstrated that SITES satisfies them.
 
 ## 5. Evidence Priority
 

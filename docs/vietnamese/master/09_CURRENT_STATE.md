@@ -1,5 +1,37 @@
 # 09 — Trạng thái hiện tại đã xác minh
 
+**Review hiện tại:** 20/09/2026, chuẩn bị Research Entry.
+
+**Baseline đã kiểm tra:** local `dev` tại `0e457fd146c1fe0d67b60f92ebe5d989be4c2b67`; sửa đổi trên `docs/research-entry`. Đây là baseline được kiểm tra, không phải SHA của commit chứa tài liệu này.
+
+**Kiểm tra remote:** 20/09/2026, 21:27 +07:00, dùng GitHub CLI metadata. Default branch `master` tại `eb077979543b5aa8ad8908191a3ff0b76329aeda`. Công việc local và trạng thái default branch remote là hai phạm vi khác nhau.
+
+| Quan sát | Bằng chứng / ranh giới |
+| --- | --- |
+| PR #62 MERGED ngày 19/09; PR #63 MERGED ngày 20/09 | GitHub PR metadata; merge commits `b8d8a2c` và `eb07797` |
+| Không có issue hoặc PR mở tại lần kiểm tra remote ban đầu | GitHub CLI lists lúc 21:27 +07:00; research issues sẽ được ghi sau khi đăng |
+| Chưa có product implementation, executable product tests hoặc product package manifest hiện hành | Baseline tree đã kiểm tra và thay đổi chỉ gồm tài liệu; không claim product test result |
+| Có agent contract và năm project-local SITES skills | `AGENTS.md` và `.agents/skills` trong baseline đã kiểm tra |
+| Có bộ M0/M1 Việt–Anh; đã chuẩn bị research docs ở cả hai ngôn ngữ | Local tree đã kiểm tra và [documentation index](../../README.md); không suy từ remote `master` |
+| Chủ dự án chấp thuận D05/D06 ngày 20/09 | [Decision log](07_DECISION_LOG.md), chấp thuận trong trao đổi lập kế hoạch và yêu cầu triển khai |
+| D07–D09 PROPOSED; D10 DEFERRED | Decision log; chưa chọn provider, metric hoặc stack triển khai |
+| Chưa có sample/provider audit, signal experiment, demo, replay hoặc user validation của M1 | Tree đã review; research docs chỉ quy định việc cần thực hiện |
+
+## Trạng thái gate hiện tại
+
+- **define-ready:** chờ review.
+- **Research Entry:** chờ review; xem [entry checklist](../research/05_RESEARCH_ENTRY_CHECKLIST.md).
+- **research-ready / preimplementation-ready / feature-ready / product-ready v1:** NOT PASSED.
+
+Bản ghi acceptance và artifacts chuẩn bị trên nhánh này chưa chứng minh correctness thực nghiệm. E1–E8 chưa chạy; thiếu historical availability vẫn là E3 NOT PASSED. Cập nhật snapshot tại gate hoặc khi trạng thái quan trọng thay đổi, không cập nhật sau từng commit.
+
+## Lưu trữ lịch sử — 18/09/2026
+
+Giữ snapshot review gốc bên dưới làm lịch sử. Các claim về PR mở, bản dịch và gate trong phần đó không phải claim hiện tại.
+
+<details>
+<summary>Snapshot review PR #62 ban đầu</summary>
+
 **Ngày review:** 18/09/2026  
 **PR đang review:** [#62](https://github.com/Dyu20705/sites/pull/62)  
 **Branch:** `chore/design-baseline-reset`
@@ -60,3 +92,5 @@ Ba nguồn học thuật chính trong [Prior Art Map](03_PRIOR_ART_MAP.md) đã 
 - bộ tài liệu chi tiết tiếng Anh hoàn chỉnh.
 
 Tài liệu này chỉ ghi trạng thái đã xác minh. Kế hoạch nằm ở [Kế hoạch Month 1](08_MONTH1_BACKLOG.md); quyết định nằm ở [Nhật ký quyết định](07_DECISION_LOG.md).
+
+</details>

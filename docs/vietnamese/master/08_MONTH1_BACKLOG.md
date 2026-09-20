@@ -4,7 +4,7 @@
 **WIP limit:** tối đa 2 work item đang thực hiện.
 
 ~~~text
-define-ready → research-ready → preimplementation-ready
+define-ready → Research Entry → research phase → research-ready → preimplementation-ready
 → feature-ready → product-ready v1
 ~~~
 
@@ -22,6 +22,19 @@ Không giai đoạn nào được đánh dấu hoàn thành chỉ vì đã đế
 | 08–13/10 — Evaluation/Demo | Kiểm tra case, control và usability | E1–E8 reports, limitation/disagreement log, reviewer replay | Đạt tiêu chí đã freeze; không tuning hậu nghiệm để che failure |
 | 14–16/10 — Packaging | Làm demo có thể chạy lại | Replay guide, shareable data, environment record, demo package | Reviewer khác replay thành công |
 | 17/10 — Final | Review M1 và trả lời RQ chính | Gate checklist, demo, research result, current state cập nhật | Contract và E1–E8 được xác nhận trong phạm vi M1 |
+
+## Hàng đợi nghiên cứu
+
+Chuẩn bị entry là một work item. Hoàn tất review của nó trước khi kích hoạt research execution. Hai issues mới dưới đây là toàn bộ hàng đợi ban đầu; #36–#61 tiếp tục là tư liệu tham khảo.
+
+| Package | Issue | Deliverables và ranh giới hoàn thành |
+| --- | --- | --- |
+| A — Bằng chứng và chỉ báo ứng viên | Chờ đăng | R1/R2/R6 ledger, định nghĩa và counterevidence, so sánh chỉ báo, case/control và freeze proposal, limitations, đề xuất D08 có căn cứ hoặc báo rõ thiếu bằng chứng |
+| B — Khả thi nguồn và corpus | Chờ đăng | R3/R4/R7 provider screening, sample/query/snapshot record giới hạn, field mapping, missingness/coverage, temporal và access/replay evidence, đề xuất D07 có căn cứ hoặc báo rõ thiếu bằng chứng |
+
+A gửi trước field requirements từ [signal candidates](../research/04_SIGNAL_CANDIDATES.md); B trả field khả thi, giới hạn denominator và time semantics theo [audit plan](../research/02_SOURCE_AUDIT_PLAN.md). A không hoàn tất D08 khi chưa có findings từ B. R5 lineage bắt buộc trong cả hai packages. R8 là walkthrough khi có prototype cùng misunderstanding log; chấp thuận D06 chưa kiểm chứng R8 và đây không phải active item thứ ba.
+
+Theo [research protocol](../research/00_RESEARCH_PROTOCOL.md) và [entry checklist](../research/05_RESEARCH_ENTRY_CHECKLIST.md). Mỗi issue hoàn thành khi bằng chứng hoặc negative findings có thể review, limitations và next action rõ ràng, đề xuất sẵn sàng để chủ dự án xem xét. Đóng khảo sát không accept D07/D08 hoặc làm research-ready đạt. Gate đó còn cần empirical artifacts, freeze proposal và chủ dự án chấp thuận D07/D08 rõ ràng. D09 là quyết định sau đó.
 
 ## Nếu trượt gate
 

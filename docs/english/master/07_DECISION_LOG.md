@@ -17,11 +17,11 @@ ACCEPTED means only that an authorized person approved the decision. It does **n
 
 ## 2. D05 — Evidence and Correctness
 
-**Status:** PROPOSED.
+**Status:** ACCEPTED — 20 September 2026, by the project owner.
 
 **Problem:** preserve durable lessons from the earlier design without inheriting its schema or technology stack.
 
-**Proposal:**
+**Accepted principles:**
 
 - conclusion-to-evidence lineage;
 - separation of observations from derived results;
@@ -30,15 +30,19 @@ ACCEPTED means only that an authorized person approved the decision. It does **n
 - idempotency;
 - explainability.
 
+Missing evidence may produce **insufficient evidence**. A deterministic calculation must reproduce the same semantic result from the same frozen input/configuration/code; replay must not duplicate contributions. Every conclusion must trace through derived results and signals to contributing observations and source evidence.
+
+**Acceptance record:** in the 20 September 2026 Research Entry planning conversation, the project owner explicitly selected acceptance of D05, including idempotency and the existing E3 requirement, and then requested implementation of that plan. This record preserves that decision; it is not an experiment result.
+
 **Basis:** the [Prior-Art Map](03_PRIOR_ART_MAP.md) and historical material; no M1 experiment exists yet.
 
-**Current recommendation:** the demo must pass E1–E8 checks; a dashboard alone is insufficient.
+**Consequence:** E1–E8 remain required for the M1 demo. If historical field availability cannot be established, use the term retrospective analysis; E3 remains NOT PASSED. This is not an automatic alternative route to passing M1. Metric formulas, reference labels, thresholds and sensitivity settings remain open under D08; no schema or stack is selected by D05.
 
-**Review point:** Define/Research Gate. If the data cannot support temporal evidence, narrow the claims.
+**Alternatives and review:** deferring the evidence contract would leave research without clear correctness requirements; inheriting the old physical design would fix D09 prematurely. The accepted choice keeps only the invariants. Review scope with the owner if R4 cannot establish temporal evidence; do not relax E3 silently.
 
 ## 3. D06 — Primary User and Task
 
-**Status:** PROPOSED.
+**Status:** ACCEPTED — 20 September 2026, by the project owner.
 
 **Options:**
 
@@ -46,13 +50,15 @@ ACCEPTED means only that an authorized person approved the decision. It does **n
 - an engineer making a technology decision;
 - a general user viewing trends.
 
-**Current recommendation:** a researcher surveying a technical topic.
+**Accepted choice:** a researcher surveying a technical topic. Within a defined corpus, the researcher selects a concept/time range, inspects change, understands the signal, opens supporting evidence and understands the limits of the conclusion.
+
+**Acceptance record:** the project owner explicitly accepted this user/task in the 20 September 2026 Research Entry planning conversation and requested implementation of the accepted plan. This enables bounded research; it does not validate user value.
 
 This option matches the scholarly-evidence starting point directly and keeps the scope narrower than a technology-decision use case.
 
 **Missing evidence:** user validation.
 
-**Review point:** Define Gate, or when R8 shows that the task does not provide value.
+**Review point:** R8 after a usable prototype exists. Record a task walkthrough and misunderstandings; if the researcher cannot use or interpret the output, revisit the task with the owner. Engineers and general audiences remain alternatives, not additional M1 targets.
 
 ## 4. D07 — Field, Data Source, and Corpus
 
