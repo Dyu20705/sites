@@ -1,15 +1,15 @@
 # 09 — Verified Current State
 
-**Current review:** 20 September 2026, Research Entry preparation.
+**Current review:** 21 September 2026, Research Entry closeout.
 
-**Inspected baseline:** local `dev` at `0e457fd146c1fe0d67b60f92ebe5d989be4c2b67`; changes prepared on `docs/research-entry`. This is the baseline inspected, not the SHA of the commit containing this document.
+**Inspected baseline:** local `dev` at `0e457fd146c1fe0d67b60f92ebe5d989be4c2b67`; Research Entry documents published at `fc0dba983458dbef7523227451e368cfd5bcef17` on `docs/research-entry`, with the issue links and review results finalized in this closeout. These identify inspected revisions, not the SHA of the commit containing this document.
 
-**Remote check:** 20 September 2026, 21:27 +07:00, using GitHub CLI metadata. Default branch `master` was at `eb077979543b5aa8ad8908191a3ff0b76329aeda`. Local work and remote default-branch state are distinct.
+**Remote checks:** 20 September 2026 at 21:27 and 21 September at 07:55–07:57 +07:00, using GitHub CLI metadata. Default branch `master` remained at `eb077979543b5aa8ad8908191a3ff0b76329aeda`. Local work and remote default-branch state are distinct; this closeout does not claim Research Entry on `master`.
 
 | Observation | Evidence / boundary |
 | --- | --- |
 | PR #62 MERGED on 19 September; PR #63 MERGED on 20 September | GitHub PR metadata; merge commits `b8d8a2c` and `eb07797` |
-| No open issue or PR at the initial remote check | GitHub CLI lists at 21:27 +07:00; research issues will be recorded after publication |
+| Two open research issues, queued; no open PR | [#64](https://github.com/Dyu20705/sites/issues/64) and [#65](https://github.com/Dyu20705/sites/issues/65), created and read back on 21 September; no open issue before creation, no open PR at 07:55 +07:00 |
 | No current product implementation, executable product tests or product package manifest | Inspected baseline tree and documentation-only changes; no product test result claimed |
 | Agent contract and five project-local SITES skills present | `AGENTS.md` and `.agents/skills` in the inspected baseline |
 | English and Vietnamese M0/M1 sets present; paired research documents prepared | Inspected local tree and [documentation index](../../README.md); not inferred from remote `master` |
@@ -19,8 +19,8 @@
 
 ## Current gate status
 
-- **define-ready:** review pending.
-- **Research Entry:** review pending; see the [entry checklist](../research/05_RESEARCH_ENTRY_CHECKLIST.md).
+- **define-ready:** PASSED in the reviewed branch scope.
+- **Research Entry:** PASSED on 21 September; see the [entry checklist](../research/05_RESEARCH_ENTRY_CHECKLIST.md) for author self-review evidence and limitations.
 - **research-ready / preimplementation-ready / feature-ready / product-ready v1:** NOT PASSED.
 
 This branch's acceptance records and preparation artifacts do not prove empirical correctness. E1–E8 have not been executed; missing historical availability remains E3 NOT PASSED. Update this snapshot at gates or material state changes, not after every commit.

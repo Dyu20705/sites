@@ -29,8 +29,10 @@ Chuẩn bị entry là một work item. Hoàn tất review của nó trước kh
 
 | Package | Issue | Deliverables và ranh giới hoàn thành |
 | --- | --- | --- |
-| A — Bằng chứng và chỉ báo ứng viên | Chờ đăng | R1/R2/R6 ledger, định nghĩa và counterevidence, so sánh chỉ báo, case/control và freeze proposal, limitations, đề xuất D08 có căn cứ hoặc báo rõ thiếu bằng chứng |
-| B — Khả thi nguồn và corpus | Chờ đăng | R3/R4/R7 provider screening, sample/query/snapshot record giới hạn, field mapping, missingness/coverage, temporal và access/replay evidence, đề xuất D07 có căn cứ hoặc báo rõ thiếu bằng chứng |
+| A — Bằng chứng và chỉ báo ứng viên | [#64](https://github.com/Dyu20705/sites/issues/64) — OPEN, trong hàng đợi | R1/R2/R6 ledger, định nghĩa và counterevidence, so sánh chỉ báo, case/control và freeze proposal, limitations, đề xuất D08 có căn cứ hoặc báo rõ thiếu bằng chứng |
+| B — Khả thi nguồn và corpus | [#65](https://github.com/Dyu20705/sites/issues/65) — OPEN, trong hàng đợi | R3/R4/R7 provider screening, sample/query/snapshot record giới hạn, field mapping, missingness/coverage, temporal và access/replay evidence, đề xuất D07 có căn cứ hoặc báo rõ thiếu bằng chứng |
+
+Research Entry được review ngày 21/09, trễ một ngày so với mốc dự kiến 20/09. Research Gate ngày 27/09 vẫn là mục tiêu, chưa phải dự báo hoàn thành đã kiểm chứng. Hai issues sẵn sàng bắt đầu sau khi đóng entry; việc tạo issue chưa có nghĩa research execution đã bắt đầu. Giữ tối đa hai work items active.
 
 A gửi trước field requirements từ [signal candidates](../research/04_SIGNAL_CANDIDATES.md); B trả field khả thi, giới hạn denominator và time semantics theo [audit plan](../research/02_SOURCE_AUDIT_PLAN.md). A không hoàn tất D08 khi chưa có findings từ B. R5 lineage bắt buộc trong cả hai packages. R8 là walkthrough khi có prototype cùng misunderstanding log; chấp thuận D06 chưa kiểm chứng R8 và đây không phải active item thứ ba.
 

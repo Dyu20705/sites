@@ -1,15 +1,15 @@
 # 09 — Trạng thái hiện tại đã xác minh
 
-**Review hiện tại:** 20/09/2026, chuẩn bị Research Entry.
+**Review hiện tại:** 21/09/2026, hoàn tất Research Entry.
 
-**Baseline đã kiểm tra:** local `dev` tại `0e457fd146c1fe0d67b60f92ebe5d989be4c2b67`; sửa đổi trên `docs/research-entry`. Đây là baseline được kiểm tra, không phải SHA của commit chứa tài liệu này.
+**Baseline đã kiểm tra:** local `dev` tại `0e457fd146c1fe0d67b60f92ebe5d989be4c2b67`; Research Entry docs đã đăng tại `fc0dba983458dbef7523227451e368cfd5bcef17` trên `docs/research-entry`, cùng liên kết issues và kết quả review được hoàn tất trong lần đóng công việc này. Đây là các revision được kiểm tra, không phải SHA của commit chứa tài liệu này.
 
-**Kiểm tra remote:** 20/09/2026, 21:27 +07:00, dùng GitHub CLI metadata. Default branch `master` tại `eb077979543b5aa8ad8908191a3ff0b76329aeda`. Công việc local và trạng thái default branch remote là hai phạm vi khác nhau.
+**Kiểm tra remote:** 20/09/2026 lúc 21:27 và 21/09 lúc 07:55–07:57 +07:00, dùng GitHub CLI metadata. Default branch `master` vẫn tại `eb077979543b5aa8ad8908191a3ff0b76329aeda`. Công việc local và trạng thái default branch remote là hai phạm vi khác nhau; lần đóng công việc này không claim Research Entry đã đạt trên `master`.
 
 | Quan sát | Bằng chứng / ranh giới |
 | --- | --- |
 | PR #62 MERGED ngày 19/09; PR #63 MERGED ngày 20/09 | GitHub PR metadata; merge commits `b8d8a2c` và `eb07797` |
-| Không có issue hoặc PR mở tại lần kiểm tra remote ban đầu | GitHub CLI lists lúc 21:27 +07:00; research issues sẽ được ghi sau khi đăng |
+| Có hai research issues mở, trong hàng đợi; không có PR mở | [#64](https://github.com/Dyu20705/sites/issues/64) và [#65](https://github.com/Dyu20705/sites/issues/65), tạo và đọc lại ngày 21/09; không có issue mở trước khi tạo, không có PR mở lúc 07:55 +07:00 |
 | Chưa có product implementation, executable product tests hoặc product package manifest hiện hành | Baseline tree đã kiểm tra và thay đổi chỉ gồm tài liệu; không claim product test result |
 | Có agent contract và năm project-local SITES skills | `AGENTS.md` và `.agents/skills` trong baseline đã kiểm tra |
 | Có bộ M0/M1 Việt–Anh; đã chuẩn bị research docs ở cả hai ngôn ngữ | Local tree đã kiểm tra và [documentation index](../../README.md); không suy từ remote `master` |
@@ -19,8 +19,8 @@
 
 ## Trạng thái gate hiện tại
 
-- **define-ready:** chờ review.
-- **Research Entry:** chờ review; xem [entry checklist](../research/05_RESEARCH_ENTRY_CHECKLIST.md).
+- **define-ready:** PASSED trong phạm vi nhánh đã review.
+- **Research Entry:** PASSED ngày 21/09; xem [entry checklist](../research/05_RESEARCH_ENTRY_CHECKLIST.md) để biết bằng chứng tự review của tác giả và giới hạn.
 - **research-ready / preimplementation-ready / feature-ready / product-ready v1:** NOT PASSED.
 
 Bản ghi acceptance và artifacts chuẩn bị trên nhánh này chưa chứng minh correctness thực nghiệm. E1–E8 chưa chạy; thiếu historical availability vẫn là E3 NOT PASSED. Cập nhật snapshot tại gate hoặc khi trạng thái quan trọng thay đổi, không cập nhật sau từng commit.
