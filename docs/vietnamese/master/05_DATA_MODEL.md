@@ -1,6 +1,6 @@
 # 05 — Mô hình dữ liệu khái niệm
 
-**PROPOSED — D05/D09.** Các khái niệm dưới đây là vocabulary phục vụ research và design. Chúng **không phải** class, table hay SQL schema đã được chấp thuận.
+**PROPOSED — D09, tuân theo nguyên tắc D05 đã ACCEPTED.** Các khái niệm dưới đây là vocabulary phục vụ research và design. Chúng **không phải** class, table hay SQL schema đã được chấp thuận.
 
 Chỉ triển khai những khái niệm thực sự cần cho chỉ báo M1.
 

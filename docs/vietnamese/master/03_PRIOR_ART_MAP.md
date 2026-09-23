@@ -26,16 +26,26 @@ Không nguồn nào ở trên được dùng để chứng minh rằng một met
 | Nhóm | Bằng chứng cần tạo | Liên hệ | Trạng thái |
 | --- | --- | --- | --- |
 | Scientometrics / bibliometrics | Coverage bias, field/age normalization, giới hạn của count/citation | R1–R3 | TO RESEARCH |
-| Science mapping | Co-word/co-citation, đơn vị phân tích, rủi ro diễn giải cluster | R1/R3 | TO RESEARCH |
+| Science mapping | Chỉ đọc bằng chứng giải quyết thiếu hụt R1/R3 cụ thể | R1/R3 | CONDITIONAL; không phải work package riêng |
 | Emerging technology detection | Đọc đầy đủ Rotolo và các cách operationalize khái niệm emergence | R1/R2 | TO RESEARCH |
 | Burst detection | Đọc paper Kleinberg, assumptions, tuning và baseline đơn giản | R2/R6 | TO RESEARCH |
-| Temporal citation dynamics | Censoring, delay, as-of availability, cohort bias | R2/R4 | TO RESEARCH |
+| Temporal citation dynamics | Censoring, delay, as-of availability, cohort bias | R2/R4 | CONDITIONAL khi có observations lịch sử cần thiết |
 | Topic/concept evolution | Alias drift, vocabulary cutoff, dictionary vs learned topics | R3/R4 | TO RESEARCH |
 | Technology forecasting | Phân biệt detection với prediction | Sau M1 | DEFERRED |
-| Scholarly knowledge graphs | Work/version identity và provenance | R3/R5/R7 | TO RESEARCH; full graph DEFERRED |
+| Scholarly knowledge graphs | Chỉ work/version identity và provenance cần cho RQ còn thiếu | R3/R5/R7 | CONDITIONAL; full graph DEFERRED |
 | Reproducible computational research | Chuyển các nguyên tắc thành replay/trace checks có thể chạy | R5/R6 | TO RESEARCH |
 
-Mỗi research note tiếp theo cần ghi: nguồn/version, câu hỏi, phương pháp và dữ liệu gốc, finding, limitation, mức áp dụng cho SITES và quyết định liên quan.
+Mỗi research note tiếp theo dùng [evidence ledger](../research/01_EVIDENCE_LEDGER.md), gồm vị trí trong nguồn, population/period, directness và counterevidence. Giới hạn đọc hiện có ở trên giữ nguyên.
+
+### Work packages hữu hạn
+
+| Package | Nhóm nghiên cứu và đầu ra | Stop condition | Quyết định |
+| --- | --- | --- | --- |
+| A — Bằng chứng và chỉ báo ứng viên | Scientometrics, emergence, count/share, burst/persistence và evaluation; so sánh ứng viên cùng định nghĩa, alternatives và confounders | Đã ghi phương pháp chính, alternative nghiêm túc, failure modes và mức áp dụng; đủ literature cùng data evidence từ B để đề xuất, hoặc báo rõ thiếu bằng chứng | R1/R2/R6 → D08 |
+| B — Khả thi nguồn và corpus | Scholarly temporal semantics, coverage và concept/vocabulary evolution; provider screening và sample audit giới hạn | Một ứng viên đủ bằng chứng đo được để đề xuất và alternatives có screening outcomes, hoặc ghi thiếu hụt quan trọng cùng phép kiểm tra phân biệt tiếp theo | R3/R4/R7 → D07 |
+| Yêu cầu chung, không phải active item thứ ba | Reproducibility, work/version semantics và claim lineage | Mỗi claim quan trọng có provenance; empirical checks vẫn được lên lịch ở gate phù hợp về sau | R5 kiểm chứng D05 và cung cấp căn cứ D09 |
+
+[Protocol](../research/00_RESEARCH_PROTOCOL.md) quy định search và stopping rules; [backlog](08_MONTH1_BACKLOG.md) liên kết issues. R8 chờ prototype dùng được và chưa được kiểm chứng. Không đặt chỉ tiêu số papers.
 
 ## 3. Bài học từ thiết kế lịch sử
 
@@ -52,9 +62,9 @@ Tài liệu lịch sử:
 
 | Bài học lịch sử | Evidence | Cách dùng trong M0 |
 | --- | --- | --- |
-| Observation phải tách khỏi derived claim; provenance phải truy được | [#47](https://github.com/Dyu20705/sites/issues/47), [#57](https://github.com/Dyu20705/sites/issues/57), [#59](https://github.com/Dyu20705/sites/issues/59) | PROPOSED requirement D05; không kế thừa dataclass/table cũ |
-| Có nhiều loại timestamp và nguy cơ look-ahead leakage | [#46](https://github.com/Dyu20705/sites/issues/46) | PROPOSED temporal invariant; cần audit dataset mới |
-| Replay cần gắn input/config/code/metric/output; chạy lại không được nhân đôi | [#45](https://github.com/Dyu20705/sites/issues/45), [#55](https://github.com/Dyu20705/sites/issues/55) | PROPOSED reproducibility/idempotency requirement |
+| Observation phải tách khỏi derived claim; provenance phải truy được | [#47](https://github.com/Dyu20705/sites/issues/47), [#57](https://github.com/Dyu20705/sites/issues/57), [#59](https://github.com/Dyu20705/sites/issues/59) | Nguyên tắc D05 ACCEPTED ngày 20/09; không kế thừa dataclass/table cũ |
+| Có nhiều loại timestamp và nguy cơ look-ahead leakage | [#46](https://github.com/Dyu20705/sites/issues/46) | Temporal invariant D05 ACCEPTED; cần audit dataset mới |
+| Replay cần gắn input/config/code/metric/output; chạy lại không được nhân đôi | [#45](https://github.com/Dyu20705/sites/issues/45), [#55](https://github.com/Dyu20705/sites/issues/55) | Reproducibility/idempotency D05 ACCEPTED; implementation chưa được xác minh |
 | Identifier, version, relation và identity không tương đương | [#48](https://github.com/Dyu20705/sites/issues/48), [#60](https://github.com/Dyu20705/sites/issues/60) | Cần semantics tối thiểu; global canonical identity DEFERRED |
 | Velocity, acceleration, influential growth, emergence, persistence, diffusion, frontier papers | [#52](https://github.com/Dyu20705/sites/issues/52), [#53](https://github.com/Dyu20705/sites/issues/53), [#54](https://github.com/Dyu20705/sites/issues/54) | Candidate/HYPOTHESIS; không coi composite score là ground truth |
 | Extensibility và performance cần bằng chứng thực nghiệm | [#56](https://github.com/Dyu20705/sites/issues/56), [#58](https://github.com/Dyu20705/sites/issues/58), [#61](https://github.com/Dyu20705/sites/issues/61) | Chỉ kiểm tra workload M1; generic registry và large benchmark DEFERRED |

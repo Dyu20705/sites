@@ -1,6 +1,6 @@
 # SITES — Scholar Intelligent Trend Evolution System
 
-[English](../../README.md) · Tiếng Việt · [日本語](../japanese/README.md)
+[English](../../README.md) · Tiếng Việt
 
 **SITES** là một dự án nghiên cứu về scholarly intelligence, hướng tới việc phân tích sự thay đổi của các khái niệm khoa học và công nghệ theo thời gian dựa trên bằng chứng có thể kiểm tra.
 
@@ -13,7 +13,7 @@ thu thập bằng chứng → theo dõi → khai phá → phát hiện xu hướ
 
 ## Trọng tâm hiện tại
 
-Repository đang ở **M0 — định nghĩa dự án**. Nhánh hiện tại chưa chứa một phiên bản triển khai của sản phẩm hay bộ kiểm thử thực thi tương ứng.
+Repository đang trên **lộ trình Month 1 từ định nghĩa dự án tới một vertical slice có thể tái lập**. Nhánh hiện tại chưa chứa một phiên bản triển khai của sản phẩm hay bộ kiểm thử thực thi tương ứng.
 
 Trong **Month 1 (17/09–17/10/2026)**, phạm vi cam kết được cố ý thu hẹp:
 
@@ -22,13 +22,13 @@ Trong **Month 1 (17/09–17/10/2026)**, phạm vi cam kết được cố ý thu
 - xây một luồng end-to-end nhỏ nhưng có thể tái lập;
 - chưa đưa forecasting, recommendation, optimization, autonomous agents hoặc hạ tầng quy mô lớn vào phạm vi M1, trừ khi có quyết định mới được chấp thuận rõ ràng.
 
-Các lựa chọn cụ thể như người dùng chính, nguồn dữ liệu, tập tài liệu phân tích, định nghĩa chỉ báo, cách lưu trữ, framework, công nghệ dashboard và cách triển khai vẫn phải đi qua bước nghiên cứu và các điểm phê duyệt.
+Nguyên tắc evidence/correctness D05 và người dùng D06 — researcher khảo sát một chủ đề kỹ thuật — đã được chấp thuận ngày 20/09/2026. Giá trị sử dụng vẫn chưa được kiểm chứng. Nguồn dữ liệu, corpus, định nghĩa chỉ báo và công nghệ triển khai vẫn cần bằng chứng và các điểm phê duyệt.
 
 ## Tài liệu
 
 Bắt đầu từ [mục lục tài liệu](../README.md).
 
-Bộ tài liệu định nghĩa M0/M1 hiện đang được review bằng tiếng Việt:
+Bộ tài liệu định nghĩa M0/M1 tiếng Việt gồm:
 
 - [Định nghĩa Month 1](baseline/M1.md)
 - [Tuyên bố dự án](master/00_PROJECT_CHARTER.md)
@@ -42,7 +42,16 @@ Bộ tài liệu định nghĩa M0/M1 hiện đang được review bằng tiến
 - [Kế hoạch Month 1](master/08_MONTH1_BACKLOG.md)
 - [Trạng thái hiện tại đã xác minh](master/09_CURRENT_STATE.md)
 
-Các bản tiếng Anh, tiếng Việt và tiếng Nhật phải tương đương về **nội dung**, không phải từng câu từng chữ. Decision ID, ngày, trạng thái, yêu cầu và ý nghĩa kỹ thuật phải giữ nhất quán giữa các bản dịch.
+Chuẩn bị nghiên cứu:
+
+- [Quy trình nghiên cứu](research/00_RESEARCH_PROTOCOL.md)
+- [Sổ bằng chứng](research/01_EVIDENCE_LEDGER.md)
+- [Kế hoạch audit nguồn](research/02_SOURCE_AUDIT_PLAN.md)
+- [Quy trình chọn case](research/03_CASE_SELECTION_PROTOCOL.md)
+- [Các chỉ báo ứng viên](research/04_SIGNAL_CANDIDATES.md)
+- [Checklist Research Entry](research/05_RESEARCH_ENTRY_CHECKLIST.md)
+
+Các bản tiếng Anh và tiếng Việt phải tương đương về **nội dung**, không phải từng câu từng chữ. Decision ID, ngày, trạng thái, yêu cầu và ý nghĩa kỹ thuật phải giữ nhất quán giữa hai bản dịch.
 
 ## Trạng thái repository và lịch sử
 

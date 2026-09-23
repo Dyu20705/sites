@@ -1,6 +1,6 @@
 # 06 — Quy trình đánh giá
 
-**PROPOSED — D05/D08.** Đây là kế hoạch kiểm chứng, chưa phải kết quả test.
+**Nguyên tắc D05 ACCEPTED; lựa chọn đánh giá D08 PROPOSED.** Đây là kế hoạch kiểm chứng, chưa phải kết quả test. E1–E8 vẫn bắt buộc; công thức, reference labels, ngưỡng và sensitivity settings còn cần D08 acceptance. Gọi phân tích là retrospective không làm E3 hoặc M1 đạt.
 
 Protocol phải được chốt **trước khi triển khai và trước khi xem kết quả holdout**.
 
