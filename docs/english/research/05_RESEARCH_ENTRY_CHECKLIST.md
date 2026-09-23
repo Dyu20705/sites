@@ -23,23 +23,36 @@
 
 - **define-ready:** D05/D06 accepted and no unresolved M0/definition BLOCKER or MAJOR in reviewed scope.
 - **Research Entry:** the artifact package must satisfy the conditions above, and authoritative issue #68 must record PASSED after the approved documentation merge. A branch self-review alone does not pass this gate.
-- **research-ready:** later literature and sample/temporal evidence, signal comparison, case/control and freeze proposal, followed by explicit D07/D08 acceptance. NOT PASSED by these preparation documents.
+- **research-ready:** later literature and sample/temporal evidence, signal comparison, case/control and freeze proposal, followed by explicit D07/D08 acceptance through authoritative issue #70. NOT PASSED by these preparation documents.
 - Preimplementation, feature and product gates remain NOT PASSED. E1–E8 are not marked as passing by a documentation review.
 
 ## Review record
 
-Reviewed all 36 changed files against the `dev` baseline: two repository/documentation indexes, two language READMEs, two M1 definitions, 18 master documents and 12 research documents. No changed file was excluded. Bilingual review compared decision status, scope, dates, RQ ownership, evidence boundaries, stop conditions and temporal/case rules. The two unchanged conceptual-architecture documents were not re-reviewed as new designs; D09 remains open.
+### Historical artifact-package review — 21 September 2026
 
-Validation results:
+Against the `dev` baseline, all 36 changed files were reviewed: two repository/documentation indexes, two language READMEs, two M1 definitions, 18 master documents and 12 research documents. No file in that `dev → docs/research-entry` changeset was excluded. Bilingual review compared decision status, scope, dates, RQ ownership, evidence boundaries, stop conditions and temporal/case rules. Both conceptual-architecture documents were unchanged **relative to that `dev` baseline**, so they were not re-reviewed as new design changes; D09 remained open.
+
+Validation results for that 21 September review:
 
 - Strict UTF-8 decoding, local file-link targets, balanced code fences and table column counts: 38 Markdown files, 18 language pairs, 169 local links and 51 tables; zero reported problems. These are targeted structural checks, not a full Markdown renderer or external-source audit.
 - Decision-state checks: D05/D06 ACCEPTED, D07–D09 PROPOSED, D10 DEFERRED in both languages. P0 and the E3 acceptance row match the original baseline. All R1–R8 have evidence/decision and construct/falsifier/owner rows.
-- `git diff --check` against the baseline: passed. No product tests were run because this changeset contains documentation only.
-- GitHub readback at 07:57 +07:00 on 21 September: #64 and #65 OPEN, bodies match the prepared drafts; all seven distinct linked document paths exist in published preparation commit `fc0dba9`.
+- `git diff --check` against that baseline: passed. No product tests were run because the changeset contained documentation only.
+- GitHub readback at 07:57 +07:00 on 21 September: #64 and #65 OPEN, bodies matched the prepared drafts; all seven distinct linked document paths existed in published preparation commit `fc0dba9`.
 
-Resolved during preparation: stale D05/D06 proposal references, missing RQ ownership/falsifiers, absent research procedures, stale current state and missing operational issues. No unresolved entry BLOCKER/MAJOR remains. Provider sampling, full-paper re-review, runtime tests, independent replay and user validation are outside this entry review and remain outstanding. They must not be inferred from an entry PASS.
+Resolved during preparation: stale D05/D06 proposal references, missing RQ ownership/falsifiers, absent research procedures, stale current state and missing operational issues. No unresolved entry BLOCKER/MAJOR remained in that historical artifact-package review. Provider sampling, full-paper re-review, runtime tests, independent replay and user validation were outside that entry review and remained outstanding.
 
+### PR #74 reconciliation review — 23 September 2026
+
+PR #74 uses `master` rather than `dev` as its base, so its current diff contains **39 changed files**, not 36: `.gitignore`; four active navigation/README files; two M1 baseline files; 19 master documents; 12 research documents; and deletion of `docs/japanese/README.md`.
+
+The three paths visible in the `master → docs/research-entry` PR diff but absent from the 21 September `dev`-baseline changeset were explicitly checked during this reconciliation:
+
+- `.gitignore`: adds only the local-review-artifact exclusion `docs/local/`; it changes no project/research decision.
+- `docs/english/master/04_SYSTEM_ARCHITECTURE.md`: remains **PROPOSED — D09**, explicitly allows a one-program implementation, and leaves provider/storage/framework/query/dashboard/deployment open.
+- deletion of `docs/japanese/README.md`: removes an incomplete/stale language entry; the documentation index now claims only the reviewed English and Vietnamese sets.
+
+The gate-sensitive reconciliation itself rechecked `docs/README.md`, the paired Month-1 backlogs, paired current-state documents, and paired Research Entry checklists. Those documents now agree that #68 is authoritative for Research Entry, #70 is authoritative for Research Exit/research-ready, #64/#65 remain blocked until #68 passes, and D07–D09 remain open. This 23 September reconciliation supplements rather than rewrites the historical 21 September review record.
 
 ## Authority update — 23 September 2026
 
-After this package self-review, the project created #66 (Control Tower), #67 (M1 roadmap), #68 (authoritative Research Entry gate), #69 (prior-art tracker), and #70 (Research Exit gate). That later control graph is authoritative for execution order. Consequently, #64/#65 are still blocked, no literature/provider experiment is claimed as executed under those work packages, and this document's 21 September PASS means **artifact-package review PASS only** until #68 passes after an approved merge.
+After the package self-review, the project created #66 (Control Tower), #67 (M1 roadmap), #68 (authoritative Research Entry gate), #69 (prior-art tracker), and #70 (Research Exit gate). That later control graph is authoritative for execution order. Consequently, #64/#65 are still blocked, no literature/provider experiment is claimed as executed under those work packages, and this document's 21 September PASS means **artifact-package review PASS only** until #68 passes after an approved merge.

@@ -23,23 +23,36 @@
 
 - **define-ready:** D05/D06 accepted và không còn BLOCKER/MAJOR về M0/định nghĩa trong phạm vi review.
 - **Research Entry:** bộ artifact phải đáp ứng các điều kiện trên, đồng thời issue #68 có thẩm quyền phải ghi PASSED sau khi documentation merge được chấp thuận. Self-review trên branch không tự làm gate này đạt.
-- **research-ready:** cần literature và sample/temporal evidence, so sánh chỉ báo, case/control và freeze proposal về sau, sau đó D07/D08 được chấp thuận rõ ràng. Tài liệu chuẩn bị này chưa làm gate đạt.
+- **research-ready:** cần literature và sample/temporal evidence, so sánh chỉ báo, case/control và freeze proposal về sau, sau đó D07/D08 được chấp thuận rõ ràng thông qua issue #70 có thẩm quyền. Tài liệu chuẩn bị này chưa làm gate đạt.
 - Preimplementation, feature và product gates vẫn NOT PASSED. Review tài liệu không đánh dấu E1–E8 đạt.
 
 ## Bản ghi review
 
-Đã review cả 36 file thay đổi so với baseline `dev`: hai mục lục repository/documentation, hai README ngôn ngữ, hai định nghĩa M1, 18 master documents và 12 research documents. Không loại file thay đổi nào khỏi review. Review Việt–Anh đối chiếu decision status, scope, ngày, RQ ownership, giới hạn bằng chứng, stop conditions và temporal/case rules. Hai tài liệu kiến trúc khái niệm không thay đổi không được review lại như thiết kế mới; D09 vẫn mở.
+### Review lịch sử của bộ artifact — 21/09/2026
 
-Kết quả kiểm tra:
+So với baseline `dev`, cả 36 file thay đổi đã được review: hai mục lục repository/documentation, hai README ngôn ngữ, hai định nghĩa M1, 18 master documents và 12 research documents. Không loại file nào trong changeset `dev → docs/research-entry`. Review Việt–Anh đối chiếu decision status, scope, ngày, RQ ownership, giới hạn bằng chứng, stop conditions và temporal/case rules. Cả hai tài liệu kiến trúc khái niệm đều không thay đổi **so với baseline `dev` đó**, nên không được re-review như thay đổi thiết kế mới; D09 vẫn mở.
+
+Kết quả kiểm tra của review ngày 21/09:
 
 - Giải mã UTF-8 nghiêm ngặt, đích local file links, code fences cân bằng và số cột bảng: 38 file Markdown, 18 cặp ngôn ngữ, 169 local links và 51 bảng; không có lỗi được báo. Đây là structural checks có mục tiêu, không phải full Markdown renderer hoặc external-source audit.
 - Decision-state checks: D05/D06 ACCEPTED, D07–D09 PROPOSED, D10 DEFERRED ở cả hai ngôn ngữ. P0 và dòng acceptance E3 khớp baseline gốc. Mọi R1–R8 có dòng evidence/decision và construct/falsifier/owner.
-- `git diff --check` so với baseline: đạt. Không chạy product tests vì changeset chỉ gồm tài liệu.
-- Đọc lại GitHub lúc 07:57 +07:00 ngày 21/09: #64 và #65 OPEN, body khớp bản nháp đã chuẩn bị; cả bảy đường dẫn tài liệu riêng biệt được liên kết đều tồn tại trong commit chuẩn bị đã đăng `fc0dba9`.
+- `git diff --check` so với baseline đó: đạt. Không chạy product tests vì changeset chỉ gồm tài liệu.
+- Đọc lại GitHub lúc 07:57 +07:00 ngày 21/09: #64 và #65 OPEN, body khớp bản nháp đã chuẩn bị; cả bảy đường dẫn tài liệu riêng biệt được liên kết đều tồn tại trong commit chuẩn bị `fc0dba9`.
 
-Đã xử lý trong quá trình chuẩn bị: tham chiếu D05/D06 proposal cũ, thiếu RQ ownership/falsifiers, thiếu research procedures, current-state cũ và thiếu operational issues. Không còn entry BLOCKER/MAJOR chưa xử lý. Provider sampling, đọc lại toàn bộ papers, runtime tests, independent replay và user validation nằm ngoài entry review này và còn thiếu. Không được suy các kết quả đó từ entry PASS.
+Đã xử lý trong quá trình chuẩn bị: tham chiếu D05/D06 proposal cũ, thiếu RQ ownership/falsifiers, thiếu research procedures, current state cũ và thiếu operational issues. Không còn entry BLOCKER/MAJOR chưa xử lý trong review lịch sử của bộ artifact. Provider sampling, đọc lại toàn bộ papers, runtime tests, independent replay và user validation nằm ngoài review entry đó và vẫn còn thiếu.
 
+### Review đối soát PR #74 — 23/09/2026
+
+PR #74 dùng `master` thay vì `dev` làm base, vì vậy diff hiện tại có **39 file thay đổi**, không phải 36: `.gitignore`; bốn file navigation/README đang hoạt động; hai file baseline M1; 19 master documents; 12 research documents; và việc xóa `docs/japanese/README.md`.
+
+Ba path xuất hiện trong diff `master → docs/research-entry` nhưng không thuộc changeset dùng baseline `dev` ngày 21/09 đã được kiểm tra riêng trong lần đối soát này:
+
+- `.gitignore`: chỉ thêm exclusion `docs/local/` cho artifact review local; không thay đổi quyết định project/research.
+- `docs/english/master/04_SYSTEM_ARCHITECTURE.md`: vẫn ở trạng thái **PROPOSED — D09**, cho phép triển khai trong một chương trình và để provider/storage/framework/query/dashboard/deployment ở trạng thái mở.
+- việc xóa `docs/japanese/README.md`: loại bỏ một language entry chưa hoàn chỉnh/cũ; documentation index hiện chỉ claim hai bộ English và Vietnamese đã được review.
+
+Phần đối soát gate-sensitive đã re-review `docs/README.md`, cặp Month-1 backlog, cặp current-state document và cặp Research Entry checklist. Các tài liệu này hiện thống nhất rằng #68 có thẩm quyền với Research Entry, #70 có thẩm quyền với Research Exit/research-ready, #64/#65 tiếp tục bị chặn cho tới khi #68 đạt, và D07–D09 vẫn mở. Phần đối soát ngày 23/09 bổ sung cho bản ghi lịch sử ngày 21/09, không viết lại lịch sử đó.
 
 ## Cập nhật thẩm quyền — 23/09/2026
 
-Sau lần self-review của bộ tài liệu này, dự án đã tạo #66 (Control Tower), #67 (M1 roadmap), #68 (gate Research Entry có thẩm quyền), #69 (prior-art tracker) và #70 (Research Exit gate). Control graph được tạo sau có thẩm quyền đối với thứ tự thực thi. Vì vậy #64/#65 vẫn bị chặn, chưa claim bất kỳ literature/provider experiment nào đã được thực hiện theo hai work package đó, và chữ PASS ngày 21/09 trong tài liệu này chỉ có nghĩa **review bộ artifact đạt** cho tới khi #68 đạt sau một lần merge được chấp thuận.
+Sau lần self-review của bộ tài liệu, dự án đã tạo #66 (Control Tower), #67 (M1 roadmap), #68 (gate Research Entry có thẩm quyền), #69 (prior-art tracker) và #70 (Research Exit gate). Control graph được tạo sau có thẩm quyền đối với thứ tự thực thi. Vì vậy #64/#65 vẫn bị chặn, chưa claim bất kỳ literature/provider experiment nào đã được thực hiện theo hai work package đó, và chữ PASS ngày 21/09 trong tài liệu này chỉ có nghĩa **review bộ artifact đạt** cho tới khi #68 đạt sau một lần merge được chấp thuận.
