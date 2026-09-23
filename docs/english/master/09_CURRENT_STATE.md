@@ -1,15 +1,15 @@
 # 09 — Verified Current State
 
-**Current review:** 21 September 2026, Research Entry closeout.
+**Current review:** 23 September 2026, authoritative Research Entry reconciliation.
 
-**Inspected baseline:** local `dev` at `0e457fd146c1fe0d67b60f92ebe5d989be4c2b67`; Research Entry documents published at `fc0dba983458dbef7523227451e368cfd5bcef17` on `docs/research-entry`, with the issue links and review results finalized in this closeout. These identify inspected revisions, not the SHA of the commit containing this document.
+**Inspected revisions:** default branch `master` at `eb077979543b5aa8ad8908191a3ff0b76329aeda`; `docs/research-entry` at `47f8018b42bd3c72657432dee36a41bd3dc0ffc7` before this reconciliation. GitHub issues #66–#73 were re-read on 23 September. These are inspected revisions, not evidence that a downstream gate has passed.
 
-**Remote checks:** 20 September 2026 at 21:27 and 21 September at 07:55–07:57 +07:00, using GitHub CLI metadata. Default branch `master` remained at `eb077979543b5aa8ad8908191a3ff0b76329aeda`. Local work and remote default-branch state are distinct; this closeout does not claim Research Entry on `master`.
+**Authority boundary:** after the 21 September branch self-review, #66/#67 established [#68](https://github.com/Dyu20705/sites/issues/68) as the authoritative Research Entry gate and [#70](https://github.com/Dyu20705/sites/issues/70) as the Research Exit gate. Branch-level review results cannot override those gate issues or substitute for an approved merge to the default branch.
 
 | Observation | Evidence / boundary |
 | --- | --- |
 | PR #62 MERGED on 19 September; PR #63 MERGED on 20 September | GitHub PR metadata; merge commits `b8d8a2c` and `eb07797` |
-| Two open research issues, queued; no open PR | [#64](https://github.com/Dyu20705/sites/issues/64) and [#65](https://github.com/Dyu20705/sites/issues/65), created and read back on 21 September; no open issue before creation, no open PR at 07:55 +07:00 |
+| The active control graph is #66–#73; #68 is OPEN and authoritative for Research Entry | [#66](https://github.com/Dyu20705/sites/issues/66), [#67](https://github.com/Dyu20705/sites/issues/67), and [#68](https://github.com/Dyu20705/sites/issues/68); #64/#65 remain blocked until #68 passes |
 | No current product implementation, executable product tests or product package manifest | Inspected baseline tree and documentation-only changes; no product test result claimed |
 | Agent contract and five project-local SITES skills present | `AGENTS.md` and `.agents/skills` in the inspected baseline |
 | English and Vietnamese M0/M1 sets present; paired research documents prepared | Inspected local tree and [documentation index](../../README.md); not inferred from remote `master` |
@@ -19,8 +19,8 @@
 
 ## Current gate status
 
-- **define-ready:** PASSED in the reviewed branch scope.
-- **Research Entry:** PASSED on 21 September; see the [entry checklist](../research/05_RESEARCH_ENTRY_CHECKLIST.md) for author self-review evidence and limitations.
+- **define-ready:** PASSED in the reviewed branch scope; canonical default-branch reconciliation is part of #68.
+- **Research Entry:** **NOT PASSED authoritatively** while #68 remains open. The 21 September checklist is a branch-package review result, not a default-branch gate declaration.
 - **research-ready / preimplementation-ready / feature-ready / product-ready v1:** NOT PASSED.
 
 This branch's acceptance records and preparation artifacts do not prove empirical correctness. E1–E8 have not been executed; missing historical availability remains E3 NOT PASSED. Update this snapshot at gates or material state changes, not after every commit.

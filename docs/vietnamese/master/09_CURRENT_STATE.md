@@ -1,15 +1,15 @@
 # 09 — Trạng thái hiện tại đã xác minh
 
-**Review hiện tại:** 21/09/2026, hoàn tất Research Entry.
+**Review hiện tại:** 23/09/2026, đối soát thẩm quyền của Research Entry.
 
-**Baseline đã kiểm tra:** local `dev` tại `0e457fd146c1fe0d67b60f92ebe5d989be4c2b67`; Research Entry docs đã đăng tại `fc0dba983458dbef7523227451e368cfd5bcef17` trên `docs/research-entry`, cùng liên kết issues và kết quả review được hoàn tất trong lần đóng công việc này. Đây là các revision được kiểm tra, không phải SHA của commit chứa tài liệu này.
+**Revision đã kiểm tra:** default branch `master` tại `eb077979543b5aa8ad8908191a3ff0b76329aeda`; `docs/research-entry` tại `47f8018b42bd3c72657432dee36a41bd3dc0ffc7` trước lần đối soát này. Các issue #66–#73 được đọc lại ngày 23/09. Đây là revision đã kiểm tra, không phải bằng chứng rằng gate phía sau đã đạt.
 
-**Kiểm tra remote:** 20/09/2026 lúc 21:27 và 21/09 lúc 07:55–07:57 +07:00, dùng GitHub CLI metadata. Default branch `master` vẫn tại `eb077979543b5aa8ad8908191a3ff0b76329aeda`. Công việc local và trạng thái default branch remote là hai phạm vi khác nhau; lần đóng công việc này không claim Research Entry đã đạt trên `master`.
+**Ranh giới thẩm quyền:** sau lần tự review branch ngày 21/09, #66/#67 quy định [#68](https://github.com/Dyu20705/sites/issues/68) là gate Research Entry có thẩm quyền và [#70](https://github.com/Dyu20705/sites/issues/70) là Research Exit gate. Kết quả review trên branch không thể ghi đè các gate issue này hoặc thay thế một lần merge vào default branch đã được chấp thuận.
 
 | Quan sát | Bằng chứng / ranh giới |
 | --- | --- |
 | PR #62 MERGED ngày 19/09; PR #63 MERGED ngày 20/09 | GitHub PR metadata; merge commits `b8d8a2c` và `eb07797` |
-| Có hai research issues mở, trong hàng đợi; không có PR mở | [#64](https://github.com/Dyu20705/sites/issues/64) và [#65](https://github.com/Dyu20705/sites/issues/65), tạo và đọc lại ngày 21/09; không có issue mở trước khi tạo, không có PR mở lúc 07:55 +07:00 |
+| Control graph đang hoạt động là #66–#73; #68 đang OPEN và có thẩm quyền đối với Research Entry | [#66](https://github.com/Dyu20705/sites/issues/66), [#67](https://github.com/Dyu20705/sites/issues/67) và [#68](https://github.com/Dyu20705/sites/issues/68); #64/#65 vẫn bị chặn cho tới khi #68 đạt |
 | Chưa có product implementation, executable product tests hoặc product package manifest hiện hành | Baseline tree đã kiểm tra và thay đổi chỉ gồm tài liệu; không claim product test result |
 | Có agent contract và năm project-local SITES skills | `AGENTS.md` và `.agents/skills` trong baseline đã kiểm tra |
 | Có bộ M0/M1 Việt–Anh; đã chuẩn bị research docs ở cả hai ngôn ngữ | Local tree đã kiểm tra và [documentation index](../../README.md); không suy từ remote `master` |
@@ -19,8 +19,8 @@
 
 ## Trạng thái gate hiện tại
 
-- **define-ready:** PASSED trong phạm vi nhánh đã review.
-- **Research Entry:** PASSED ngày 21/09; xem [entry checklist](../research/05_RESEARCH_ENTRY_CHECKLIST.md) để biết bằng chứng tự review của tác giả và giới hạn.
+- **define-ready:** PASSED trong phạm vi branch đã review; việc đồng bộ thành trạng thái canonical trên default branch thuộc #68.
+- **Research Entry:** **chưa PASSED theo authority** khi #68 còn mở. Checklist ngày 21/09 chỉ là kết quả review bộ artifact trên branch, không phải tuyên bố gate của default branch.
 - **research-ready / preimplementation-ready / feature-ready / product-ready v1:** NOT PASSED.
 
 Bản ghi acceptance và artifacts chuẩn bị trên nhánh này chưa chứng minh correctness thực nghiệm. E1–E8 chưa chạy; thiếu historical availability vẫn là E3 NOT PASSED. Cập nhật snapshot tại gate hoặc khi trạng thái quan trọng thay đổi, không cập nhật sau từng commit.

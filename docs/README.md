@@ -1,6 +1,6 @@
 # SITES Documentation
 
-This directory contains the English and Vietnamese documentation for SITES, including the paired M0/M1 and Research Entry sets. Start research preparation at the [English checklist](english/research/05_RESEARCH_ENTRY_CHECKLIST.md) or [checklist tiếng Việt](vietnamese/research/05_RESEARCH_ENTRY_CHECKLIST.md). Research Entry does not mean the later research-ready gate has passed.
+This directory contains the English and Vietnamese documentation for SITES, including the paired M0/M1 and Research Entry sets. Start research preparation at the [English checklist](english/research/05_RESEARCH_ENTRY_CHECKLIST.md) or [checklist tiếng Việt](vietnamese/research/05_RESEARCH_ENTRY_CHECKLIST.md). Research Entry does not mean the later research-ready gate has passed. The authoritative gate state is tracked by [#68](https://github.com/Dyu20705/sites/issues/68) for Research Entry and [#70](https://github.com/Dyu20705/sites/issues/70) for Research Exit; a branch-level checklist review is not by itself a default-branch gate pass.
 
 ## Languages
 
