@@ -50,6 +50,9 @@ Research preparation:
 - [Case selection protocol](research/03_CASE_SELECTION_PROTOCOL.md)
 - [Signal candidates](research/04_SIGNAL_CANDIDATES.md)
 - [Research Entry checklist](research/05_RESEARCH_ENTRY_CHECKLIST.md)
+- [Research Exit evidence](research/06_RESEARCH_EXIT_EVIDENCE.md)
+- [Provider screening and access results](research/07_PROVIDER_AUDIT_RESULTS.md)
+- [D07/D08 packets and Research Exit blockers](research/08_D07_D08_EXIT_PACKET.md)
 
 The English and Vietnamese sets are equivalent in meaning, not sentence-by-sentence wording. Decision IDs, dates, statuses, requirements, and technical meaning must remain consistent across both versions.
 

@@ -1,6 +1,6 @@
 # 01 — Evidence Ledger
 
-**Status:** capture format ready; no new literature findings or provider measurements recorded. The [prior-art map](../master/03_PRIOR_ART_MAP.md) remains the source for the limited checks recorded on 18 September. Those checks have not been upgraded to new full-text reviews.
+**Status, 27 September 2026:** EL-001–005 are recorded in [Research Exit evidence](06_RESEARCH_EXIT_EVIDENCE.md); EL-101–105 and measured access failures are in [provider screening](07_PROVIDER_AUDIT_RESULTS.md). [Search provenance](../../../experiments/research_exit_20260927/search-log.json) records actual access depth and protocol deviations. No corpus missingness or real-signal result is available. The earlier seed checks below remain historical; later notes only upgrade the specific sections actually inspected.
 
 ## Claim record
 

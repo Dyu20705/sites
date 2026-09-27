@@ -1,6 +1,22 @@
 # 09 — Verified Current State
 
-**Current review:** 23 September 2026, authoritative Research Entry reconciliation.
+## Current verification — 27 September 2026
+
+Verification scope: the PR #75 evidence changeset based on `master@0a853636ef6d1be9d3bb85058f34faf368fcb6ce`. PR #74 merged and [#68 explicitly passed](https://github.com/Dyu20705/sites/issues/68#issuecomment-5795799412) on 23 September. D05/D06 remain ACCEPTED; #64/#65 are the two active research items. The older snapshots below do not describe the current gate.
+
+- Define / Research Entry: **PASSED**.
+- Research Exit #70 / research-ready: **NOT PASSED**; D07/D08 remain PROPOSED. [Evidence and decision packet](../research/08_D07_D08_EXIT_PACKET.md).
+- PR #75 evidence: five-provider documentation screen, focused literature notes, a preregistered acquisition attempt, two preserved but endpoint-confounded arXiv HTTP 406 observations, a DBLP legacy-path reset, verified metadata for the exact April-2019 DOI-backed DBLP snapshot, and 15 passing synthetic test methods in each of two separate processes with matching output hashes.
+- Missing: usable real corpus snapshot, measured missingness/denominator/temporal fitness, real signal comparison, independent reference protocol/quality threshold and accepted freeze. **E3 NOT PASSED**; no product E1–E8 pass is claimed.
+- D09 / preimplementation, feature and product-ready remain **NOT PASSED**. No product implementation, holdout evaluation, demo or user validation exists in this changeset.
+- Deadline remains **17 October 2026**. Accelerated dates are conditional; no autonomous merge, release or deployment occurred.
+
+This snapshot describes evidence carried by PR #75. If the PR is merged, those artifacts become inspectable from the default branch, but **merge status does not pass Research Exit**: #70 remains the authority and D07/D08 still require explicit owner acceptance plus a frozen experiment contract. Historical acceptance remains authoritative, while newly proposed choices require owner acceptance.
+
+<details>
+<summary>Historical verification — 23 September 2026 (superseded snapshot)</summary>
+
+**Historical review:** 23 September 2026, authoritative Research Entry reconciliation.
 
 **Inspected revisions:** default branch `master` at `eb077979543b5aa8ad8908191a3ff0b76329aeda`; `docs/research-entry` at `47f8018b42bd3c72657432dee36a41bd3dc0ffc7` before this reconciliation. GitHub issues #66–#73 were re-read on 23 September. These are inspected revisions, not evidence that a downstream gate has passed.
 
@@ -94,5 +110,7 @@ The three primary scholarly sources in the [Prior-Art Map](03_PRIOR_ART_MAP.md) 
 - a complete detailed English documentation set.
 
 This file preserves the verified historical state. The plan is in the [Month-1 Gate Plan](08_MONTH1_BACKLOG.md); decisions are in the [Decision Log](07_DECISION_LOG.md).
+
+</details>
 
 </details>

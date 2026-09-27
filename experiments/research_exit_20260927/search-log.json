@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-27",
+  "extractor": "Codex",
+  "service": "web search tool and direct official/publisher/author-page opens",
+  "protocol_deviation": "Google Scholar and Semantic Scholar search interfaces named in the entry protocol were not used. This focused web-search run is documented as a limited evidence pass, not equivalent database coverage or a systematic review. Post-run review also found that the two executed arXiv probes used HTTPS although the inspected API manual explicitly presents the query endpoint over HTTP; those 406 observations are endpoint-confounded. No corrected AM-02 network run is claimed in this changeset.",
+  "screening_boundary": "First tool-returned result batch per query; selected primary pages opened below. No exhaustive result count, database page count, or citation saturation claimed.",
+  "filters": "No date or recency filter. Nonprimary results used only as leads or excluded; provider claims use current official pages.",
+  "queries": [
+    {"id":"SR-001","query":"site.info.arxiv.org metadata API version history OAI license bulk data","note":"Literal query used; subsequent direct official opens supplied evidence."},
+    {"id":"SR-002","query":"site.docs.openalex.org snapshot historical updated_date api key free"},
+    {"id":"SR-003","query":"site.crossref.org documentation metadata license public data API dates indexed"},
+    {"id":"SR-004","query":"site.dblp.org xml monthly snapshots license CC0"},
+    {"id":"SR-005","query":"site.semanticscholar.org product api datasets license API key historical releases"},
+    {"id":"SR-006","query":"\"fuzzing\" \"survey\" 2018 Manes evaluation"},
+    {"id":"SR-007","query":"\"publication growth\" \"normalization\" bibliometric limitations"},
+    {"id":"SR-008","query":"site.help.openalex.org api authentication rate limits CC0"},
+    {"id":"SR-009","query":"site.dblp.org \"search API\" \"1000\" \"h\""},
+    {"id":"SR-010","query":"site.api.semanticscholar.org \"publicationDate\" \"externalIds\" \"title\""},
+    {"id":"SR-011","query":"site.help.openalex.org/data/works \"publication_date\" \"updated_date\""},
+    {"id":"SR-012","query":"site.crossref.org \"rate limits\" \"public\" \"cursor\""}
+  ],
+  "inspected": [
+    {"id":"EL-001","discovery":"existing seed; direct open","url":"https://arxiv.org/html/1503.00673","depth":"full-text sections 3-4, table 2; not a full independent review of cited studies"},
+    {"id":"EL-002","discovery":"existing seed; direct author PDF","url":"https://www.cs.cornell.edu/home/kleinber/bhs.pdf","depth":"sections 2 and 4, especially batched model and title examples pp13-16"},
+    {"id":"EL-003","discovery":"existing seed; direct publisher open","url":"https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285","depth":"Rules 1-3"},
+    {"id":"EL-004","discovery":"SR-007","url":"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0268433","depth":"Introduction and Methods: GGT calculation, interpretation, data collection; no reproduction of authors' datasets"},
+    {"id":"EL-005","discovery":"SR-006 and version-specific followup","url":"https://arxiv.org/abs/1812.00140v1","depth":"abstract and submission history only"},
+    {"id":"EL-101","discovery":"SR-001 plus direct official opens","urls":["https://info.arxiv.org/help/api/user-manual.html","https://info.arxiv.org/help/api/tou.html","https://info.arxiv.org/help/versions.html","https://info.arxiv.org/help/availability.html"],"depth":"query, response fields, version retrieval, metadata rights, rate limit, submission versus public announcement; manual QuickStart/calling sections inspected for the HTTP base endpoint and request method"},
+    {"id":"EL-102","discovery":"SR-002, SR-008, SR-011","urls":["https://help.openalex.org/api/authentication/","https://help.openalex.org/api/","https://help.openalex.org/data/works/attributes/","https://help.openalex.org/access/snapshot/"],"depth":"authentication/paging, work attributes, snapshot access and layout"},
+    {"id":"EL-103","discovery":"SR-003, SR-012","urls":["https://www.crossref.org/documentation/retrieve-metadata/","https://www.crossref.org/documentation/retrieve-metadata/rest-api/","https://www.crossref.org/documentation/retrieve-metadata/bulk-downloads","https://github.com/CrossRef/rest-api-doc/blob/master/api_format.md"],"depth":"metadata rights/access, REST schema and snapshot availability"},
+    {"id":"EL-104","discovery":"SR-005, SR-010","urls":["https://webflow.semanticscholar.org/product/api/tutorial","https://api.semanticscholar.org/api-docs/snippets"],"depth":"dataset release/download tutorial and publicationDateOrYear/schema excerpts; license path unresolved"},
+    {"id":"EL-105","discovery":"SR-004, SR-009; XML guide link to original VLDB paper","urls":["https://dblp.org/faq/4621382.html","https://dblp.org/faq/1474681.html","https://blog.dblp.org/2019/11/24/licence-change-to-cc-0/","https://drops.dagstuhl.de/entities/artifact/10.4230/dblp.xml.2019-04-01","https://www.vldb.org/pvldb/vol2/vldb09-98.pdf"],"depth":"persistent snapshot guidance, XML guide, metadata license, and exact April-2019 DROPS artifact; artifact page verifies DOI/version 2019-04-01, CC0, 468.04 MB file, MD5 cdf6416c27ab24eaef5aa4560e38aa3c and schema DOI; Ley (2009) section 2 pp1-2 inspected only for historical key/title/year schema description; no archive content or bounded extract inspected"}
+  ],
+  "exclusions_and_limits": [
+    {"url":"https://seclab.bu.edu/papers/manes19-fuzzing-survey.pdf","reason":"Later version is not independent corroboration of the 2018 vocabulary; no full-text claim made."},
+    {"url":"https://arxiv.org/abs/2402.00350","reason":"Post-period LLM fuzzing survey outside the selected historical case and M1 methodology."},
+    {"url":"https://link.springer.com/article/10.1186/s42400-018-0002-y","reason":"Discovery/context only; not extracted as a separate ledger finding in this bounded pass."},
+    {"url":"https://www.sciencedirect.com/science/article/pii/S0167404818300658","reason":"Abstract lead only; no full-text finding or independent quality threshold inferred."},
+    {"url":"https://www.semanticscholar.org/product/api/license","reason":"Direct open failed; redistribution permission remains unresolved."},
+    {"url":"https://api.semanticscholar.org/api-docs/datasets","reason":"Dynamic page exposed only a shell; use official tutorial for claims actually supported."},
+    {"url":"https://dblp.org/xml/release/dblp-2019-04-01.xml.gz","reason":"Legacy direct path was inaccessible and the separate HEAD probe reset. This does not imply snapshot absence: the exact April-2019 release was subsequently verified through its official DOI-backed DROPS artifact."},
+    {"url":"https://dblp.org/xml/docu/dblpxml.pdf","reason":"Access denied by Anubis. No bypass attempted. The XML guide separately links the original publisher's Ley (2009) paper, which was inspected."}
+  ],
+  "snowballing": "Read the seed papers' internal method discussions and provider links. No systematic backward/forward citation-search pass completed; no saturation or novelty claim.",
+  "next_literature_gap": "Independent concept annotations, reference trend rubric, minimum-support rationale and numerical quality/sensitivity criteria remain unresolved. Complete after an accessible temporal-valid corpus is established."
+}

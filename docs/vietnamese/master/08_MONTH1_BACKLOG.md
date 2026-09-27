@@ -25,14 +25,16 @@ Không giai đoạn nào được đánh dấu hoàn thành chỉ vì đã đế
 
 ## Hàng đợi nghiên cứu
 
-Chuẩn bị entry là một work item. Hoàn tất review của nó trước khi kích hoạt research execution. Hai issues mới dưới đây là toàn bộ hàng đợi ban đầu; #36–#61 tiếp tục là tư liệu tham khảo.
+Research Entry đã đạt qua #68 ngày 23/09 sau khi PR #74 merge. Hai issues dưới đây là hàng đợi nghiên cứu active; #36–#61 tiếp tục là tư liệu tham khảo.
 
 | Package | Issue | Deliverables và ranh giới hoàn thành |
 | --- | --- | --- |
-| A — Bằng chứng và chỉ báo ứng viên | [#64](https://github.com/Dyu20705/sites/issues/64) — OPEN, BỊ CHẶN bởi #68 | R1/R2/R6 ledger, định nghĩa và counterevidence, so sánh chỉ báo, case/control và freeze proposal, limitations, đề xuất D08 có căn cứ hoặc báo rõ thiếu bằng chứng |
-| B — Khả thi nguồn và corpus | [#65](https://github.com/Dyu20705/sites/issues/65) — OPEN, BỊ CHẶN bởi #68 | R3/R4/R7 provider screening, sample/query/snapshot record giới hạn, field mapping, missingness/coverage, temporal và access/replay evidence, đề xuất D07 có căn cứ hoặc báo rõ thiếu bằng chứng |
+| A — Bằng chứng và chỉ báo ứng viên | [#64](https://github.com/Dyu20705/sites/issues/64) — OPEN, ACTIVE | R1/R2/R6 ledger, định nghĩa và counterevidence, so sánh chỉ báo, case/control và freeze proposal, limitations, đề xuất D08 có căn cứ hoặc báo rõ thiếu bằng chứng |
+| B — Khả thi nguồn và corpus | [#65](https://github.com/Dyu20705/sites/issues/65) — OPEN, ACTIVE | R3/R4/R7 provider screening, sample/query/snapshot record giới hạn, field mapping, missingness/coverage, temporal và access/replay evidence, đề xuất D07 có căn cứ hoặc báo rõ thiếu bằng chứng |
 
-Bộ artifact Research Entry trên branch đã được tự review ngày 21/09. Control graph được tạo sau đó quy định [#68](https://github.com/Dyu20705/sites/issues/68) là gate Research Entry có thẩm quyền, dưới [#66](https://github.com/Dyu20705/sites/issues/66) và [#67](https://github.com/Dyu20705/sites/issues/67). Vì vậy #64/#65 vẫn **BỊ CHẶN** cho tới khi #68 ghi **PASSED** sau khi documentation merge được chấp thuận. Trước thời điểm đó, WIP thực thi duy nhất là #68; sau khi gate đạt, WIP active mới chuyển thành đúng #64 + #65. Research Gate ngày 27/09 vẫn là mục tiêu, chưa phải dự báo hoàn thành đã kiểm chứng.
+[Quyết định #68 có thẩm quyền](https://github.com/Dyu20705/sites/issues/68#issuecomment-5795799412) xác lập WIP thực thi đúng #64 + #65. [Gói bằng chứng 27/09](../research/08_D07_D08_EXIT_PACKET.md) ghi thiếu bằng chứng: acquisition bị chặn, chưa freeze được experiment. #70 giữ NOT PASSED. #69 chỉ tracking; không tạo execution item thứ ba.
+
+**Mục tiêu tăng tốc được yêu cầu ngày 27/09:** hoàn tất Research Exit cùng ngày nếu đủ evidence; sau đó D09 ngày 28/09, build 29/09–02/10, evaluation/demo đầu 03–05/10, sửa lỗi/replay/packaging 06–16/10. Đây là lịch có điều kiện, không phải bằng chứng hoàn thành. Deadline 17/10 và E1–E8 giữ nguyên. Giữ phase allocation ban đầu phía trên để đối chiếu; lịch tăng tốc chưa mở khóa công việc phụ thuộc.
 
 A gửi trước field requirements từ [signal candidates](../research/04_SIGNAL_CANDIDATES.md); B trả field khả thi, giới hạn denominator và time semantics theo [audit plan](../research/02_SOURCE_AUDIT_PLAN.md). A không hoàn tất D08 khi chưa có findings từ B. R5 lineage bắt buộc trong cả hai packages. R8 là walkthrough khi có prototype cùng misunderstanding log; chấp thuận D06 chưa kiểm chứng R8 và đây không phải active item thứ ba.
 

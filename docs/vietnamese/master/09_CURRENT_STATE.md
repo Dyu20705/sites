@@ -1,6 +1,22 @@
 # 09 — Trạng thái hiện tại đã xác minh
 
-**Review hiện tại:** 23/09/2026, đối soát thẩm quyền của Research Entry.
+## Xác minh hiện tại — 27/09/2026
+
+Phạm vi xác minh: changeset evidence của PR #75 dựa trên `master@0a853636ef6d1be9d3bb85058f34faf368fcb6ce`. PR #74 đã merge và [#68 ghi PASSED rõ ràng](https://github.com/Dyu20705/sites/issues/68#issuecomment-5795799412) ngày 23/09. D05/D06 giữ ACCEPTED; #64/#65 là hai work items nghiên cứu active. Snapshot cũ phía dưới không mô tả gate hiện tại.
+
+- Define / Research Entry: **PASSED**.
+- Research Exit #70 / research-ready: **NOT PASSED**; D07/D08 giữ PROPOSED. [Evidence và decision packet](../research/08_D07_D08_EXIT_PACKET.md).
+- Evidence trong PR #75: screen tài liệu năm provider, literature notes có trọng tâm, acquisition đã preregister, hai quan sát arXiv HTTP 406 được giữ nhưng bị confound bởi endpoint, một lần reset trên đường legacy DBLP, metadata đã xác minh cho exact DBLP snapshot tháng 04/2019 có DOI, và 15 test methods synthetic đạt ở mỗi lần chạy trong hai tiến trình riêng với output hash giống nhau.
+- Còn thiếu: corpus snapshot thật dùng được, missingness/denominator/temporal fitness thực đo, real signal comparison, reference protocol/quality threshold độc lập và freeze đã chấp thuận. **E3 NOT PASSED**; không claim E1–E8 sản phẩm đạt.
+- D09 / preimplementation, feature và product-ready giữ **NOT PASSED**. Changeset chưa có product implementation, holdout evaluation, demo hoặc user validation.
+- Deadline giữ **17/10/2026**. Ngày tăng tốc có điều kiện; không tự merge, release hoặc deploy.
+
+Snapshot này mô tả evidence trong PR #75. Nếu PR được merge, artifacts sẽ đọc được từ default branch, nhưng **merge không làm Research Exit đạt**: #70 vẫn là authority và D07/D08 vẫn cần chủ dự án chấp thuận rõ ràng cùng experiment contract đã freeze. Acceptance lịch sử vẫn có thẩm quyền; lựa chọn đề xuất mới cần chủ dự án chấp thuận.
+
+<details>
+<summary>Xác minh lịch sử — 23/09/2026 (snapshot đã được thay thế)</summary>
+
+**Review lịch sử:** 23/09/2026, đối soát thẩm quyền của Research Entry.
 
 **Revision đã kiểm tra:** default branch `master` tại `eb077979543b5aa8ad8908191a3ff0b76329aeda`; `docs/research-entry` tại `47f8018b42bd3c72657432dee36a41bd3dc0ffc7` trước lần đối soát này. Các issue #66–#73 được đọc lại ngày 23/09. Đây là revision đã kiểm tra, không phải bằng chứng rằng gate phía sau đã đạt.
 
@@ -92,5 +108,7 @@ Ba nguồn học thuật chính trong [Prior Art Map](03_PRIOR_ART_MAP.md) đã 
 - bộ tài liệu chi tiết tiếng Anh hoàn chỉnh.
 
 Tài liệu này chỉ ghi trạng thái đã xác minh. Kế hoạch nằm ở [Kế hoạch Month 1](08_MONTH1_BACKLOG.md); quyết định nằm ở [Nhật ký quyết định](07_DECISION_LOG.md).
+
+</details>
 
 </details>

@@ -30,6 +30,8 @@ The complete English documentation starts at [docs/english/README.md](docs/engli
 
 The [Research Entry checklist](docs/english/research/05_RESEARCH_ENTRY_CHECKLIST.md) links the research protocol, evidence ledger, source audit plan, case selection rules and signal candidates. Research Entry is preparation for investigation; it is distinct from the later research-ready gate.
 
+The [27 September Research Exit packet](docs/english/research/08_D07_D08_EXIT_PACKET.md) contains literature notes, provider screening, recorded acquisition failures and reproducible synthetic checks. Research-ready remains **NOT PASSED** pending measured corpus and evaluation evidence.
+
 For the Vietnamese introduction and documentation, see [docs/vietnamese/README.md](docs/vietnamese/README.md). Translation rules and document-set status are recorded in the [documentation index](docs/README.md).
 
 ## Repository status and history

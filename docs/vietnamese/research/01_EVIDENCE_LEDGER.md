@@ -1,6 +1,6 @@
 # 01 — Sổ bằng chứng
 
-**Trạng thái:** đã có format ghi nhận; chưa ghi finding literature mới hoặc phép đo provider. [Prior-art map](../master/03_PRIOR_ART_MAP.md) vẫn là nguồn cho phạm vi kiểm tra giới hạn ngày 18/09. Không nâng các lần kiểm tra đó thành full-text review mới.
+**Trạng thái, 27/09/2026:** EL-001–005 nằm trong [Research Exit evidence](06_RESEARCH_EXIT_EVIDENCE.md); EL-101–105 và lỗi truy cập thực đo nằm trong [provider screening](07_PROVIDER_AUDIT_RESULTS.md). [Search provenance](../../../experiments/research_exit_20260927/search-log.json) ghi độ sâu đọc thật và protocol deviations. Chưa có missingness corpus hay real-signal result. Seed checks phía dưới là lịch sử; notes mới chỉ nâng mức kiểm tra tại các mục thực sự đã đọc.
 
 ## Bản ghi claim
 
