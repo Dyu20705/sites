@@ -64,6 +64,8 @@ Lý do: phù hợp trực tiếp với scholarly evidence và giữ phạm vi h�
 
 **Trạng thái:** PROPOSED.
 
+**Cập nhật bằng chứng 27/09:** [Gói D07/D08](../research/08_D07_D08_EXIT_PACKET.md) ghi kết quả thiếu bằng chứng, lỗi truy cập và gap temporal/sample còn lại. Chưa có acceptance provider/corpus hay evaluation freeze.
+
 Các nguồn từng được nhắc như arXiv, OpenAlex, Crossref, Semantic Scholar và DBLP chỉ là **candidates**; chưa nguồn nào có vai trò cố định.
 
 **Khuyến nghị hiện tại:**
@@ -81,6 +83,8 @@ Nếu một nguồn thiếu field, ưu tiên đổi chỉ báo hoặc thu hẹp 
 ## 5. D08 — Chỉ báo, nhãn và đánh giá
 
 **Trạng thái:** PROPOSED.
+
+**Cập nhật bằng chứng 27/09:** [Synthetic comparison và literature notes](../research/06_RESEARCH_EXIT_EVIDENCE.md) hỗ trợ khảo sát tiếp count/share, chưa chứng minh chất lượng corpus thật. Support, labels và quality thresholds còn unresolved trong [decision packet](../research/08_D07_D08_EXIT_PACKET.md).
 
 **Các hướng đang xem xét:** count/share, burst/persistence, citation dynamics.
 

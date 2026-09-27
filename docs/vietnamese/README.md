@@ -50,6 +50,9 @@ Chuẩn bị nghiên cứu:
 - [Quy trình chọn case](research/03_CASE_SELECTION_PROTOCOL.md)
 - [Các chỉ báo ứng viên](research/04_SIGNAL_CANDIDATES.md)
 - [Checklist Research Entry](research/05_RESEARCH_ENTRY_CHECKLIST.md)
+- [Bằng chứng Research Exit](research/06_RESEARCH_EXIT_EVIDENCE.md)
+- [Sàng lọc provider và kết quả truy cập](research/07_PROVIDER_AUDIT_RESULTS.md)
+- [Gói D07/D08 và blockers Research Exit](research/08_D07_D08_EXIT_PACKET.md)
 
 Các bản tiếng Anh và tiếng Việt phải tương đương về **nội dung**, không phải từng câu từng chữ. Decision ID, ngày, trạng thái, yêu cầu và ý nghĩa kỹ thuật phải giữ nhất quán giữa hai bản dịch.
 

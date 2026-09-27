@@ -64,6 +64,8 @@ This option matches the scholarly-evidence starting point directly and keeps the
 
 **Status:** PROPOSED.
 
+**27 September evidence update:** [D07/D08 packet](../research/08_D07_D08_EXIT_PACKET.md) records an insufficient-evidence outcome, documented access failures and remaining temporal/sample gaps. No provider/corpus acceptance or evaluation freeze is recorded.
+
 Previously mentioned sources such as arXiv, OpenAlex, Crossref, Semantic Scholar, and DBLP are **candidates** only. None has a fixed role.
 
 **Current recommendation:**
@@ -81,6 +83,8 @@ If a source lacks a field, first change the signal or narrow the corpus before a
 ## 5. D08 — Signals, Labels, and Evaluation
 
 **Status:** PROPOSED.
+
+**27 September evidence update:** [synthetic comparison and literature notes](../research/06_RESEARCH_EXIT_EVIDENCE.md) support further count/share investigation, not real-corpus quality. Support, labels and quality thresholds remain unresolved in the [packet](../research/08_D07_D08_EXIT_PACKET.md).
 
 **Directions under consideration:** count/share, burst/persistence, and citation dynamics.
 

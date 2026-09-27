@@ -26,14 +26,16 @@ A stage does not become complete merely because its date has arrived. Every stat
 
 ## Research work queue
 
-Entry preparation is one work item. Finish its review before activating research execution. The two new issues below are the complete initial queue; historical #36–#61 remain reference material.
+Research Entry passed through #68 on 23 September after PR #74 merged. The two issues below are the active research queue; historical #36–#61 remain reference material.
 
 | Package | Issue | Deliverables and completion boundary |
 | --- | --- | --- |
-| A — Evidence and candidate signals | [#64](https://github.com/Dyu20705/sites/issues/64) — OPEN, BLOCKED by #68 | R1/R2/R6 ledger, definitions and counterevidence, signal comparison, case/control and freeze proposal, limitations, supported D08 proposal or explicit insufficient-evidence report |
-| B — Source and corpus feasibility | [#65](https://github.com/Dyu20705/sites/issues/65) — OPEN, BLOCKED by #68 | R3/R4/R7 provider screening, bounded sample/query/snapshot record, field mapping, missingness/coverage, temporal and access/replay evidence, supported D07 proposal or explicit insufficient-evidence report |
+| A — Evidence and candidate signals | [#64](https://github.com/Dyu20705/sites/issues/64) — OPEN, ACTIVE | R1/R2/R6 ledger, definitions and counterevidence, signal comparison, case/control and freeze proposal, limitations, supported D08 proposal or explicit insufficient-evidence report |
+| B — Source and corpus feasibility | [#65](https://github.com/Dyu20705/sites/issues/65) — OPEN, ACTIVE | R3/R4/R7 provider screening, bounded sample/query/snapshot record, field mapping, missingness/coverage, temporal and access/replay evidence, supported D07 proposal or explicit insufficient-evidence report |
 
-The branch-level Research Entry package was self-reviewed on 21 September. The control graph created afterward makes [#68](https://github.com/Dyu20705/sites/issues/68) the authoritative Research Entry gate under [#66](https://github.com/Dyu20705/sites/issues/66) and [#67](https://github.com/Dyu20705/sites/issues/67). Therefore #64/#65 remain **BLOCKED** until #68 records **PASSED** after the approved documentation merge. Until then the only active execution WIP is #68; after it passes, active WIP becomes exactly #64 + #65. The 27 September Research Gate remains a target, not a verified completion forecast.
+The [authoritative #68 decision](https://github.com/Dyu20705/sites/issues/68#issuecomment-5795799412) establishes exactly #64 + #65 as execution WIP. The [27 September evidence packet](../research/08_D07_D08_EXIT_PACKET.md) records insufficient evidence: acquisition is blocked and the experiment cannot be frozen. #70 remains NOT PASSED. #69 remains tracking only; no third execution item is created.
+
+**Accelerated target requested on 27 September:** complete Research Exit that day if evidence allows; then D09 on 28 September, build 29 September–2 October, first evaluation/demo 3–5 October, correction/replay/packaging 6–16 October. These dates are conditional, not evidence of completion. The 17 October deadline and E1–E8 remain unchanged. The original phase allocation above is retained for comparison; the accelerated target has not unlocked downstream work.
 
 A first shares signal field requirements from [signal candidates](../research/04_SIGNAL_CANDIDATES.md); B returns feasible fields, denominator constraints and time semantics from the [audit plan](../research/02_SOURCE_AUDIT_PLAN.md). A cannot finalize D08 without B's findings. R5 lineage is required in both packages. R8 remains a later prototype walkthrough with a misunderstanding log; it is not validated by D06 acceptance and is not a third active item.
 

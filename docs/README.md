@@ -4,6 +4,8 @@ This directory contains the English and Vietnamese documentation for SITES, incl
 
 ## Languages
 
+Research Exit evidence from 27 September is available in [English](english/research/08_D07_D08_EXIT_PACKET.md) and [Tiếng Việt](vietnamese/research/08_D07_D08_EXIT_PACKET.md), with shared [experiment artifacts](../experiments/research_exit_20260927/README.md). It records insufficient evidence; Research Entry has passed but research-ready has not.
+
 | Language | Project introduction | Detailed M0/M1 set | Status |
 | --- | --- | --- | --- |
 | English | [Repository README](../README.md) | [English documentation](english/README.md) | Complete mirror of the current Vietnamese set |
