@@ -36,10 +36,18 @@ def read_entries(raw):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--accept-atom-diagnostic", action="store_true")
+    parser.add_argument("--http-endpoint-diagnostic", action="store_true")
     args = parser.parse_args()
+    if args.accept_atom_diagnostic and args.http_endpoint_diagnostic:
+        raise SystemExit("Choose only one diagnostic mode")
     config_bytes = (ROOT / "preregistration.json").read_bytes()
     config = json.loads(config_bytes)
-    run_root = ROOT / "accept-atom-diagnostic" if args.accept_atom_diagnostic else ROOT
+    if args.http_endpoint_diagnostic:
+        run_root = ROOT / "http-endpoint-diagnostic"
+    elif args.accept_atom_diagnostic:
+        run_root = ROOT / "accept-atom-diagnostic"
+    else:
+        run_root = ROOT
     run_root.mkdir(exist_ok=True)
     target = run_root / "raw"
     target.mkdir(exist_ok=True)
@@ -48,7 +56,7 @@ def main():
         raise SystemExit("Existing acquisition preserved. Use a separately preregistered run for another attempt.")
     manifest = {"started_at": stamp(), "preregistration_sha256": hashlib.sha256(config_bytes).hexdigest(),
                 "requests": [], "status": "RUNNING", "unique_bound": config["max_unique_works"],
-                "amendment": "AM-01" if args.accept_atom_diagnostic else None}
+                "amendment": "AM-02" if args.http_endpoint_diagnostic else ("AM-01" if args.accept_atom_diagnostic else None)}
 
     def save():
         manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
@@ -56,7 +64,8 @@ def main():
     def fetch(name, params):
         if manifest["requests"]:
             time.sleep(3.1)
-        url = "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params)
+        base_url = "http://export.arxiv.org/api/query?" if args.http_endpoint_diagnostic else "https://export.arxiv.org/api/query?"
+        url = base_url + urllib.parse.urlencode(params)
         entry = {"url": url, "started_at": stamp(), "file": "raw/" + name}
         manifest["requests"].append(entry)
         save()
@@ -71,6 +80,7 @@ def main():
                 if len(raw) > 20_000_000:
                     raise ValueError("Response exceeds 20 MB bound")
                 entry["status"] = response.status
+                entry["final_url"] = response.url
                 entry["content_type"] = response.headers.get("Content-Type")
             (target / name).write_bytes(raw)
             entry.update(sha256=hashlib.sha256(raw).hexdigest(), bytes=len(raw), ended_at=stamp())
@@ -90,6 +100,10 @@ def main():
                   "sortOrder": config["sort_order"], "start": 0, "max_results": 1}
         _, total = fetch("count.xml", params)
         manifest["reported_total"] = total
+        if args.http_endpoint_diagnostic:
+            manifest["status"] = "HTTP_ENDPOINT_DIAGNOSTIC_SUCCEEDED"
+            manifest["final_url"] = manifest["requests"][-1].get("final_url")
+            return
         if total is None or total <= 0 or total > config["max_unique_works"]:
             manifest["status"] = "STOPPED_COUNT_OR_BOUND"
             return

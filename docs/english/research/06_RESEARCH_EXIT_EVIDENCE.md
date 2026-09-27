@@ -51,8 +51,8 @@ The lexical pattern `\bfuzz(?:ing|er|ers)?\b` is an exploratory proposal. EL-005
 
 See [provider audit](07_PROVIDER_AUDIT_RESULTS.md), [decision packets](08_D07_D08_EXIT_PACKET.md) and shared [experiment artifacts](../../../experiments/research_exit_20260927/README.md).
 
-- Initial arXiv count request: HTTP 406; zero successful record responses. AM-01 content-negotiation diagnostic: HTTP 406 again. The web tool also could not access the count URL.
-- DBLP historical archive HEAD probe: connection reset; no archive downloaded. This is an environment-specific access observation, not evidence that DBLP lacks snapshots.
+- Initial arXiv count request and AM-01 content-negotiation diagnostic both returned HTTP 406 with zero successful record responses. Post-run review found that both probes used `https://export.arxiv.org/...`, while the inspected arXiv API manual explicitly presents `http://export.arxiv.org/api/query`. The 406s are preserved but **confounded by endpoint construction**; they do not establish failure of the documented access path. AM-02 defines a separate one-request HTTP diagnostic and records redirect/final URL, but it has not been executed in this changeset.
+- The legacy DBLP archive HEAD probe reset before an HTTP status was obtained. Independent official-source review then verified the exact April-2019 snapshot as the [DROPS artifact `10.4230/dblp.xml.2019-04-01`](https://drops.dagstuhl.de/entities/artifact/10.4230/dblp.xml.2019-04-01): publication date 2019-04-01, CC0, file `dblp-2019-04-01.xml.gz` (468.04 MB), MD5 `cdf6416c27ab24eaef5aa4560e38aa3c`, and schema DOI `10.4230/dblp.xml.dtd.2017-08-29`. This verifies snapshot identity and published artifact metadata, **not** field fitness or a bounded corpus.
 - **15 synthetic test methods passed in each of two separate processes**, including seven hand-calculated series scenarios; output hashes match. No real-corpus signal comparison, annotation, sample missingness estimate or holdout evaluation ran.
 - Actual numeric examples: `10/100 = 20/200 = 0.1`; with the numerator fixed, `10/100 = 0.1` but `10/200 = 0.05`. Empty denominator and missing bins produce null, not zero.
 

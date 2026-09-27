@@ -2,16 +2,16 @@
 
 ## Current verification — 27 September 2026
 
-Verified remote baseline: `master@0a853636ef6d1be9d3bb85058f34faf368fcb6ce`; working branch `research/exit-evidence-20260927`. PR #74 merged and [#68 explicitly passed](https://github.com/Dyu20705/sites/issues/68#issuecomment-5795799412) on 23 September. D05/D06 remain ACCEPTED; #64/#65 are the two active research items. The older snapshots below do not describe the current gate.
+Verification scope: the PR #75 evidence changeset based on `master@0a853636ef6d1be9d3bb85058f34faf368fcb6ce`. PR #74 merged and [#68 explicitly passed](https://github.com/Dyu20705/sites/issues/68#issuecomment-5795799412) on 23 September. D05/D06 remain ACCEPTED; #64/#65 are the two active research items. The older snapshots below do not describe the current gate.
 
 - Define / Research Entry: **PASSED**.
 - Research Exit #70 / research-ready: **NOT PASSED**; D07/D08 remain PROPOSED. [Evidence and decision packet](../research/08_D07_D08_EXIT_PACKET.md).
-- New branch evidence: five-provider documentation screen, focused literature notes, a preregistered acquisition attempt, recorded HTTP 406/reset failures, and 15 passing synthetic test methods in each of two separate processes with matching output hashes.
+- PR #75 evidence: five-provider documentation screen, focused literature notes, a preregistered acquisition attempt, two preserved but endpoint-confounded arXiv HTTP 406 observations, a DBLP legacy-path reset, verified metadata for the exact April-2019 DOI-backed DBLP snapshot, and 15 passing synthetic test methods in each of two separate processes with matching output hashes.
 - Missing: usable real corpus snapshot, measured missingness/denominator/temporal fitness, real signal comparison, independent reference protocol/quality threshold and accepted freeze. **E3 NOT PASSED**; no product E1–E8 pass is claimed.
 - D09 / preimplementation, feature and product-ready remain **NOT PASSED**. No product implementation, holdout evaluation, demo or user validation exists in this changeset.
 - Deadline remains **17 October 2026**. Accelerated dates are conditional; no autonomous merge, release or deployment occurred.
 
-The research artifacts above are branch-local until an approved merge; the issue gate is not changed by this document. Historical acceptance remains authoritative, while newly proposed choices require owner acceptance.
+This snapshot describes evidence carried by PR #75. If the PR is merged, those artifacts become inspectable from the default branch, but **merge status does not pass Research Exit**: #70 remains the authority and D07/D08 still require explicit owner acceptance plus a frozen experiment contract. Historical acceptance remains authoritative, while newly proposed choices require owner acceptance.
 
 <details>
 <summary>Historical verification — 23 September 2026 (superseded snapshot)</summary>

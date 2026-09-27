@@ -51,8 +51,8 @@ Pattern `\bfuzz(?:ing|er|ers)?\b` là đề xuất khảo sát. EL-005 chứng m
 
 Xem [provider audit](07_PROVIDER_AUDIT_RESULTS.md), [decision packets](08_D07_D08_EXIT_PACKET.md) và [experiment artifacts](../../../experiments/research_exit_20260927/README.md) dùng chung.
 
-- Count request arXiv đầu tiên: HTTP 406, không có record response thành công. Diagnostic content negotiation AM-01: HTTP 406. Web tool cũng không truy cập được count URL.
-- HEAD probe archive DBLP lịch sử: connection reset, chưa tải archive. Đây là quan sát truy cập trong môi trường này, không chứng minh DBLP thiếu snapshots.
+- Count request arXiv đầu tiên và diagnostic content negotiation AM-01 đều trả HTTP 406, không có record response thành công. Review sau lần chạy phát hiện cả hai probe dùng `https://export.arxiv.org/...`, trong khi arXiv API manual đã đọc ghi rõ endpoint `http://export.arxiv.org/api/query`. Vì vậy vẫn giữ hai 406 như quan sát của đúng request đã chạy nhưng coi chúng là **bị confound bởi cách dựng endpoint**; chưa thể dùng để kết luận đường truy cập được tài liệu mô tả đã fail. AM-02 định nghĩa một HTTP diagnostic riêng chỉ chạy một request và ghi redirect/final URL, nhưng chưa chạy trong changeset này.
+- HEAD probe đường legacy của archive DBLP reset trước khi có HTTP status. Review nguồn chính thức sau đó xác minh snapshot tháng 04/2019 tại [DROPS artifact `10.4230/dblp.xml.2019-04-01`](https://drops.dagstuhl.de/entities/artifact/10.4230/dblp.xml.2019-04-01): publication date 01/04/2019, CC0, file `dblp-2019-04-01.xml.gz` (468,04 MB), MD5 `cdf6416c27ab24eaef5aa4560e38aa3c` và schema DOI `10.4230/dblp.xml.dtd.2017-08-29`. Điều này xác minh danh tính snapshot và metadata artifact đã công bố, **không** chứng minh field fitness hay bounded corpus.
 - **15 test methods synthetic đều đạt trong mỗi lần chạy ở hai tiến trình riêng**, gồm bảy tình huống series tính tay; hash output giống nhau. Chưa chạy so sánh signal corpus thật, annotation, phép đo missingness hay holdout.
 - Ví dụ số: `10/100 = 20/200 = 0,1`; giữ numerator thì `10/100 = 0,1` nhưng `10/200 = 0,05`. Denominator rỗng và bin thiếu trả null, không trả zero.
 

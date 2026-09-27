@@ -8,12 +8,12 @@
 
 **Ứng viên khảo sát:** software engineering/testing, arXiv `cat:cs.SE`, development 01–06/2019, candidate holdout 07–12/2019, work ID riêng biệt và title version đầu. Acquisition sáu tháng có bound chặt hơn là 2.000 works. Query membership hiện dựa category index hôm nay, còn rủi ro membership lịch sử chưa giải quyết. Không suy rộng thành toàn bộ literature software testing.
 
-**Bằng chứng:** [EL-101–105 và access logs](07_PROVIDER_AUDIT_RESULTS.md). Hai request arXiv không trả records. Có tài liệu về persistent archive DBLP nhưng access probe fail. Chưa xác lập missingness, counts, membership tại cutoff hay input snapshot.
+**Bằng chứng:** [EL-101–105 và access logs](07_PROVIDER_AUDIT_RESULTS.md). Hai request arXiv không trả records, nhưng cả hai dùng HTTPS trong khi manual đã đọc trình bày endpoint query qua HTTP; vì vậy hai 406 bị confound bởi endpoint. Probe DBLP đường legacy trước đó reset, còn snapshot tháng 04/2019 có DOI trên DROPS hiện đã được xác minh ở mức metadata artifact. Chưa audit bounded extract. Chưa xác lập missingness, counts, membership tại cutoff hay input snapshot.
 
 **Alternatives và trade-offs:**
 
-1. Khôi phục đường truy cập arXiv đã khai báo, đo version/membership/announcement fitness. Ít thay đổi khảo sát nhất, nhưng truy cập thành công vẫn có thể fail temporal audit.
-2. Preregister venue extract từ snapshot DBLP lịch sử. Snapshot identity được mô tả rõ hơn; upstream transfer/scan rộng và thời gian coarse cần audit có bound riêng, không tự accept.
+1. Chạy đúng một request AM-02 tới endpoint HTTP trong arXiv manual đã đọc và ghi redirect/final URL/status. Nếu truy cập thành công, đo version/membership/announcement fitness. Đây là sửa đổi nhỏ nhất của khảo sát; temporal evidence vẫn có thể fail sau đó.
+2. Preregister bounded venue/domain extract từ snapshot DBLP đã xác minh `10.4230/dblp.xml.2019-04-01`. Danh tính snapshot/license/checksum file đã có bằng chứng, nhưng upstream transfer/scan 468,04 MB và độ chính xác thời gian thô hơn vẫn cần audit giới hạn riêng, không tự accept.
 3. Metadata OpenAlex/Crossref/DBLP hiện tại cho retrospective analysis. Có thể hỗ trợ exploration nhưng tự nó không đáp ứng E3 giữ nguyên. Historical download Semantic Scholar cũng cần key chưa có.
 
 **Khuyến nghị:** chưa chọn provider cuối cùng hay freeze corpus. Giữ lỗi truy cập và chạy phép kiểm tra giới hạn tiếp theo trong provider report. Không có bằng chứng để kết luận mọi provider đều bất khả thi.

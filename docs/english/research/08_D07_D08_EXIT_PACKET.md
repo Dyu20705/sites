@@ -8,12 +8,12 @@
 
 **Exploratory candidate:** software engineering/testing, arXiv `cat:cs.SE`, January–June 2019 development, July–December 2019 candidate holdout, distinct work IDs with explicit first-version titles. Six-month acquisition has a tighter 2,000-work stop bound. Query membership is currently defined by today's category index, which is an unresolved historical-membership risk. Scope does not generalize to all software-testing literature.
 
-**Evidence:** [EL-101–105 and access logs](07_PROVIDER_AUDIT_RESULTS.md). Neither attempted arXiv request returned records. DBLP's persistent-archive path is documented but the access probe failed. Missingness, counts, cutoff-valid membership and input snapshot are not established.
+**Evidence:** [EL-101–105 and access logs](07_PROVIDER_AUDIT_RESULTS.md). Neither attempted arXiv request returned records, but both used HTTPS while the inspected manual presents the query endpoint over HTTP; their 406s are therefore endpoint-confounded. The earlier DBLP legacy-path probe reset, while the exact April-2019 DOI-backed DROPS snapshot is now verified at the artifact-metadata level. No bounded extract has been audited. Missingness, counts, cutoff-valid membership and input snapshot are not established.
 
 **Alternatives and trade-offs:**
 
-1. Recover the declared arXiv access path and measure version/membership/announcement fitness. Smallest change to the investigation, but temporal evidence may still fail even after access works.
-2. Preregister a DBLP historical-snapshot venue extract. Stronger documented snapshot identity; broader upstream transfer/scan and coarser publication time require a separate bounded audit, not automatic acceptance.
+1. Run one clean AM-02 request against the HTTP endpoint shown in the inspected arXiv manual and record redirect/final URL/status. If access succeeds, measure version/membership/announcement fitness. This is the smallest correction to the investigation; temporal evidence may still fail afterward.
+2. Preregister a bounded venue/domain extract from the verified DBLP snapshot `10.4230/dblp.xml.2019-04-01`. Snapshot identity/license/file checksum are documented, but the 468.04 MB upstream transfer/scan and coarser publication time require a separate bounded audit, not automatic acceptance.
 3. Current OpenAlex/Crossref/DBLP metadata for retrospective analysis. May help descriptive exploration, but does not satisfy unchanged E3 by itself. Semantic Scholar historical downloads also need a currently unavailable key.
 
 **Recommendation:** do not select a final provider or freeze a corpus. Preserve the access failures and run the next bounded test in the provider report. No evidence supports declaring every provider impossible.
