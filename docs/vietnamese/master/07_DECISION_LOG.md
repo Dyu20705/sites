@@ -134,7 +134,13 @@ Tiếp tục hoãn:
 
 Các lựa chọn cũ không bị cấm vĩnh viễn; chỉ không được kế thừa tự động.
 
-## 8. Nguyên tắc cập nhật log
+## 8. Hướng scope của owner — 10/10/2026
+
+**Direction ACCEPTED, không phải D07/D08 acceptance:** [quyết định owner tại #70](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) nghiệm thu negative investigation đã hoàn thành của #65 và development-only empirical evidence, chọn hướng M1 retrospective-only, cho phép chuẩn bị exact amendment proposal có kiểm soát. D05/D06 giữ ACCEPTED; nghĩa vụ gốc còn hiệu lực đến khi exact amendment được chấp thuận. E3 gốc và #70 vẫn NOT PASSED. Các trạng thái D07/D08/D09 phía trên giữ PROPOSED.
+
+[Packet M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) đề xuất estimand chính xác, clause impacts, D07/D08, E2-R/E3-R riêng và freeze/quality choices. Chỉ dẫn owner tiếp theo trong phiên cho phép SIMULATED A/B/C và synthetic workflow testing; independent scientific quality giữ NOT MEASURED. Quyền simulate không chấp thuận scientific reference hoặc tự bỏ điều kiện #70. Không ghi thresholds, freeze, architecture hoặc Research Exit pass là accepted ở đây.
+
+## 9. Nguyên tắc cập nhật log
 
 Mọi thay đổi trạng thái phải ghi:
 

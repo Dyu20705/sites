@@ -1,5 +1,7 @@
 # 06 — Quy trình đánh giá
 
+**Amendment đang chờ, 10/10:** owner chọn hướng retrospective-only và cho phép chuẩn bị [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). E2-R/E3-R và quality/support/budget choices vẫn PROPOSED; không tự thay matrix gốc phía dưới. SIMULATED workflow checks không đáp ứng independent scientific-reference quality. E3 gốc vẫn NOT PASSED; accepted retrospective contract cũng không biến nó thành E3 gốc PASS.
+
 **Nguyên tắc D05 ACCEPTED; lựa chọn đánh giá D08 PROPOSED.** Đây là kế hoạch kiểm chứng, chưa phải kết quả test. E1–E8 vẫn bắt buộc; công thức, reference labels, ngưỡng và sensitivity settings còn cần D08 acceptance. Gọi phân tích là retrospective không làm E3 hoặc M1 đạt.
 
 Protocol phải được chốt **trước khi triển khai và trước khi xem kết quả holdout**.

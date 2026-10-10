@@ -1,6 +1,14 @@
 # 09 — Trạng thái hiện tại đã xác minh
 
-## Xác minh critical path mới nhất — 10/10/2026
+## Hướng owner và preparation amendment mới nhất — 10/10/2026
+
+Đã xác minh branch sạch `research/exit-evidence-20260927` tại `64da78be17f0b89bbd008f5033192742fd663046`, khớp fresh fetch; PR #75 OPEN/Draft; #65 CLOSED/completed; #64/#70 OPEN. [Quyết định owner](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) nghiệm thu development-only evidence, chọn hướng M1 retrospective-only và cho phép chuẩn bị exact amendment. Chưa chấp thuận D07/D08, quality thresholds, freeze hoặc Research Exit.
+
+[Scope amendment + D07/D08 packet thống nhất](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) là PROPOSED: tác động D05/M1/E1–E8 rõ ràng, E2-R/E3-R riêng, observed corpus/lexical construct chính xác, exposure/freeze discipline và owner checklist. Chỉ dẫn owner tiếp theo cho phép SIMULATED A/B/C trên 27 fictional records. Synthetic workflow tạo 54 judgments, 18 agreements, chín disagreements/adjudications và final labels 9/9/9; đây là fixture thiết kế, không human observations. Tool suite 35 unit tests PASS (bảy workflow tests mới). Works thật được annotate: 0; independent scientific quality NOT MEASURED. Pilot thật hiện có vẫn chưa chạy.
+
+**Direction ACCEPTED; exact amendment PROPOSED. D05/D06 ACCEPTED; D07/D08/D09 PROPOSED; E3 gốc/#70 NOT PASSED.** Preparation này không kích hoạt replacement gate hoặc product implementation. Deadline vẫn 15/10. Tiếp theo: owner review exact scope/criteria/D07/D08/freeze; #70 chỉ PASS theo yêu cầu đã chấp thuận rõ và có evidence. Reviewer replay/usability, product integration và E8 measurements còn thiếu.
+
+## Xác minh execution development — 10/10/2026 (snapshot direction đã thay thế)
 
 Bắt đầu tại `53a50ec806b2d6d5fee4112554a6826aeaea852b`, đúng branch sạch và khớp fresh fetch; PR #75 OPEN/Draft; #64/#65/#70 ban đầu OPEN. [A acknowledgment](https://github.com/Dyu20705/sites/issues/64#issuecomment-6097520949) theo sau review thực với 17 tests/replay/XML. Đã đáp ứng [owner condition](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097421846); [#65 completed](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097523060) với reason `completed`. Chỉ đóng insufficient-evidence investigation. #64 là execution item active; #70 là gate.
 

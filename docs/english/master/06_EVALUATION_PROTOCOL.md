@@ -1,5 +1,7 @@
 # 06 — Evaluation Protocol
 
+**Amendment pending, 10 October:** owner selected retrospective-only direction and authorized [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). Its E2-R/E3-R and quality/support/budget choices remain PROPOSED; the original matrix below is not silently replaced. SIMULATED workflow checks do not satisfy independent scientific-reference quality. Original E3 remains NOT PASSED; an accepted retrospective contract would not make it original E3 PASS.
+
 **D05 principles ACCEPTED; D08 evaluation choices PROPOSED.** This is a validation plan, not a test result. E1–E8 remain required; formulas, reference labels, thresholds and sensitivity settings still require D08 acceptance. Calling an analysis retrospective does not pass E3 or M1.
 
 The protocol must be fixed **before implementation and before inspecting holdout results**.

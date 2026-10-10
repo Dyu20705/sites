@@ -134,7 +134,13 @@ The following remain deferred:
 
 Earlier choices are not permanently prohibited; they are simply not inherited automatically.
 
-## 8. Updating the Log
+## 8. Owner scope direction — 10 October 2026
+
+**ACCEPTED direction, not D07/D08 acceptance:** [owner #70 decision](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) accepts #65's completed negative investigation and development-only empirical evidence, selects retrospective-only M1 direction and authorizes a controlled exact amendment proposal. D05/D06 remain ACCEPTED; their original obligations remain until an exact amendment is accepted. Original E3 and #70 remain NOT PASSED. D07/D08/D09 statuses above remain PROPOSED.
+
+The [M1-R-20261010-v1 packet](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) proposes the exact estimand, clause impacts, D07/D08, separate E2-R/E3-R and freeze/quality choices. The owner's subsequent session instruction permits SIMULATED A/B/C and synthetic workflow testing; independent scientific quality stays NOT MEASURED. Permission to simulate is not scientific-reference acceptance or an implicit waiver at #70. No thresholds, freeze, architecture or Research Exit pass are recorded as accepted here.
+
+## 9. Updating the Log
 
 Every status change must record:
 

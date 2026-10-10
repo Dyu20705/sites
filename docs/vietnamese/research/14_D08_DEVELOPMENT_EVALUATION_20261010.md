@@ -1,5 +1,7 @@
 # 14 — Thực nghiệm development D08 và gói quyết định cho owner
 
+**Disposition owner tiếp theo:** [#70](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) nghiệm thu development-only evidence này và chọn hướng retrospective-only. [Packet 15](15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) chứa exact amendment và D07/D08/quality decisions còn PROPOSED; phần chọn A/B phía dưới là lịch sử. Independent scientific quality giữ NOT MEASURED, kể cả sau synthetic workflow test được cho phép riêng. Không đổi measurement/configuration/declaration ở đây.
+
 **VERIFIED, 10/10/2026:** #65 đã đóng `completed` sau [owner acceptance](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097421846), [A acknowledgment](https://github.com/Dyu20705/sites/issues/64#issuecomment-6097520949) và [completion record](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097523060). #64 đã có count/share thực đo trong phạm vi exploratory. **D07/D08/D09 PROPOSED; E3/#70 NOT PASSED.** Packet phục vụ owner quyết định, chưa phải confirmatory contract đã freeze hoặc quyền triển khai D09. Deadline demo-ready: **15/10/2026**.
 
 ## Declaration, đơn vị và ranh giới kết luận

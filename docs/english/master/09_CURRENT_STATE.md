@@ -1,6 +1,14 @@
 # 09 — Verified Current State
 
-## Latest critical-path verification — 10 October 2026
+## Latest owner direction and amendment preparation — 10 October 2026
+
+Verified clean branch `research/exit-evidence-20260927` at `64da78be17f0b89bbd008f5033192742fd663046`, aligned after fresh fetch; PR #75 OPEN/Draft; #65 CLOSED/completed; #64/#70 OPEN. [Owner decision](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) accepts development-only evidence and selects retrospective-only M1 direction, authorizing exact amendment preparation. It does not accept D07/D08, quality thresholds, freeze or Research Exit.
+
+[Unified scope amendment + D07/D08 packet](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) is PROPOSED: explicit D05/M1/E1–E8 impacts, separate E2-R/E3-R, exact observed corpus/lexical construct, exposure/freeze discipline and owner checklist. Subsequent owner instruction authorizes SIMULATED A/B/C on 27 fictional records. The synthetic workflow produced 54 judgments, 18 agreements, nine disagreements/adjudications and 9/9/9 final labels; these are designed fixture outcomes, not human observations. All 35 tool unit tests pass (seven new workflow tests). Real works annotated: zero; independent scientific quality NOT MEASURED. The existing real pilot remains unexecuted.
+
+**Direction ACCEPTED; exact amendment PROPOSED. D05/D06 ACCEPTED; D07/D08/D09 PROPOSED; original E3/#70 NOT PASSED.** Current preparation does not activate a replacement gate or product implementation. Deadline remains 15 October. Next: owner review of exact scope/criteria/D07/D08/freeze; #70 can pass only against explicitly accepted requirements with evidence. Reviewer replay/usability, product integration and E8 measurements remain outstanding.
+
+## Development execution verification — 10 October 2026 (superseded direction snapshot)
 
 Starting revision `53a50ec806b2d6d5fee4112554a6826aeaea852b`, correct clean branch aligned with a fresh fetch; PR #75 OPEN/Draft; #64/#65/#70 initially OPEN. [A acknowledgment](https://github.com/Dyu20705/sites/issues/64#issuecomment-6097520949) followed an actual 17-test/replay/XML review. The [owner condition](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097421846) was met; [#65 completed](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097523060) with reason `completed`. This closes the insufficient-evidence investigation only. #64 is the active execution item; #70 is a gate.
 

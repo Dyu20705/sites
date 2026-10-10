@@ -1,5 +1,16 @@
 # Research Exit evidence spike
 
+## Unified amendment and synthetic reference workflow — 10 October 2026
+
+Owner selected retrospective-only direction and authorized exact amendment preparation; [packet EN](../../docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) / [packet VI](../../docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) remain PROPOSED. A subsequent session instruction permits SIMULATED A/B/C on 27 fictional works. [Workflow source](simulate_reference_workflow.py), [seven workflow tests](test_reference_workflow.py) and [output](runs/20261010-amendment-01/simulated-workflow.json) retain 54 judgments, 18 agreements, nine disagreements/adjudications and 9/9/9 final labels. These are deliberately constructed fixture outcomes; zero real works annotated. 35/35 tool unit tests PASS. Independent scientific quality NOT MEASURED; original E3/#70 NOT PASSED and D07/D08/D09 PROPOSED.
+
+```powershell
+python -m unittest discover -s experiments/research_exit_20260927 -p "test_*.py" -v
+python experiments/research_exit_20260927/simulate_reference_workflow.py --output <new-directory>/simulated-workflow.json
+```
+
+New output file is required; the simulator refuses overwriting existing output. It has no network or real-corpus input. The real 27-work pilot manifest in the earlier run remains unannotated. This validates synthetic workflow behavior, not product integration, independent scientific reference or Research Exit.
+
 ## Critical-path execution — 10 October 2026
 
 [English](../../docs/english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md) / [Tiếng Việt](../../docs/vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md): #65 completed after owner acceptance and substantive A acknowledgment. Frozen 598-work development experiment measured monthly fuzzing title counts **0/1/2/1/4/1**, with denominators **91/79/97/103/122/106**. The [corrected declaration](runs/20261010-signal-01/declaration-corrected.json) discloses the agent's earlier escaping misinterpretation; no original config or lexical rule changed. [Measurements](runs/20261010-signal-01/corrected-replay-1/measurements.json), [10 synthetic controlled checks](runs/20261010-signal-01/corrected-replay-1/controlled-checks.json), [verification](runs/20261010-signal-01/verification.json) and [unannotated pilot proposal](runs/20261010-signal-01/reference-pilot-plan.json) distinguish real observations, perturbations and NOT MEASURED reference quality. 28 unit tests and 15 legacy synthetic tests pass; two corrected separate processes reproduce semantic bytes, with direct-XML arithmetic and lineage verification. Same-host agent verification only. No holdout/product/independent human evaluation. E3/#70 NOT PASSED; D07/D08/D09 PROPOSED; deadline 15 October.

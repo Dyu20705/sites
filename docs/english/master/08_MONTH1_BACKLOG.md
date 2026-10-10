@@ -2,6 +2,8 @@
 
 **Hard demo-ready deadline:** 15 October 2026, per [owner rebaseline](https://github.com/Dyu20705/sites/issues/70#issuecomment-6096887546).
 
+**Owner direction update:** retrospective-only direction selected in [#70](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689); exact [unified amendment/D07/D08 packet](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) still PROPOSED. SIMULATED 27-fictional-work workflow checks are complete, not independent scientific reference. Immediate sequence: exact amendment/quality criteria review → D07/D08/freeze → explicit #70 → D09 → vertical slice and independent replay/task. If an accepted criterion remains unmet, #70 stays NOT PASSED. Original E3 is not relabeled PASS. WIP: #64 execution, #70 gate; #65 completed.
+
 **Critical path, 10 October:** #65 investigation completed after owner acceptance + A acknowledgment; #64 has [real development count/share and decision evidence](../research/14_D08_DEVELOPMENT_EVALUATION_20261010.md). #70 remains NOT PASSED; D07/D08/D09 PROPOSED. Active execution: #64; no third item. Owner scope/D07/D08/freeze decision → explicit Research Exit → D09/preimplementation → one vertical slice → evaluation/reviewer replay → demo-ready by 15 October. Advance immediately when conditions pass. All original phase/allocation and 27 September schedule statements below are historical, superseded by this rebaseline; do not allocate remaining work through 17 October.
 
 **WIP limit:** no more than two active work items.

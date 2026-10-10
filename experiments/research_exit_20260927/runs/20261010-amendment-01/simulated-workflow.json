@@ -1,0 +1,759 @@
+{
+  "adjudications": 9,
+  "agreements": 18,
+  "claim_boundary": "Synthetic workflow checks only; no human or real-paper judgments",
+  "code_sha256": "ddd25597c17009281f1d97b02d59f65afecd4bf3374d40918036a3d903940c16",
+  "disagreements": 9,
+  "final_label_counts": {
+    "NEGATIVE": 9,
+    "POSITIVE": 9,
+    "UNCERTAIN": 9
+  },
+  "fixture_sha256": "5a0ed5522881496648a6d1b71f6cb2b52184e77b52b6558f20d6a528b5a4bc56",
+  "independent_scientific_quality": "NOT_MEASURED",
+  "mode": "SIMULATED",
+  "raw_judgment_count": 54,
+  "real_corpus_works_annotated": 0,
+  "records": [
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "POSITIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-001"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-001"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-001"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "POSITIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-002"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-002"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-002"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "POSITIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-003"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-003"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-003"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "POSITIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-004"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-004"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-004"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "POSITIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-005"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-005"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-005"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "POSITIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-006"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-006"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-006"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "POSITIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-007"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-007"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-007"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "NEGATIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-008"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-008"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-008"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "NEGATIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-009"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-009"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-009"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "NEGATIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-010"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-010"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-010"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "NEGATIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-011"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-011"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-011"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "NEGATIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-012"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-012"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-012"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "NEGATIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-013"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-013"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-013"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "NEGATIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-014"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-014"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-014"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "UNCERTAIN",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-015"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "UNCERTAIN",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-016"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "UNCERTAIN",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-017"
+    },
+    {
+      "adjudication": null,
+      "agreement": true,
+      "final_label": "UNCERTAIN",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-018"
+    },
+    {
+      "adjudication": {
+        "evidence_refs": [
+          "synthetic://workflow/SYN-019"
+        ],
+        "label": "POSITIVE",
+        "mode": "SIMULATED",
+        "rationale": "Constructed workflow case with stipulated sufficient evidence",
+        "role": "SIMULATED_C"
+      },
+      "agreement": false,
+      "final_label": "POSITIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-019"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-019"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-019"
+    },
+    {
+      "adjudication": {
+        "evidence_refs": [
+          "synthetic://workflow/SYN-020"
+        ],
+        "label": "NEGATIVE",
+        "mode": "SIMULATED",
+        "rationale": "Constructed workflow case with stipulated sufficient evidence",
+        "role": "SIMULATED_C"
+      },
+      "agreement": false,
+      "final_label": "NEGATIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-020"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-020"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-020"
+    },
+    {
+      "adjudication": {
+        "evidence_refs": [],
+        "label": "UNCERTAIN",
+        "mode": "SIMULATED",
+        "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+        "role": "SIMULATED_C"
+      },
+      "agreement": false,
+      "final_label": "UNCERTAIN",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-021"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-021"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-021"
+    },
+    {
+      "adjudication": {
+        "evidence_refs": [],
+        "label": "UNCERTAIN",
+        "mode": "SIMULATED",
+        "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+        "role": "SIMULATED_C"
+      },
+      "agreement": false,
+      "final_label": "UNCERTAIN",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-022"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-022"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-022"
+    },
+    {
+      "adjudication": {
+        "evidence_refs": [
+          "synthetic://workflow/SYN-023"
+        ],
+        "label": "POSITIVE",
+        "mode": "SIMULATED",
+        "rationale": "Constructed workflow case with stipulated sufficient evidence",
+        "role": "SIMULATED_C"
+      },
+      "agreement": false,
+      "final_label": "POSITIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-023"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-023"
+    },
+    {
+      "adjudication": {
+        "evidence_refs": [],
+        "label": "UNCERTAIN",
+        "mode": "SIMULATED",
+        "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+        "role": "SIMULATED_C"
+      },
+      "agreement": false,
+      "final_label": "UNCERTAIN",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-024"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-024"
+    },
+    {
+      "adjudication": {
+        "evidence_refs": [],
+        "label": "UNCERTAIN",
+        "mode": "SIMULATED",
+        "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+        "role": "SIMULATED_C"
+      },
+      "agreement": false,
+      "final_label": "UNCERTAIN",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-025"
+          ],
+          "label": "POSITIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-025"
+    },
+    {
+      "adjudication": {
+        "evidence_refs": [
+          "synthetic://workflow/SYN-026"
+        ],
+        "label": "NEGATIVE",
+        "mode": "SIMULATED",
+        "rationale": "Constructed workflow case with stipulated sufficient evidence",
+        "role": "SIMULATED_C"
+      },
+      "agreement": false,
+      "final_label": "NEGATIVE",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-026"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-026"
+    },
+    {
+      "adjudication": {
+        "evidence_refs": [],
+        "label": "UNCERTAIN",
+        "mode": "SIMULATED",
+        "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+        "role": "SIMULATED_C"
+      },
+      "agreement": false,
+      "final_label": "UNCERTAIN",
+      "raw_judgments": {
+        "a": {
+          "evidence_refs": [],
+          "label": "UNCERTAIN",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case; ambiguous/missing evidence retained",
+          "role": "SIMULATED_A"
+        },
+        "b": {
+          "evidence_refs": [
+            "synthetic://workflow/SYN-027"
+          ],
+          "label": "NEGATIVE",
+          "mode": "SIMULATED",
+          "rationale": "Constructed workflow case with stipulated sufficient evidence",
+          "role": "SIMULATED_B"
+        }
+      },
+      "work_id": "SYN-027"
+    }
+  ],
+  "status": "WORKFLOW_COMPLETED",
+  "work_count": 27
+}

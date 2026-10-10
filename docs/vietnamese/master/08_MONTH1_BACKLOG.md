@@ -2,6 +2,8 @@
 
 **Hard deadline demo-ready:** 15/10/2026, theo [owner rebaseline](https://github.com/Dyu20705/sites/issues/70#issuecomment-6096887546).
 
+**Cập nhật hướng owner:** đã chọn retrospective-only tại [#70](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689); [amendment/D07/D08 packet thống nhất](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) chính xác vẫn PROPOSED. SIMULATED workflow checks trên 27 fictional works đã hoàn thành, không phải independent scientific reference. Thứ tự trước mắt: review exact amendment/quality criteria → D07/D08/freeze → #70 rõ ràng → D09 → vertical slice và independent replay/task. Tiêu chí accepted chưa đạt thì #70 vẫn NOT PASSED. Không đổi E3 gốc thành PASS. WIP: #64 execution, #70 gate; #65 completed.
+
 **Critical path ngày 10/10:** #65 investigation completed sau owner acceptance + A acknowledgment; #64 có [real development count/share và decision evidence](../research/14_D08_DEVELOPMENT_EVALUATION_20261010.md). #70 NOT PASSED; D07/D08/D09 PROPOSED. Execution active: #64; không có item thứ ba. Owner quyết định scope/D07/D08/freeze → Research Exit rõ ràng → D09/preimplementation → một vertical slice → evaluation/reviewer replay → demo-ready trước hoặc trong 15/10. Đủ điều kiện thì chuyển ngay. Mọi phase/allocation gốc và phát biểu lịch ngày 27/09 phía dưới là lịch sử đã bị rebaseline thay thế; không phân bổ công việc còn lại tới 17/10.
 
 **WIP limit:** tối đa 2 work item đang thực hiện.

@@ -1,5 +1,7 @@
 # 14 — D08 development evaluation and owner decision packet
 
+**Later owner disposition:** [#70](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) accepts this development-only evidence and selects retrospective-only direction. [Packet 15](15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) now carries the exact PROPOSED amendment and D07/D08/quality decisions; the earlier A/B choice discussion below is historical. Independent scientific quality remains NOT MEASURED, including after the separately authorized synthetic workflow test. No measurement/configuration/declaration here is changed.
+
 **VERIFIED, 10 October 2026:** #65 closed `completed` after [owner acceptance](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097421846), [A acknowledgment](https://github.com/Dyu20705/sites/issues/64#issuecomment-6097520949) and [completion record](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097523060). #64 now has actual exploratory count/share evidence. **D07/D08/D09 PROPOSED; E3/#70 NOT PASSED.** This packet supports an owner choice; it is not a frozen confirmatory contract or permission to implement D09. Demo-ready deadline: **15 October 2026**.
 
 ## Declaration, unit and claim boundary
