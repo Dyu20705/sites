@@ -1,5 +1,7 @@
 # 07 — Kết quả sàng lọc provider và truy cập
 
+**Cập nhật — 10/10/2026:** [Audit corpus thật và B → A handoff](11_REAL_CORPUS_AUDIT_20261010.md) thay thế gaps access/sample bên dưới: AM-02 thành công; đã thu thập và audit 598 current works cùng 598 bản v1. E3/#70 giữ NOT PASSED; D07/D08/D09 giữ PROPOSED. Nội dung 27/09 bên dưới là evidence lịch sử.
+
 **27/09/2026 — #65, đã screen tài liệu; audit corpus thực đo bị chặn.** Chưa accept provider. Bảng dưới không phải phép đo coverage. Chi phí chỉ phản ánh điều kiện truy cập trong tài liệu; chưa đo runtime/transfer.
 
 ## Sàng lọc năm ứng viên

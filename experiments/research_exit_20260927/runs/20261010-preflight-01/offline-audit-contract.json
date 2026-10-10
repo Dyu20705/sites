@@ -1,0 +1,23 @@
+{
+  "id": "OFFLINE-AUDIT-20261010-01",
+  "declared_at": "2026-10-10T11:29:09.716Z",
+  "scope": "Post-acquisition field/identity/completeness audit; no signal, thresholds, labels or holdout",
+  "input": "runs/20261010-development-01",
+  "invariants": [
+    "offline only",
+    "verify manifest/config/script/raw SHA-256",
+    "check same query, contiguous offsets, stable totals, exact page lengths and v1 batch identity",
+    "one normalized record per work with current+v1 entry references",
+    "missing and invalid separate, inspected denominator per UTC month",
+    "available_at remains null; E3 NOT PASSED",
+    "all current-query works retained for retrospective denominator, not filtered by concept",
+    "exclusive new output directories; deterministic semantic JSON"
+  ],
+  "validation": [
+    "mocked acquisition tests",
+    "hand-calculated missing/invalid date tests",
+    "corrupted hash rejection",
+    "two independent offline replay processes with byte-identical audit and records",
+    "independent raw XML cross-check of aggregate and month counts"
+  ]
+}

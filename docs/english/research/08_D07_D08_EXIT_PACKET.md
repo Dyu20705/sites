@@ -1,5 +1,7 @@
 # 08 — D07/D08 decision packets and Research Exit review
 
+**Update — 10 October 2026:** [Real-corpus audit and B → A handoff](11_REAL_CORPUS_AUDIT_20261010.md) supersede the access/sample gaps below: AM-02 succeeded; 598 current works and 598 v1 records were acquired and audited. E3/#70 remain NOT PASSED; D07/D08/D09 remain PROPOSED. The 27 September material below is historical evidence.
+
 **PROPOSED — 27 September 2026. Recommendation: keep #70 NOT PASSED.** This packet is reviewable as an insufficient-evidence outcome. It is **not** ready for approval as a frozen experiment contract. D05/D06 remain ACCEPTED; D07/D08/D09 remain PROPOSED.
 
 ## D07 — Domain/source/corpus

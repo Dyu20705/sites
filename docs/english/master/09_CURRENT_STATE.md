@@ -1,6 +1,16 @@
 # 09 — Verified Current State
 
-## Current verification — 27 September 2026
+## Current verification — 10 October 2026
+
+Local Issue #65 continuation on research/exit-evidence-20260927; session began at 3c23a44ce0f11e243b0e0ecafef2faa93866d123, matching the fetched remote branch. [Measured evidence and handoff](../research/11_REAL_CORPUS_AUDIT_20261010.md) are prepared locally; this does not claim these new artifacts are on the remote PR/default branch.
+
+- AM-02: HTTP 301 to HTTPS, then 200 Atom, reported_total=598.
+- Development corpus: 598 distinct current-query works, exactly 598 v1 records; verified hashes, pagination and current-query completeness.
+- Seven checked core fields have no missing/invalid values in the six bins; monthly counts 91/79/97/103/122/106. Revisions: 161 current IDs above v1, 55 title changes, four category-set changes.
+- Two same-host offline replays match; direct XML cross-check verifies all 598 records. Nine IDs have an ID month after cutoff despite earlier submission dates; this is temporal counterevidence, not an exact announcement-date measurement.
+- E3 / historical denominator remain unresolved; Research Exit #70 NOT PASSED. D05/D06 ACCEPTED; D07/D08/D09 PROPOSED. No real signal comparison, accepted freeze, holdout evaluation, product implementation/demo or user validation is claimed. WIP remains #64 + #65; deadline 17 October 2026.
+
+## Historical verification — 27 September 2026 (superseded)
 
 Verification scope: the PR #75 evidence changeset based on `master@0a853636ef6d1be9d3bb85058f34faf368fcb6ce`. PR #74 merged and [#68 explicitly passed](https://github.com/Dyu20705/sites/issues/68#issuecomment-5795799412) on 23 September. D05/D06 remain ACCEPTED; #64/#65 are the two active research items. The older snapshots below do not describe the current gate.
 

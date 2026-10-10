@@ -1,5 +1,18 @@
 # Research Exit evidence spike
 
+## Latest measured run — 10 October 2026
+
+[English report](../../docs/english/research/11_REAL_CORPUS_AUDIT_20261010.md) / [Báo cáo tiếng Việt](../../docs/vietnamese/research/11_REAL_CORPUS_AUDIT_20261010.md): AM-02 returned HTTP 301 → HTTPS 200 Atom; acquired and audited 598 distinct development works and 598 v1 records. [Frozen run](runs/20261010-development-01/acquisition.json), [offline audit](runs/20261010-development-01/replay-1/audit.json), [replay verification](runs/20261010-development-01/replay-verification.json). E3 and Research Exit remain NOT PASSED. The older outcome below describes the preserved 27 September attempts.
+
+Offline replay (use a fresh output directory):
+
+```text
+python experiments/research_exit_20260927/offline_audit.py --run experiments/research_exit_20260927/runs/20261010-development-01 --output experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay
+python -m unittest discover -s experiments/research_exit_20260927 -p "test_*.py" -v
+```
+
+The output-dir option on acquire.py is for a new development run under runs, requires hash-verified same-config successful AM-02, and stops on count drift. Do not repeat the live acquisition just to replay. All frozen JSON/XML bytes are preserved in Git.
+
 Exploratory evidence for #64/#65, not a product runtime or D09 choice. Baseline: `0a853636ef6d1be9d3bb85058f34faf368fcb6ce`. D07/D08 remain PROPOSED. The preregistration precedes record acquisition and defines both the field handoff and bounded development sample. No holdout is run.
 
 Only Python standard-library modules are used (Python 3.10+). The host already has Python 3.14.7; this does not select a product dependency. Git preserves JSON bytes without newline conversion so manifest/config checksums survive checkout; generated replay reports explicitly use LF. Acquisition manifests retain their original bytes.

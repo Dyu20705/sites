@@ -52,12 +52,35 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--accept-atom-diagnostic", action="store_true")
     parser.add_argument("--http-endpoint-diagnostic", action="store_true")
+    parser.add_argument("--output-dir", type=Path, help="New development run directory under this experiment; requires successful AM-02")
     args = parser.parse_args()
     if args.accept_atom_diagnostic and args.http_endpoint_diagnostic:
         raise SystemExit("Choose only one diagnostic mode")
+    if args.output_dir and (args.accept_atom_diagnostic or args.http_endpoint_diagnostic):
+        raise SystemExit("Output override is only for development acquisition")
     config_bytes = (ROOT / "preregistration.json").read_bytes()
     config = json.loads(config_bytes)
-    if args.http_endpoint_diagnostic:
+    access_evidence = None
+    if args.output_dir:
+        run_root = (ROOT / args.output_dir).resolve()
+        if not run_root.is_relative_to((ROOT / "runs").resolve()):
+            raise SystemExit("Development output must be under experiment/runs")
+        access_path = ROOT / "http-endpoint-diagnostic/acquisition.json"
+        access_bytes = access_path.read_bytes()
+        access = json.loads(access_bytes)
+        if (access["status"] != "HTTP_ENDPOINT_DIAGNOSTIC_SUCCEEDED"
+                or access["preregistration_sha256"] != hashlib.sha256(config_bytes).hexdigest()
+                or not 0 < access["reported_total"] <= config["max_unique_works"]):
+            raise SystemExit("Successful bounded AM-02 for the same config is required")
+        access_request = access["requests"][0]
+        if hashlib.sha256((access_path.parent / access_request["file"]).read_bytes()).hexdigest() != access_request["sha256"]:
+            raise SystemExit("AM-02 raw response hash mismatch")
+        access_evidence = {"file": str(access_path.relative_to(ROOT)),
+                           "sha256": hashlib.sha256(access_bytes).hexdigest(),
+                           "reported_total": access["reported_total"],
+                           "final_url": access_request["final_url"]}
+        run_root.mkdir(parents=True, exist_ok=False)
+    elif args.http_endpoint_diagnostic:
         run_root = ROOT / "http-endpoint-diagnostic"
     elif args.accept_atom_diagnostic:
         run_root = ROOT / "accept-atom-diagnostic"
@@ -72,7 +95,9 @@ def main():
     manifest = {"started_at": stamp(), "preregistration_sha256": hashlib.sha256(config_bytes).hexdigest(),
                 "acquire_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                 "requests": [], "status": "RUNNING", "unique_bound": config["max_unique_works"],
-                "amendment": "AM-02" if args.http_endpoint_diagnostic else ("AM-01" if args.accept_atom_diagnostic else None)}
+                "amendment": "AM-02" if args.http_endpoint_diagnostic else ("AM-01" if args.accept_atom_diagnostic else None),
+                "mode": "development-acquisition" if args.output_dir else "diagnostic-or-legacy",
+                "access_evidence": access_evidence}
 
     def save():
         manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
@@ -138,6 +163,8 @@ def main():
         if total is None or total <= 0 or total > config["max_unique_works"]:
             manifest["status"] = "STOPPED_COUNT_OR_BOUND"
             return
+        if access_evidence and total != access_evidence["reported_total"]:
+            raise ValueError("Count drift since AM-02; stop before corpus retrieval")
         current = []
         for offset in range(0, total, config["page_size"]):
             params.update(start=offset, max_results=min(config["page_size"], total-offset))

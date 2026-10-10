@@ -101,5 +101,66 @@ class DiagnosticTests(unittest.TestCase):
         self.assertEqual(target.read_bytes(), b"old evidence")
 
 
+
+
+class AcquisitionTests(unittest.TestCase):
+    setUp = DiagnosticTests.setUp
+    feed = DiagnosticTests.feed
+    def execute_acquisition(self, payloads):
+        access_raw = self.feed("2")
+        access_dir = self.root / "http-endpoint-diagnostic"
+        (access_dir / "raw").mkdir(parents=True)
+        (access_dir / "raw/count.xml").write_bytes(access_raw)
+        access = {"status": "HTTP_ENDPOINT_DIAGNOSTIC_SUCCEEDED", "reported_total": 2,
+                  "preregistration_sha256": hashlib.sha256(self.config).hexdigest(),
+                  "requests": [{"file": "raw/count.xml", "sha256": hashlib.sha256(access_raw).hexdigest(),
+                                "final_url": "https://export.arxiv.org/api/query?test"}]}
+        (access_dir / "acquisition.json").write_text(json.dumps(access))
+        responses = []
+        for raw in payloads:
+            response = io.BytesIO(raw)
+            response.status, response.url = 200, "https://export.arxiv.org/api/query?test"
+            response.headers = {"Content-Type": "application/atom+xml"}
+            responses.append(response)
+        opener = Mock()
+        opener.open.side_effect = responses
+        with patch.object(acquire, "ROOT", self.root), patch("sys.argv", ["acquire.py", "--output-dir", "runs/test"]), patch.object(acquire.urllib.request, "build_opener", return_value=opener), patch.object(acquire.time, "sleep"), contextlib.redirect_stdout(io.StringIO()):
+            acquire.main()
+        return json.loads((self.root / "runs/test/acquisition.json").read_text()), opener.open.call_count
+
+    def record_feed(self, ids, total=2):
+        return (f'<feed xmlns="{acquire.NS["a"]}"><totalResults xmlns="{acquire.NS["o"]}">{total}</totalResults>' + ''.join(f'<entry><id>http://arxiv.org/abs/{identifier}</id></entry>' for identifier in ids) + '</feed>').encode()
+
+    def test_complete_acquisition(self):
+        result, calls = self.execute_acquisition([self.feed("2"), self.record_feed(["1901.00001v2", "1901.00002v1"]), self.record_feed(["1901.00001v1", "1901.00002v1"])])
+        self.assertEqual(result["status"], "ACQUIRED_NOT_TEMPORALLY_VERIFIED")
+        self.assertEqual((result["current_records"], result["v1_records"], calls), (2, 2, 3))
+
+    def test_over_bound_stops_after_count(self):
+        result, calls = self.execute_acquisition([self.feed("2001")])
+        self.assertEqual(result["status"], "STOPPED_COUNT_OR_BOUND")
+        self.assertEqual(calls, 1)
+
+    def test_count_drift_since_access_stops(self):
+        result, calls = self.execute_acquisition([self.feed("3")])
+        self.assertEqual(result["status"], "ACCESS_OR_RESPONSE_FAILURE")
+        self.assertEqual(calls, 1)
+
+    def test_incomplete_page_stops(self):
+        result, calls = self.execute_acquisition([self.feed("2"), self.record_feed(["1901.00001v1"])])
+        self.assertEqual(result["status"], "ACCESS_OR_RESPONSE_FAILURE")
+        self.assertEqual(calls, 2)
+
+    def test_duplicate_works_stop_before_versions(self):
+        result, calls = self.execute_acquisition([self.feed("2"), self.record_feed(["1901.00001v1", "1901.00001v2"])])
+        self.assertEqual(result["status"], "ACCESS_OR_RESPONSE_FAILURE")
+        self.assertEqual(calls, 2)
+
+    def test_wrong_version_stops(self):
+        result, calls = self.execute_acquisition([self.feed("2"), self.record_feed(["1901.00001v2", "1901.00002v1"]), self.record_feed(["1901.00001v2", "1901.00002v1"])])
+        self.assertEqual(result["status"], "ACCESS_OR_RESPONSE_FAILURE")
+        self.assertEqual(calls, 3)
+
+
 if __name__ == "__main__":
     unittest.main()

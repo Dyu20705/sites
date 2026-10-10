@@ -1,0 +1,117 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "inputs": {
+    "accept-atom-diagnostic/acquisition.json": "e267eabcb172210c7252c84051152825fa4381035fbbeffe130afebe00b78fe3",
+    "acquisition.json": "48226d2c87a604cb2f3b8275b44ffbeb29007a3dbb134a01f16613d68ffc9269",
+    "checks.py": "3ad3d13b6de01e16d87674f8fc81fa5cb0dc1bd13bff52662803ab048de13625",
+    "fixtures.json": "c605ee9ec1e0e43f928106682752c93e63e8881a0b7b6ffc02705b87ec300b5d",
+    "preregistration.json": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7"
+  },
+  "limitations": [
+    "Availability in fixtures is stipulated, not measured",
+    "No holdout or real corpus evaluated",
+    "Alias and provider composition changes can defeat both count and share"
+  ],
+  "record_result": {
+    "contributors": [
+      "synthetic-a"
+    ],
+    "count": 1,
+    "denominator": 2,
+    "denominator_ids": [
+      "synthetic-a",
+      "synthetic-b"
+    ],
+    "share": 0.5
+  },
+  "sample_audit": {
+    "E3": "NOT_PASSED",
+    "corpus_total": null,
+    "coverage": null,
+    "missingness": null,
+    "observed_http_statuses": [
+      406,
+      406
+    ],
+    "real_signal": null,
+    "status": "NOT_MEASURED_ACCESS_FAILURE",
+    "successful_record_responses": 0,
+    "v1_comparison": null
+  },
+  "series": [
+    {
+      "actual": [
+        0.1,
+        0.2
+      ],
+      "expected": [
+        0.1,
+        0.2
+      ],
+      "id": "increase"
+    },
+    {
+      "actual": [
+        0.2,
+        0.1
+      ],
+      "expected": [
+        0.2,
+        0.1
+      ],
+      "id": "decrease"
+    },
+    {
+      "actual": [
+        0.1,
+        0.1
+      ],
+      "expected": [
+        0.1,
+        0.1
+      ],
+      "id": "constant_share_corpus_growth"
+    },
+    {
+      "actual": [
+        0.1,
+        0.05
+      ],
+      "expected": [
+        0.1,
+        0.05
+      ],
+      "id": "denominator_drift"
+    },
+    {
+      "actual": [
+        0.0
+      ],
+      "expected": [
+        0.0
+      ],
+      "id": "zero_matches"
+    },
+    {
+      "actual": [
+        null
+      ],
+      "expected": [
+        null
+      ],
+      "id": "empty_denominator"
+    },
+    {
+      "actual": [
+        null
+      ],
+      "expected": [
+        null
+      ],
+      "id": "missing_bin"
+    }
+  ],
+  "synthetic_only": true,
+  "tests_run": 15
+}

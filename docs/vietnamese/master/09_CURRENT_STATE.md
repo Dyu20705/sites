@@ -1,6 +1,16 @@
 # 09 — Trạng thái hiện tại đã xác minh
 
-## Xác minh hiện tại — 27/09/2026
+## Xác minh hiện tại — 10/10/2026
+
+Tiếp tục Issue #65 tại local trên research/exit-evidence-20260927; đầu phiên ở 3c23a44ce0f11e243b0e0ecafef2faa93866d123, khớp nhánh remote sau fetch. [Evidence thực đo và handoff](../research/11_REAL_CORPUS_AUDIT_20261010.md) được chuẩn bị tại local; không claim artifacts mới đã có trên remote PR/default branch.
+
+- AM-02: HTTP 301 sang HTTPS, rồi 200 Atom, reported_total=598.
+- Corpus development: 598 current-query works riêng biệt, đúng 598 bản v1; xác minh hashes, pagination và completeness của query hiện tại.
+- Bảy field lõi đã kiểm tra không có missing/invalid ở sáu bins; monthly counts 91/79/97/103/122/106. Revisions: 161 current IDs trên v1, 55 title thay đổi, bốn bộ category thay đổi.
+- Hai replay offline trên cùng host khớp; cross-check XML trực tiếp xác minh đủ 598 records. Chín IDs có tháng ID sau cutoff dù submission trước đó; đây là temporal counterevidence, không phải đo announcement date cụ thể.
+- E3 / denominator lịch sử còn unresolved; Research Exit #70 NOT PASSED. D05/D06 ACCEPTED; D07/D08/D09 PROPOSED. Chưa claim real signal comparison, accepted freeze, holdout evaluation, product implementation/demo hoặc user validation. WIP giữ #64 + #65; deadline 17/10/2026.
+
+## Xác minh lịch sử — 27/09/2026 (đã thay thế)
 
 Phạm vi xác minh: changeset evidence của PR #75 dựa trên `master@0a853636ef6d1be9d3bb85058f34faf368fcb6ce`. PR #74 đã merge và [#68 ghi PASSED rõ ràng](https://github.com/Dyu20705/sites/issues/68#issuecomment-5795799412) ngày 23/09. D05/D06 giữ ACCEPTED; #64/#65 là hai work items nghiên cứu active. Snapshot cũ phía dưới không mô tả gate hiện tại.
 

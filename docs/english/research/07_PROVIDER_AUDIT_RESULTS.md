@@ -1,5 +1,7 @@
 # 07 — Provider screening and access results
 
+**Update — 10 October 2026:** [Real-corpus audit and B → A handoff](11_REAL_CORPUS_AUDIT_20261010.md) supersede the access/sample gaps below: AM-02 succeeded; 598 current works and 598 v1 records were acquired and audited. E3/#70 remain NOT PASSED; D07/D08/D09 remain PROPOSED. The 27 September material below is historical evidence.
+
 **27 September 2026 — #65, screening completed; measured corpus audit blocked.** No provider is accepted. The documentation screen below is not a field-coverage measurement. Cost means documented access conditions; runtime and transfer costs are unmeasured.
 
 ## Five-candidate screen

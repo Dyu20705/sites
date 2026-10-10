@@ -1,0 +1,21 @@
+{
+  "declared_at": "2026-10-10T11:27:32.721Z",
+  "id": "20261010-development-01",
+  "output": "runs/20261010-development-01",
+  "mode": "development-acquisition",
+  "config_sha256": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7",
+  "acquire_sha256": "cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9",
+  "endpoint": "https://export.arxiv.org/api/query",
+  "endpoint_reason": "Observed AM-02 redirect destination returned HTTP 200 Atom; no claim HTTPS previously failed provider-wide.",
+  "am02_manifest_sha256": "7379a40b6c2a8c18806facae7ff0c1ea9d4eab4e1a19189909d7efdbe692f34d",
+  "query_unchanged": true,
+  "holdout_exposure": false,
+  "stop_rules": [
+    "count outside (0,2000]",
+    "count drift since AM-02 or across pages",
+    "incomplete page",
+    "duplicate IDs",
+    "wrong v1 identity",
+    "access/rate-limit failure"
+  ]
+}

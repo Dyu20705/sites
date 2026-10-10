@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/FhYnmyPWaSTBqCR+vSowKW3iUAM</id>
+  <title>arXiv Query: search_query=cat:cs.SE AND submittedDate:"201901010000 TO 201906302359"&amp;id_list=&amp;start=0&amp;max_results=1</title>
+  <updated>2026-10-10T11:26:13Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=cat:cs.SE+AND+submittedDate:%22201901010000+TO+201906302359%22&amp;start=0&amp;max_results=1&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>1</opensearch:itemsPerPage>
+  <opensearch:totalResults>598</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1901.01811v1</id>
+    <title>Information Systems Development and Evolution: A replication study on work distribution in Norwegian Organizations</title>
+    <updated>2019-01-01T18:05:11Z</updated>
+    <link href="https://arxiv.org/abs/1901.01811v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1901.01811v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The information systems landscape is at first sight very different from how it was 20 years ago. On the other hand, it seems that we are still struggling with many of the same problems, including late or abandoned projects and unfilled customer demands. In this article we present selected data from survey investigations from 1993, 1998, 2003, 2008 and 2013 among Norwegian organizations on how they conduct information systems development and maintenance. In particular we compare data from 2008 and 2013 in more detail. A major finding is that whereas main work distribution numbers was very stable between 2003 and 2008, we see some changes as for time used on maintenance and development between 2008 and 2013. Even if we witness large changes in the underlying implementation technology and methods used, a number of aspects such as application portfolio upkeep (the amount of work for keeping the application portfolio operational) though are still on the same level as it has been the last 15 years. On the other hand, because of the more complex infrastructures supporting the application portfolio, and the increasing number of in particular external users, an increasing amount of resources is used for other tasks such as operations and user-support than in the first investigations, although also this appears to have stabilised between the last investigations.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-01-01T18:05:11Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Tor Kristian Veld</name>
+    </author>
+    <author>
+      <name>John Krogstie</name>
+    </author>
+  </entry>
+</feed>
