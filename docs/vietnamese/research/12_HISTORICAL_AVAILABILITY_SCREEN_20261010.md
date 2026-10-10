@@ -60,3 +60,7 @@ Chưa accept phương án nào tại đây. Screen chưa dẫn tới real signal
 ## 05. Phạm vi validation
 
 Evidence tự động gồm 17 unit tests, replay mới, input hashes và cross-check XML raw trực tiếp. Package report kiểm tra relative links, parse JSON/Python và gate statuses hiện có; không xác minh external links, độ mới của trang cache hoặc completeness lịch sử. Đã self-review hai bản về counts, dates, null fields và trạng thái proposal. Không claim independent human replay hoặc historical ground truth.
+
+## 06. Review tiếp theo: giới hạn provenance
+
+Search record thiếu execution metadata đầy đủ về service/timestamp/filter/result-count/URL. Plan và results được push cùng nhau sau execution; timestamp local của plan chưa phải bằng chứng độc lập về sự tồn tại trước exposure. Ghi nhận các giới hạn này mà không tự tạo metadata lịch sử còn thiếu. Xem [phản hồi review và handoff/owner decisions còn pending](13_ISSUE65_REVIEW_HANDOFF_20261010.md).

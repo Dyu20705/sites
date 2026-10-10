@@ -60,3 +60,7 @@ Neither alternative is accepted here. No real signal, reference labels, threshol
 ## 05. Validation scope
 
 Automated evidence covers the 17 unit tests, fresh replay, input hashes and direct raw-XML cross-check. The package report checks relative links, JSON/Python parsing and existing gate statuses; it does not validate external links, cached-page freshness or historical completeness. The paired reports were self-reviewed for matching counts, dates, null fields and proposal status. No independent human replay or historical ground truth is claimed.
+
+## 06. Subsequent review: provenance limitations
+
+The search record lacks complete service/timestamp/filter/result-count/URL execution metadata. The plan and results were pushed together after execution; the local plan timestamp is not independent evidence of pre-exposure existence. These limitations are acknowledged without reconstructing missing historical metadata. See the [review response and pending handoff/owner decisions](13_ISSUE65_REVIEW_HANDOFF_20261010.md).

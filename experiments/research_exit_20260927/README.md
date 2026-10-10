@@ -1,5 +1,9 @@
 # Research Exit evidence spike
 
+## Review response / handoff — 10 October 2026
+
+[English](../../docs/english/research/13_ISSUE65_REVIEW_HANDOFF_20261010.md) / [Tiếng Việt](../../docs/vietnamese/research/13_ISSUE65_REVIEW_HANDOFF_20261010.md): [B → A handoff sent to #64](https://github.com/Dyu20705/sites/issues/64#issuecomment-6097343828), acknowledgment pending. Missing search execution metadata and independent preregistration timing evidence are acknowledged; the [future execution template](runs/20261010-review-response-01/future-search-execution-template.json) is NOT EXECUTED. Investigation completion and research-scope decisions await owner review; E3/#70 remain NOT PASSED.
+
 ## Reviewer follow-up — 10 October 2026
 
 [English report](../../docs/english/research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md) / [Báo cáo tiếng Việt](../../docs/vietnamese/research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md): 17 unit tests pass; [fresh offline replay and direct XML cross-check](runs/20261010-development-01/reviewer-replay-20261010-115331/verification.json) reproduce the original bytes and verify 14 frozen inputs. [Bounded historical source screen](runs/20261010-historical-screen-01/source-screen-results.json): eight readable abstract pages corroborate submission dates; one web-reader cache miss. No qualifying historical population capture was verified. E3/#70 remain NOT PASSED; this is same-host agent replay, not independent human validation.
