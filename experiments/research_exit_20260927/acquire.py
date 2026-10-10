@@ -20,6 +20,8 @@ def stamp():
 
 def read_entries(raw):
     feed = ET.fromstring(raw)
+    if feed.tag != "{" + NS["a"] + "}feed":
+        raise ValueError("Response is not an Atom feed")
     entries = []
     for node in feed.findall("a:entry", NS):
         def value(tag):
@@ -31,6 +33,19 @@ def read_entries(raw):
         })
     total = feed.findtext("o:totalResults", None, NS)
     return entries, int(total) if total is not None else None
+
+
+class DiagnosticRedirectHandler(urllib.request.HTTPRedirectHandler):
+    """Retain observed redirects, including a redirect followed by HTTP failure."""
+
+    def __init__(self, redirects):
+        super().__init__()
+        self.redirects = redirects
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        self.redirects.append({"url": req.full_url, "status": code, "location": newurl})
+        time.sleep(3.1)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
 def main():
@@ -55,6 +70,7 @@ def main():
     if manifest_path.exists():
         raise SystemExit("Existing acquisition preserved. Use a separately preregistered run for another attempt.")
     manifest = {"started_at": stamp(), "preregistration_sha256": hashlib.sha256(config_bytes).hexdigest(),
+                "acquire_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                 "requests": [], "status": "RUNNING", "unique_bound": config["max_unique_works"],
                 "amendment": "AM-02" if args.http_endpoint_diagnostic else ("AM-01" if args.accept_atom_diagnostic else None)}
 
@@ -66,7 +82,7 @@ def main():
             time.sleep(3.1)
         base_url = "http://export.arxiv.org/api/query?" if args.http_endpoint_diagnostic else "https://export.arxiv.org/api/query?"
         url = base_url + urllib.parse.urlencode(params)
-        entry = {"url": url, "started_at": stamp(), "file": "raw/" + name}
+        entry = {"url": url, "started_at": stamp(), "file": "raw/" + name, "redirects": []}
         manifest["requests"].append(entry)
         save()
         headers = {"User-Agent": "SITES-research-audit/0.1 (https://github.com/Dyu20705/sites)"}
@@ -75,14 +91,16 @@ def main():
         request = urllib.request.Request(url, headers=headers)
         entry["request_headers"] = headers
         try:
-            with urllib.request.urlopen(request, timeout=45) as response:
+            opener = urllib.request.build_opener(DiagnosticRedirectHandler(entry["redirects"]))
+            with opener.open(request, timeout=45) as response:
                 raw = response.read(20_000_001)
                 if len(raw) > 20_000_000:
                     raise ValueError("Response exceeds 20 MB bound")
                 entry["status"] = response.status
                 entry["final_url"] = response.url
                 entry["content_type"] = response.headers.get("Content-Type")
-            (target / name).write_bytes(raw)
+            with (target / name).open("xb") as output:
+                output.write(raw)
             entry.update(sha256=hashlib.sha256(raw).hexdigest(), bytes=len(raw), ended_at=stamp())
             save()
             return read_entries(raw)
@@ -90,17 +108,30 @@ def main():
             entry.update(error=type(error).__name__ + ": " + str(error), ended_at=stamp())
             if isinstance(error, urllib.error.HTTPError):
                 entry["status"] = error.code
-                # Keep a short diagnostic excerpt; do not fetch again or change identity.
-                entry["response_excerpt"] = error.read(2048).decode("utf-8", errors="replace")
+                entry["final_url"] = error.geturl()
+                entry["content_type"] = error.headers.get("Content-Type") if error.headers else None
+                # This is a bounded excerpt, not a full provider response.
+                excerpt = error.read(2048)
+                error.close()
+                excerpt_path = "raw/" + name + ".error.txt"
+                with (run_root / excerpt_path).open("xb") as output:
+                    output.write(excerpt)
+                entry.update(response_excerpt=excerpt.decode("utf-8", errors="replace"),
+                             error_excerpt_file=excerpt_path, error_excerpt_bytes=len(excerpt),
+                             error_excerpt_sha256=hashlib.sha256(excerpt).hexdigest())
             save()
             raise
 
     try:
         params = {"search_query": config["query"], "sortBy": config["sort_by"],
                   "sortOrder": config["sort_order"], "start": 0, "max_results": 1}
-        _, total = fetch("count.xml", params)
+        count_entries, total = fetch("count.xml", params)
         manifest["reported_total"] = total
         if args.http_endpoint_diagnostic:
+            if total is None or total < 0:
+                raise ValueError("Diagnostic requires a nonnegative totalResults")
+            if len(count_entries) != min(1, total):
+                raise ValueError("Diagnostic count response has inconsistent entries")
             manifest["status"] = "HTTP_ENDPOINT_DIAGNOSTIC_SUCCEEDED"
             manifest["final_url"] = manifest["requests"][-1].get("final_url")
             return
