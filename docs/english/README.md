@@ -53,6 +53,8 @@ Research preparation:
 - [Research Exit evidence](research/06_RESEARCH_EXIT_EVIDENCE.md)
 - [Provider screening and access results](research/07_PROVIDER_AUDIT_RESULTS.md)
 - [D07/D08 packets and Research Exit blockers](research/08_D07_D08_EXIT_PACKET.md)
+- [Real corpus audit and B → A handoff](research/11_REAL_CORPUS_AUDIT_20261010.md)
+- [Reviewer replay and historical source screen](research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md)
 
 The English and Vietnamese sets are equivalent in meaning, not sentence-by-sentence wording. Decision IDs, dates, statuses, requirements, and technical meaning must remain consistent across both versions.
 

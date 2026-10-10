@@ -2,13 +2,14 @@
 
 ## Current verification — 10 October 2026
 
-Local Issue #65 continuation on research/exit-evidence-20260927; session began at 3c23a44ce0f11e243b0e0ecafef2faa93866d123, matching the fetched remote branch. [Measured evidence and handoff](../research/11_REAL_CORPUS_AUDIT_20261010.md) are prepared locally; this does not claim these new artifacts are on the remote PR/default branch.
+Issue #65 continuation on research/exit-evidence-20260927. The [measured corpus evidence](../research/11_REAL_CORPUS_AUDIT_20261010.md) was pushed in commit 670bcee and reported in [#65](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097159176). A fresh fetch and local reviewer replay began at that same remote revision; PR #75 was verified OPEN/Draft. The [historical source screen](../research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md) records the follow-up, not owner acceptance or a default-branch merge.
 
 - AM-02: HTTP 301 to HTTPS, then 200 Atom, reported_total=598.
 - Development corpus: 598 distinct current-query works, exactly 598 v1 records; verified hashes, pagination and current-query completeness.
 - Seven checked core fields have no missing/invalid values in the six bins; monthly counts 91/79/97/103/122/106. Revisions: 161 current IDs above v1, 55 title changes, four category-set changes.
 - Two same-host offline replays match; direct XML cross-check verifies all 598 records. Nine IDs have an ID month after cutoff despite earlier submission dates; this is temporal counterevidence, not an exact announcement-date measurement.
-- E3 / historical denominator remain unresolved; Research Exit #70 NOT PASSED. D05/D06 ACCEPTED; D07/D08/D09 PROPOSED. No real signal comparison, accepted freeze, holdout evaluation, product implementation/demo or user validation is claimed. WIP remains #64 + #65; deadline 17 October 2026.
+- Follow-up: 17 unit tests pass; fresh same-host replay and direct XML cross-check match the original bytes. Eight of nine abstract pages corroborate submission dates; one web-reader cache miss is retained. No cutoff-dated category capture or complete membership ledger was verified by the bounded screen.
+- E3 / historical denominator remain unresolved; Research Exit #70 NOT PASSED. D05/D06 ACCEPTED; D07/D08/D09 PROPOSED. No real signal comparison, accepted freeze, holdout evaluation, product implementation/demo or user validation is claimed. WIP remains #64 + #65. The [latest control checkpoint](https://github.com/Dyu20705/sites/issues/70#issuecomment-6096887546) sets the hard demo-ready deadline to 15 October 2026 (before 16 October), superseding 17 October as an execution milestone; it does not accept a research gate.
 
 ## Historical verification — 27 September 2026 (superseded)
 

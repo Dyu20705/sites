@@ -1,0 +1,325 @@
+{
+  "id": "HA-20261010-01",
+  "status": "INSUFFICIENT_EVIDENCE",
+  "finished_at": "2026-10-10T11:58:49.587Z",
+  "plan": "source-screen-plan.json",
+  "record_pages": [
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-29T04:32:14Z",
+      "source_ref": {
+        "entry_index": 9,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00143",
+      "url": "https://arxiv.org/abs/1907.00143",
+      "page_attempts": 1,
+      "observation_date": "2026-10-10",
+      "retrieval_method": "Web reader; may return cached representation, not fresh provider bytes",
+      "page_status": "READ",
+      "v1_submission_timestamp_observed": "2019-06-29T04:32:14Z",
+      "submission_matches_frozen_raw": true,
+      "current_subjects_observed": [
+        "cs.SE"
+      ],
+      "section": "Submission history / Subjects",
+      "exact_first_announcement_at": null,
+      "membership_at_cutoff": null,
+      "interpretation": "Current abstract page repeats submission time; no exact first-public-announcement timestamp or category membership timeline verified."
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-29T09:37:34Z",
+      "source_ref": {
+        "entry_index": 78,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00172",
+      "url": "https://arxiv.org/abs/1907.00172",
+      "page_attempts": 1,
+      "observation_date": "2026-10-10",
+      "retrieval_method": "Web reader; may return cached representation, not fresh provider bytes",
+      "page_status": "READ",
+      "v1_submission_timestamp_observed": "2019-06-29T09:37:34Z",
+      "submission_matches_frozen_raw": true,
+      "current_subjects_observed": [
+        "cs.SE"
+      ],
+      "section": "Submission history / Subjects",
+      "exact_first_announcement_at": null,
+      "membership_at_cutoff": null,
+      "interpretation": "Current abstract page repeats submission time; no exact first-public-announcement timestamp or category membership timeline verified."
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-29T21:39:03Z",
+      "source_ref": {
+        "entry_index": 49,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00282",
+      "url": "https://arxiv.org/abs/1907.00282",
+      "page_attempts": 1,
+      "observation_date": "2026-10-10",
+      "retrieval_method": "Web reader; may return cached representation, not fresh provider bytes",
+      "page_status": "READ",
+      "v1_submission_timestamp_observed": "2019-06-29T21:39:03Z",
+      "submission_matches_frozen_raw": true,
+      "current_subjects_observed": [
+        "cs.RO",
+        "cs.SE"
+      ],
+      "section": "Submission history / Subjects",
+      "exact_first_announcement_at": null,
+      "membership_at_cutoff": null,
+      "interpretation": "Current abstract page repeats submission time; no exact first-public-announcement timestamp or category membership timeline verified."
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-29T23:53:22Z",
+      "source_ref": {
+        "entry_index": 10,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00298",
+      "url": "https://arxiv.org/abs/1907.00298",
+      "page_attempts": 1,
+      "observation_date": "2026-10-10",
+      "retrieval_method": "Web reader; may return cached representation, not fresh provider bytes",
+      "page_status": "READ",
+      "v1_submission_timestamp_observed": "2019-06-29T23:53:22Z",
+      "submission_matches_frozen_raw": true,
+      "current_subjects_observed": [
+        "cs.PL",
+        "cs.FL",
+        "cs.LO",
+        "cs.SE"
+      ],
+      "section": "Submission history / Subjects",
+      "exact_first_announcement_at": null,
+      "membership_at_cutoff": null,
+      "interpretation": "Current abstract page repeats submission time; no exact first-public-announcement timestamp or category membership timeline verified."
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-30T13:04:27Z",
+      "source_ref": {
+        "entry_index": 31,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00376",
+      "url": "https://arxiv.org/abs/1907.00376",
+      "page_attempts": 1,
+      "observation_date": "2026-10-10",
+      "retrieval_method": "Web reader; may return cached representation, not fresh provider bytes",
+      "page_status": "READ",
+      "v1_submission_timestamp_observed": "2019-06-30T13:04:27Z",
+      "submission_matches_frozen_raw": true,
+      "current_subjects_observed": [
+        "cs.SE"
+      ],
+      "section": "Submission history / Subjects",
+      "exact_first_announcement_at": null,
+      "membership_at_cutoff": null,
+      "interpretation": "Current abstract page repeats submission time; no exact first-public-announcement timestamp or category membership timeline verified."
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-30T21:29:48Z",
+      "source_ref": {
+        "entry_index": 84,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00468",
+      "url": "https://arxiv.org/abs/1907.00468",
+      "page_attempts": 1,
+      "observation_date": "2026-10-10",
+      "retrieval_method": "Web reader; may return cached representation, not fresh provider bytes",
+      "page_status": "READ",
+      "v1_submission_timestamp_observed": "2019-06-30T21:29:48Z",
+      "submission_matches_frozen_raw": true,
+      "current_subjects_observed": [
+        "cs.NI",
+        "cs.PF",
+        "cs.SE",
+        "eess.SP"
+      ],
+      "section": "Submission history / Subjects",
+      "exact_first_announcement_at": null,
+      "membership_at_cutoff": null,
+      "interpretation": "Current abstract page repeats submission time; no exact first-public-announcement timestamp or category membership timeline verified."
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-28T07:21:51Z",
+      "source_ref": {
+        "entry_index": 3,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00677",
+      "url": "https://arxiv.org/abs/1907.00677",
+      "page_attempts": 1,
+      "observation_date": "2026-10-10",
+      "retrieval_method": "Web reader; may return cached representation, not fresh provider bytes",
+      "page_status": "READ",
+      "v1_submission_timestamp_observed": "2019-06-28T07:21:51Z",
+      "submission_matches_frozen_raw": true,
+      "current_subjects_observed": [
+        "cs.SE"
+      ],
+      "section": "Submission history / Subjects",
+      "exact_first_announcement_at": null,
+      "membership_at_cutoff": null,
+      "interpretation": "Current abstract page repeats submission time; no exact first-public-announcement timestamp or category membership timeline verified."
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-27T18:44:14Z",
+      "source_ref": {
+        "entry_index": 11,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.03773",
+      "url": "https://arxiv.org/abs/1907.03773",
+      "page_attempts": 1,
+      "observation_date": "2026-10-10",
+      "retrieval_method": "Web reader; may return cached representation, not fresh provider bytes",
+      "page_status": "READ",
+      "v1_submission_timestamp_observed": "2019-06-27T18:44:14Z",
+      "submission_matches_frozen_raw": true,
+      "current_subjects_observed": [
+        "cs.NE",
+        "cs.SE"
+      ],
+      "section": "Submission history / Subjects",
+      "exact_first_announcement_at": null,
+      "membership_at_cutoff": null,
+      "interpretation": "Current abstract page repeats submission time; no exact first-public-announcement timestamp or category membership timeline verified."
+    },
+    {
+      "id_month": "2019-08",
+      "published_at": "2019-03-07T08:37:23Z",
+      "source_ref": {
+        "entry_index": 16,
+        "file": "raw/v1-0100.xml"
+      },
+      "work_id": "1908.04451",
+      "url": "https://arxiv.org/abs/1908.04451",
+      "page_attempts": 1,
+      "observation_date": "2026-10-10",
+      "retrieval_method": "Web reader; may return cached representation, not fresh provider bytes",
+      "page_status": "WEB_READER_CACHE_MISS",
+      "v1_submission_timestamp_observed": null,
+      "submission_matches_frozen_raw": null,
+      "current_subjects_observed": null,
+      "section": "Submission history / Subjects",
+      "exact_first_announcement_at": null,
+      "membership_at_cutoff": null,
+      "interpretation": "Tool failed to fetch cached page; not evidence of provider absence. Raw XML observation retained."
+    }
+  ],
+  "primary_sources": [
+    {
+      "id": "HA-S01",
+      "url": "https://info.arxiv.org/help/availability.html",
+      "section": "Availability of submissions",
+      "finding": "Final identifier is assigned on announcement; identifier month follows first announcement, which can differ from submission month.",
+      "limit": "Current policy, not a dated 2019 event log. No exact historical timestamp inferred.",
+      "inspected_on": "2026-10-10",
+      "evidence_kind": "Current official documentation, interpreted conservatively"
+    },
+    {
+      "id": "HA-S02",
+      "url": "https://info.arxiv.org/help/arxiv_identifier.html",
+      "section": "New identifier / motivation",
+      "finding": "Identifier does not encode classification; categories can change after announcement.",
+      "limit": "Does not enumerate historical category members.",
+      "inspected_on": "2026-10-10",
+      "evidence_kind": "Current official documentation, interpreted conservatively"
+    },
+    {
+      "id": "HA-S03",
+      "url": "https://info.arxiv.org/help/oa/index.html",
+      "section": "Item = Article / Datestamps / Sets / Chronology",
+      "finding": "Exposes latest item metadata; arXivRaw has version history. OAI datestamp is metadata last modification, not a submission-date filter.",
+      "limit": "Live OAI until cutoff does not reconstruct the state at cutoff; no OAI request made.",
+      "inspected_on": "2026-10-10",
+      "evidence_kind": "Current official documentation, interpreted conservatively"
+    },
+    {
+      "id": "HA-S04",
+      "url": "https://info.arxiv.org/help/rss.html",
+      "section": "RSS news feeds",
+      "finding": "Describes daily category news feeds.",
+      "limit": "No verified dated 2019 archive or completeness manifest identified in this screen.",
+      "inspected_on": "2026-10-10",
+      "evidence_kind": "Current official documentation, interpreted conservatively"
+    },
+    {
+      "id": "HA-S05",
+      "url": "https://info.arxiv.org/help/cross.html",
+      "section": "Crosslisting articles",
+      "finding": "Cross-lists can be added; inappropriate cross-lists can be removed.",
+      "limit": "No public category-membership event ledger verified.",
+      "inspected_on": "2026-10-10",
+      "evidence_kind": "Current official documentation, interpreted conservatively"
+    },
+    {
+      "id": "HA-S06",
+      "url": "https://info.arxiv.org/help/bulk_data.html",
+      "section": "Metadata / full text",
+      "finding": "Lists live OAI/API/RSS metadata interfaces and bulk full-text routes.",
+      "limit": "No compatible frozen 2019 category metadata capture identified by this documentation screen.",
+      "inspected_on": "2026-10-10",
+      "evidence_kind": "Current official documentation, interpreted conservatively"
+    },
+    {
+      "id": "HA-S07",
+      "url": "https://info.arxiv.org/help/api/user-manual.html",
+      "section": "Entry metadata / published and updated",
+      "finding": "Published is v1 submission and updated is the retrieved version submission.",
+      "limit": "Submission date and exact version retrieval alone do not prove public availability at cutoff.",
+      "inspected_on": "2026-10-10",
+      "evidence_kind": "Current official documentation, interpreted conservatively"
+    }
+  ],
+  "search_queries": [
+    {
+      "q": "site:info.arxiv.org historical category metadata snapshot announcement date arxivRaw",
+      "phase": "Exploratory documentation screen before preregistration"
+    },
+    {
+      "q": "site:info.arxiv.org arxiv identifier month original submission announcement",
+      "phase": "Exploratory documentation screen before preregistration"
+    },
+    {
+      "q": "site:info.arxiv.org \"historical\" \"category\" \"snapshot\"",
+      "phase": "After preregistration"
+    },
+    {
+      "q": "site:info.arxiv.org \"announcement\" \"archive\" \"2019\"",
+      "phase": "After preregistration"
+    }
+  ],
+  "search_result": "No qualifying cutoff-dated cs.SE snapshot or complete announcement/membership ledger verified. Searches included irrelevant papers and roadmap snippets; snippets were not treated as snapshot evidence.",
+  "limitations": [
+    "Bounded official-source screen, not an exhaustive archive search or proof no archive exists.",
+    "No raw HTML captures or provider response checksums; web-reader pages may be cached. Observations are document-level corroboration.",
+    "No 2019 category denominator, excluded-member enumeration, precise historical announcement timestamps or cutoff vocabulary freeze established.",
+    "No provider API/OAI request, corpus reacquisition, holdout query, PDF transfer or provider change."
+  ],
+  "population_fitness": {
+    "current_query_completeness": "VERIFIED_BY_OFFLINE_REPLAY",
+    "historical_membership": "UNRESOLVED",
+    "members_lost_from_current_query": "UNKNOWN_NOT_ZERO",
+    "historical_denominator": null,
+    "nine_ID_removal_repairs_population": false
+  },
+  "gate": {
+    "E3": "NOT_PASSED",
+    "research_exit_70": "NOT_PASSED",
+    "D07": "PROPOSED",
+    "D08": "PROPOSED",
+    "D09": "PROPOSED"
+  }
+}

@@ -1,5 +1,9 @@
 # Research Exit evidence spike
 
+## Reviewer follow-up — 10 October 2026
+
+[English report](../../docs/english/research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md) / [Báo cáo tiếng Việt](../../docs/vietnamese/research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md): 17 unit tests pass; [fresh offline replay and direct XML cross-check](runs/20261010-development-01/reviewer-replay-20261010-115331/verification.json) reproduce the original bytes and verify 14 frozen inputs. [Bounded historical source screen](runs/20261010-historical-screen-01/source-screen-results.json): eight readable abstract pages corroborate submission dates; one web-reader cache miss. No qualifying historical population capture was verified. E3/#70 remain NOT PASSED; this is same-host agent replay, not independent human validation.
+
 ## Latest measured run — 10 October 2026
 
 [English report](../../docs/english/research/11_REAL_CORPUS_AUDIT_20261010.md) / [Báo cáo tiếng Việt](../../docs/vietnamese/research/11_REAL_CORPUS_AUDIT_20261010.md): AM-02 returned HTTP 301 → HTTPS 200 Atom; acquired and audited 598 distinct development works and 598 v1 records. [Frozen run](runs/20261010-development-01/acquisition.json), [offline audit](runs/20261010-development-01/replay-1/audit.json), [replay verification](runs/20261010-development-01/replay-verification.json). E3 and Research Exit remain NOT PASSED. The older outcome below describes the preserved 27 September attempts.

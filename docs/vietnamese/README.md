@@ -53,6 +53,8 @@ Chuẩn bị nghiên cứu:
 - [Bằng chứng Research Exit](research/06_RESEARCH_EXIT_EVIDENCE.md)
 - [Sàng lọc provider và kết quả truy cập](research/07_PROVIDER_AUDIT_RESULTS.md)
 - [Gói D07/D08 và blockers Research Exit](research/08_D07_D08_EXIT_PACKET.md)
+- [Audit corpus thật và handoff B → A](research/11_REAL_CORPUS_AUDIT_20261010.md)
+- [Replay theo review và screen nguồn lịch sử](research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md)
 
 Các bản tiếng Anh và tiếng Việt phải tương đương về **nội dung**, không phải từng câu từng chữ. Decision ID, ngày, trạng thái, yêu cầu và ý nghĩa kỹ thuật phải giữ nhất quán giữa hai bản dịch.
 

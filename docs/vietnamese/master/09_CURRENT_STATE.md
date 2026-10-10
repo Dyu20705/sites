@@ -2,13 +2,14 @@
 
 ## Xác minh hiện tại — 10/10/2026
 
-Tiếp tục Issue #65 tại local trên research/exit-evidence-20260927; đầu phiên ở 3c23a44ce0f11e243b0e0ecafef2faa93866d123, khớp nhánh remote sau fetch. [Evidence thực đo và handoff](../research/11_REAL_CORPUS_AUDIT_20261010.md) được chuẩn bị tại local; không claim artifacts mới đã có trên remote PR/default branch.
+Tiếp tục Issue #65 trên research/exit-evidence-20260927. [Evidence corpus thực đo](../research/11_REAL_CORPUS_AUDIT_20261010.md) đã push tại commit 670bcee và báo cáo ở [#65](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097159176). Fetch mới và reviewer replay local bắt đầu tại cùng revision remote đó; đã xác minh PR #75 OPEN/Draft. [Screen nguồn lịch sử](../research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md) ghi kết quả tiếp theo, chưa phải owner acceptance hoặc merge vào default branch.
 
 - AM-02: HTTP 301 sang HTTPS, rồi 200 Atom, reported_total=598.
 - Corpus development: 598 current-query works riêng biệt, đúng 598 bản v1; xác minh hashes, pagination và completeness của query hiện tại.
 - Bảy field lõi đã kiểm tra không có missing/invalid ở sáu bins; monthly counts 91/79/97/103/122/106. Revisions: 161 current IDs trên v1, 55 title thay đổi, bốn bộ category thay đổi.
 - Hai replay offline trên cùng host khớp; cross-check XML trực tiếp xác minh đủ 598 records. Chín IDs có tháng ID sau cutoff dù submission trước đó; đây là temporal counterevidence, không phải đo announcement date cụ thể.
-- E3 / denominator lịch sử còn unresolved; Research Exit #70 NOT PASSED. D05/D06 ACCEPTED; D07/D08/D09 PROPOSED. Chưa claim real signal comparison, accepted freeze, holdout evaluation, product implementation/demo hoặc user validation. WIP giữ #64 + #65; deadline 17/10/2026.
+- Follow-up: 17 unit tests pass; replay mới trên cùng host và cross-check XML trực tiếp khớp bytes gốc. Tám trong chín trang abstract xác nhận submission dates; giữ một lỗi cache của web reader. Screen có giới hạn chưa xác minh category capture có ngày tại cutoff hoặc membership ledger đầy đủ.
+- E3 / denominator lịch sử còn unresolved; Research Exit #70 NOT PASSED. D05/D06 ACCEPTED; D07/D08/D09 PROPOSED. Chưa claim real signal comparison, accepted freeze, holdout evaluation, product implementation/demo hoặc user validation. WIP giữ #64 + #65. [Checkpoint control mới nhất](https://github.com/Dyu20705/sites/issues/70#issuecomment-6096887546) đặt hard deadline demo-ready là 15/10/2026 (trước 16/10), thay mốc execution 17/10; chưa accept research gate.
 
 ## Xác minh lịch sử — 27/09/2026 (đã thay thế)
 
