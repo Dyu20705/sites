@@ -1,5 +1,7 @@
 # 08 — D07/D08 decision packets and Research Exit review
 
+**Latest critical-path update — 10 October:** [real D08 development results and #70 alternatives](14_D08_DEVELOPMENT_EVALUATION_20261010.md) supersede the missing-signal/handoff status below. #65 investigation completed; n=0/1/2/1/4/1, N=91/79/97/103/122/106; independent quality NOT MEASURED. D07/D08/D09 PROPOSED, E3/#70 NOT PASSED. Retrospective scope remains unaccepted; deadline 15 October. Earlier sections are dated historical proposals, not the current execution schedule.
+
 **Update — 10 October 2026:** [Real-corpus audit and B → A handoff](11_REAL_CORPUS_AUDIT_20261010.md) supersede the access/sample gaps below: AM-02 succeeded; 598 current works and 598 v1 records were acquired and audited. E3/#70 remain NOT PASSED; D07/D08/D09 remain PROPOSED. The 27 September material below is historical evidence.
 
 **PROPOSED — 27 September 2026. Recommendation: keep #70 NOT PASSED.** This packet is reviewable as an insufficient-evidence outcome. It is **not** ready for approval as a frozen experiment contract. D05/D06 remain ACCEPTED; D07/D08/D09 remain PROPOSED.

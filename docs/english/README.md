@@ -56,6 +56,7 @@ Research preparation:
 - [Real corpus audit and B → A handoff](research/11_REAL_CORPUS_AUDIT_20261010.md)
 - [Reviewer replay and historical source screen](research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md)
 - [Issue #65 review response and B → A handoff](research/13_ISSUE65_REVIEW_HANDOFF_20261010.md)
+- [D08 real development evaluation and owner decision packet](research/14_D08_DEVELOPMENT_EVALUATION_20261010.md)
 
 The English and Vietnamese sets are equivalent in meaning, not sentence-by-sentence wording. Decision IDs, dates, statuses, requirements, and technical meaning must remain consistent across both versions.
 

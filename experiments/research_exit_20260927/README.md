@@ -1,5 +1,18 @@
 # Research Exit evidence spike
 
+## Critical-path execution — 10 October 2026
+
+[English](../../docs/english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md) / [Tiếng Việt](../../docs/vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md): #65 completed after owner acceptance and substantive A acknowledgment. Frozen 598-work development experiment measured monthly fuzzing title counts **0/1/2/1/4/1**, with denominators **91/79/97/103/122/106**. The [corrected declaration](runs/20261010-signal-01/declaration-corrected.json) discloses the agent's earlier escaping misinterpretation; no original config or lexical rule changed. [Measurements](runs/20261010-signal-01/corrected-replay-1/measurements.json), [10 synthetic controlled checks](runs/20261010-signal-01/corrected-replay-1/controlled-checks.json), [verification](runs/20261010-signal-01/verification.json) and [unannotated pilot proposal](runs/20261010-signal-01/reference-pilot-plan.json) distinguish real observations, perturbations and NOT MEASURED reference quality. 28 unit tests and 15 legacy synthetic tests pass; two corrected separate processes reproduce semantic bytes, with direct-XML arithmetic and lineage verification. Same-host agent verification only. No holdout/product/independent human evaluation. E3/#70 NOT PASSED; D07/D08/D09 PROPOSED; deadline 15 October.
+
+New offline evaluator (fresh output directory required):
+
+```powershell
+python experiments/research_exit_20260927/signal_evaluator.py --declaration experiments/research_exit_20260927/runs/20261010-signal-01/declaration-corrected.json --output <new-directory>/replay
+python experiments/research_exit_20260927/validate_signal.py --run experiments/research_exit_20260927/runs/20261010-signal-01 --output <new-directory>/verification.json
+```
+
+The sections below are earlier dated snapshots; their pending-handoff/no-signal/access-failure claims are superseded by this update. Do not run the legacy `validate.py` to overwrite frozen `results/validation.json`; the new verifier reads existing artifacts and writes exclusively to a new path.
+
 ## Review response / handoff — 10 October 2026
 
 [English](../../docs/english/research/13_ISSUE65_REVIEW_HANDOFF_20261010.md) / [Tiếng Việt](../../docs/vietnamese/research/13_ISSUE65_REVIEW_HANDOFF_20261010.md): [B → A handoff sent to #64](https://github.com/Dyu20705/sites/issues/64#issuecomment-6097343828), acknowledgment pending. Missing search execution metadata and independent preregistration timing evidence are acknowledged; the [future execution template](runs/20261010-review-response-01/future-search-execution-template.json) is NOT EXECUTED. Investigation completion and research-scope decisions await owner review; E3/#70 remain NOT PASSED.

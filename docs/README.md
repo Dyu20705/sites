@@ -4,6 +4,8 @@ This directory contains the English and Vietnamese documentation for SITES, incl
 
 ## Languages
 
+Latest critical-path evidence: [D08 development evaluation (EN)](english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md) / [thực nghiệm D08 (VI)](vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md). #65 investigation completed; real count/share measured; D07/D08/D09 still PROPOSED, E3/#70 NOT PASSED. Demo-ready deadline: 15 October 2026.
+
 Research Exit evidence from 27 September is available in [English](english/research/08_D07_D08_EXIT_PACKET.md) and [Tiếng Việt](vietnamese/research/08_D07_D08_EXIT_PACKET.md), with shared [experiment artifacts](../experiments/research_exit_20260927/README.md). It records insufficient evidence; Research Entry has passed but research-ready has not.
 
 | Language | Project introduction | Detailed M0/M1 set | Status |

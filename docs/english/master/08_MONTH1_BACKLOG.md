@@ -1,6 +1,8 @@
 # 08 — Month-1 Gate Plan
 
-**Deadline:** 17 October 2026.
+**Hard demo-ready deadline:** 15 October 2026, per [owner rebaseline](https://github.com/Dyu20705/sites/issues/70#issuecomment-6096887546).
+
+**Critical path, 10 October:** #65 investigation completed after owner acceptance + A acknowledgment; #64 has [real development count/share and decision evidence](../research/14_D08_DEVELOPMENT_EVALUATION_20261010.md). #70 remains NOT PASSED; D07/D08/D09 PROPOSED. Active execution: #64; no third item. Owner scope/D07/D08/freeze decision → explicit Research Exit → D09/preimplementation → one vertical slice → evaluation/reviewer replay → demo-ready by 15 October. Advance immediately when conditions pass. All original phase/allocation and 27 September schedule statements below are historical, superseded by this rebaseline; do not allocate remaining work through 17 October.
 
 **WIP limit:** no more than two active work items.
 
@@ -31,7 +33,7 @@ Research Entry passed through #68 on 23 September after PR #74 merged. The two i
 | Package | Issue | Deliverables and completion boundary |
 | --- | --- | --- |
 | A — Evidence and candidate signals | [#64](https://github.com/Dyu20705/sites/issues/64) — OPEN, ACTIVE | R1/R2/R6 ledger, definitions and counterevidence, signal comparison, case/control and freeze proposal, limitations, supported D08 proposal or explicit insufficient-evidence report |
-| B — Source and corpus feasibility | [#65](https://github.com/Dyu20705/sites/issues/65) — OPEN, ACTIVE | R3/R4/R7 provider screening, bounded sample/query/snapshot record, field mapping, missingness/coverage, temporal and access/replay evidence, supported D07 proposal or explicit insufficient-evidence report |
+| B — Source and corpus feasibility | [#65](https://github.com/Dyu20705/sites/issues/65) — CLOSED, COMPLETED investigation | Owner-accepted insufficient-evidence outcome; A acknowledged field/denominator/temporal limits. D07 remains PROPOSED |
 
 The [authoritative #68 decision](https://github.com/Dyu20705/sites/issues/68#issuecomment-5795799412) establishes exactly #64 + #65 as execution WIP. The [27 September evidence packet](../research/08_D07_D08_EXIT_PACKET.md) records insufficient evidence: acquisition is blocked and the experiment cannot be frozen. #70 remains NOT PASSED. #69 remains tracking only; no third execution item is created.
 

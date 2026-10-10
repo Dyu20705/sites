@@ -1,0 +1,24 @@
+{
+  "status": "LIMITED_PRIMARY_SOURCE_RECHECK_NOT_SYSTEMATIC_SEARCH",
+  "date": "2026-10-10",
+  "service": "web.run open",
+  "execution_start_utc": null,
+  "execution_end_utc": null,
+  "timestamp_limitation": "Exact per-request times were not captured prospectively; not reconstructed or backdated.",
+  "search_queries": [],
+  "filters": "NOT_APPLICABLE_DIRECT_URL_OPEN",
+  "direct_open_operations": 7,
+  "distinct_requested_urls": 6,
+  "search_result_count": null,
+  "search_result_count_reason": "No search operation; direct source recheck only.",
+  "corpus_or_holdout_requests": 0,
+  "raw_web_capture": "NOT_RETAINED; reader representations may be cached",
+  "sources": [
+    {"url":"https://www.cs.cornell.edu/home/kleinber/bhs.pdf","attempts":2,"outcome":"FIRST_421_MISDIRECTED_REQUEST_THEN_INTERNAL_ERROR","depth":"NO_NEW_CONTENT","use":"EL-002 remains carried historical inspection; no new verification"},
+    {"url":"https://arxiv.org/abs/1812.00140v1","attempts":1,"outcome":"READABLE","depth":"abstract, title, authors, submission history","use":"Independent 2018 case context only; no trend label or complete dictionary"},
+    {"url":"https://doi.org/10.1007/s11192-026-05744-5","attempts":1,"outcome":"TOOL_NOT_ACCESSIBLE","depth":"NONE","use":"Direct publisher URL inspected subsequently"},
+    {"url":"https://info.arxiv.org/help/availability.html","attempts":1,"outcome":"READABLE","depth":"submission/public posting and identifier assignment, lines 168-176","use":"Current policy corroborates semantic distinction, not exact historical dates or complete population"},
+    {"url":"https://link.springer.com/article/10.1007/s11192-026-05744-5","attempts":1,"outcome":"READABLE","depth":"title/authors/date, abstract and introduction, lines 11-110","use":"Close lexical/normalization/burst/human-plot evaluation prior art; not validation of SITES and not independent reference evidence for its corpus"},
+    {"url":"https://arxiv.org/html/1503.00673","attempts":1,"outcome":"READABLE_METADATA_RETURNED","depth":"No additional full-text section extraction this execution","use":"No new substantive claim; earlier EL-001 inspection retained"}
+  ]
+}

@@ -1,5 +1,7 @@
 # 09 — Research Master and Research Exit Review (10 October 2026)
 
+**Subsequent critical-path evidence:** [D08 real development evaluation](14_D08_DEVELOPMENT_EVALUATION_20261010.md) supersedes the missing real-corpus/signal and open-handoff claims in this earlier dated review. #65 completed; #64 has real count/share. Independent reference quality and as-of validity remain unresolved; D07/D08/D09 PROPOSED, E3/#70 NOT PASSED; demo-ready deadline 15 October. The prior literature synthesis remains useful historical evidence.
+
 **Status: evidence synthesis complete for the inspected sources; empirical Research Exit NOT PASSED.** This is a dated, reviewable extension of the 27 September PR #75 evidence packet, not a D07/D08 acceptance, not a product result, and not a claim of exhaustive prior-art coverage. Research Entry #68 PASSED; #70 is the authoritative Research Exit gate. D05/D06 ACCEPTED, D07/D08/D09 PROPOSED. No holdout was inspected.
 
 ## Decision question, construct and boundary

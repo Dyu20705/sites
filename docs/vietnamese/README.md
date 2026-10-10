@@ -56,6 +56,7 @@ Chuẩn bị nghiên cứu:
 - [Audit corpus thật và handoff B → A](research/11_REAL_CORPUS_AUDIT_20261010.md)
 - [Replay theo review và screen nguồn lịch sử](research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md)
 - [Phản hồi review #65 và handoff B → A](research/13_ISSUE65_REVIEW_HANDOFF_20261010.md)
+- [Thực nghiệm development D08 và gói quyết định cho owner](research/14_D08_DEVELOPMENT_EVALUATION_20261010.md)
 
 Các bản tiếng Anh và tiếng Việt phải tương đương về **nội dung**, không phải từng câu từng chữ. Decision ID, ngày, trạng thái, yêu cầu và ý nghĩa kỹ thuật phải giữ nhất quán giữa hai bản dịch.
 

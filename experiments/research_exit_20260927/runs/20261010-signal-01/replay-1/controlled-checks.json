@@ -1,0 +1,246 @@
+[
+  {
+    "actual": [
+      [
+        10,
+        100,
+        0.1
+      ],
+      [
+        20,
+        200,
+        0.1
+      ]
+    ],
+    "case": "corpus_growth",
+    "evidence_type": "CONTROLLED_SYNTHETIC",
+    "expected": [
+      [
+        10,
+        100,
+        0.1
+      ],
+      [
+        20,
+        200,
+        0.1
+      ]
+    ],
+    "implication": "Count doubles; share cancels proportional corpus growth.",
+    "status": "PASS"
+  },
+  {
+    "actual": [
+      [
+        10,
+        100,
+        0.1
+      ],
+      [
+        10,
+        200,
+        0.05
+      ]
+    ],
+    "case": "denominator_drift",
+    "evidence_type": "CONTROLLED_SYNTHETIC",
+    "expected": [
+      [
+        10,
+        100,
+        0.1
+      ],
+      [
+        10,
+        200,
+        0.05
+      ]
+    ],
+    "implication": "Share changes with denominator composition; no topic decline established.",
+    "status": "PASS"
+  },
+  {
+    "actual": [
+      [
+        1,
+        10,
+        0.1
+      ],
+      [
+        1,
+        10,
+        0.1
+      ]
+    ],
+    "case": "duplicates_revisions",
+    "evidence_type": "CONTROLLED_SYNTHETIC",
+    "expected": [
+      [
+        1,
+        10,
+        0.1
+      ],
+      [
+        1,
+        10,
+        0.1
+      ]
+    ],
+    "implication": "Repeated observations and v2 do not add contributions.",
+    "status": "PASS"
+  },
+  {
+    "actual": [
+      [
+        null,
+        3,
+        null
+      ]
+    ],
+    "case": "missing_invalid_title",
+    "evidence_type": "CONTROLLED_SYNTHETIC",
+    "expected": [
+      [
+        null,
+        3,
+        null
+      ]
+    ],
+    "implication": "Two unknown fields remain in N; n/p abstain, known matches=1, bounds 1/3..1.",
+    "status": "PASS"
+  },
+  {
+    "actual": [
+      [
+        1,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.5
+      ],
+      [
+        0,
+        0,
+        null
+      ]
+    ],
+    "case": "sparse_small_empty",
+    "evidence_type": "CONTROLLED_SYNTHETIC",
+    "expected": [
+      [
+        1,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.5
+      ],
+      [
+        0,
+        0,
+        null
+      ]
+    ],
+    "implication": "Small N is unstable; empty share undefined, no trend labels.",
+    "status": "PASS"
+  },
+  {
+    "actual": [
+      [
+        1,
+        1,
+        1.0
+      ],
+      [
+        0,
+        1,
+        0.0
+      ]
+    ],
+    "case": "vocabulary_alias_drift",
+    "evidence_type": "CONTROLLED_SYNTHETIC",
+    "expected": [
+      [
+        1,
+        1,
+        1.0
+      ],
+      [
+        0,
+        1,
+        0.0
+      ]
+    ],
+    "implication": "Stipulated same topic renamed; lexical rule misses alias. Recall not measured.",
+    "status": "PASS"
+  },
+  {
+    "actual": [
+      [
+        1,
+        1,
+        1.0
+      ]
+    ],
+    "case": "delayed_availability",
+    "evidence_type": "CONTROLLED_SYNTHETIC",
+    "expected": [
+      [
+        1,
+        1,
+        1.0
+      ]
+    ],
+    "implication": "Retrospective event-bin includes delayed item; synthetic as-of checks exclude it. Not E3 evidence.",
+    "status": "PASS"
+  },
+  {
+    "actual": [
+      [
+        10,
+        100,
+        0.1
+      ],
+      [
+        10,
+        10,
+        1.0
+      ]
+    ],
+    "case": "query_selection_bias",
+    "evidence_type": "CONTROLLED_SYNTHETIC",
+    "expected": [
+      [
+        10,
+        100,
+        0.1
+      ],
+      [
+        10,
+        10,
+        1.0
+      ]
+    ],
+    "implication": "Concept-selected sample inflates share; complete selected query need not represent the field.",
+    "status": "PASS"
+  },
+  {
+    "case": "category_mutation",
+    "current_category_count": 1,
+    "evidence_type": "CONTROLLED_SYNTHETIC",
+    "implication": "Category rule changes numerator/denominator; neither reconstructs removed historical members.",
+    "status": "PASS",
+    "v1_category_count": 0
+  },
+  {
+    "case": "cutoff_leakage",
+    "evidence_type": "CONTROLLED_SYNTHETIC",
+    "implication": "Future event excluded; stipulated late availability/membership excluded and future vocabulary rejected by existing as-of fixture. Real availability remains unknown.",
+    "status": "PASS"
+  }
+]

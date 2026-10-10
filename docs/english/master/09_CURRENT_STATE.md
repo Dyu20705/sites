@@ -1,6 +1,14 @@
 # 09 — Verified Current State
 
-## Current verification — 10 October 2026
+## Latest critical-path verification — 10 October 2026
+
+Starting revision `53a50ec806b2d6d5fee4112554a6826aeaea852b`, correct clean branch aligned with a fresh fetch; PR #75 OPEN/Draft; #64/#65/#70 initially OPEN. [A acknowledgment](https://github.com/Dyu20705/sites/issues/64#issuecomment-6097520949) followed an actual 17-test/replay/XML review. The [owner condition](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097421846) was met; [#65 completed](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097523060) with reason `completed`. This closes the insufficient-evidence investigation only. #64 is the active execution item; #70 is a gate.
+
+[D08 development evidence and decision packet](../research/14_D08_DEVELOPMENT_EVALUATION_20261010.md): frozen 598 works, monthly n **0/1/2/1/4/1**, N **91/79/97/103/122/106**; 9/598 title matches under the unchanged rule. Exact-fuzzing sensitivity gives five; no independent reference quality or trend labels. 28 unit tests, 15 legacy synthetic tests and ten controlled scenarios pass; two corrected same-host processes reproduce semantic results and direct XML verifies arithmetic/lineage. A mistaken escaping interpretation in initial metadata is corrected transparently without changing input/rule/results. This is agent verification, not independent human validation.
+
+**D05/D06 ACCEPTED; D07/D08/D09 PROPOSED. E3/#70 NOT PASSED.** Historical membership/public availability/vocabulary, independent quality/support criteria and accepted freeze remain unresolved. Retrospective-only scope is a proposal awaiting owner acceptance. No holdout, product implementation/demo, user validation, merge, release or deployment. Hard demo-ready deadline **15 October 2026**; transfer immediately when accepted gates permit, without waiting for a calendar phase.
+
+## Earlier verification — 10 October 2026 (superseded status snapshot)
 
 Issue #65 continuation on research/exit-evidence-20260927. The [measured corpus evidence](../research/11_REAL_CORPUS_AUDIT_20261010.md) was pushed in commit 670bcee and reported in [#65](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097159176). A fresh fetch and local reviewer replay began at that same remote revision; PR #75 was verified OPEN/Draft. The [historical source screen](../research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md) records the follow-up, not owner acceptance or a default-branch merge.
 

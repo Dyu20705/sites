@@ -1,0 +1,18 @@
+{
+  "code_sha256": {
+    "acquire.py": "cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9",
+    "checks.py": "3ad3d13b6de01e16d87674f8fc81fa5cb0dc1bd13bff52662803ab048de13625",
+    "offline_audit.py": "d26cdc19ac5cb9c3c49da8bb6f92ab7d37d3ee76ffc5829c26140fcb7833a7a2",
+    "signal_evaluator.py": "0c6da9cc55cac176ad30a9989f2f09bcc1dbeaa3a55cb1a80b96c3659175cb32"
+  },
+  "declaration_sha256": "9764e840c97cc3b49bf5356f434a19a50ff0c37ba4b803ab263879ebc0e33043",
+  "ended_at_utc": "2026-10-10T12:37:29.419346+00:00",
+  "outputs_sha256": {
+    "controlled-checks.json": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c",
+    "measurements.json": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.7",
+  "scope": "Same-host agent execution; no network, holdout or independent scientific validation",
+  "started_at_utc": "2026-10-10T12:37:29.315238+00:00"
+}

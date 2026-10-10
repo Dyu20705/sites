@@ -1,5 +1,7 @@
 # 08 — Gói quyết định D07/D08 và review Research Exit
 
+**Critical-path update mới nhất — 10/10:** [real D08 development results và alternatives #70](14_D08_DEVELOPMENT_EVALUATION_20261010.md) thay trạng thái thiếu signal/handoff bên dưới. #65 investigation completed; n=0/1/2/1/4/1, N=91/79/97/103/122/106; independent quality NOT MEASURED. D07/D08/D09 PROPOSED, E3/#70 NOT PASSED. Retrospective scope chưa accepted; deadline 15/10. Các phần trước là historical proposals có ngày, không phải current execution schedule.
+
 **Cập nhật — 10/10/2026:** [Audit corpus thật và B → A handoff](11_REAL_CORPUS_AUDIT_20261010.md) thay thế gaps access/sample bên dưới: AM-02 thành công; đã thu thập và audit 598 current works cùng 598 bản v1. E3/#70 giữ NOT PASSED; D07/D08/D09 giữ PROPOSED. Nội dung 27/09 bên dưới là evidence lịch sử.
 
 **PROPOSED — 27/09/2026. Khuyến nghị: giữ #70 NOT PASSED.** Gói này có thể review như một kết quả thiếu bằng chứng; **chưa** sẵn sàng chấp thuận thành experiment contract đã freeze. D05/D06 giữ ACCEPTED; D07/D08/D09 giữ PROPOSED.

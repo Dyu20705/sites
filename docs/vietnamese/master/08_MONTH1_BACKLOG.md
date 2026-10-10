@@ -1,6 +1,9 @@
 # 08 — Kế hoạch Month 1 theo điểm kiểm soát
 
-**Deadline:** 17/10/2026.  
+**Hard deadline demo-ready:** 15/10/2026, theo [owner rebaseline](https://github.com/Dyu20705/sites/issues/70#issuecomment-6096887546).
+
+**Critical path ngày 10/10:** #65 investigation completed sau owner acceptance + A acknowledgment; #64 có [real development count/share và decision evidence](../research/14_D08_DEVELOPMENT_EVALUATION_20261010.md). #70 NOT PASSED; D07/D08/D09 PROPOSED. Execution active: #64; không có item thứ ba. Owner quyết định scope/D07/D08/freeze → Research Exit rõ ràng → D09/preimplementation → một vertical slice → evaluation/reviewer replay → demo-ready trước hoặc trong 15/10. Đủ điều kiện thì chuyển ngay. Mọi phase/allocation gốc và phát biểu lịch ngày 27/09 phía dưới là lịch sử đã bị rebaseline thay thế; không phân bổ công việc còn lại tới 17/10.
+
 **WIP limit:** tối đa 2 work item đang thực hiện.
 
 ~~~text
@@ -30,7 +33,7 @@ Research Entry đã đạt qua #68 ngày 23/09 sau khi PR #74 merge. Hai issues 
 | Package | Issue | Deliverables và ranh giới hoàn thành |
 | --- | --- | --- |
 | A — Bằng chứng và chỉ báo ứng viên | [#64](https://github.com/Dyu20705/sites/issues/64) — OPEN, ACTIVE | R1/R2/R6 ledger, định nghĩa và counterevidence, so sánh chỉ báo, case/control và freeze proposal, limitations, đề xuất D08 có căn cứ hoặc báo rõ thiếu bằng chứng |
-| B — Khả thi nguồn và corpus | [#65](https://github.com/Dyu20705/sites/issues/65) — OPEN, ACTIVE | R3/R4/R7 provider screening, sample/query/snapshot record giới hạn, field mapping, missingness/coverage, temporal và access/replay evidence, đề xuất D07 có căn cứ hoặc báo rõ thiếu bằng chứng |
+| B — Khả thi nguồn và corpus | [#65](https://github.com/Dyu20705/sites/issues/65) — CLOSED, COMPLETED investigation | Owner-accepted insufficient-evidence outcome; A acknowledged field/denominator/temporal limits. D07 giữ PROPOSED |
 
 [Quyết định #68 có thẩm quyền](https://github.com/Dyu20705/sites/issues/68#issuecomment-5795799412) xác lập WIP thực thi đúng #64 + #65. [Gói bằng chứng 27/09](../research/08_D07_D08_EXIT_PACKET.md) ghi thiếu bằng chứng: acquisition bị chặn, chưa freeze được experiment. #70 giữ NOT PASSED. #69 chỉ tracking; không tạo execution item thứ ba.
 

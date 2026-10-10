@@ -1,6 +1,14 @@
 # 09 — Trạng thái hiện tại đã xác minh
 
-## Xác minh hiện tại — 10/10/2026
+## Xác minh critical path mới nhất — 10/10/2026
+
+Bắt đầu tại `53a50ec806b2d6d5fee4112554a6826aeaea852b`, đúng branch sạch và khớp fresh fetch; PR #75 OPEN/Draft; #64/#65/#70 ban đầu OPEN. [A acknowledgment](https://github.com/Dyu20705/sites/issues/64#issuecomment-6097520949) theo sau review thực với 17 tests/replay/XML. Đã đáp ứng [owner condition](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097421846); [#65 completed](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097523060) với reason `completed`. Chỉ đóng insufficient-evidence investigation. #64 là execution item active; #70 là gate.
+
+[D08 development evidence và decision packet](../research/14_D08_DEVELOPMENT_EVALUATION_20261010.md): frozen 598 works, monthly n **0/1/2/1/4/1**, N **91/79/97/103/122/106**; 9/598 title matches theo rule không đổi. Exact-fuzzing sensitivity có năm; chưa có independent reference quality hoặc trend labels. 28 unit tests, 15 legacy synthetic tests và mười controlled scenarios pass; hai corrected same-host processes tái tạo semantic results, direct XML kiểm tra arithmetic/lineage. Metadata đầu có nhận định escaping sai, đã sửa công khai mà không đổi input/rule/results. Đây là agent verification, không independent human validation.
+
+**D05/D06 ACCEPTED; D07/D08/D09 PROPOSED. E3/#70 NOT PASSED.** Historical membership/public availability/vocabulary, independent quality/support criteria và accepted freeze còn thiếu. Retrospective-only scope chỉ là proposal chờ owner acceptance. Chưa có holdout, product implementation/demo, user validation, merge, release hoặc deploy. Hard deadline demo-ready **15/10/2026**; chuyển bước ngay khi accepted gates cho phép, không chờ calendar phase.
+
+## Xác minh trước đó — 10/10/2026 (snapshot trạng thái đã thay thế)
 
 Tiếp tục Issue #65 trên research/exit-evidence-20260927. [Evidence corpus thực đo](../research/11_REAL_CORPUS_AUDIT_20261010.md) đã push tại commit 670bcee và báo cáo ở [#65](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097159176). Fetch mới và reviewer replay local bắt đầu tại cùng revision remote đó; đã xác minh PR #75 OPEN/Draft. [Screen nguồn lịch sử](../research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md) ghi kết quả tiếp theo, chưa phải owner acceptance hoặc merge vào default branch.
 

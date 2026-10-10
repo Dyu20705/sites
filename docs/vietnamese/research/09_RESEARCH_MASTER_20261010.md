@@ -1,5 +1,7 @@
 # 09 — Research Master và review Research Exit (10/10/2026)
 
+**Critical-path evidence tiếp theo:** [D08 real development evaluation](14_D08_DEVELOPMENT_EVALUATION_20261010.md) thay các claims thiếu real corpus/signal và handoff còn mở trong dated review trước này. #65 completed; #64 có real count/share. Independent reference quality và as-of validity còn unresolved; D07/D08/D09 PROPOSED, E3/#70 NOT PASSED; deadline demo-ready 15/10. Literature synthesis trước vẫn là historical evidence hữu ích.
+
 **Trạng thái: đã tổng hợp evidence từ nguồn được kiểm tra; empirical Research Exit NOT PASSED.** Đây là cập nhật sau gói PR #75 ngày 27/09; không chấp thuận D07/D08, không tuyên bố novelty hoặc hoàn tất sản phẩm. Research Entry #68 PASSED; #70 là gate Research Exit có thẩm quyền. D05/D06 ACCEPTED; D07/D08/D09 PROPOSED; chưa dùng holdout.
 
 ## RQ, construct và claim boundary
