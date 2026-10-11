@@ -1,5 +1,7 @@
 # 14 — Thực nghiệm development D08 và gói quyết định cho owner
 
+**Audit mới nhất, 11/10/2026:** phần [Final #64 DoD audit](#final-64-dod-audit--11102026) bên dưới xác minh frozen result, ghi owner decisions còn thiếu và giới hạn của standalone helper. Giữ nguyên báo cáo development có ngày phía dưới.
+
 **Disposition owner tiếp theo:** [#70](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) nghiệm thu development-only evidence này và chọn hướng retrospective-only. [Packet 15](15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) chứa exact amendment và D07/D08/quality decisions còn PROPOSED; phần chọn A/B phía dưới là lịch sử. Independent scientific quality giữ NOT MEASURED, kể cả sau synthetic workflow test được cho phép riêng. Không đổi measurement/configuration/declaration ở đây.
 
 **VERIFIED, 10/10/2026:** #65 đã đóng `completed` sau [owner acceptance](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097421846), [A acknowledgment](https://github.com/Dyu20705/sites/issues/64#issuecomment-6097520949) và [completion record](https://github.com/Dyu20705/sites/issues/65#issuecomment-6097523060). #64 đã có count/share thực đo trong phạm vi exploratory. **D07/D08/D09 PROPOSED; E3/#70 NOT PASSED.** Packet phục vụ owner quyết định, chưa phải confirmatory contract đã freeze hoặc quyền triển khai D09. Deadline demo-ready: **15/10/2026**.
@@ -98,3 +100,81 @@ git diff --check
 ```
 
 Evaluator/tests/replay đều offline; literature-page inspection tách khỏi corpus measurement. Same-host agent verification và bilingual self-review không phải independent scientific validation, user validation, product benchmark hoặc E1–E8 acceptance. Relative links/parsing được tự động kiểm tra; external freshness, anchors và translation meaning có giới hạn riêng. Xem [bản tiếng Anh](../../english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md).
+
+## Final #64 DoD audit — 11/10/2026
+
+**Verdict: #64 READY FOR OWNER REVIEW**, theo outcome proposal mô tả hữu hạn kèm các kết luận thiếu bằng chứng rõ ràng. Không phải đóng issue, nghiệm thu scientific quality hoặc Research Exit. **E3 gốc và #70 vẫn NOT PASSED.** Không đổi threshold, formula, case, corpus, holdout hoặc trạng thái quyết định.
+
+Baseline sạch: `research/exit-evidence-20260927@ed2a21f36b8b0b05efd889279717b61dbe777eda`, upstream bằng nhau (0 ahead/0 behind), live PR head và `git ls-remote` cùng SHA. Checkout ban đầu là `dev@0e457fd146c1fe0d67b60f92ebe5d989be4c2b67`, sạch; chỉ sửa trong worktree research hiện hữu. PR #75 OPEN/Draft, không có submitted review hoặc inline review thread; #65 CLOSED/completed; #64/#69/#70 OPEN. [State/source record](../../../experiments/research_exit_20260927/runs/20261011-final-audit-01/context.json). Direction ngày 10/10 chỉ cho phép proposal hồi cứu, chưa accept exact clauses. WIP: #64; #70 là gate.
+
+### Findings và correction hữu hạn
+
+- **P0 scientific blockers giữ nguyên:** chưa xác lập population/public availability/vocabulary lịch sử; independent semantic/trend quality NOT MEASURED. Chưa có human raters, zero real annotations. SIMULATED_A/B/C trên SYN-001…027 không giải quyết các gaps này.
+- **P1 đã sửa — validator ghi đè:** `validate.py` trước đây ghi trực tiếp vào historical `results/validation.json`; nay bắt buộc `--output` mới và exclusive creation. Hai subprocess regressions chứng minh giữ bytes có sẵn và thiếu path trả exit 2. README dùng đường dẫn mới. Không sửa historical validation/checks/evaluator/config/raw/results.
+- **P1 khi tái sử dụng cho input khác — membership boundary đã xác nhận:** standalone `evaluate()` gặp thiếu `categories_current` thì loại work và trả empty bin n=0, N=0, p=null thay vì unknown membership. [Reproducer/output](../../../experiments/research_exit_20260927/runs/20261011-final-audit-01/boundary-probe.json). Đây không phải general fail-closed ingestion interface. Frozen CLI kiểm đúng hashes; cả 598 records thật có valid cs.SE membership, không exclusions, nên arithmetic đã công bố không bị ảnh hưởng. Giữ pinned evaluator. Trước broader reuse phải có membership guard/correction được version riêng và regression, hoặc giữ đúng fixed-input boundary. Không âm thầm đổi experiment contract.
+- **P2 làm rõ scope:** phương pháp tính riêng trên cùng host không phải independent scientist/machine. Bảy owner rows của packet vẫn chưa điền; giữ nguyên version/bytes của packet.
+
+### Ma trận DoD
+
+VERIFIED chỉ xác nhận quan sát ghi trong dòng; PARTIAL/UNKNOWN/BLOCKED không tự thành PASS qua amendment còn đề xuất.
+
+| Requirement | Evidence path | Verification method | Status | Finding | Smallest corrective action |
+| --- | --- | --- | --- | --- | --- |
+| A1 construct/claims | [14](14_D08_DEVELOPMENT_EVALUATION_20261010.md), [15 §1](15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) | Đối chiếu EN/VI với n/N thực | VERIFIED | Lexical prevalence của title v1 trong 598 observed works do frozen query cs.SE năm 2026 trả về, bin hồi cứu theo submission tháng 2019; không emergence/causality/semantic recall | Owner quyết exact estimand |
+| A1 prior art/alternatives/gap | [ledger](01_EVIDENCE_LEDGER.md), [EL-001–005](06_RESEARCH_EXIT_EVIDENCE.md), [09](09_RESEARCH_MASTER_20261010.md), [source review](../../../experiments/research_exit_20260927/runs/20261011-final-audit-01/context.json) | Đọc lại primary abstract/introduction/manual, kiểm provenance cũ | PARTIAL | Có main lexical method, serious count comparator và burst alternative; fetch PDF Kleinberg mới thất bại; search metadata lịch sử chưa đủ; chưa novelty | Giữ read-depth limits; chỉ tìm novelty riêng nếu có claim mới |
+| A2 arithmetic/unit/denominator | [recount](../../../experiments/research_exit_20260927/runs/20261011-final-audit-01/independent-verification.json) | Raw XML + token scanner riêng, không import project | VERIFIED | 598 distinct works gồm mọi nonmatches; N=91/79/97/103/122/106, n=0/1/2/1/4/1; 598 source refs, 9 match refs | Không cần sửa fixed experiment |
+| A2 confounders/sensitivity/negative results | [measurements](../../../experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json), [11](11_REAL_CORPUS_AUDIT_20261010.md), [execution](../../../experiments/research_exit_20260927/runs/20261011-final-audit-01/execution.json) | Tính lại năm variants, two-month sums; replay mười controls | VERIFIED | Growth/denominator/query/alias/revisions/delay/cutoff được thử; loại late IDs cho N=91/79/96/103/122/98, exact fuzzing=5; không loại selection bias | Giữ mọi kết quả; chưa căn cứ thêm signal |
+| A2 uncertain input/missing bins | [tests](../../../experiments/research_exit_20260927/test_signal_evaluator.py), [boundary](../../../experiments/research_exit_20260927/runs/20261011-final-audit-01/boundary-probe.json) | Missing/invalid title/date, zero/empty, conflicts/duplicates/partial acquisition và missing category | PARTIAL | n=0 khác unknown và empty N; complete input có sáu bins rõ; partial acquisition bị reject; helper còn giới hạn membership | Guard trước broader reuse; missing retrieval bin không là empty bin |
+| A3 case/control/exposure | [03](03_CASE_SELECTION_PROTOCOL.md), [preregistration](../../../experiments/research_exit_20260927/preregistration.json), [15 §7](15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) | Context 2018, candidate/exclusion log, chronology | PARTIAL | Context fuzzing độc lập plot; synthetic null chỉ computational; chưa independently proven timing; 598 works đã exposure, pilot chọn sau output | Prospective immutable freeze; không gọi development là holdout |
+| A3 annotation/roles/uncertainty | [pilot](../../../experiments/research_exit_20260927/runs/20261010-signal-01/reference-pilot-plan.json), [15 §5–6](15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) | Tái tạo 27 IDs theo seed, kiểm null fields/simulation | BLOCKED | 9 matches + 18 nonmatches chưa real labels/personnel; 54 synthetic judgments là fixture; quality/recall/agreement NOT MEASURED | Owner chỉ định người đủ chuyên môn/rubric nếu giữ route này, hoặc chọn rõ limited route |
+| A4 exact D08 | [declaration](../../../experiments/research_exit_20260927/runs/20261010-signal-01/declaration-corrected.json), [15 §4–6](15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) | Decode config, 18 lexical cases gồm Unicode/underscore, recount | VERIFIED | Python Unicode IGNORECASE word boundaries, distinct v1 work, UTC month, n/N; share luôn kèm n/N, không directional labels | Accept exact rule/contract; hiện chưa approval |
+| A4 support/quality/alternatives | [14](14_D08_DEVELOPMENT_EVALUATION_20261010.md), [15 §6/8](15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) | Tách mathematical criteria khỏi scientific evidence | UNKNOWN | N≥1 chỉ định nghĩa share; support 0–4/tháng; scientific precision/agreement/min-support targets UNRESOLVED; count là alternative thực chất | Không chọn số tùy ý; pilot và prospective justified criteria nếu giữ yêu cầu |
+| A4 decision/freeze | [15 §2/7/9](15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md), [#70](https://github.com/Dyu20705/sites/issues/70) | Đối chiếu D05/D06, M1/E1–E8 gốc, owner direction | BLOCKED cho acceptance; VERIFIED có proposal | Nghĩa vụ gốc còn hiệu lực; E2-R/E3-R chưa accepted; product E4/E7/E8 còn thiếu; chưa freeze | Owner ghi từng lựa chọn theo immutable bytes và limitation audit |
+
+**Science thực đo:** exact lexical counts/proportions, field/identity checks, sensitivity perturbations. Chưa đo scientific field growth, semantic coverage, independent detector accuracy, user value, effect size hoặc human agreement. Tests chỉ chứng minh arithmetic/workflow đã kiểm. E2-R chỉ hoãn original independent scientific-reference acceptance nếu owner chọn rõ; E3-R thay nghĩa vụ temporal của demo nhưng không sửa historical E3. Hiện chưa kích hoạt deferral nào.
+
+### Scientific/reference integrity
+
+Reports 14/15 giới hạn substantive conclusions trong finite observed population. Equal-count/different-N chỉ chứng minh tác dụng arithmetic của normalization; denominator có selection bias vẫn biased. Năm exact-fuzzing so với chín broad-rule matches là vocabulary sensitivity, không semantic recall. Current-title stability theo rule không xóa 55 title changes. Chín late IDs vẫn trong corpus theo v1 event; trừ chúng không tìm lại members đã bị loại/chưa index. Support nhỏ và sáu bins không đủ trend label hoặc causal interpretation.
+
+Đọc lại ngày 11/10: [Manès v1 abstract/history](https://arxiv.org/abs/1812.00140v1) chỉ cho context trước 2019; [Štimec abstract/introduction](https://link.springer.com/article/10.1007/s11192-026-05744-5) hỗ trợ đối chiếu lexical/normalization/burst/plot evaluation, không SITES accuracy. [arXiv manual](https://info.arxiv.org/help/api/user-manual.html), [availability](https://info.arxiv.org/help/availability.html), [terms](https://info.arxiv.org/help/api/tou.html) hỗ trợ version/time semantics và phân biệt quyền metadata/paper. Không dataset API hoặc holdout. Kleinberg giữ historical EL-002 inspection, không new full-text verification. Không novelty, exhaustive review hoặc claim không tồn tại historical archive.
+
+Human follow-up nhỏ nhất, có điều kiện: hai researchers đủ chuyên môn do owner chỉ định, người thứ ba phân xử; giữ 27 IDs, công khai post-output selection; opaque IDs/random order, giấu strata/month/plots. Title lộ từ nên không blind rule hoàn hảo. Khóa judgments trước mở source links, ghi exposure; giữ raw labels và uncertain/pending. Rubric dùng substantive-topic evidence, không regex/plot làm truth. Báo từng stratum/uncertainty; không suy ra population recall/trend accuracy. Không bịa personnel/labels/scientific thresholds.
+
+### Owner choices — PROPOSED, riêng G70 NOT PASSED
+
+| Row / exact choice | Alternative | Lợi ích / chi phí, scientific limit | Verified evidence / reversal |
+| --- | --- | --- | --- | --- |
+| A1 — §1/2 finite observed-2026 v1-title estimand | Giữ broad question và defer | Bounded description tái lập; bỏ historical/semantic/detector claims | Recount + negative #65; đảo khi owner cần broader validity hoặc có historical evidence phù hợp |
+| A2 — §2 thay E2/E3 bằng E2-R/E3-R | Giữ original obligations | Descriptive demo kiểm được; không đáp ứng original reference/availability | E3 unresolved, controls/replay có; đảo nếu không đáp ứng research objective |
+| A3 — §5/6 limited acceptance, quality NOT MEASURED | Giữ independent-reference tại #70 | Quyết định hẹp sớm hơn; mất scientific accuracy acceptance | Zero real labels; đảo nếu reviewer hiểu sai hoặc cần validated quality |
+| D07 — §3 đúng 598 works/query/v1 UTC/frozen provenance/bias | Defer hoặc historical capture riêng | Denominator quan sát có sẵn; không historical completeness/representativeness | 14 hashes/598 refs; đảo khi identity/completeness fail |
+| D08 — §4–6 fixed lexical n/N/share, no labels/null/support/sensitivity/reference | Count alone hoặc defer | Share thêm denominator context; còn selection/alias/sparse limits | 9/598, sensitivities; đảo khi denominator invalid/hiểu sai; broader reuse cần guard |
+| F1 — §7 prospective immutable manifest/exposure | Không confirmatory evaluation | Exact replay/reviewer protocol; không xóa exposure cũ | Có artifact identities, chưa acceptance/personnel/task freeze; sửa nếu approved bytes đổi/overlap |
+| G70 — §9 disposition sau accepted criteria có evidence | Giữ NOT PASSED | Tách research contract khỏi product readiness | Rows chưa điền; chỉ đổi sau explicit D07/D08/amendment/freeze và mọi retained research criterion |
+
+Packet `M1-R-20261010-v1` không sửa/activate qua audit. Git-blob SHA-256 vẫn EN `da80e30a4fb07ad7722cf4d845ce0feb7da28a1b84336710697f358cd30b8122`, VI `164535e1d50fd6f01e26aaadb639d7a89f67dadfc2dd4412b75d93bd05b677b0`. Acceptance phải định danh version/hash, mọi revision ghi rõ. Rubric 5/5 và budget 60 giây/256 MiB chưa accepted/measured, là engineering/task criteria, không scientifically calibrated thresholds. D09 riêng.
+
+### Validation thực chạy và coverage
+
+[Execution record](../../../experiments/research_exit_20260927/runs/20261011-final-audit-01/execution.json) giữ exact argv/environment/stdout/stderr/exit codes và 13 byte comparisons. Python 3.14.7, Windows, stdlib. **37/37 unit tests PASS** (35 cũ + hai preservation regressions); **15/15 legacy checks mỗi hai process**; **10/10 controls mỗi signal replay**; hai workflow processes, hai audit processes, crosscheck và cả hai validators. Successful commands exit 0; deliberate existing-output call exit 2, giữ bytes. Lần đầu default temp chạy 35 tests với 27 setup/cleanup PermissionErrors, exit 1; đặt TEMP/TMP trong workspace sửa giới hạn môi trường. Không che failing assertion.
+
+Từ repository root, mỗi runner tạo scratch directory mới được ignore; không corpus network:
+
+```powershell
+python experiments/research_exit_20260927/runs/20261011-final-audit-01/run_checks.py
+python experiments/research_exit_20260927/runs/20261011-final-audit-01/independent_verify.py --output <new-directory>/independent.json
+python experiments/research_exit_20260927/runs/20261011-final-audit-01/boundary_probe.py --output <new-directory>/boundary.json
+git diff --check
+```
+
+| Frozen artifact tái tạo | SHA-256 |
+| --- | --- |
+| audit.json | `53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8` |
+| normalized-records.json | `a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1` |
+| measurements.json | `214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818` |
+| crosscheck.json | `0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591` |
+
+[Recount script](../../../experiments/research_exit_20260927/runs/20261011-final-audit-01/independent_verify.py) không import evaluator/parser project; kiểm v1/current refs với XML, 14 inputs với committed bytes, flags/escaping/boundaries, toàn bộ sensitivities và pilot selection. Chỉ chạy process riêng không được gọi independent verification. Frozen/history inputs không đổi. Review gồm 00/01/03/04, D05/D06/M1/evaluation, paired 11–15, declarations/source logs/pilot/measurements, evaluator/audit/crosscheck/simulator/tests/validators, live issues/comments/PR. Các file PR #75 khác chỉ inventory/hash/context review, không exhaustive security/provider-capability review; giữ negative history. Links/parsing/numeric pairing kiểm tự động; EN/VI meaning tự review, không independent translation validation.
+
+**Next action nhỏ nhất:** owner review exact packet không đổi cùng audit này; chọn A1/A2/A3/D07/D08/F1 riêng, ghi G70 có căn cứ. Nếu giữ independent-reference acceptance, chỉ định humans và biện minh/freeze prospective criteria trước evaluation đó. #64 vẫn open, #70 NOT PASSED; chưa product/holdout/merge.

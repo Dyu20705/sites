@@ -1,0 +1,115 @@
+{
+  "checked_at": {
+    "current_time": "2026-10-11 01:53:10 UTC"
+  },
+  "source_head": "ed2a21f36b8b0b05efd889279717b61dbe777eda",
+  "base_sha": "0a853636ef6d1be9d3bb85058f34faf368fcb6ce",
+  "pr": {
+    "number": 75,
+    "state": "open",
+    "draft": true,
+    "reviews": 0,
+    "review_threads": 0
+  },
+  "issues": [
+    {
+      "number": 64,
+      "state": "open",
+      "updated_at": "2026-10-10T13:18:11Z",
+      "url": "https://github.com/Dyu20705/sites/issues/64"
+    },
+    {
+      "number": 65,
+      "state": "closed",
+      "updated_at": "2026-10-10T12:32:05Z",
+      "url": "https://github.com/Dyu20705/sites/issues/65"
+    },
+    {
+      "number": 69,
+      "state": "open",
+      "updated_at": "2026-09-21T01:05:16Z",
+      "url": "https://github.com/Dyu20705/sites/issues/69"
+    },
+    {
+      "number": 70,
+      "state": "open",
+      "updated_at": "2026-10-10T13:18:52Z",
+      "url": "https://github.com/Dyu20705/sites/issues/70"
+    },
+    {
+      "number": 66,
+      "state": "open",
+      "updated_at": "2026-10-10T11:11:28Z",
+      "url": "https://github.com/Dyu20705/sites/issues/66"
+    },
+    {
+      "number": 67,
+      "state": "open",
+      "updated_at": "2026-10-10T11:11:30Z",
+      "url": "https://github.com/Dyu20705/sites/issues/67"
+    }
+  ],
+  "owner_direction": [
+    {
+      "url": "https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689",
+      "body": "## OWNER SCOPE DIRECTION — retrospective-only M1 (10/10/2026)\n\nThe owner reviewed the completed #65 investigation and #64 development-only evidence and confirmed **“chốt OK”** in the SITES control conversation after the [agent's execution report](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097673774).\n\n### Decision now recorded\n\n1. **ACCEPT the completed #65 investigation outcome** (insufficient historical/as-of evidence) and the measured **D08 development-only exploratory research package** as a reviewable research result, *not* as evidence that the indicator detects technology trends or passes the product gate.\n2. **SELECT Option B — retrospective-only as the M1 scope direction**, based on current feasibility evidence and the 15 October demo-ready target. **Authorize preparation of a controlled, explicit scope/estimand amendment and decision-ready D07/D08 packet for owner signature.** Do not pursue open-ended as-of reconstruction as the immediate M1 critical path. Future historical reconstruction remains an independently gated research direction.\n3. **Preserve accepted D05/D06 and original E3 semantics until the exact amendment is reviewed and explicitly accepted.** This direction is **not** approval to declare the original E3 PASSED, silently replace it, or treat the 2026 current-query corpus as the complete June-2019 public state.\n\n### Grounded review evidence\n\n- [PR #75 @ 64da78b](https://github.com/Dyu20705/sites/commit/64da78be17f0b89bbd008f5033192742fd663046) remains Draft.\n- [D08 report](https://github.com/Dyu20705/sites/blob/64da78be17f0b89bbd008f5033192742fd663046/docs/vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md): January–June 2019 observed current-query, 598 distinct work/v1 title records; `N = 91/79/97/103/122/106`, `n = 0/1/2/1/4/1`, pooled 9/598 (1.5050%). An additional independent reaggregation of the committed normalized JSON confirmed the six denominators, numerators and all nine matched work IDs.\n- [Verification](https://github.com/Dyu20705/sites/blob/64da78be17f0b89bbd008f5033192742fd663046/experiments/research_exit_20260927/runs/20261010-signal-01/verification.json) reports 28 tool tests, 15 legacy synthetic checks, 10 controlled cases, two same-host corrected replays, 598 denominator ID checks, 9 source references. This review independently recalculated the result **from committed normalized JSON**, not a fresh second-machine raw-XML replay.\n- Extremely sparse support (`0–4` title matches per month); historical public availability/category population and cutoff-valid vocabulary unresolved; independent reference annotation, minimum support, semantic detection quality and numerical quality threshold **NOT MEASURED / UNRESOLVED**. No growth/decline/emergence label has been validated. No holdout was viewed.\n\n### Next conditional owner gate\n\nPrepare a **single proposed retrospective amendment** spelling out:\n- changed research target/estimand and claim boundary, with line-by-line impacts on D05, M1, original E3 and E1–E8; explicitly keep as-of statements prohibited;\n- proposed D07 population = frozen observed `cs.SE` query (retrieved in 2026), v1-submission UTC bins, provenance, denominator and sampling/coverage limits;\n- proposed D08 = v1 title lexical count plus normalized share, documented regex/version, no unsupported direction/emergence labels, support/abstention behavior;\n- independent blinded 27-work semantic pilot protocol with owner-designated humans and disclosed post-output selection; this pilot is not yet executed and cannot establish trend-level accuracy;\n- predeclared reference/quality/support criteria, exposure register, holdout overlap reconciliation and immutable freeze procedure, **before any future confirmatory evaluation**;\n- residual risk, one bounded next test, and an explicit owner acceptance/rejection checklist.\n\n**NOT ACCEPTED BY THIS COMMENT:** exact D07/D08 contract or threshold, experimental/holdout freeze, historical E3 pass, Research Exit #70 pass, D09 stack, implementation/deployment, PR merge. No automatic status change for D05–D09. **#64 and #70 remain OPEN; #65 remains completed; PR #75 remains Draft** until subsequent review. The direction approval should reduce decision latency, not substitute for scientific validation."
+    },
+    {
+      "url": "https://github.com/Dyu20705/sites/issues/70#issuecomment-6097914035",
+      "body": "## Proposed M1-R-20261010-v1 — exact scope/D07/D08 owner decision packet\n\n[VI unified packet](https://github.com/Dyu20705/sites/blob/ed2a21f36b8b0b05efd889279717b61dbe777eda/docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) · [EN](https://github.com/Dyu20705/sites/blob/ed2a21f36b8b0b05efd889279717b61dbe777eda/docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) · [commit ed2a21f](https://github.com/Dyu20705/sites/commit/ed2a21f36b8b0b05efd889279717b61dbe777eda) · [#64 execution/verification](https://github.com/Dyu20705/sites/issues/64#issuecomment-6097908418). One successful branch push in this execution; PR #75 remains Draft.\n\nThis prepares the exact amendment authorized by [owner direction](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689). It does **not** accept it or pass this gate.\n\n### Exact proposed change\nM1 evaluates inspectable/reproducible **v1-title lexical prevalence within the 598 observed works of the frozen 2026 cs.SE query**, retrospectively binned by Jan–Jun 2019 UTC v1 submission. Preserve lineage, observation/derivation separation, deterministic replay, idempotency and D06. Give up historical public-state completeness/as-of vocabulary/availability and validated scientific trend-detection claims.\n\nThe packet maps every affected M1/D05 clause and E1–E8. **Original E3 remains NOT PASSED.** Separately proposed E3-R checks frozen population/version/event boundaries; E2-R evaluates fixed case/control, declared sensitivities, workflow correctness and later independent reviewer interpretation. These replacements require explicit acceptance; original requirements remain authoritative until then.\n\n**D07 PROPOSED:** exact existing query, full 598 observed current-query works including nonmatches, frozen metadata/raw references, v1 identity, retrieval 10 October 2026 vs 2019 event time, denominator/missingness/coverage/selection bias and metadata-vs-paper sharing boundary.\n\n**D08 PROPOSED:** unchanged versioned case-insensitive title regex, n/N and share; n=0/1/2/1/4/1 with N=91/79/97/103/122/106. Share requires valid fields and N≥1; unknowns yield null/bounds. Directional labels disabled at every support value. Sparse 0–4 support does not validate growth. All development sensitivity/negative evidence retained.\n\n### Owner's subsequent simulation instruction — no scientific substitution\nIn this session the owner instructed: three roles explicitly **SIMULATED**; 27-work workflow tested on synthetic data; independent scientific quality **NOT MEASURED**; D08 may be accepted for a descriptive indicator only if other conditions are owner-approved; #70 may pass only against the accepted criteria, with no automatic bypass.\n\nExecuted synthetic fixture uses **27 fictional SYN IDs**, 54 A/B judgments, 18 designed agreements, nine disagreements/C adjudications, 9/9/9 final labels. **Zero real works annotated.** Seven new workflow tests and all 35 tool unit tests PASS; a second process reproduced synthetic semantic bytes. This is workflow correctness evidence, not independent annotator agreement, precision/recall, real-paper reference or product pipeline acceptance. The existing real 27-work pilot remains unexecuted; its blinded human protocol is retained for the route that requires it.\n\n### Separate decisions awaiting owner signature\nRecord ACCEPT / REJECT / REVISE per packet §9, with owner/date/version/hash:\n1. **A1:** exact retrospective estimand/claim limits and D05/M1 clause amendment.\n2. **A2:** applicable E2-R/E3-R replacements, retaining historical E3 NOT PASSED.\n3. **A3:** explicitly select limited descriptive-demo acceptance with independent scientific quality NOT MEASURED, **or** retain independent-reference quality as a #70 requirement and wait for real reference evidence. Simulation does not satisfy the latter.\n4. **D07 / D08:** exact corpus/time/rule/formula/support/uncertainty/sensitivity/reference/evaluation contract.\n5. **F1:** immutable prospective freeze with exposure, exact code/config/input/protocol hashes, criteria and proposed reviewer/budget checks. No current holdout access.\n6. **G70:** explicit disposition only after all owner-selected research criteria have evidence; otherwise keep NOT PASSED with named gaps. Product E1–E8 and D09 are later gates, not claimed complete at Research Exit.\n\nRecommendation remains **PROPOSED**: accept a narrowly labeled descriptive route if it matches owner value requirements; otherwise retain quality requirements and defer M1 rather than lowering them implicitly. No independent semantic/trend numerical threshold is justified by simulation. Proposed 60-second/256-MiB offline replay budget and five-question reviewer interpretation rubric remain unaccepted/unmeasured. One bounded next demo test after gates: independent reviewer interpretation/evidence opening/replay, not more open-ended historical searching.\n\nImmutable packet Git-blob SHA-256: VI `164535e1d50fd6f01e26aaadb639d7a89f67dadfc2dd4412b75d93bd05b677b0`; EN `da80e30a4fb07ad7722cf4d845ce0feb7da28a1b84336710697f358cd30b8122`. [Validation/hash records](https://github.com/Dyu20705/sites/blob/ed2a21f36b8b0b05efd889279717b61dbe777eda/experiments/research_exit_20260927/runs/20261010-amendment-01/index-byte-verification.json) preserve exact staged identities; old raw/config/evaluator/measurements unchanged.\n\n**Current: #64/#70 OPEN; #65 completed; D05/D06 ACCEPTED; D07/D08/D09 PROPOSED; original E3/#70 NOT PASSED.** No holdout query/read/write, D09/product implementation, merge, release or deployment. Deadline 15 October."
+    }
+  ],
+  "initial_environment_failures": [
+    {
+      "command": "git ls-remote origin refs/heads/research/exit-evidence-20260927",
+      "exit_code": 1,
+      "reason": "Sandbox DNS failure; escalated read-only retry returned ed2a21f36b8b0b05efd889279717b61dbe777eda."
+    },
+    {
+      "command": "python -m unittest discover -s experiments/research_exit_20260927 -p 'test_*.py' -v",
+      "exit_code": 1,
+      "tests_run": 35,
+      "errors": 27,
+      "reason": "Sandbox default temporary directory PermissionError in test setup and cleanup. Workspace-local TEMP/TMP rerun: 35 tests, exit 0; after two validator regression tests: 37 tests, exit 0."
+    }
+  ],
+  "literature_reinspection": {
+    "date": "2026-10-11",
+    "service": "web.run direct URL open; no corpus queries",
+    "exact_per_call_timestamps": "NOT_RECORDED",
+    "filters": "not applicable; direct URLs",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1812.00140v1",
+        "depth": "title/authors/abstract/submission history",
+        "claim": "2018 topic context only"
+      },
+      {
+        "url": "https://link.springer.com/article/10.1007/s11192-026-05744-5",
+        "depth": "abstract/introduction",
+        "claim": "Lexical n-grams, normalization, burst alternatives, anonymous plot judgments; not SITES reference validation"
+      },
+      {
+        "url": "https://www.cs.cornell.edu/home/kleinber/bhs.pdf",
+        "depth": "no content; failed fetch (421)",
+        "claim": "Earlier EL-002 inspection carried, not newly verified"
+      },
+      {
+        "url": "https://info.arxiv.org/help/api/user-manual.html",
+        "depth": "Atom version/submission/date and category documentation",
+        "claim": "Submission and retrieved version semantics"
+      },
+      {
+        "url": "https://info.arxiv.org/help/availability.html",
+        "depth": "Availability and identifier assignment",
+        "claim": "Submission/public announcement distinct; historical event dates not measured"
+      },
+      {
+        "url": "https://info.arxiv.org/help/api/tou.html",
+        "depth": "Metadata rights and rate limits",
+        "claim": "Descriptive metadata CC0, paper redistribution separate; serial requests >=3 seconds"
+      }
+    ],
+    "limitations": "Reader representations may be cached; no new discovery search, completeness claim, raw HTML hash or exact source event timestamp."
+  }
+}

@@ -22,7 +22,7 @@ python experiments/research_exit_20260927/signal_evaluator.py --declaration expe
 python experiments/research_exit_20260927/validate_signal.py --run experiments/research_exit_20260927/runs/20261010-signal-01 --output <new-directory>/verification.json
 ```
 
-The sections below are earlier dated snapshots; their pending-handoff/no-signal/access-failure claims are superseded by this update. Do not run the legacy `validate.py` to overwrite frozen `results/validation.json`; the new verifier reads existing artifacts and writes exclusively to a new path.
+The sections below are earlier dated snapshots; their pending-handoff/no-signal/access-failure claims are superseded by this update. As of the 11 October audit, `validate.py` requires an explicit new `--output` path and refuses existing files. Preserve frozen `results/validation.json` and historical replay outputs.
 
 ## Review response / handoff — 10 October 2026
 
@@ -64,8 +64,8 @@ Both preserved arXiv count attempts returned HTTP 406, but post-run review found
 From the repository root, using an existing Python 3 interpreter:
 
 ```text
-python experiments/research_exit_20260927/checks.py --output experiments/research_exit_20260927/results/run-1.json
-python experiments/research_exit_20260927/checks.py --output experiments/research_exit_20260927/results/run-2.json
+python experiments/research_exit_20260927/checks.py --output <new-directory>/run-1.json
+python experiments/research_exit_20260927/checks.py --output <new-directory>/run-2.json
 ```
 
 These commands do not use the network. Each runs 15 test methods, with seven hand-calculated series scenarios. Compare the two output hashes. Outputs include expected/actual values, lineage IDs, input/code hashes and a real-sample status explicitly marked NOT_MEASURED_ACCESS_FAILURE.
@@ -75,7 +75,7 @@ Coverage includes arithmetic, empty/missing bins, invalid counts, denominator dr
 Run the separate offline package check from the repository root:
 
 ```text
-python experiments/research_exit_20260927/validate.py
+python experiments/research_exit_20260927/validate.py --output <new-directory>/package-validation.json
 ```
 
 The saved [validation report](results/validation.json) records relative-link target checks, JSON/Python parsing, paired evidence IDs, decision statuses and replay/input hashes. It does not check external URL availability, Markdown anchors or translation meaning. Translation meaning and source attribution were self-reviewed manually. The matching [first](results/run-1.json) and [second](results/run-2.json) outputs establish same-host replay only.

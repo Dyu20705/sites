@@ -1,4 +1,5 @@
 """Offline artifact integrity/link checks; not a research-validity test."""
+import argparse
 import ast
 import hashlib
 import json
@@ -11,6 +12,12 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent.parent
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--output", type=Path, required=True,
+                    help="New report path; existing evidence is never overwritten")
+args = parser.parse_args()
+if args.output.exists():
+    parser.error("Output already exists; choose a new report path")
 paths = subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard"], cwd=REPO, text=True).splitlines()
 markdown = sorted(p for p in set(paths) if p.endswith(".md"))
 broken = []
@@ -63,7 +70,9 @@ result = {"python": platform.python_version(), "platform": platform.platform(),
           "replay_equal": one == two, "replay_sha256": hashlib.sha256(one).hexdigest(),
           "stale_input_hashes": stale_hashes,
           "scope": "Relative target existence, JSON/Python parsing, evidence-ID pairing, decision statuses and offline replay integrity. External links/anchors and translation semantics are not automatically validated."}
-(HERE / "results/validation.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8", newline="\n")
+args.output.parent.mkdir(parents=True, exist_ok=True)
+with args.output.open("x", encoding="utf-8", newline="\n") as output:
+    output.write(json.dumps(result, indent=2) + "\n")
 print(json.dumps(result, indent=2))
 if broken or stale_hashes or one != two or statuses != expected or not all(p["evidence_ids_match"] for p in pairs):
     sys.exit(1)

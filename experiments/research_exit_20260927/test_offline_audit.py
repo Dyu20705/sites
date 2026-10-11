@@ -1,5 +1,7 @@
 """Hand-calculated field validation and integrity rejection; offline only."""
 import tempfile
+import subprocess
+import sys
 import unittest
 from pathlib import Path
 import offline_audit as audit
@@ -34,6 +36,24 @@ class FieldAuditTests(unittest.TestCase):
             path.write_bytes(b"corrupt")
             with self.assertRaisesRegex(ValueError, "Checksum mismatch"):
                 audit.checked_bytes(path, expected)
+
+
+class ValidatorOutputTests(unittest.TestCase):
+    def test_existing_report_is_preserved(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "evidence.json"
+            path.write_bytes(b"historical evidence")
+            result = subprocess.run([sys.executable, str(Path(__file__).with_name("validate.py")),
+                                     "--output", str(path)], capture_output=True, text=True)
+            self.assertEqual(result.returncode, 2)
+            self.assertIn("Output already exists", result.stderr)
+            self.assertEqual(path.read_bytes(), b"historical evidence")
+
+    def test_output_path_is_required(self):
+        result = subprocess.run([sys.executable, str(Path(__file__).with_name("validate.py"))],
+                                capture_output=True, text=True)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("--output", result.stderr)
 
 
 if __name__ == "__main__":
