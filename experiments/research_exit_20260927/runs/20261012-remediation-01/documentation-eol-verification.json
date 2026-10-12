@@ -1,0 +1,18 @@
+{
+  "allowed_documentation_eol": [
+    "docs/README.md"
+  ],
+  "comparison": "artifact_bytes",
+  "files": [
+    {
+      "committed_sha256": "a7113bedc8a66040ef94fbba16d195297e8e6c92ae9f0f2fcc98aef37d20fdc0",
+      "path": "docs/README.md",
+      "state": "missing_artifact"
+    }
+  ],
+  "mismatched_paths": [
+    "docs/README.md"
+  ],
+  "revision": "b006c45ae74f75127fa6b275f158378a000ceb6c",
+  "status": "FAIL"
+}

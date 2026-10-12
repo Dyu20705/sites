@@ -2,7 +2,15 @@
 
 ## Current replay entry point — 12 October 2026
 
-Use `checks_cli_v2.py` for legacy synthetic checks. The frozen `checks.py` writes directly to its output path and can overwrite an existing report. The v2 CLI runs it in a fresh private directory, publishes only after success, and exclusively creates the requested file. Existing outputs are refused. Frozen checker/config/result bytes are preserved. [Current audit and conditional owner handoff](../../docs/english/research/16_CRITICAL_PATH_HANDOFF_20261012.md) records the reproduction and remaining gates.
+Use `checks_cli_v2.py` for legacy synthetic checks. The frozen `checks.py` writes directly to its output path and can overwrite an existing report. The v2 CLI runs it in a private directory on the destination filesystem; after the checker flushes/closes its complete report and exits successfully, `os.link()` publishes that file without overwriting an existing destination, including a concurrent winner. Unsupported hard links fail explicitly; there is no copy/replace fallback. This provides atomic visibility on supporting local filesystems, not crash durability (no fsync guarantee). Normal success/failure paths remove temporary files. Frozen checker/config/result bytes remain unchanged. See the [final remediation and owner handoff](runs/20261012-remediation-01/README.md).
+
+`verify_git_bytes.py` hashes explicit Git blobs and optionally compares actual files read-only. Repeat `--path` for the file scope. It returns JSON plus exit 0 for PASS, 1 for mismatches and 2 for invalid setup. Only individually named Markdown files under `docs/` may opt into CRLF/LF equivalence; experiment/raw/config/code/measurement files always require exact bytes. Both original digests are retained. Use an absolute comparison root in the restricted Windows environment:
+
+```powershell
+python experiments/research_exit_20260927/verify_git_bytes.py --revision b006c45ae74f75127fa6b275f158378a000ceb6c --path docs/README.md --compare-root C:/Users/Admin/sites/.worktrees/research-exit --allow-doc-eol docs/README.md
+```
+
+Omit `--compare-root` and `--allow-doc-eol` for Git-object digests alone. Substitute your checkout root on another machine. [Exact executed commands and validation](runs/20261012-remediation-01/execution.json) include the prior 18-blob manifest reproduction, 112 exact frozen-file comparisons, Windows/Linux suites, and the resolved sandbox failures. No manifest pins its own future bytes.
 
 ## Unified amendment and synthetic reference workflow — 10 October 2026
 

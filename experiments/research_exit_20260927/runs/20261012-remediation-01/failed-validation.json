@@ -1,0 +1,372 @@
+{
+  "status": "FAIL",
+  "status_scope": "This attempted validation stopped at the final recorded command. Earlier successful suite/replay observations are retained; resolution is in execution.json.",
+  "started_utc": "2026-10-12T01:41:56.850215+00:00",
+  "ended_utc": "2026-10-12T01:42:07.735302+00:00",
+  "python": "3.14.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "executable": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+  "head_before": "0eea1360a100d21a190034cadf2c9f21a1f2a4bc",
+  "temporary_directory": "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b",
+  "TEMP_and_TMP": "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "experiments\\research_exit_20260927",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "test_complete_acquisition (test_acquire.AcquisitionTests.test_complete_acquisition) ... ok\ntest_count_drift_since_access_stops (test_acquire.AcquisitionTests.test_count_drift_since_access_stops) ... ok\ntest_duplicate_works_stop_before_versions (test_acquire.AcquisitionTests.test_duplicate_works_stop_before_versions) ... ok\ntest_incomplete_page_stops (test_acquire.AcquisitionTests.test_incomplete_page_stops) ... ok\ntest_over_bound_stops_after_count (test_acquire.AcquisitionTests.test_over_bound_stops_after_count) ... ok\ntest_wrong_version_stops (test_acquire.AcquisitionTests.test_wrong_version_stops) ... ok\ntest_bad_feed_or_count_never_claims_success (test_acquire.DiagnosticTests.test_bad_feed_or_count_never_claims_success) ... ok\ntest_existing_manifest_is_preserved_without_request (test_acquire.DiagnosticTests.test_existing_manifest_is_preserved_without_request) ... ok\ntest_http_error_preserves_url_excerpt_and_hash (test_acquire.DiagnosticTests.test_http_error_preserves_url_excerpt_and_hash) ... ok\ntest_network_error_is_single_attempt (test_acquire.DiagnosticTests.test_network_error_is_single_attempt) ... ok\ntest_redirect_is_recorded_and_rate_limited (test_acquire.DiagnosticTests.test_redirect_is_recorded_and_rate_limited) ... ok\ntest_success_stops_after_count_and_hashes_raw (test_acquire.DiagnosticTests.test_success_stops_after_count_and_hashes_raw) ... ok\ntest_zero_count_is_access_success_only (test_acquire.DiagnosticTests.test_zero_count_is_access_success_only) ... ok\ntest_existing_evidence_is_preserved_without_running_checker (test_checks_cli_v2.PreservingChecksCliTests.test_existing_evidence_is_preserved_without_running_checker) ... ok\ntest_failed_checker_does_not_publish_a_report (test_checks_cli_v2.PreservingChecksCliTests.test_failed_checker_does_not_publish_a_report) ... ok\ntest_fresh_report_equals_frozen_result_and_repeat_is_refused (test_checks_cli_v2.PreservingChecksCliTests.test_fresh_report_equals_frozen_result_and_repeat_is_refused) ... ok\ntest_partial_preparation_failure_never_exposes_destination (test_checks_cli_v2.PreservingChecksCliTests.test_partial_preparation_failure_never_exposes_destination) ... ok\ntest_two_processes_race_only_after_both_reports_are_complete (test_checks_cli_v2.PreservingChecksCliTests.test_two_processes_race_only_after_both_reports_are_complete) ... ok\ntest_unsupported_hard_links_fail_closed_and_clean_up (test_checks_cli_v2.PreservingChecksCliTests.test_unsupported_hard_links_fail_closed_and_clean_up) ... ok\ntest_checksum_corruption_rejected (test_offline_audit.FieldAuditTests.test_checksum_corruption_rejected) ... ok\ntest_field_status_does_not_treat_missing_title_as_nonmatch (test_offline_audit.FieldAuditTests.test_field_status_does_not_treat_missing_title_as_nonmatch) ... ok\ntest_missing_and_invalid_dates_are_distinct (test_offline_audit.FieldAuditTests.test_missing_and_invalid_dates_are_distinct) ... ok\ntest_work_and_version_identity (test_offline_audit.FieldAuditTests.test_work_and_version_identity) ... ok\ntest_existing_report_is_preserved (test_offline_audit.ValidatorOutputTests.test_existing_report_is_preserved) ... ok\ntest_output_path_is_required (test_offline_audit.ValidatorOutputTests.test_output_path_is_required) ... ok\ntest_agreement_cannot_be_rewritten_by_adjudicator (test_reference_workflow.ReferenceWorkflowTests.test_agreement_cannot_be_rewritten_by_adjudicator) ... ok\ntest_complete_fixture_retains_raw_judgments_and_uncertainty (test_reference_workflow.ReferenceWorkflowTests.test_complete_fixture_retains_raw_judgments_and_uncertainty) ... ok\ntest_duplicate_cannot_inflate_support (test_reference_workflow.ReferenceWorkflowTests.test_duplicate_cannot_inflate_support) ... ok\ntest_invalid_role_label_or_rationale_is_rejected (test_reference_workflow.ReferenceWorkflowTests.test_invalid_role_label_or_rationale_is_rejected) ... ok\ntest_missing_evidence_is_not_negative (test_reference_workflow.ReferenceWorkflowTests.test_missing_evidence_is_not_negative) ... ok\ntest_real_id_or_reference_is_rejected (test_reference_workflow.ReferenceWorkflowTests.test_real_id_or_reference_is_rejected) ... ok\ntest_unresolved_disagreement_does_not_complete (test_reference_workflow.ReferenceWorkflowTests.test_unresolved_disagreement_does_not_complete) ... ok\ntest_all_ten_controlled_failures (test_signal_evaluator.SignalTests.test_all_ten_controlled_failures) ... ok\ntest_bimonth_is_ratio_of_sums (test_signal_evaluator.SignalTests.test_bimonth_is_ratio_of_sums) ... ok\ntest_conflicting_v1_fails (test_signal_evaluator.SignalTests.test_conflicting_v1_fails) ... ok\ntest_empty_vs_observed_zero (test_signal_evaluator.SignalTests.test_empty_vs_observed_zero) ... ok\ntest_identity_and_version_fails (test_signal_evaluator.SignalTests.test_identity_and_version_fails) ... ok\ntest_lineage_matches_and_nonmatches (test_signal_evaluator.SignalTests.test_lineage_matches_and_nonmatches) ... ok\ntest_missing_invalid_event_time_invalidates_denominator (test_signal_evaluator.SignalTests.test_missing_invalid_event_time_invalidates_denominator) ... ok\ntest_missing_invalid_titles_not_nonmatches (test_signal_evaluator.SignalTests.test_missing_invalid_titles_not_nonmatches) ... ok\ntest_order_and_identity_idempotency (test_signal_evaluator.SignalTests.test_order_and_identity_idempotency) ... ok\ntest_utc_binning_and_cutoff (test_signal_evaluator.SignalTests.test_utc_binning_and_cutoff) ... ok\ntest_word_boundary_and_stipulated_double_escape (test_signal_evaluator.SignalTests.test_word_boundary_and_stipulated_double_escape) ... ok\ntest_corruption_fails_even_with_doc_exception (test_verify_git_bytes.GitBytesTests.test_corruption_fails_even_with_doc_exception) ... ok\ntest_digest_only_uses_objects_even_if_artifact_corrupted (test_verify_git_bytes.GitBytesTests.test_digest_only_uses_objects_even_if_artifact_corrupted) ... ok\ntest_exact_hash_and_deterministic_read_only_comparison (test_verify_git_bytes.GitBytesTests.test_exact_hash_and_deterministic_read_only_comparison) ... ok\ntest_frozen_artifacts_cannot_opt_into_normalization (test_verify_git_bytes.GitBytesTests.test_frozen_artifacts_cannot_opt_into_normalization) ... ok\ntest_invalid_scope_and_revision_are_nonzero (test_verify_git_bytes.GitBytesTests.test_invalid_scope_and_revision_are_nonzero) ... ok\ntest_line_endings_require_explicit_documentation_exception (test_verify_git_bytes.GitBytesTests.test_line_endings_require_explicit_documentation_exception) ... ok\ntest_missing_artifact_and_missing_git_blob_fail (test_verify_git_bytes.GitBytesTests.test_missing_artifact_and_missing_git_blob_fail) ... ok\n\n----------------------------------------------------------------------\nRan 50 tests in 6.653s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\checks.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\legacy-1.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "test_alias_limitation_is_visible (__main__.Checks.test_alias_limitation_is_visible) ... ok\ntest_conflicting_version_fails (__main__.Checks.test_conflicting_version_fails) ... ok\ntest_future_observation_isolated (__main__.Checks.test_future_observation_isolated) ... ok\ntest_hand_calculated_series (__main__.Checks.test_hand_calculated_series) ... ok\ntest_idempotency (__main__.Checks.test_idempotency) ... ok\ntest_invalid_count (__main__.Checks.test_invalid_count) ... ok\ntest_late_availability_isolated (__main__.Checks.test_late_availability_isolated) ... ok\ntest_lineage_and_expected (__main__.Checks.test_lineage_and_expected) ... ok\ntest_missing_title (__main__.Checks.test_missing_title) ... ok\ntest_order_independence (__main__.Checks.test_order_independence) ... ok\ntest_revision_not_double_counted (__main__.Checks.test_revision_not_double_counted) ... ok\ntest_timezone_required (__main__.Checks.test_timezone_required) ... ok\ntest_unknown_availability_not_zero (__main__.Checks.test_unknown_availability_not_zero) ... ok\ntest_unknown_coverage (__main__.Checks.test_unknown_coverage) ... ok\ntest_vocabulary_cutoff (__main__.Checks.test_vocabulary_cutoff) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\offline_audit.py",
+        "--run",
+        "experiments\\research_exit_20260927\\runs\\20261010-development-01",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\audit-1"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"status\": \"RETROSPECTIVE_AUDIT_ONLY\", \"records\": 598, \"E3\": \"NOT_PASSED\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\signal_evaluator.py",
+        "--declaration",
+        "experiments\\research_exit_20260927\\runs\\20261010-signal-01\\declaration-corrected.json",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\signal-1"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"monthly\": [[0, 91, 0.0], [1, 79, 0.012658227848101266], [2, 97, 0.020618556701030927], [1, 103, 0.009708737864077669], [4, 122, 0.03278688524590164], [1, 106, 0.009433962264150943]], \"matches\": 9, \"controlled_cases\": 10}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\simulate_reference_workflow.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\workflow-1.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"adjudications\": 9,\n  \"agreements\": 18,\n  \"claim_boundary\": \"Synthetic workflow checks only; no human or real-paper judgments\",\n  \"code_sha256\": \"ddd25597c17009281f1d97b02d59f65afecd4bf3374d40918036a3d903940c16\",\n  \"disagreements\": 9,\n  \"final_label_counts\": {\n    \"NEGATIVE\": 9,\n    \"POSITIVE\": 9,\n    \"UNCERTAIN\": 9\n  },\n  \"fixture_sha256\": \"5a0ed5522881496648a6d1b71f6cb2b52184e77b52b6558f20d6a528b5a4bc56\",\n  \"independent_scientific_quality\": \"NOT_MEASURED\",\n  \"mode\": \"SIMULATED\",\n  \"raw_judgment_count\": 54,\n  \"real_corpus_works_annotated\": 0,\n  \"status\": \"WORKFLOW_COMPLETED\",\n  \"work_count\": 27\n}\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\checks.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\legacy-2.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "test_alias_limitation_is_visible (__main__.Checks.test_alias_limitation_is_visible) ... ok\ntest_conflicting_version_fails (__main__.Checks.test_conflicting_version_fails) ... ok\ntest_future_observation_isolated (__main__.Checks.test_future_observation_isolated) ... ok\ntest_hand_calculated_series (__main__.Checks.test_hand_calculated_series) ... ok\ntest_idempotency (__main__.Checks.test_idempotency) ... ok\ntest_invalid_count (__main__.Checks.test_invalid_count) ... ok\ntest_late_availability_isolated (__main__.Checks.test_late_availability_isolated) ... ok\ntest_lineage_and_expected (__main__.Checks.test_lineage_and_expected) ... ok\ntest_missing_title (__main__.Checks.test_missing_title) ... ok\ntest_order_independence (__main__.Checks.test_order_independence) ... ok\ntest_revision_not_double_counted (__main__.Checks.test_revision_not_double_counted) ... ok\ntest_timezone_required (__main__.Checks.test_timezone_required) ... ok\ntest_unknown_availability_not_zero (__main__.Checks.test_unknown_availability_not_zero) ... ok\ntest_unknown_coverage (__main__.Checks.test_unknown_coverage) ... ok\ntest_vocabulary_cutoff (__main__.Checks.test_vocabulary_cutoff) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\offline_audit.py",
+        "--run",
+        "experiments\\research_exit_20260927\\runs\\20261010-development-01",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\audit-2"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"status\": \"RETROSPECTIVE_AUDIT_ONLY\", \"records\": 598, \"E3\": \"NOT_PASSED\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\signal_evaluator.py",
+        "--declaration",
+        "experiments\\research_exit_20260927\\runs\\20261010-signal-01\\declaration-corrected.json",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\signal-2"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"monthly\": [[0, 91, 0.0], [1, 79, 0.012658227848101266], [2, 97, 0.020618556701030927], [1, 103, 0.009708737864077669], [4, 122, 0.03278688524590164], [1, 106, 0.009433962264150943]], \"matches\": 9, \"controlled_cases\": 10}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\simulate_reference_workflow.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\workflow-2.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"adjudications\": 9,\n  \"agreements\": 18,\n  \"claim_boundary\": \"Synthetic workflow checks only; no human or real-paper judgments\",\n  \"code_sha256\": \"ddd25597c17009281f1d97b02d59f65afecd4bf3374d40918036a3d903940c16\",\n  \"disagreements\": 9,\n  \"final_label_counts\": {\n    \"NEGATIVE\": 9,\n    \"POSITIVE\": 9,\n    \"UNCERTAIN\": 9\n  },\n  \"fixture_sha256\": \"5a0ed5522881496648a6d1b71f6cb2b52184e77b52b6558f20d6a528b5a4bc56\",\n  \"independent_scientific_quality\": \"NOT_MEASURED\",\n  \"mode\": \"SIMULATED\",\n  \"raw_judgment_count\": 54,\n  \"real_corpus_works_annotated\": 0,\n  \"status\": \"WORKFLOW_COMPLETED\",\n  \"work_count\": 27\n}\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\crosscheck.py",
+        "--run",
+        "experiments\\research_exit_20260927\\runs\\20261010-development-01",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\crosscheck.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"records_checked\": 598, \"raw_files_hashed\": 9, \"late_id_month_count\": 9}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\validate_signal.py",
+        "--run",
+        "experiments\\research_exit_20260927\\runs\\20261010-signal-01",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\signal-validation.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"frozen_inputs_verified\": 14,\n  \"output_sha256\": {\n    \"measurements.json\": \"214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818\",\n    \"controlled-checks.json\": \"3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c\"\n  },\n  \"replay_equal\": true,\n  \"raw_xml_records_checked\": 598,\n  \"match_lineage_checked\": 9,\n  \"distinct_denominator_ids_checked\": 598,\n  \"correction_changed_measurements\": false,\n  \"config_literal_equals_executed_rule\": true,\n  \"relative_links_checked\": 468,\n  \"broken_links\": [],\n  \"decision_statuses\": {\n    \"english/D05\": \"ACCEPTED\",\n    \"english/D06\": \"ACCEPTED\",\n    \"english/D07\": \"PROPOSED\",\n    \"english/D08\": \"PROPOSED\",\n    \"english/D09\": \"PROPOSED\",\n    \"vietnamese/D05\": \"ACCEPTED\",\n    \"vietnamese/D06\": \"ACCEPTED\",\n    \"vietnamese/D07\": \"PROPOSED\",\n    \"vietnamese/D08\": \"PROPOSED\",\n    \"vietnamese/D09\": \"PROPOSED\"\n  },\n  \"paired_monthly_tables_equal\": true,\n  \"reference_pilot_status\": \"PROPOSED_NOT_ANNOTATED\",\n  \"validator_code_sha256\": \"b62186867e375224f3a2b8442c49c1bf27b593953214789ae988424792cd980b\",\n  \"scope\": \"Automated same-host agent verification; no independent scientific/human validation; external URLs/anchors and bilingual meaning require separate review.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\validate.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\package-validation.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"python\": \"3.14.7\",\n  \"platform\": \"Windows-11-10.0.26200-SP0\",\n  \"markdown_files_checked\": 71,\n  \"relative_links_checked\": 468,\n  \"broken_relative_links\": [],\n  \"json_files_parsed\": [\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/github-read-20261012.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/audit-1/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/audit-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/audit-2/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/audit-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/crosscheck.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/legacy-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/legacy-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/package-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-1/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-1/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-2/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-2/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/workflow-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/workflow-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/audit-1/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/audit-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/audit-2/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/audit-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/crosscheck.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/legacy-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/legacy-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/package-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-1/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-1/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-2/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-2/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/workflow-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/workflow-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/audit-1/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/audit-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/audit-2/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/audit-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/crosscheck.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/legacy-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/legacy-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/package-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-1/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-1/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-2/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-2/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/workflow-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/workflow-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/audit-1/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/audit-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/audit-2/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/audit-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/crosscheck.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/legacy-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/legacy-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/signal-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/signal-1/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/signal-1/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/signal-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/signal-2/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/signal-2/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/signal-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/workflow-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-xsa9i30b/workflow-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/additional-execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/audit-1/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/audit-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/audit-2/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/audit-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/boundary.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/crosscheck.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/independent.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/legacy-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/legacy-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/package-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-1/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-1/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-2/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-2/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/workflow-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/workflow-2.json\",\n    \"experiments/research_exit_20260927/accept-atom-diagnostic/acquisition.json\",\n    \"experiments/research_exit_20260927/acquisition.json\",\n    \"experiments/research_exit_20260927/dblp-access.json\",\n    \"experiments/research_exit_20260927/fixtures.json\",\n    \"experiments/research_exit_20260927/http-endpoint-diagnostic/acquisition.json\",\n    \"experiments/research_exit_20260927/preregistration.json\",\n    \"experiments/research_exit_20260927/results/run-1.json\",\n    \"experiments/research_exit_20260927/results/run-2.json\",\n    \"experiments/research_exit_20260927/runs/20261010-amendment-01/frozen-evidence-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-amendment-01/index-byte-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-amendment-01/simulated-workflow.json\",\n    \"experiments/research_exit_20260927/runs/20261010-amendment-01/workflow-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/acquisition.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/crosscheck.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/historical-preservation.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/index-byte-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/inputs/am02-acquisition.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/inputs/preregistration.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/replay-1/audit.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/replay-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/replay-2/audit.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/replay-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/replay-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/audit.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/crosscheck.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/normalized-records.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/verification-local.json\",\n    \"experiments/research_exit_20260927/runs/20261010-historical-screen-01/package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261010-historical-screen-01/source-screen-plan.json\",\n    \"experiments/research_exit_20260927/runs/20261010-historical-screen-01/source-screen-results.json\",\n    \"experiments/research_exit_20260927/runs/20261010-preflight-01/development-plan.json\",\n    \"experiments/research_exit_20260927/runs/20261010-preflight-01/dns.json\",\n    \"experiments/research_exit_20260927/runs/20261010-preflight-01/execution-hashes.json\",\n    \"experiments/research_exit_20260927/runs/20261010-preflight-01/offline-audit-contract.json\",\n    \"experiments/research_exit_20260927/runs/20261010-preflight-01/preflight.json\",\n    \"experiments/research_exit_20260927/runs/20261010-review-response-01/future-search-execution-template.json\",\n    \"experiments/research_exit_20260927/runs/20261010-review-response-01/package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261010-review-response-01/review-response.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/measurements.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/declaration-corrected.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/declaration.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/handoff-crosscheck.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/handoff-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/index-byte-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/legacy-checks.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/reference-pilot-plan.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/measurements.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/measurements.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/self-review.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/source-inspection.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/verification.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/boundary-probe.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/context.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/final-execution.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/final-package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/independent-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/preservation-and-scope.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/signal-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/boundary-probe.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/commit-byte-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/correction-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/final-package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/final-signal-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/final-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/independent-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/legacy-overwrite-probe.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/preservation-and-scope.json\",\n    \"experiments/research_exit_20260927/runs/20261012-critical-path-01/review-context.json\",\n    \"experiments/research_exit_20260927/search-log.json\"\n  ],\n  \"paired_evidence_ids\": [\n    {\n      \"name\": \"06_RESEARCH_EXIT_EVIDENCE.md\",\n      \"evidence_ids_match\": true\n    },\n    {\n      \"name\": \"07_PROVIDER_AUDIT_RESULTS.md\",\n      \"evidence_ids_match\": true\n    },\n    {\n      \"name\": \"08_D07_D08_EXIT_PACKET.md\",\n      \"evidence_ids_match\": true\n    }\n  ],\n  \"decision_statuses\": {\n    \"english/D05\": \"ACCEPTED\",\n    \"english/D06\": \"ACCEPTED\",\n    \"english/D07\": \"PROPOSED\",\n    \"english/D08\": \"PROPOSED\",\n    \"english/D09\": \"PROPOSED\",\n    \"vietnamese/D05\": \"ACCEPTED\",\n    \"vietnamese/D06\": \"ACCEPTED\",\n    \"vietnamese/D07\": \"PROPOSED\",\n    \"vietnamese/D08\": \"PROPOSED\",\n    \"vietnamese/D09\": \"PROPOSED\"\n  },\n  \"replay_equal\": true,\n  \"replay_sha256\": \"a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109\",\n  \"stale_input_hashes\": [],\n  \"scope\": \"Relative target existence, JSON/Python parsing, evidence-ID pairing, decision statuses and offline replay integrity. External links/anchors and translation semantics are not automatically validated.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\validate.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-xsa9i30b\\package-validation.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "stdout": "",
+      "stderr": "usage: validate.py [-h] --output OUTPUT\nvalidate.py: error: Output already exists; choose a new report path\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\runs\\20261011-final-audit-01\\independent_verify.py",
+        "--output",
+        "experiments\\research_exit_20260927\\runs\\20261012-remediation-01\\independent-verification.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"method\": \"Direct Atom parse plus Unicode token-set membership; no project imports\",\n  \"scope\": \"Independent calculation method on same host; not independent reviewer/scientific validation\",\n  \"monthly_N\": [\n    91,\n    79,\n    97,\n    103,\n    122,\n    106\n  ],\n  \"monthly_n\": [\n    0,\n    1,\n    2,\n    1,\n    4,\n    1\n  ],\n  \"frozen_inputs_and_git_bytes\": {\n    \"acquisition.json\": \"64646536afd87e272eab90601c326a67d8146b7741785ae312f86d21d17b5fc7\",\n    \"inputs/acquire.py\": \"cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9\",\n    \"inputs/am02-acquisition.json\": \"7379a40b6c2a8c18806facae7ff0c1ea9d4eab4e1a19189909d7efdbe692f34d\",\n    \"inputs/am02-count.xml\": \"5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f\",\n    \"inputs/preregistration.json\": \"f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7\",\n    \"raw/count.xml\": \"5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f\",\n    \"raw/current-0000.xml\": \"abf8034f6deea3294749102eda98e3adcff7fe760c2c805f5694296b10139932\",\n    \"raw/current-0500.xml\": \"3436230d717a31bef2cd2b4de43ea4f8e50141e31aeaae66564d1ef1c3d2a473\",\n    \"raw/v1-0000.xml\": \"17efe9c3dbe5a0dc693c96cc69f0f19166d33e3a49acb4f9794a89b170eada1f\",\n    \"raw/v1-0100.xml\": \"3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497\",\n    \"raw/v1-0200.xml\": \"2980129ca1ab896bb24f6fb7cb6317e481de085646f8da237016475eade1ef1d\",\n    \"raw/v1-0300.xml\": \"0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb\",\n    \"raw/v1-0400.xml\": \"3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9\",\n    \"raw/v1-0500.xml\": \"ed474590509a8e8461ab327de09f6790a96d0ffaac5aa39178b5616435ef33bf\"\n  },\n  \"denominator_lineage_records\": 598,\n  \"numerator_lineage_records\": 9,\n  \"lexical_boundary_cases\": 18,\n  \"sensitivity_variants_verified\": 5,\n  \"late_ids\": [\n    \"1907.00143\",\n    \"1907.00172\",\n    \"1907.00282\",\n    \"1907.00298\",\n    \"1907.00376\",\n    \"1907.00468\",\n    \"1907.00677\",\n    \"1907.03773\",\n    \"1908.04451\"\n  ],\n  \"pilot_selection_reproduced\": 27,\n  \"real_annotations\": 0,\n  \"normalized_sha256\": \"a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1\",\n  \"measurement_sha256\": \"214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818\",\n  \"script_sha256\": \"c9558f3ad3edd83bae69a8c8592dd4e52c06633e84206a28979643b64957f8b8\"\n}\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\verify_git_bytes.py",
+        "--repo",
+        ".",
+        "--revision",
+        "b006c45ae74f75127fa6b275f158378a000ceb6c",
+        "--path",
+        "docs/README.md",
+        "--path",
+        "docs/english/master/09_CURRENT_STATE.md",
+        "--path",
+        "docs/english/research/16_CRITICAL_PATH_HANDOFF_20261012.md",
+        "--path",
+        "docs/vietnamese/master/09_CURRENT_STATE.md",
+        "--path",
+        "docs/vietnamese/research/16_CRITICAL_PATH_HANDOFF_20261012.md",
+        "--path",
+        "experiments/research_exit_20260927/README.md",
+        "--path",
+        "experiments/research_exit_20260927/checks_cli_v2.py",
+        "--path",
+        "experiments/research_exit_20260927/runs/20261012-critical-path-01/boundary-probe.json",
+        "--path",
+        "experiments/research_exit_20260927/runs/20261012-critical-path-01/correction-validation.json",
+        "--path",
+        "experiments/research_exit_20260927/runs/20261012-critical-path-01/execution.json",
+        "--path",
+        "experiments/research_exit_20260927/runs/20261012-critical-path-01/final-package-validation.json",
+        "--path",
+        "experiments/research_exit_20260927/runs/20261012-critical-path-01/final-signal-validation.json",
+        "--path",
+        "experiments/research_exit_20260927/runs/20261012-critical-path-01/final-validation.json",
+        "--path",
+        "experiments/research_exit_20260927/runs/20261012-critical-path-01/independent-verification.json",
+        "--path",
+        "experiments/research_exit_20260927/runs/20261012-critical-path-01/legacy-overwrite-probe.json",
+        "--path",
+        "experiments/research_exit_20260927/runs/20261012-critical-path-01/preservation-and-scope.json",
+        "--path",
+        "experiments/research_exit_20260927/runs/20261012-critical-path-01/review-context.json",
+        "--path",
+        "experiments/research_exit_20260927/test_checks_cli_v2.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n",
+      "stdout_artifact": "experiments/research_exit_20260927/runs/20261012-remediation-01/historical-git-blobs.json",
+      "stdout_artifact_sha256": "b3649cde791b5669b19d3d7d84530cbf6ea2ca05361fd29bf0f63ce16cafdcdf"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\verify_git_bytes.py",
+        "--revision",
+        "b006c45ae74f75127fa6b275f158378a000ceb6c",
+        "--path",
+        "docs/README.md",
+        "--compare-root",
+        ".",
+        "--allow-doc-eol",
+        "docs/README.md"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n",
+      "stdout_artifact": "experiments/research_exit_20260927/runs/20261012-remediation-01/documentation-eol-verification.json",
+      "stdout_artifact_sha256": "b70ab293606e05c63a39585bf21a3b767a92e289459c7f6d9ac2ce726e11c40c"
+    }
+  ],
+  "byte_comparisons": {
+    "legacy-1.json": {
+      "equals_frozen": "experiments/research_exit_20260927/results/run-1.json",
+      "sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109"
+    },
+    "legacy-2.json": {
+      "equals_frozen": "experiments/research_exit_20260927/results/run-2.json",
+      "sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109"
+    },
+    "audit-1/audit.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/audit.json",
+      "sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8"
+    },
+    "audit-2/audit.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-development-01/replay-2/audit.json",
+      "sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8"
+    },
+    "audit-1/normalized-records.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/normalized-records.json",
+      "sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1"
+    },
+    "audit-2/normalized-records.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-development-01/replay-2/normalized-records.json",
+      "sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1"
+    },
+    "signal-1/measurements.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json",
+      "sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818"
+    },
+    "signal-2/measurements.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/measurements.json",
+      "sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818"
+    },
+    "signal-1/controlled-checks.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/controlled-checks.json",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    "signal-2/controlled-checks.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/controlled-checks.json",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    "workflow-1.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-amendment-01/simulated-workflow.json",
+      "sha256": "15d84a09bb0dd597018a030768d5fe22240fdca406e3f71265b24408a60fbbfd"
+    },
+    "workflow-2.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-amendment-01/simulated-workflow.json",
+      "sha256": "15d84a09bb0dd597018a030768d5fe22240fdca406e3f71265b24408a60fbbfd"
+    },
+    "crosscheck.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-development-01/crosscheck.json",
+      "sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591"
+    }
+  },
+  "scope": "Same-host separate processes; no network, holdout, independent human validation or product benchmark",
+  "baseline_revision": "0eea1360a100d21a190034cadf2c9f21a1f2a4bc",
+  "runner_argv": [
+    "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "experiments\\research_exit_20260927\\runs\\20261011-final-audit-01\\run_checks.py"
+  ],
+  "linux_suite": {
+    "argv": [
+      "wsl",
+      "-d",
+      "Ubuntu",
+      "--exec",
+      "env",
+      "TMPDIR=/tmp",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "/mnt/c/Users/Admin/sites/.worktrees/research-exit/experiments/research_exit_20260927",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "environment": {
+      "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3",
+      "git": "2.43.0",
+      "temporary_files": "native Linux /tmp",
+      "scope": "Same host WSL Ubuntu, not an independent clean machine"
+    },
+    "exit_code": 0,
+    "output": "test_complete_acquisition (test_acquire.AcquisitionTests.test_complete_acquisition) ... ok\ntest_count_drift_since_access_stops (test_acquire.AcquisitionTests.test_count_drift_since_access_stops) ... ok\ntest_duplicate_works_stop_before_versions (test_acquire.AcquisitionTests.test_duplicate_works_stop_before_versions) ... ok\ntest_incomplete_page_stops (test_acquire.AcquisitionTests.test_incomplete_page_stops) ... ok\ntest_over_bound_stops_after_count (test_acquire.AcquisitionTests.test_over_bound_stops_after_count) ... ok\ntest_wrong_version_stops (test_acquire.AcquisitionTests.test_wrong_version_stops) ... ok\ntest_bad_feed_or_count_never_claims_success (test_acquire.DiagnosticTests.test_bad_feed_or_count_never_claims_success) ... ok\ntest_existing_manifest_is_preserved_without_request (test_acquire.DiagnosticTests.test_existing_manifest_is_preserved_without_request) ... ok\ntest_http_error_preserves_url_excerpt_and_hash (test_acquire.DiagnosticTests.test_http_error_preserves_url_excerpt_and_hash) ... ok\ntest_network_error_is_single_attempt (test_acquire.DiagnosticTests.test_network_error_is_single_attempt) ... ok\ntest_redirect_is_recorded_and_rate_limited (test_acquire.DiagnosticTests.test_redirect_is_recorded_and_rate_limited) ... ok\ntest_success_stops_after_count_and_hashes_raw (test_acquire.DiagnosticTests.test_success_stops_after_count_and_hashes_raw) ... ok\ntest_zero_count_is_access_success_only (test_acquire.DiagnosticTests.test_zero_count_is_access_success_only) ... ok\ntest_existing_evidence_is_preserved_without_running_checker (test_checks_cli_v2.PreservingChecksCliTests.test_existing_evidence_is_preserved_without_running_checker) ... ok\ntest_failed_checker_does_not_publish_a_report (test_checks_cli_v2.PreservingChecksCliTests.test_failed_checker_does_not_publish_a_report) ... ok\ntest_fresh_report_equals_frozen_result_and_repeat_is_refused (test_checks_cli_v2.PreservingChecksCliTests.test_fresh_report_equals_frozen_result_and_repeat_is_refused) ... ok\ntest_partial_preparation_failure_never_exposes_destination (test_checks_cli_v2.PreservingChecksCliTests.test_partial_preparation_failure_never_exposes_destination) ... ok\ntest_two_processes_race_only_after_both_reports_are_complete (test_checks_cli_v2.PreservingChecksCliTests.test_two_processes_race_only_after_both_reports_are_complete) ... ok\ntest_unsupported_hard_links_fail_closed_and_clean_up (test_checks_cli_v2.PreservingChecksCliTests.test_unsupported_hard_links_fail_closed_and_clean_up) ... ok\ntest_checksum_corruption_rejected (test_offline_audit.FieldAuditTests.test_checksum_corruption_rejected) ... ok\ntest_field_status_does_not_treat_missing_title_as_nonmatch (test_offline_audit.FieldAuditTests.test_field_status_does_not_treat_missing_title_as_nonmatch) ... ok\ntest_missing_and_invalid_dates_are_distinct (test_offline_audit.FieldAuditTests.test_missing_and_invalid_dates_are_distinct) ... ok\ntest_work_and_version_identity (test_offline_audit.FieldAuditTests.test_work_and_version_identity) ... ok\ntest_existing_report_is_preserved (test_offline_audit.ValidatorOutputTests.test_existing_report_is_preserved) ... ok\ntest_output_path_is_required (test_offline_audit.ValidatorOutputTests.test_output_path_is_required) ... ok\ntest_agreement_cannot_be_rewritten_by_adjudicator (test_reference_workflow.ReferenceWorkflowTests.test_agreement_cannot_be_rewritten_by_adjudicator) ... ok\ntest_complete_fixture_retains_raw_judgments_and_uncertainty (test_reference_workflow.ReferenceWorkflowTests.test_complete_fixture_retains_raw_judgments_and_uncertainty) ... ok\ntest_duplicate_cannot_inflate_support (test_reference_workflow.ReferenceWorkflowTests.test_duplicate_cannot_inflate_support) ... ok\ntest_invalid_role_label_or_rationale_is_rejected (test_reference_workflow.ReferenceWorkflowTests.test_invalid_role_label_or_rationale_is_rejected) ... ok\ntest_missing_evidence_is_not_negative (test_reference_workflow.ReferenceWorkflowTests.test_missing_evidence_is_not_negative) ... ok\ntest_real_id_or_reference_is_rejected (test_reference_workflow.ReferenceWorkflowTests.test_real_id_or_reference_is_rejected) ... ok\ntest_unresolved_disagreement_does_not_complete (test_reference_workflow.ReferenceWorkflowTests.test_unresolved_disagreement_does_not_complete) ... ok\ntest_all_ten_controlled_failures (test_signal_evaluator.SignalTests.test_all_ten_controlled_failures) ... ok\ntest_bimonth_is_ratio_of_sums (test_signal_evaluator.SignalTests.test_bimonth_is_ratio_of_sums) ... ok\ntest_conflicting_v1_fails (test_signal_evaluator.SignalTests.test_conflicting_v1_fails) ... ok\ntest_empty_vs_observed_zero (test_signal_evaluator.SignalTests.test_empty_vs_observed_zero) ... ok\ntest_identity_and_version_fails (test_signal_evaluator.SignalTests.test_identity_and_version_fails) ... ok\ntest_lineage_matches_and_nonmatches (test_signal_evaluator.SignalTests.test_lineage_matches_and_nonmatches) ... ok\ntest_missing_invalid_event_time_invalidates_denominator (test_signal_evaluator.SignalTests.test_missing_invalid_event_time_invalidates_denominator) ... ok\ntest_missing_invalid_titles_not_nonmatches (test_signal_evaluator.SignalTests.test_missing_invalid_titles_not_nonmatches) ... ok\ntest_order_and_identity_idempotency (test_signal_evaluator.SignalTests.test_order_and_identity_idempotency) ... ok\ntest_utc_binning_and_cutoff (test_signal_evaluator.SignalTests.test_utc_binning_and_cutoff) ... ok\ntest_word_boundary_and_stipulated_double_escape (test_signal_evaluator.SignalTests.test_word_boundary_and_stipulated_double_escape) ... ok\ntest_corruption_fails_even_with_doc_exception (test_verify_git_bytes.GitBytesTests.test_corruption_fails_even_with_doc_exception) ... ok\ntest_digest_only_uses_objects_even_if_artifact_corrupted (test_verify_git_bytes.GitBytesTests.test_digest_only_uses_objects_even_if_artifact_corrupted) ... ok\ntest_exact_hash_and_deterministic_read_only_comparison (test_verify_git_bytes.GitBytesTests.test_exact_hash_and_deterministic_read_only_comparison) ... ok\ntest_frozen_artifacts_cannot_opt_into_normalization (test_verify_git_bytes.GitBytesTests.test_frozen_artifacts_cannot_opt_into_normalization) ... ok\ntest_invalid_scope_and_revision_are_nonzero (test_verify_git_bytes.GitBytesTests.test_invalid_scope_and_revision_are_nonzero) ... ok\ntest_line_endings_require_explicit_documentation_exception (test_verify_git_bytes.GitBytesTests.test_line_endings_require_explicit_documentation_exception) ... ok\ntest_missing_artifact_and_missing_git_blob_fail (test_verify_git_bytes.GitBytesTests.test_missing_artifact_and_missing_git_blob_fail) ... ok\n\n----------------------------------------------------------------------\nRan 50 tests in 3.735s\n\nOK\n"
+  },
+  "initial_environment_failure": {
+    "command": "python -m unittest discover -s experiments/research_exit_20260927 -p test_checks_cli_v2.py -v",
+    "environment": "restricted Windows sandbox; workspace TEMP/TMP",
+    "exit_code": 1,
+    "tests_run": 6,
+    "failures": 2,
+    "cause": "WinError 5 on actual os.link calls; fresh publication and race tests failed. Other four tests passed; verifier tests not started because command stopped on failure.",
+    "resolution": "Unchanged code: approved execution outside sandbox passed 6 publication + 7 verifier tests, then full Windows suite 50/50; Linux 50/50. No unsafe fallback added."
+  },
+  "historical_manifest_reproduction": {
+    "commit": "b006c45ae74f75127fa6b275f158378a000ceb6c",
+    "18_committed_digests_match_recorded_manifest": true,
+    "scope": "Git-object hashes independently reproducible; does not recreate the previous ephemeral worktree"
+  }
+}

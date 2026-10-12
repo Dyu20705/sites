@@ -1,0 +1,99 @@
+{
+  "allowed_documentation_eol": [],
+  "comparison": "git_blobs_only",
+  "files": [
+    {
+      "committed_sha256": "a7113bedc8a66040ef94fbba16d195297e8e6c92ae9f0f2fcc98aef37d20fdc0",
+      "path": "docs/README.md",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "a1c0c0c2735d3a5807ae1ef2956168a14589554c70b7d6092752361d8067c40d",
+      "path": "docs/english/master/09_CURRENT_STATE.md",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "a5c9c2dccf55c55ecab77270ad6dcc25c05c3c22aae42c646d3c6ae8c1cb451d",
+      "path": "docs/english/research/16_CRITICAL_PATH_HANDOFF_20261012.md",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "4cb2b0411cd4a759153b0e184e361c188d00f98780483d8ed430d23765dc8c81",
+      "path": "docs/vietnamese/master/09_CURRENT_STATE.md",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "a32ac64a1417ccbee6ad40faf5023223322ecac403543a0538c9f7fcf938c91c",
+      "path": "docs/vietnamese/research/16_CRITICAL_PATH_HANDOFF_20261012.md",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "624da01f926b110409d162cd2e6a1a7383bb4f0ba1d06af6857b819a07dbcfa2",
+      "path": "experiments/research_exit_20260927/README.md",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "bfaf98267acc06abc692ac494d9d8910c16a0b061544b62d2203bb6b06cd868f",
+      "path": "experiments/research_exit_20260927/checks_cli_v2.py",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "b145f0409fee14c3d3afd8dc48c9a583fc252f0b98dbe1fb49902283bc9bfc59",
+      "path": "experiments/research_exit_20260927/runs/20261012-critical-path-01/boundary-probe.json",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "ba3d503311257d686f8b9eea716a4aef5426a9fde705dab1e1f40e6e3d273068",
+      "path": "experiments/research_exit_20260927/runs/20261012-critical-path-01/correction-validation.json",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "ff022cb9f33c4384fb56ef8d698dbd84da7055dba31664951065bafa0df82dff",
+      "path": "experiments/research_exit_20260927/runs/20261012-critical-path-01/execution.json",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "f26a2e0e33b9abc0e6109b35a2088765bf85270856470b8227a5b48cff13f6f6",
+      "path": "experiments/research_exit_20260927/runs/20261012-critical-path-01/final-package-validation.json",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "fe43aca305d25d4bbadea33d70be9106cde887554862c8ae8fb4b458c8ceab72",
+      "path": "experiments/research_exit_20260927/runs/20261012-critical-path-01/final-signal-validation.json",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "ed4ad1b32653787716ed7a3874c8d52c2f0bf42dd3321a0f533a56fdb54519cc",
+      "path": "experiments/research_exit_20260927/runs/20261012-critical-path-01/final-validation.json",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "97993bdcfbcb5cdecadbc10928665dfa4b30be9794bf8973231c57e7941cffc1",
+      "path": "experiments/research_exit_20260927/runs/20261012-critical-path-01/independent-verification.json",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "a63c5336f0f216f8f7c3720fd2d8c1aea580a5b2a547564037eb6db67561a9ee",
+      "path": "experiments/research_exit_20260927/runs/20261012-critical-path-01/legacy-overwrite-probe.json",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "a32c4c7de1234b13c23ee3bb1d80fb55b741d597ad25d34ffb59ec6226bf4e0e",
+      "path": "experiments/research_exit_20260927/runs/20261012-critical-path-01/preservation-and-scope.json",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "656e137d3e856d81fba3c7d384f43fd6c595074862772a6d6302cf9c861d38d6",
+      "path": "experiments/research_exit_20260927/runs/20261012-critical-path-01/review-context.json",
+      "state": "hashed"
+    },
+    {
+      "committed_sha256": "a851ffd6c8bfb5a373252f531f2abb5aee8331e5bac969bf40cd03e133c3bd58",
+      "path": "experiments/research_exit_20260927/test_checks_cli_v2.py",
+      "state": "hashed"
+    }
+  ],
+  "mismatched_paths": [],
+  "revision": "b006c45ae74f75127fa6b275f158378a000ceb6c",
+  "status": "PASS"
+}
