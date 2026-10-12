@@ -1,5 +1,11 @@
 # 09 — Verified Current State
 
+## Critical-path verification — 12 October 2026
+
+Rechecked clean research worktree/remote at `7ef28119b125c6bcb9f0372516cc0ebe3200326d`, base `0a853636ef6d1be9d3bb85058f34faf368fcb6ce`. PR #75 remains OPEN/Draft; #65 CLOSED/completed; #64 OPEN/ready for owner review; #70 NOT PASSED. [Audit and proposed D09 handoff](../research/16_CRITICAL_PATH_HANDOFF_20261012.md) preserves packet-15 identity, reports live tracker checkbox contradictions, and reproduces 598 works / nine matches / 13 frozen byte comparisons. A new preserving legacy-check CLI has three regressions; current tool suite **40/40 PASS**. Frozen checker/evaluator/input/history remain unchanged. Missing-category behavior is contained by the frozen corpus but needs a separately versioned strict projection before broader reuse.
+
+D05/D06 ACCEPTED; exact amendment, D07/D08/D09 and prospective freeze PROPOSED. Original E3 remains NOT PASSED; independent scientific quality NOT MEASURED; no product view or independent demo replay. Next: owner separately decides A1/A2/A3/D07/D08/F1, records evidence-based G70, then considers D09. Demo-ready deadline 15 October; risk HIGH. These are audit results and conditional proposals, not gate acceptance.
+
 ## Latest owner direction and amendment preparation — 10 October 2026
 
 Verified clean branch `research/exit-evidence-20260927` at `64da78be17f0b89bbd008f5033192742fd663046`, aligned after fresh fetch; PR #75 OPEN/Draft; #65 CLOSED/completed; #64/#70 OPEN. [Owner decision](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) accepts development-only evidence and selects retrospective-only M1 direction, authorizing exact amendment preparation. It does not accept D07/D08, quality thresholds, freeze or Research Exit.

@@ -1,0 +1,1020 @@
+{
+  "checkpoint": "7ef28119b125c6bcb9f0372516cc0ebe3200326d",
+  "base": "0a853636ef6d1be9d3bb85058f34faf368fcb6ce",
+  "incoming_pr_file_count": 143,
+  "packet_git_blob_sha256": {
+    "english": "da80e30a4fb07ad7722cf4d845ce0feb7da28a1b84336710697f358cd30b8122",
+    "vietnamese": "164535e1d50fd6f01e26aaadb639d7a89f67dadfc2dd4412b75d93bd05b677b0"
+  },
+  "new_output_directory": "experiments\\research_exit_20260927\\runs\\20261012-critical-path-01",
+  "files": [
+    {
+      "path": "README.md",
+      "checkpoint_sha256": "cecca7c7ac18a7a1a6f334eb8354b2927fe872ecc79b30218f09b8e54889a6d6",
+      "working_sha256": "ffc39abdf9133c02133e306e9eaeaeaa54620c038c14f9df0aacc89836f62606",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/README.md",
+      "checkpoint_sha256": "9b0f93c20065c80f3408f2a53305e6dd24665d86829173f0f72b37b5ef497d42",
+      "working_sha256": "ff10990ed95b9691811a7777ff760449222281f60846f3a6210e6adc3f6329bd",
+      "preservation": "authorized_current_document_edit",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/english/README.md",
+      "checkpoint_sha256": "a92a9dec8b057ad0d08cdc8fc70155e481f8c67ef3f21616e51ae9257fab63a3",
+      "working_sha256": "c8a4aad1a0574b3909db75a058e2f878675c0aa04e2acd3ff49b289e96fadd34",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/english/baseline/M1.md",
+      "checkpoint_sha256": "25736966983712ebcefce5bde77566533fd1988db6cd582310c7a416b53cbb52",
+      "working_sha256": "547f7c8165d632345987a6b560f4f81671f47afbe28250cee15645456cc951e2",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/english/master/06_EVALUATION_PROTOCOL.md",
+      "checkpoint_sha256": "41c570a89f5aae8f2de10dfc0defce5ad46b291b7956a51e72e1ff0d8ddcf7c6",
+      "working_sha256": "069319b66d5202f1f56164c1a2b1ba9392c18d7dbba2b265208afdee0c442f53",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/english/master/07_DECISION_LOG.md",
+      "checkpoint_sha256": "3a8062d4caa2677efa73eb48e9d7022fa79425a2abaac066a3f001453597f8d4",
+      "working_sha256": "9e1b4132ebcd9d64aa87be421a951259827c1e7f82df089e07d2224362d1e1c2",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/english/master/08_MONTH1_BACKLOG.md",
+      "checkpoint_sha256": "c59018add2ae4fe8f3d1f60179d42c3da69b45bd07a9ecfe5671014ccd3f96b0",
+      "working_sha256": "f36b34942fa7c24d5ff1af516a4bebd364bea1d887e0d7aca2755dcf0a485485",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/english/master/09_CURRENT_STATE.md",
+      "checkpoint_sha256": "15ab925b28089ae4cd208536ec6a791dbc22e53547573ad62b1a32934d3e1400",
+      "working_sha256": "a1c0c0c2735d3a5807ae1ef2956168a14589554c70b7d6092752361d8067c40d",
+      "preservation": "authorized_current_document_edit",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/english/research/01_EVIDENCE_LEDGER.md",
+      "checkpoint_sha256": "1c87887fb0651574c6abde9063e85db3768da6b4f5e1739ee164bd680852cf12",
+      "working_sha256": "adffedcf25c9e262d106b68cc7f25055ed2f256e40d3ce8008d821001de43635",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/english/research/06_RESEARCH_EXIT_EVIDENCE.md",
+      "checkpoint_sha256": "41d4be2ce7833ab432b9ae0bc0c9392c28b2b1d712e3b1a0711afabead6361b2",
+      "working_sha256": "20e2d6b402626c911bd187bb2d7bb2b7551ef58540abbde1845bb2073d66b4b1",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/english/research/07_PROVIDER_AUDIT_RESULTS.md",
+      "checkpoint_sha256": "bdb3e01d3919e74a72c38c8fc356665cab82e96a521f7d05c72db9b02c9ca5d0",
+      "working_sha256": "bdb3e01d3919e74a72c38c8fc356665cab82e96a521f7d05c72db9b02c9ca5d0",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/english/research/08_D07_D08_EXIT_PACKET.md",
+      "checkpoint_sha256": "3f3855948bca5b965d6fd489a08d61ae55833fad1feba611ff0615ca3d8f0213",
+      "working_sha256": "3f3855948bca5b965d6fd489a08d61ae55833fad1feba611ff0615ca3d8f0213",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/english/research/09_RESEARCH_MASTER_20261010.md",
+      "checkpoint_sha256": "e9e5bc32ac941a20dc2dbf7936786360ddb13ccc5bf5a62efc51c256f7ab12bb",
+      "working_sha256": "527d32cf176606213d79551561592a22a9d100d7e76b06394f86f3a5847d107e",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/english/research/10_CONDITIONAL_DESIGN_HANDOFF.md",
+      "checkpoint_sha256": "8ca544bf13a6919b9594a29926962680c0d38f038079c2cf32991d5af8f7e2ad",
+      "working_sha256": "1bedd3b76292d70a5f66741aa6e8f9d77df254884e9f74c1e0cffb9da2fdb7c3",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/english/research/11_REAL_CORPUS_AUDIT_20261010.md",
+      "checkpoint_sha256": "a589f1310879d0f2f4806fe5376b1f7232dc18844716c4e24fa16d66153359ee",
+      "working_sha256": "a589f1310879d0f2f4806fe5376b1f7232dc18844716c4e24fa16d66153359ee",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/english/research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md",
+      "checkpoint_sha256": "49061e3a525bea00e8af12faed1cd38da7a9c4079b831dc06dfd8e291d17f126",
+      "working_sha256": "49061e3a525bea00e8af12faed1cd38da7a9c4079b831dc06dfd8e291d17f126",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/english/research/13_ISSUE65_REVIEW_HANDOFF_20261010.md",
+      "checkpoint_sha256": "71d3e9a76057353c4dcb58d927169881aec5a979e4c7589157f8e3ef94713e49",
+      "working_sha256": "71d3e9a76057353c4dcb58d927169881aec5a979e4c7589157f8e3ef94713e49",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md",
+      "checkpoint_sha256": "17c4ef2c96ce823f4bb30405f2c38f195be5f1551d5a8b9d6dc9a5e82631937b",
+      "working_sha256": "17c4ef2c96ce823f4bb30405f2c38f195be5f1551d5a8b9d6dc9a5e82631937b",
+      "preservation": "identical_bytes",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md",
+      "checkpoint_sha256": "da80e30a4fb07ad7722cf4d845ce0feb7da28a1b84336710697f358cd30b8122",
+      "working_sha256": "da80e30a4fb07ad7722cf4d845ce0feb7da28a1b84336710697f358cd30b8122",
+      "preservation": "identical_bytes",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/vietnamese/README.md",
+      "checkpoint_sha256": "bba77b9107cf7858fb00f6643ee25f4cb19ec17e578b4943c35f0b0bc163dc01",
+      "working_sha256": "3f69fb976ab2eae75041ab263498a0438df63ad1cbbd3a8df532d230b6a44f15",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/vietnamese/baseline/M1.md",
+      "checkpoint_sha256": "ebaa7d7388e18d453846c1f88eaa171fcbca6dd0049cca2a1bca150531c60819",
+      "working_sha256": "f17015f41932b93cf1d7417ebd170d72da59e484f50ca93e1738cb8893642ecf",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/vietnamese/master/06_EVALUATION_PROTOCOL.md",
+      "checkpoint_sha256": "94010d290feffddc29f77cc097d59bcd8952db16a6d7f5d481f36289b06c20c2",
+      "working_sha256": "8b836d9bd9f3356be395279137197545c52a2d84173ebddd53e2d96a5efad7bc",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/vietnamese/master/07_DECISION_LOG.md",
+      "checkpoint_sha256": "4086a25bf473b04835a6f1fd6246a5b11f9389ccde62b49c508866e305f664c7",
+      "working_sha256": "83d5edec22133b4881ed98041645b996c666ddfab6bc0c8e192ee88dad879a54",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/vietnamese/master/08_MONTH1_BACKLOG.md",
+      "checkpoint_sha256": "b3056910322cad3182b9102893ce35479f65f689005d0f02561b8e80476b2767",
+      "working_sha256": "99eb247c34464cea103bc2dfed512057c5396ba271c7dafd252875604eeefd49",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/vietnamese/master/09_CURRENT_STATE.md",
+      "checkpoint_sha256": "e95dd87804e53b5c387fece44944f97efffe00f3b2c64a7f211fa604ad2e01ff",
+      "working_sha256": "4cb2b0411cd4a759153b0e184e361c188d00f98780483d8ed430d23765dc8c81",
+      "preservation": "authorized_current_document_edit",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/vietnamese/research/01_EVIDENCE_LEDGER.md",
+      "checkpoint_sha256": "72f080302d433fdbaba5b5724086c9d533440d0503cf57155977c3dff52b8dbf",
+      "working_sha256": "f4b83ec263c7eb0cb85d8950c646a2c49712e39e598ec430825e6006d347fd81",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/vietnamese/research/06_RESEARCH_EXIT_EVIDENCE.md",
+      "checkpoint_sha256": "2dbad3d9814b17fb5b22594252caea6846ca877187e1a56b6f192715af45b3a8",
+      "working_sha256": "97fb4264fe075c2b5a517fdc8d18f0e5df966910eb84df691f0575d9d97e3791",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/vietnamese/research/07_PROVIDER_AUDIT_RESULTS.md",
+      "checkpoint_sha256": "548662a6cfa04508f6c8012a5be68cffa100cf63b7c9079f6d9e5cb63c39eb9a",
+      "working_sha256": "548662a6cfa04508f6c8012a5be68cffa100cf63b7c9079f6d9e5cb63c39eb9a",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/vietnamese/research/08_D07_D08_EXIT_PACKET.md",
+      "checkpoint_sha256": "1b65055f2f52a9a469a8f7f711df8ba3a052a5a9323b0f183c3f22f8149e7965",
+      "working_sha256": "1b65055f2f52a9a469a8f7f711df8ba3a052a5a9323b0f183c3f22f8149e7965",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/vietnamese/research/09_RESEARCH_MASTER_20261010.md",
+      "checkpoint_sha256": "70c11efecea2d6f300412ea4511ccb880f8271764cea543dff0ddd5c3a3505e3",
+      "working_sha256": "1c45e98d2083ffd78c89be3aab9c8baa2c4fce51e19516ac835de3fd1648a602",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/vietnamese/research/10_CONDITIONAL_DESIGN_HANDOFF.md",
+      "checkpoint_sha256": "99363d34c2f2936629bc4df1047b719978b5682eaa9bb97d7f59368ca8381e81",
+      "working_sha256": "bb6b772f7cc937c35219d0c4e96dec8774419b197c7cddc8d4705418f81f9646",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/vietnamese/research/11_REAL_CORPUS_AUDIT_20261010.md",
+      "checkpoint_sha256": "870b410a009f41deba402c838e36a5c058ed6f6f538fd9adcf9b72b5af63ba3e",
+      "working_sha256": "870b410a009f41deba402c838e36a5c058ed6f6f538fd9adcf9b72b5af63ba3e",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/vietnamese/research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md",
+      "checkpoint_sha256": "36798eaa8b50bfd76432bb3468e0c22cf268770cc5d53c022088c42c66381ae8",
+      "working_sha256": "36798eaa8b50bfd76432bb3468e0c22cf268770cc5d53c022088c42c66381ae8",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/vietnamese/research/13_ISSUE65_REVIEW_HANDOFF_20261010.md",
+      "checkpoint_sha256": "2f0cbd9b497e2b1cca6466b999c369b806a3c802ee99fa7140ec2a15d6dd25ee",
+      "working_sha256": "2f0cbd9b497e2b1cca6466b999c369b806a3c802ee99fa7140ec2a15d6dd25ee",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "docs/vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md",
+      "checkpoint_sha256": "ff7004b1e0cc753b82b4c9dab221d037a82cd95c7df25a1aac7ac4b18d21e1dc",
+      "working_sha256": "ff7004b1e0cc753b82b4c9dab221d037a82cd95c7df25a1aac7ac4b18d21e1dc",
+      "preservation": "identical_bytes",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md",
+      "checkpoint_sha256": "164535e1d50fd6f01e26aaadb639d7a89f67dadfc2dd4412b75d93bd05b677b0",
+      "working_sha256": "164535e1d50fd6f01e26aaadb639d7a89f67dadfc2dd4412b75d93bd05b677b0",
+      "preservation": "identical_bytes",
+      "review_scope": "Targeted gate/claim/contract review; not independent translation review"
+    },
+    {
+      "path": "experiments/research_exit_20260927/.gitattributes",
+      "checkpoint_sha256": "f4133c03a1494e75893ce1630f2bab6ea2ec344d4637f7521facbf725b7856a9",
+      "working_sha256": "f4133c03a1494e75893ce1630f2bab6ea2ec344d4637f7521facbf725b7856a9",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "experiments/research_exit_20260927/.gitignore",
+      "checkpoint_sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "working_sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "experiments/research_exit_20260927/README.md",
+      "checkpoint_sha256": "c6a8f34ebac1e49d4ba3e69eeccfcc9ff8dc946b6947dc1d7ea218b8ed9837d2",
+      "working_sha256": "624da01f926b110409d162cd2e6a1a7383bb4f0ba1d06af6857b819a07dbcfa2",
+      "preservation": "authorized_current_document_edit",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "experiments/research_exit_20260927/accept-atom-diagnostic/acquisition.json",
+      "checkpoint_sha256": "e267eabcb172210c7252c84051152825fa4381035fbbeffe130afebe00b78fe3",
+      "working_sha256": "e267eabcb172210c7252c84051152825fa4381035fbbeffe130afebe00b78fe3",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/acquire.py",
+      "checkpoint_sha256": "cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9",
+      "working_sha256": "cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9",
+      "preservation": "identical_bytes",
+      "review_scope": "Parser/CLI boundary inspection and mocked tests; live acquisition intentionally not executed"
+    },
+    {
+      "path": "experiments/research_exit_20260927/acquisition.json",
+      "checkpoint_sha256": "48226d2c87a604cb2f3b8275b44ffbeb29007a3dbb134a01f16613d68ffc9269",
+      "working_sha256": "48226d2c87a604cb2f3b8275b44ffbeb29007a3dbb134a01f16613d68ffc9269",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/amendments.md",
+      "checkpoint_sha256": "ab2b94415b7aa1371fb9677e97a2f86fc7d0c4e71a6815b67b6330439a7d4baa",
+      "working_sha256": "ab2b94415b7aa1371fb9677e97a2f86fc7d0c4e71a6815b67b6330439a7d4baa",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "experiments/research_exit_20260927/checks.py",
+      "checkpoint_sha256": "3ad3d13b6de01e16d87674f8fc81fa5cb0dc1bd13bff52662803ab048de13625",
+      "working_sha256": "3ad3d13b6de01e16d87674f8fc81fa5cb0dc1bd13bff52662803ab048de13625",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/crosscheck.py",
+      "checkpoint_sha256": "78b58b8ad2f603e15f1a08b7d1467f8f0d214f7be25972b39063aa1b772919dc",
+      "working_sha256": "78b58b8ad2f603e15f1a08b7d1467f8f0d214f7be25972b39063aa1b772919dc",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/dblp-access.json",
+      "checkpoint_sha256": "839a52ee156aa172c4fbd7a34ab39000075e4990c7e60cd7169bbec4cbc5ada4",
+      "working_sha256": "839a52ee156aa172c4fbd7a34ab39000075e4990c7e60cd7169bbec4cbc5ada4",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/fixtures.json",
+      "checkpoint_sha256": "c605ee9ec1e0e43f928106682752c93e63e8881a0b7b6ffc02705b87ec300b5d",
+      "working_sha256": "c605ee9ec1e0e43f928106682752c93e63e8881a0b7b6ffc02705b87ec300b5d",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/http-endpoint-diagnostic/acquisition.json",
+      "checkpoint_sha256": "7379a40b6c2a8c18806facae7ff0c1ea9d4eab4e1a19189909d7efdbe692f34d",
+      "working_sha256": "7379a40b6c2a8c18806facae7ff0c1ea9d4eab4e1a19189909d7efdbe692f34d",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/http-endpoint-diagnostic/raw/count.xml",
+      "checkpoint_sha256": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+      "working_sha256": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/offline_audit.py",
+      "checkpoint_sha256": "d26cdc19ac5cb9c3c49da8bb6f92ab7d37d3ee76ffc5829c26140fcb7833a7a2",
+      "working_sha256": "d26cdc19ac5cb9c3c49da8bb6f92ab7d37d3ee76ffc5829c26140fcb7833a7a2",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/preregistration.json",
+      "checkpoint_sha256": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7",
+      "working_sha256": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/probe_snapshot.py",
+      "checkpoint_sha256": "6d9aaa4f0263cd7e9b7b63d57a52b7280c3ada651273fad60dfafb35874cfc80",
+      "working_sha256": "6d9aaa4f0263cd7e9b7b63d57a52b7280c3ada651273fad60dfafb35874cfc80",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "experiments/research_exit_20260927/results/run-1.json",
+      "checkpoint_sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109",
+      "working_sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/results/run-2.json",
+      "checkpoint_sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109",
+      "working_sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/results/validation.json",
+      "checkpoint_sha256": "d6350bb9b372bcb925323e3c10d51947d791bca855305e41b0f4c33d1272ec8a",
+      "working_sha256": "d6350bb9b372bcb925323e3c10d51947d791bca855305e41b0f4c33d1272ec8a",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-amendment-01/frozen-evidence-verification.json",
+      "checkpoint_sha256": "2f60b55995f64ace911a48d36eeee81a907f17547c5d3b23469265e161e7f04b",
+      "working_sha256": "2f60b55995f64ace911a48d36eeee81a907f17547c5d3b23469265e161e7f04b",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-amendment-01/index-byte-verification.json",
+      "checkpoint_sha256": "a659cd0a607d77ae2c26d3c9b815ebef037ebdac79d698f9b8a2f0eb3cf91088",
+      "working_sha256": "a659cd0a607d77ae2c26d3c9b815ebef037ebdac79d698f9b8a2f0eb3cf91088",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-amendment-01/simulated-workflow.json",
+      "checkpoint_sha256": "15d84a09bb0dd597018a030768d5fe22240fdca406e3f71265b24408a60fbbfd",
+      "working_sha256": "15d84a09bb0dd597018a030768d5fe22240fdca406e3f71265b24408a60fbbfd",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-amendment-01/workflow-verification.json",
+      "checkpoint_sha256": "dab3e9cc66b36bcd4f5452f30096447dbdccfce1073625ec0c37525189d37f33",
+      "working_sha256": "dab3e9cc66b36bcd4f5452f30096447dbdccfce1073625ec0c37525189d37f33",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/acquisition.json",
+      "checkpoint_sha256": "64646536afd87e272eab90601c326a67d8146b7741785ae312f86d21d17b5fc7",
+      "working_sha256": "64646536afd87e272eab90601c326a67d8146b7741785ae312f86d21d17b5fc7",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/crosscheck.json",
+      "checkpoint_sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591",
+      "working_sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/historical-preservation.json",
+      "checkpoint_sha256": "eff2d2d83eec864ce949365ab47e768c989c0800f1944d91dc91992dac919800",
+      "working_sha256": "eff2d2d83eec864ce949365ab47e768c989c0800f1944d91dc91992dac919800",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/index-byte-verification.json",
+      "checkpoint_sha256": "392e3564ed72a3e8502a0d10a72b95f5bba763b4e4f2601849015ca4db53ef2f",
+      "working_sha256": "392e3564ed72a3e8502a0d10a72b95f5bba763b4e4f2601849015ca4db53ef2f",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/inputs/acquire.py",
+      "checkpoint_sha256": "cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9",
+      "working_sha256": "cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9",
+      "preservation": "identical_bytes",
+      "review_scope": "Parser/CLI boundary inspection and mocked tests; live acquisition intentionally not executed"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/inputs/am02-acquisition.json",
+      "checkpoint_sha256": "7379a40b6c2a8c18806facae7ff0c1ea9d4eab4e1a19189909d7efdbe692f34d",
+      "working_sha256": "7379a40b6c2a8c18806facae7ff0c1ea9d4eab4e1a19189909d7efdbe692f34d",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/inputs/am02-count.xml",
+      "checkpoint_sha256": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+      "working_sha256": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/inputs/preregistration.json",
+      "checkpoint_sha256": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7",
+      "working_sha256": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/package-validation.json",
+      "checkpoint_sha256": "ce7f23fd953ca48fa056119a809851d70b7aa52986d043404203565e9508406b",
+      "working_sha256": "ce7f23fd953ca48fa056119a809851d70b7aa52986d043404203565e9508406b",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/count.xml",
+      "checkpoint_sha256": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+      "working_sha256": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/current-0000.xml",
+      "checkpoint_sha256": "abf8034f6deea3294749102eda98e3adcff7fe760c2c805f5694296b10139932",
+      "working_sha256": "abf8034f6deea3294749102eda98e3adcff7fe760c2c805f5694296b10139932",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/current-0500.xml",
+      "checkpoint_sha256": "3436230d717a31bef2cd2b4de43ea4f8e50141e31aeaae66564d1ef1c3d2a473",
+      "working_sha256": "3436230d717a31bef2cd2b4de43ea4f8e50141e31aeaae66564d1ef1c3d2a473",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0000.xml",
+      "checkpoint_sha256": "17efe9c3dbe5a0dc693c96cc69f0f19166d33e3a49acb4f9794a89b170eada1f",
+      "working_sha256": "17efe9c3dbe5a0dc693c96cc69f0f19166d33e3a49acb4f9794a89b170eada1f",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0100.xml",
+      "checkpoint_sha256": "3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497",
+      "working_sha256": "3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0200.xml",
+      "checkpoint_sha256": "2980129ca1ab896bb24f6fb7cb6317e481de085646f8da237016475eade1ef1d",
+      "working_sha256": "2980129ca1ab896bb24f6fb7cb6317e481de085646f8da237016475eade1ef1d",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0300.xml",
+      "checkpoint_sha256": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb",
+      "working_sha256": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0400.xml",
+      "checkpoint_sha256": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9",
+      "working_sha256": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0500.xml",
+      "checkpoint_sha256": "ed474590509a8e8461ab327de09f6790a96d0ffaac5aa39178b5616435ef33bf",
+      "working_sha256": "ed474590509a8e8461ab327de09f6790a96d0ffaac5aa39178b5616435ef33bf",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/audit.json",
+      "checkpoint_sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8",
+      "working_sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/normalized-records.json",
+      "checkpoint_sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1",
+      "working_sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/replay-2/audit.json",
+      "checkpoint_sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8",
+      "working_sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/replay-2/normalized-records.json",
+      "checkpoint_sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1",
+      "working_sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/replay-verification.json",
+      "checkpoint_sha256": "fbbd8de7958bb1ba0394af4646dc09b2ba18083f0e877761e12198f45cd888eb",
+      "working_sha256": "fbbd8de7958bb1ba0394af4646dc09b2ba18083f0e877761e12198f45cd888eb",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/review.md",
+      "checkpoint_sha256": "e43bf12a60f438824d9db64a66958f65ebe3a690b404a64aaa61d9d85ef37167",
+      "working_sha256": "e43bf12a60f438824d9db64a66958f65ebe3a690b404a64aaa61d9d85ef37167",
+      "preservation": "identical_bytes",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/audit.json",
+      "checkpoint_sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8",
+      "working_sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/crosscheck.json",
+      "checkpoint_sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591",
+      "working_sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/normalized-records.json",
+      "checkpoint_sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1",
+      "working_sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1",
+      "preservation": "identical_bytes",
+      "review_scope": "Byte preservation; frozen corpus raw/identity/lineage programmatically checked, no scientific content labeling"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/verification.json",
+      "checkpoint_sha256": "87fb2f6d099922b062fd808ab45d731502fa6ecb6daf4eb44ce70d626a6fbe0d",
+      "working_sha256": "87fb2f6d099922b062fd808ab45d731502fa6ecb6daf4eb44ce70d626a6fbe0d",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/tool-tests.txt",
+      "checkpoint_sha256": "ba39d7d625763f05767720c98fc5aeb8c34a091864ac191aa98fadd3431beadb",
+      "working_sha256": "20ad1e8b64b9712460aed40e5028c92a57a05746295134a084b5a326a435be4b",
+      "preservation": "preexisting_checkout_line_endings_only",
+      "review_scope": "Inventory/context only; earlier literature/provider search and unrelated content not re-audited"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/verification-local.json",
+      "checkpoint_sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109",
+      "working_sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-historical-screen-01/package-validation.json",
+      "checkpoint_sha256": "927e65f99c9142948c0e7d9ecfc50f2caf4499add6bd5c7ac0751385578f9832",
+      "working_sha256": "927e65f99c9142948c0e7d9ecfc50f2caf4499add6bd5c7ac0751385578f9832",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-historical-screen-01/source-screen-plan.json",
+      "checkpoint_sha256": "7aa0adcf63f2e23dbd16abf49db99e028181f7b6a43e6b9f3192d5ed4df00b60",
+      "working_sha256": "7aa0adcf63f2e23dbd16abf49db99e028181f7b6a43e6b9f3192d5ed4df00b60",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-historical-screen-01/source-screen-results.json",
+      "checkpoint_sha256": "b4239453fb147f2df7ad73f585bec782749cda95575efff5dbc0e656fe80ee43",
+      "working_sha256": "b4239453fb147f2df7ad73f585bec782749cda95575efff5dbc0e656fe80ee43",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-preflight-01/development-plan.json",
+      "checkpoint_sha256": "43fa3ec2ff078e9aa51792dae86f8cbb4a2c5eb3efb5632c13faab436de38f40",
+      "working_sha256": "43fa3ec2ff078e9aa51792dae86f8cbb4a2c5eb3efb5632c13faab436de38f40",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-preflight-01/dns.json",
+      "checkpoint_sha256": "7f7b74b305333319978f6120b230003f6034468e1aee0d2fedd26d3528cc6ad3",
+      "working_sha256": "7f7b74b305333319978f6120b230003f6034468e1aee0d2fedd26d3528cc6ad3",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-preflight-01/execution-hashes.json",
+      "checkpoint_sha256": "32f38e8e84d43de989be7b5881dc60cf542dbf6ab05959306b85cea23c8c72f6",
+      "working_sha256": "32f38e8e84d43de989be7b5881dc60cf542dbf6ab05959306b85cea23c8c72f6",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-preflight-01/offline-audit-contract.json",
+      "checkpoint_sha256": "6b8ccd98e4b46e9b274add3561e9e232ba59e60b31a6567e1573a630e3876442",
+      "working_sha256": "6b8ccd98e4b46e9b274add3561e9e232ba59e60b31a6567e1573a630e3876442",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-preflight-01/preflight.json",
+      "checkpoint_sha256": "996f35feb65a24fe9cb531d83d1c892e465cfea5d50529bd15d7e97cd2f505eb",
+      "working_sha256": "996f35feb65a24fe9cb531d83d1c892e465cfea5d50529bd15d7e97cd2f505eb",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-review-response-01/future-search-execution-template.json",
+      "checkpoint_sha256": "3f11ca8162f2d3c94ced8db854b0fa67bf17b3807d81920feafc11141923c04d",
+      "working_sha256": "3f11ca8162f2d3c94ced8db854b0fa67bf17b3807d81920feafc11141923c04d",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-review-response-01/package-validation.json",
+      "checkpoint_sha256": "25e40f581e90228337badd9114bbfaf1b1f6f1c8434e6e9e675cadc4fc94d7e0",
+      "working_sha256": "25e40f581e90228337badd9114bbfaf1b1f6f1c8434e6e9e675cadc4fc94d7e0",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-review-response-01/review-response.json",
+      "checkpoint_sha256": "4ac167db64cb2f553d7e0ae7528139a786d5be858681b64846a70f13d09e427f",
+      "working_sha256": "4ac167db64cb2f553d7e0ae7528139a786d5be858681b64846a70f13d09e427f",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/controlled-checks.json",
+      "checkpoint_sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c",
+      "working_sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/execution.json",
+      "checkpoint_sha256": "66202578ce8406789e9b59989667aa95db5e98ea698bf2ced787abfdb594a611",
+      "working_sha256": "66202578ce8406789e9b59989667aa95db5e98ea698bf2ced787abfdb594a611",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json",
+      "checkpoint_sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818",
+      "working_sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/controlled-checks.json",
+      "checkpoint_sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c",
+      "working_sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/execution.json",
+      "checkpoint_sha256": "d11ffdf3bfe0f529b3f2b18486a26fce9b31c89dd3393f9746bcfd7dcb4f6c10",
+      "working_sha256": "d11ffdf3bfe0f529b3f2b18486a26fce9b31c89dd3393f9746bcfd7dcb4f6c10",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/measurements.json",
+      "checkpoint_sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818",
+      "working_sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/declaration-corrected.json",
+      "checkpoint_sha256": "9764e840c97cc3b49bf5356f434a19a50ff0c37ba4b803ab263879ebc0e33043",
+      "working_sha256": "9764e840c97cc3b49bf5356f434a19a50ff0c37ba4b803ab263879ebc0e33043",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/declaration.json",
+      "checkpoint_sha256": "24284285e3ff9a3b13770b7647e84e97e8efd81ba09b139e345a0b088c50d600",
+      "working_sha256": "24284285e3ff9a3b13770b7647e84e97e8efd81ba09b139e345a0b088c50d600",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-crosscheck.json",
+      "checkpoint_sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591",
+      "working_sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-verification.json",
+      "checkpoint_sha256": "3b5654d622fe62a5eedadb8082e3accb1f08311715e9d789a46aba91d433d8e8",
+      "working_sha256": "3b5654d622fe62a5eedadb8082e3accb1f08311715e9d789a46aba91d433d8e8",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/index-byte-verification.json",
+      "checkpoint_sha256": "7b3de84da6b0bac6e9b0ab75b1272949632d997f6f0ceef4ce0377cfcd320152",
+      "working_sha256": "7b3de84da6b0bac6e9b0ab75b1272949632d997f6f0ceef4ce0377cfcd320152",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/legacy-checks.json",
+      "checkpoint_sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109",
+      "working_sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/reference-pilot-plan.json",
+      "checkpoint_sha256": "58421ee544e7d8afc8744aa35eba2543b1b65bf23a1c24092b25a6146dbbcd5c",
+      "working_sha256": "58421ee544e7d8afc8744aa35eba2543b1b65bf23a1c24092b25a6146dbbcd5c",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/controlled-checks.json",
+      "checkpoint_sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c",
+      "working_sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/execution.json",
+      "checkpoint_sha256": "ac122f3a4a375d5367033dcc1506ca73366014c89b72b6d5a02edc9d9dcd4db0",
+      "working_sha256": "ac122f3a4a375d5367033dcc1506ca73366014c89b72b6d5a02edc9d9dcd4db0",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/measurements.json",
+      "checkpoint_sha256": "0e36c5a25271c562ead1cf271ffca90c8316b48abd5f403f33d775b8e503e67c",
+      "working_sha256": "0e36c5a25271c562ead1cf271ffca90c8316b48abd5f403f33d775b8e503e67c",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/controlled-checks.json",
+      "checkpoint_sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c",
+      "working_sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/execution.json",
+      "checkpoint_sha256": "782b69706b797563c2b3a172d41ccb980d5f7bb4b548dcf74eebc18b70bff844",
+      "working_sha256": "782b69706b797563c2b3a172d41ccb980d5f7bb4b548dcf74eebc18b70bff844",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/measurements.json",
+      "checkpoint_sha256": "0e36c5a25271c562ead1cf271ffca90c8316b48abd5f403f33d775b8e503e67c",
+      "working_sha256": "0e36c5a25271c562ead1cf271ffca90c8316b48abd5f403f33d775b8e503e67c",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/self-review.json",
+      "checkpoint_sha256": "d9b9b66de3059954834d49ed1ec2bc8429f43f7b0b6969570192cccf3ce146d9",
+      "working_sha256": "d9b9b66de3059954834d49ed1ec2bc8429f43f7b0b6969570192cccf3ce146d9",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/source-inspection.json",
+      "checkpoint_sha256": "251aa261a411cb6757a2bd3bdeb687371e5db4fff79d0a6d75689fb3981b755c",
+      "working_sha256": "251aa261a411cb6757a2bd3bdeb687371e5db4fff79d0a6d75689fb3981b755c",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/verification.json",
+      "checkpoint_sha256": "0a95feab52cd1b72deddb7f2b1db453b6bce1104e9932a13f5e019c688cd6a2a",
+      "working_sha256": "0a95feab52cd1b72deddb7f2b1db453b6bce1104e9932a13f5e019c688cd6a2a",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/boundary-probe.json",
+      "checkpoint_sha256": "b145f0409fee14c3d3afd8dc48c9a583fc252f0b98dbe1fb49902283bc9bfc59",
+      "working_sha256": "b145f0409fee14c3d3afd8dc48c9a583fc252f0b98dbe1fb49902283bc9bfc59",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/boundary_probe.py",
+      "checkpoint_sha256": "e40400d27775f99f2724338c04c97eda493dfa1397c57e2452c6cdd170ac0ce2",
+      "working_sha256": "e40400d27775f99f2724338c04c97eda493dfa1397c57e2452c6cdd170ac0ce2",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/context.json",
+      "checkpoint_sha256": "ad9b95d1e959e8909a4827ece2faaf89a254ccac929f728d5f388bde43f444e1",
+      "working_sha256": "ad9b95d1e959e8909a4827ece2faaf89a254ccac929f728d5f388bde43f444e1",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/execution.json",
+      "checkpoint_sha256": "651c5c2df56374e35df8f26bac1ec58dadfaaf37453aa7f33e8f07c24740dd18",
+      "working_sha256": "651c5c2df56374e35df8f26bac1ec58dadfaaf37453aa7f33e8f07c24740dd18",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/final-execution.json",
+      "checkpoint_sha256": "a4eec459053d6641e530803c7ae26c318a1c794d2275321f785f443f92075596",
+      "working_sha256": "a4eec459053d6641e530803c7ae26c318a1c794d2275321f785f443f92075596",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/final-package-validation.json",
+      "checkpoint_sha256": "dfe399fadc73c27f775c48d86f425f61e4a1e8b120aafd3214e972c14d3fed37",
+      "working_sha256": "dfe399fadc73c27f775c48d86f425f61e4a1e8b120aafd3214e972c14d3fed37",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/independent-verification.json",
+      "checkpoint_sha256": "97993bdcfbcb5cdecadbc10928665dfa4b30be9794bf8973231c57e7941cffc1",
+      "working_sha256": "97993bdcfbcb5cdecadbc10928665dfa4b30be9794bf8973231c57e7941cffc1",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/independent_verify.py",
+      "checkpoint_sha256": "c9558f3ad3edd83bae69a8c8592dd4e52c06633e84206a28979643b64957f8b8",
+      "working_sha256": "c9558f3ad3edd83bae69a8c8592dd4e52c06633e84206a28979643b64957f8b8",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/package-validation.json",
+      "checkpoint_sha256": "be46527e0c9f1ca19c1a7340061d089eb2520637f58ff1ec766ef66712a357ac",
+      "working_sha256": "be46527e0c9f1ca19c1a7340061d089eb2520637f58ff1ec766ef66712a357ac",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/preservation-and-scope.json",
+      "checkpoint_sha256": "625c8922653a11f471731c36248f5b4b7096c14e384352104cdd07403a210658",
+      "working_sha256": "625c8922653a11f471731c36248f5b4b7096c14e384352104cdd07403a210658",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/run_checks.py",
+      "checkpoint_sha256": "f5d4ba2902db706ddb7c117a9de4f8f8c04eb09de9ea57ab6c228d4eca2e3046",
+      "working_sha256": "f5d4ba2902db706ddb7c117a9de4f8f8c04eb09de9ea57ab6c228d4eca2e3046",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261011-final-audit-01/signal-validation.json",
+      "checkpoint_sha256": "2f60b55995f64ace911a48d36eeee81a907f17547c5d3b23469265e161e7f04b",
+      "working_sha256": "2f60b55995f64ace911a48d36eeee81a907f17547c5d3b23469265e161e7f04b",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/search-log.json",
+      "checkpoint_sha256": "201f3d47afaf7bb8f67bd771ae3e0e7164848a92f52d8c6bbd411a2c6a08b9b4",
+      "working_sha256": "201f3d47afaf7bb8f67bd771ae3e0e7164848a92f52d8c6bbd411a2c6a08b9b4",
+      "preservation": "identical_bytes",
+      "review_scope": "Preservation/inventory; current evidence subsets checked by replay and raw recount; not every historical report independently re-evaluated"
+    },
+    {
+      "path": "experiments/research_exit_20260927/signal_evaluator.py",
+      "checkpoint_sha256": "0c6da9cc55cac176ad30a9989f2f09bcc1dbeaa3a55cb1a80b96c3659175cb32",
+      "working_sha256": "0c6da9cc55cac176ad30a9989f2f09bcc1dbeaa3a55cb1a80b96c3659175cb32",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/simulate_reference_workflow.py",
+      "checkpoint_sha256": "ddd25597c17009281f1d97b02d59f65afecd4bf3374d40918036a3d903940c16",
+      "working_sha256": "ddd25597c17009281f1d97b02d59f65afecd4bf3374d40918036a3d903940c16",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/test_acquire.py",
+      "checkpoint_sha256": "3856e5470f1203fa852ed9942607543e2a934ef006e028e1437b98a5b9b810fd",
+      "working_sha256": "3856e5470f1203fa852ed9942607543e2a934ef006e028e1437b98a5b9b810fd",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/test_offline_audit.py",
+      "checkpoint_sha256": "a8fe5c81151271e75d19735c9529a838045eaf2e7a8d3ecfbebcca024effe4d6",
+      "working_sha256": "a8fe5c81151271e75d19735c9529a838045eaf2e7a8d3ecfbebcca024effe4d6",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/test_reference_workflow.py",
+      "checkpoint_sha256": "9611b3ed3f168052bba674baeafd61ede67f94b6b834a79c16d7625c27213fa1",
+      "working_sha256": "9611b3ed3f168052bba674baeafd61ede67f94b6b834a79c16d7625c27213fa1",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/test_signal_evaluator.py",
+      "checkpoint_sha256": "383cd73cbff2e4d3510ade1ecf3d8920affa7be4024acf17ea5a49516dd88c0e",
+      "working_sha256": "383cd73cbff2e4d3510ade1ecf3d8920affa7be4024acf17ea5a49516dd88c0e",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/validate.py",
+      "checkpoint_sha256": "314deb4d4d6c83af669016842f812623c034f81002cf6e9fefda5958a7f0041a",
+      "working_sha256": "314deb4d4d6c83af669016842f812623c034f81002cf6e9fefda5958a7f0041a",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/validate_signal.py",
+      "checkpoint_sha256": "b62186867e375224f3a2b8442c49c1bf27b593953214789ae988424792cd980b",
+      "working_sha256": "b62186867e375224f3a2b8442c49c1bf27b593953214789ae988424792cd980b",
+      "preservation": "identical_bytes",
+      "review_scope": "Source inspected and offline execution/test evidence; no live acquisition"
+    }
+  ],
+  "summary": {
+    "authorized_current_document_edit": 4,
+    "identical_bytes": 119,
+    "preexisting_checkout_line_endings_only": 20
+  },
+  "changed_historical_evidence": [],
+  "excluded_work": "No corpus acquisition/holdout, exhaustive security review, independent human review, or product benchmark."
+}

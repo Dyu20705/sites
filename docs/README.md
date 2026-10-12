@@ -4,6 +4,8 @@ This directory contains the English and Vietnamese documentation for SITES, incl
 
 ## Languages
 
+12 October critical-path audit and conditional D09 handoff: [full report EN](english/research/16_CRITICAL_PATH_HANDOFF_20261012.md) / [tóm tắt VI](vietnamese/research/16_CRITICAL_PATH_HANDOFF_20261012.md). Frozen arithmetic reproduced; current tool suite 40/40 PASS after a preserving legacy replay entry point. Original E3/#70 NOT PASSED; the exact owner packet is unchanged. Report 16 is maintained in English with an explicitly abridged Vietnamese companion.
+
 Owner selected retrospective-only direction; the exact unified amendment remains PROPOSED: [packet EN](english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) / [packet VI](vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). SIMULATED 27-fictional-work annotation workflow tested; independent scientific quality NOT MEASURED. D07/D08/D09 PROPOSED, original E3/#70 NOT PASSED.
 
 Latest critical-path evidence: [D08 development evaluation (EN)](english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md) / [thực nghiệm D08 (VI)](vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md). #65 investigation completed; real count/share measured; D07/D08/D09 still PROPOSED, E3/#70 NOT PASSED. Demo-ready deadline: 15 October 2026.
@@ -12,8 +14,8 @@ Research Exit evidence from 27 September is available in [English](english/resea
 
 | Language | Project introduction | Detailed M0/M1 set | Status |
 | --- | --- | --- | --- |
-| English | [Repository README](../README.md) | [English documentation](english/README.md) | Complete mirror of the current Vietnamese set |
-| Tiếng Việt | [Vietnamese README](vietnamese/README.md) | [Tài liệu tiếng Việt](vietnamese/README.md) | Complete |
+| English | [Repository README](../README.md) | [English documentation](english/README.md) | Complete paired baseline/research set through report 15; full report 16 |
+| Tiếng Việt | [Vietnamese README](vietnamese/README.md) | [Tài liệu tiếng Việt](vietnamese/README.md) | Complete paired set through report 15; report 16 is a summary linking to full EN details |
 
 ## Translation policy
 

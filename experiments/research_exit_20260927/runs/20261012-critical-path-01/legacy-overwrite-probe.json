@@ -1,0 +1,16 @@
+{
+  "status": "OVERWRITE_REPRODUCED_ON_DISPOSABLE_FILE",
+  "argv": [
+    "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "experiments\\research_exit_20260927\\checks.py",
+    "--output",
+    "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\tmpanfr042q\\existing-evidence.json"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\ntest_alias_limitation_is_visible (__main__.Checks.test_alias_limitation_is_visible) ... ok\ntest_conflicting_version_fails (__main__.Checks.test_conflicting_version_fails) ... ok\ntest_future_observation_isolated (__main__.Checks.test_future_observation_isolated) ... ok\ntest_hand_calculated_series (__main__.Checks.test_hand_calculated_series) ... ok\ntest_idempotency (__main__.Checks.test_idempotency) ... ok\ntest_invalid_count (__main__.Checks.test_invalid_count) ... ok\ntest_late_availability_isolated (__main__.Checks.test_late_availability_isolated) ... ok\ntest_lineage_and_expected (__main__.Checks.test_lineage_and_expected) ... ok\ntest_missing_title (__main__.Checks.test_missing_title) ... ok\ntest_order_independence (__main__.Checks.test_order_independence) ... ok\ntest_revision_not_double_counted (__main__.Checks.test_revision_not_double_counted) ... ok\ntest_timezone_required (__main__.Checks.test_timezone_required) ... ok\ntest_unknown_availability_not_zero (__main__.Checks.test_unknown_availability_not_zero) ... ok\ntest_unknown_coverage (__main__.Checks.test_unknown_coverage) ... ok\ntest_vocabulary_cutoff (__main__.Checks.test_vocabulary_cutoff) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.001s\n\nOK\n",
+  "before_sha256": "5d46ddc7b974bfdf2934c3e0a3b90e052fd5d52bfc98c7a911620a638c44fe19",
+  "after_sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109",
+  "frozen_checker_modified": false,
+  "historical_output_modified": false
+}

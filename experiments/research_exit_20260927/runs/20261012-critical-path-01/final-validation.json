@@ -1,0 +1,68 @@
+{
+  "recorded_utc": "2026-10-12T01:17:02.157135+00:00",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\validate_signal.py",
+        "--run",
+        "experiments\\research_exit_20260927\\runs\\20261010-signal-01",
+        "--output",
+        "experiments\\research_exit_20260927\\runs\\20261012-critical-path-01\\final-signal-validation.json"
+      ],
+      "exit_code": 0,
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n",
+      "output": "experiments\\research_exit_20260927\\runs\\20261012-critical-path-01\\final-signal-validation.json",
+      "output_sha256": "fe43aca305d25d4bbadea33d70be9106cde887554862c8ae8fb4b458c8ceab72"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\validate.py",
+        "--output",
+        "experiments\\research_exit_20260927\\runs\\20261012-critical-path-01\\final-package-validation.json"
+      ],
+      "exit_code": 0,
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n",
+      "output": "experiments\\research_exit_20260927\\runs\\20261012-critical-path-01\\final-package-validation.json",
+      "output_sha256": "f26a2e0e33b9abc0e6109b35a2088765bf85270856470b8227a5b48cff13f6f6"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of 'docs/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/english/master/09_CURRENT_STATE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/vietnamese/master/09_CURRENT_STATE.md', LF will be replaced by CRLF the next time Git touches it\n"
+    }
+  ],
+  "reviewable_addendum_and_correction_sha256": {
+    "docs/english/research/16_CRITICAL_PATH_HANDOFF_20261012.md": "a5c9c2dccf55c55ecab77270ad6dcc25c05c3c22aae42c646d3c6ae8c1cb451d",
+    "docs/vietnamese/research/16_CRITICAL_PATH_HANDOFF_20261012.md": "a32ac64a1417ccbee6ad40faf5023223322ecac403543a0538c9f7fcf938c91c",
+    "experiments/research_exit_20260927/checks_cli_v2.py": "bfaf98267acc06abc692ac494d9d8910c16a0b061544b62d2203bb6b06cd868f",
+    "experiments/research_exit_20260927/test_checks_cli_v2.py": "a851ffd6c8bfb5a373252f531f2abb5aee8331e5bac969bf40cd03e133c3bd58"
+  },
+  "relative_links_checked": 468,
+  "broken_relative_links": [],
+  "stale_input_hashes": [],
+  "signal_status": "PASS",
+  "self_review": {
+    "scope_change": false,
+    "new_runtime_dependency": false,
+    "frozen_evaluator_modified": false,
+    "owner_decision_status_changed": false,
+    "product_implementation": false,
+    "known_broader_category_limitation": "Contained by pinned corpus; future strict guard remains proposed",
+    "historical_checker_limit": "Direct legacy CLI remains unsafe; v2 is the current documented entry point",
+    "tracker_contradiction": "Recorded with snapshot; no unsupported readiness inferred"
+  },
+  "not_executed": [
+    "new acquisition",
+    "holdout evaluation",
+    "independent human semantic labels",
+    "independent clean-host demo",
+    "product E7/E8"
+  ]
+}

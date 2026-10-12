@@ -1,5 +1,11 @@
 # 09 — Trạng thái hiện tại đã xác minh
 
+## Xác minh critical path — 12/10/2026
+
+Đã kiểm tra worktree research/remote sạch tại `7ef28119b125c6bcb9f0372516cc0ebe3200326d`, base `0a853636ef6d1be9d3bb85058f34faf368fcb6ce`. PR #75 OPEN/Draft; #65 CLOSED/completed; #64 OPEN/ready for owner review; #70 NOT PASSED. [Audit và handoff D09 đề xuất](../research/16_CRITICAL_PATH_HANDOFF_20261012.md) giữ nguyên identity packet 15, ghi mâu thuẫn checkbox tracker, tái lập 598 works/chín matches/13 byte comparisons frozen. CLI legacy mới bảo toàn output có ba regression tests; suite hiện tại **40/40 PASS**. Không đổi frozen checker/evaluator/input/history. Missing-category limitation không tác động corpus này nhưng cần strict projection có version riêng trước reuse rộng.
+
+D05/D06 ACCEPTED; exact amendment, D07/D08/D09 và prospective freeze PROPOSED. E3 gốc NOT PASSED; independent scientific quality NOT MEASURED; chưa có product view hoặc independent demo replay. Bước tiếp theo: owner quyết định riêng A1/A2/A3/D07/D08/F1, ghi G70 theo evidence, rồi review D09. Deadline demo-ready 15/10; rủi ro CAO. Audit/proposal không phải acceptance gate.
+
 ## Hướng owner và preparation amendment mới nhất — 10/10/2026
 
 Đã xác minh branch sạch `research/exit-evidence-20260927` tại `64da78be17f0b89bbd008f5033192742fd663046`, khớp fresh fetch; PR #75 OPEN/Draft; #65 CLOSED/completed; #64/#70 OPEN. [Quyết định owner](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) nghiệm thu development-only evidence, chọn hướng M1 retrospective-only và cho phép chuẩn bị exact amendment. Chưa chấp thuận D07/D08, quality thresholds, freeze hoặc Research Exit.

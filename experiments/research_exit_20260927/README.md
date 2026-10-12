@@ -1,5 +1,9 @@
 # Research Exit evidence spike
 
+## Current replay entry point — 12 October 2026
+
+Use `checks_cli_v2.py` for legacy synthetic checks. The frozen `checks.py` writes directly to its output path and can overwrite an existing report. The v2 CLI runs it in a fresh private directory, publishes only after success, and exclusively creates the requested file. Existing outputs are refused. Frozen checker/config/result bytes are preserved. [Current audit and conditional owner handoff](../../docs/english/research/16_CRITICAL_PATH_HANDOFF_20261012.md) records the reproduction and remaining gates.
+
 ## Unified amendment and synthetic reference workflow — 10 October 2026
 
 Owner selected retrospective-only direction and authorized exact amendment preparation; [packet EN](../../docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) / [packet VI](../../docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) remain PROPOSED. A subsequent session instruction permits SIMULATED A/B/C on 27 fictional works. [Workflow source](simulate_reference_workflow.py), [seven workflow tests](test_reference_workflow.py) and [output](runs/20261010-amendment-01/simulated-workflow.json) retain 54 judgments, 18 agreements, nine disagreements/adjudications and 9/9/9 final labels. These are deliberately constructed fixture outcomes; zero real works annotated. 35/35 tool unit tests PASS. Independent scientific quality NOT MEASURED; original E3/#70 NOT PASSED and D07/D08/D09 PROPOSED.
@@ -64,8 +68,8 @@ Both preserved arXiv count attempts returned HTTP 406, but post-run review found
 From the repository root, using an existing Python 3 interpreter:
 
 ```text
-python experiments/research_exit_20260927/checks.py --output <new-directory>/run-1.json
-python experiments/research_exit_20260927/checks.py --output <new-directory>/run-2.json
+python experiments/research_exit_20260927/checks_cli_v2.py --output <new-directory>/run-1.json
+python experiments/research_exit_20260927/checks_cli_v2.py --output <new-directory>/run-2.json
 ```
 
 These commands do not use the network. Each runs 15 test methods, with seven hand-calculated series scenarios. Compare the two output hashes. Outputs include expected/actual values, lineage IDs, input/code hashes and a real-sample status explicitly marked NOT_MEASURED_ACCESS_FAILURE.
