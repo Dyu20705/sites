@@ -1,5 +1,15 @@
 # 09 — Trạng thái hiện tại đã xác minh
 
+**Thẩm quyền hiện tại — 12/10/2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) chấp thuận A1/A2/A3/D07/D08/F1 của [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 giữ ACCEPTED; chỉ sửa ứng dụng temporal M1/D05 và nghĩa vụ demo E2/E3 được nêu rõ. Output accepted là lexical n/N/share retrospective của corpus frozen 598 công trình; không có trend labels hoặc historical-as-of claim. E3 gốc giữ **NOT PASSED**; independent scientific quality **NOT MEASURED**.
+
+[Research Exit đã kiểm chứng](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 giữ **PROPOSED**; được làm thiết kế #71, build #72 chờ owner acceptance riêng. Deadline: **15/10/2026**.
+
+F1-M1-R-20261012-v1 SHA-256 `bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a`: 122 tệp ghim được kiểm chứng ở worktree và thư mục artifact mới; 56 unit tests PASS; raw XML recount 598 công trình và 13 frozen byte comparisons PASS. Research source `97bf499718c13166667a8e5da09b201065d9e117`; commit bàn giao được dẫn tại #70. PR #75 OPEN/Draft. Không acquisition hoặc exposure holdout mới. Bàn giao #64 xong (issue OPEN), #65 completed, #69 còn thiếu search metadata. WIP: chỉ đề xuất #71; #72/#73 chưa đạt. Independent demo 0/7; reviewer replay/usability và E8 đo thực tế còn pending. Rủi ro deadline vẫn HIGH.
+
+## Baseline lịch sử — giữ để đối chiếu
+
+Phần dưới ghi quyết định/kế hoạch trước đây. Exact amendment đã accepted và mục hiện tại phía trên thay các scope, trạng thái, lịch thực hiện mâu thuẫn; nghĩa vụ được giữ lại vẫn áp dụng.
+
 ## Xác minh critical path — 12/10/2026
 
 Đã kiểm tra worktree research/remote sạch tại `7ef28119b125c6bcb9f0372516cc0ebe3200326d`, base `0a853636ef6d1be9d3bb85058f34faf368fcb6ce`. PR #75 OPEN/Draft; #65 CLOSED/completed; #64 OPEN/ready for owner review; #70 NOT PASSED. [Audit và handoff D09 đề xuất](../research/16_CRITICAL_PATH_HANDOFF_20261012.md) giữ nguyên identity packet 15, ghi mâu thuẫn checkbox tracker, tái lập 598 works/chín matches/13 byte comparisons frozen. CLI legacy mới bảo toàn output có ba regression tests; suite hiện tại **40/40 PASS**. Không đổi frozen checker/evaluator/input/history. Missing-category limitation không tác động corpus này nhưng cần strict projection có version riêng trước reuse rộng.

@@ -1,5 +1,15 @@
 # 08 — Month-1 Gate Plan
 
+**Current authority — 12 October 2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) accepts A1/A2/A3/D07/D08/F1 in [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 remain ACCEPTED; only the specified M1/D05 temporal application and E2/E3 demo obligations are amended. The accepted output is retrospective lexical n/N/share for the frozen 598-work corpus; no trend labels or historical-as-of claim. Original E3 remains **NOT PASSED**; independent scientific quality **NOT MEASURED**.
+
+[Verified Research Exit](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 remains **PROPOSED**; #71 design is allowed, #72 build awaits separate owner acceptance. Deadline: **15 October 2026**.
+
+**Current WIP:** #71 bounded proposal, at most two execution items. #64 investigation handoff complete, OPEN for administrative closure; #65 CLOSED/completed. #69 remains a tracker with an incomplete search-provenance field. Sequence: D09 owner acceptance → #72 one slice → #73 independent offline demo. All seven independent-demo checks remain incomplete; no allocation beyond the 15 October deadline.
+
+## Historical baseline — retained for comparison
+
+The text below records earlier decisions/plans. The exact accepted amendment and current section above supersede conflicting scope, status and execution dates; preserved obligations still apply.
+
 **Hard demo-ready deadline:** 15 October 2026, per [owner rebaseline](https://github.com/Dyu20705/sites/issues/70#issuecomment-6096887546).
 
 **Owner direction update:** retrospective-only direction selected in [#70](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689); exact [unified amendment/D07/D08 packet](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) still PROPOSED. SIMULATED 27-fictional-work workflow checks are complete, not independent scientific reference. Immediate sequence: exact amendment/quality criteria review → D07/D08/freeze → explicit #70 → D09 → vertical slice and independent replay/task. If an accepted criterion remains unmet, #70 stays NOT PASSED. Original E3 is not relabeled PASS. WIP: #64 execution, #70 gate; #65 completed.

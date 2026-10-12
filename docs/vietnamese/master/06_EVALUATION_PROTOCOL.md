@@ -1,5 +1,15 @@
 # 06 — Quy trình đánh giá
 
+**Thẩm quyền hiện tại — 12/10/2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) chấp thuận A1/A2/A3/D07/D08/F1 của [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 giữ ACCEPTED; chỉ sửa ứng dụng temporal M1/D05 và nghĩa vụ demo E2/E3 được nêu rõ. Output accepted là lexical n/N/share retrospective của corpus frozen 598 công trình; không có trend labels hoặc historical-as-of claim. E3 gốc giữ **NOT PASSED**; independent scientific quality **NOT MEASURED**.
+
+[Research Exit đã kiểm chứng](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 giữ **PROPOSED**; được làm thiết kế #71, build #72 chờ owner acceptance riêng. Deadline: **15/10/2026**.
+
+**Gate allocation đã accepted:** G70 gồm quyết định owner, F1, corpus/số học/lineage frozen, synthetic workflow, controls và research E2-R/E3-R. Product E1/E3-R/E5/E6 integration, E2-R interpretation, E4 independent replay, E7 task năm/năm câu đúng và navigation, E8 đo thực tế vẫn là nghĩa vụ demo sau D09. Budget: ≤598 công trình, ≤60 giây, ≤256 MiB peak process memory, không live corpus request. Phải ghi identity/exposure/runtime reviewer trước task mới; chưa có reviewer result hoặc E8 đo thực tế.
+
+## Baseline lịch sử — giữ để đối chiếu
+
+Phần dưới ghi quyết định/kế hoạch trước đây. Exact amendment đã accepted và mục hiện tại phía trên thay các scope, trạng thái, lịch thực hiện mâu thuẫn; nghĩa vụ được giữ lại vẫn áp dụng.
+
 **Amendment đang chờ, 10/10:** owner chọn hướng retrospective-only và cho phép chuẩn bị [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). E2-R/E3-R và quality/support/budget choices vẫn PROPOSED; không tự thay matrix gốc phía dưới. SIMULATED workflow checks không đáp ứng independent scientific-reference quality. E3 gốc vẫn NOT PASSED; accepted retrospective contract cũng không biến nó thành E3 gốc PASS.
 
 **Nguyên tắc D05 ACCEPTED; lựa chọn đánh giá D08 PROPOSED.** Đây là kế hoạch kiểm chứng, chưa phải kết quả test. E1–E8 vẫn bắt buộc; công thức, reference labels, ngưỡng và sensitivity settings còn cần D08 acceptance. Gọi phân tích là retrospective không làm E3 hoặc M1 đạt.

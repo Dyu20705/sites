@@ -15,6 +15,8 @@ Một quyết định ở trạng thái ACCEPTED chỉ có nghĩa lựa chọn �
 | D03 | M1 17/09–17/10 tập trung detection/descriptive intelligence. **ACCEPTED** | Mục tiêu Month 1 | Forecasting/recommendation/optimization/agents và hạ tầng lớn nằm ngoài M1 |
 | D04 | Scholarly evidence là miền khởi đầu; phải tách tầm nhìn khỏi trạng thái hiện tại và dùng evidence hierarchy. **ACCEPTED** | Yêu cầu M0 | Không tự chọn provider; papers không được mặc định là nguồn “tốt nhất” |
 
+Trạng thái hiện tại và amendment đã accepted: xem §9; giữ các phát biểu lịch sử có ngày bên dưới.
+
 ## 2. D05 — Bằng chứng và tính đúng
 
 **Trạng thái:** ACCEPTED — 20/09/2026, bởi chủ dự án.
@@ -62,7 +64,13 @@ Lý do: phù hợp trực tiếp với scholarly evidence và giữ phạm vi h�
 
 ## 4. D07 — Lĩnh vực, nguồn dữ liệu và corpus
 
-**Trạng thái:** PROPOSED.
+**Trạng thái:** ACCEPTED — 12/10/2026, Dyu20705, [owner record](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874); exact M1-R-20261010-v1.
+
+**Lựa chọn đã chấp thuận:** Một population quan sát current cs.SE arXiv frozen: 598 công trình riêng biệt, title v1 chính xác, bin v1-submission UTC tháng 1–6/2019, current category membership và public availability null. Không có claim population lịch sử; giữ toàn bộ raw evidence và thành viên mẫu số.
+
+Xem [F1 và bằng chứng Research Exit](../research/17_RESEARCH_EXIT_20261012.md).
+
+**Đề xuất lịch sử bên dưới (đã thay thế cho scope hiện tại):**
 
 **Cập nhật bằng chứng 27/09:** [Gói D07/D08](../research/08_D07_D08_EXIT_PACKET.md) ghi kết quả thiếu bằng chứng, lỗi truy cập và gap temporal/sample còn lại. Chưa có acceptance provider/corpus hay evaluation freeze.
 
@@ -82,7 +90,13 @@ Nếu một nguồn thiếu field, ưu tiên đổi chỉ báo hoặc thu hẹp 
 
 ## 5. D08 — Chỉ báo, nhãn và đánh giá
 
-**Trạng thái:** PROPOSED.
+**Trạng thái:** ACCEPTED — 12/10/2026, Dyu20705, [owner record](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874); exact M1-R-20261010-v1.
+
+**Lựa chọn đã chấp thuận:** Rule title fuzzing có version chính xác; n, N và n/N, bắt buộc support/null/bounds và mọi sensitivity đã khai báo, không directional labels. Route demo giới hạn E2-R/E3-R accepted; independent quality thật NOT MEASURED. E3 gốc NOT PASSED; reviewer task và budget product đo thực tế còn pending.
+
+Xem [F1 và bằng chứng Research Exit](../research/17_RESEARCH_EXIT_20261012.md).
+
+**Đề xuất lịch sử bên dưới (đã thay thế cho scope hiện tại):**
 
 **Cập nhật bằng chứng 27/09:** [Synthetic comparison và literature notes](../research/06_RESEARCH_EXIT_EVIDENCE.md) hỗ trợ khảo sát tiếp count/share, chưa chứng minh chất lượng corpus thật. Support, labels và quality thresholds còn unresolved trong [decision packet](../research/08_D07_D08_EXIT_PACKET.md).
 
@@ -134,13 +148,21 @@ Tiếp tục hoãn:
 
 Các lựa chọn cũ không bị cấm vĩnh viễn; chỉ không được kế thừa tự động.
 
-## 8. Hướng scope của owner — 10/10/2026
+## 8. Hướng scope của owner — 10/10/2026 — lịch sử, thay bởi §9
 
 **Direction ACCEPTED, không phải D07/D08 acceptance:** [quyết định owner tại #70](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) nghiệm thu negative investigation đã hoàn thành của #65 và development-only empirical evidence, chọn hướng M1 retrospective-only, cho phép chuẩn bị exact amendment proposal có kiểm soát. D05/D06 giữ ACCEPTED; nghĩa vụ gốc còn hiệu lực đến khi exact amendment được chấp thuận. E3 gốc và #70 vẫn NOT PASSED. Các trạng thái D07/D08/D09 phía trên giữ PROPOSED.
 
 [Packet M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) đề xuất estimand chính xác, clause impacts, D07/D08, E2-R/E3-R riêng và freeze/quality choices. Chỉ dẫn owner tiếp theo trong phiên cho phép SIMULATED A/B/C và synthetic workflow testing; independent scientific quality giữ NOT MEASURED. Quyền simulate không chấp thuận scientific reference hoặc tự bỏ điều kiện #70. Không ghi thresholds, freeze, architecture hoặc Research Exit pass là accepted ở đây.
 
-## 9. Nguyên tắc cập nhật log
+## 9. Exact amendment acceptance và Research Exit đã kiểm chứng — 12/10/2026
+
+**Thẩm quyền hiện tại — 12/10/2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) chấp thuận A1/A2/A3/D07/D08/F1 của [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 giữ ACCEPTED; chỉ sửa ứng dụng temporal M1/D05 và nghĩa vụ demo E2/E3 được nêu rõ. Output accepted là lexical n/N/share retrospective của corpus frozen 598 công trình; không có trend labels hoặc historical-as-of claim. E3 gốc giữ **NOT PASSED**; independent scientific quality **NOT MEASURED**.
+
+[Research Exit đã kiểm chứng](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 giữ **PROPOSED**; được làm thiết kế #71, build #72 chờ owner acceptance riêng. Deadline: **15/10/2026**.
+
+F1 đã kiểm chứng với SHA-256 `bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a`. Owner acceptance ở ngoài byte packet 15 được giữ nguyên. Mục này thay các phát biểu pending-decision lịch sử phía trên, không nâng E3 gốc hoặc scientific quality. G70 không chấp thuận architecture, dependency hay product gate.
+
+## 10. Nguyên tắc cập nhật log
 
 Mọi thay đổi trạng thái phải ghi:
 

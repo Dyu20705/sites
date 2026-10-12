@@ -1,5 +1,15 @@
 # 08 — Kế hoạch Month 1 theo điểm kiểm soát
 
+**Thẩm quyền hiện tại — 12/10/2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) chấp thuận A1/A2/A3/D07/D08/F1 của [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 giữ ACCEPTED; chỉ sửa ứng dụng temporal M1/D05 và nghĩa vụ demo E2/E3 được nêu rõ. Output accepted là lexical n/N/share retrospective của corpus frozen 598 công trình; không có trend labels hoặc historical-as-of claim. E3 gốc giữ **NOT PASSED**; independent scientific quality **NOT MEASURED**.
+
+[Research Exit đã kiểm chứng](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 giữ **PROPOSED**; được làm thiết kế #71, build #72 chờ owner acceptance riêng. Deadline: **15/10/2026**.
+
+**WIP hiện tại:** đề xuất giới hạn #71, tối đa hai execution items. Bàn giao investigation #64 hoàn thành, OPEN để administrative closure; #65 CLOSED/completed. #69 là tracker, còn thiếu search-provenance. Thứ tự: owner chấp thuận D09 → #72 một slice → #73 independent offline demo. Bảy independent-demo checks đều chưa đạt; không phân bổ công việc qua deadline 15/10.
+
+## Baseline lịch sử — giữ để đối chiếu
+
+Phần dưới ghi quyết định/kế hoạch trước đây. Exact amendment đã accepted và mục hiện tại phía trên thay các scope, trạng thái, lịch thực hiện mâu thuẫn; nghĩa vụ được giữ lại vẫn áp dụng.
+
 **Hard deadline demo-ready:** 15/10/2026, theo [owner rebaseline](https://github.com/Dyu20705/sites/issues/70#issuecomment-6096887546).
 
 **Cập nhật hướng owner:** đã chọn retrospective-only tại [#70](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689); [amendment/D07/D08 packet thống nhất](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) chính xác vẫn PROPOSED. SIMULATED workflow checks trên 27 fictional works đã hoàn thành, không phải independent scientific reference. Thứ tự trước mắt: review exact amendment/quality criteria → D07/D08/freeze → #70 rõ ràng → D09 → vertical slice và independent replay/task. Tiêu chí accepted chưa đạt thì #70 vẫn NOT PASSED. Không đổi E3 gốc thành PASS. WIP: #64 execution, #70 gate; #65 completed.

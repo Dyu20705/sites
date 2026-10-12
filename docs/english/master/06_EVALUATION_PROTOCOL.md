@@ -1,5 +1,15 @@
 # 06 — Evaluation Protocol
 
+**Current authority — 12 October 2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) accepts A1/A2/A3/D07/D08/F1 in [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 remain ACCEPTED; only the specified M1/D05 temporal application and E2/E3 demo obligations are amended. The accepted output is retrospective lexical n/N/share for the frozen 598-work corpus; no trend labels or historical-as-of claim. Original E3 remains **NOT PASSED**; independent scientific quality **NOT MEASURED**.
+
+[Verified Research Exit](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 remains **PROPOSED**; #71 design is allowed, #72 build awaits separate owner acceptance. Deadline: **15 October 2026**.
+
+**Gate allocation now accepted:** G70 covers owner decisions, F1, frozen corpus/arithmetic/lineage, synthetic workflow, controls and research E2-R/E3-R. Product E1/E3-R/E5/E6 integration, E2-R interpretation, E4 independent replay, E7 five-of-five task/navigation and measured E8 remain later demo obligations after D09. Budget: ≤598 works, ≤60 seconds, ≤256 MiB peak process memory, zero live corpus requests. Reviewer identity/exposure/runtime must be recorded before a new task; no reviewer result or measured E8 yet.
+
+## Historical baseline — retained for comparison
+
+The text below records earlier decisions/plans. The exact accepted amendment and current section above supersede conflicting scope, status and execution dates; preserved obligations still apply.
+
 **Amendment pending, 10 October:** owner selected retrospective-only direction and authorized [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). Its E2-R/E3-R and quality/support/budget choices remain PROPOSED; the original matrix below is not silently replaced. SIMULATED workflow checks do not satisfy independent scientific-reference quality. Original E3 remains NOT PASSED; an accepted retrospective contract would not make it original E3 PASS.
 
 **D05 principles ACCEPTED; D08 evaluation choices PROPOSED.** This is a validation plan, not a test result. E1–E8 remain required; formulas, reference labels, thresholds and sensitivity settings still require D08 acceptance. Calling an analysis retrospective does not pass E3 or M1.

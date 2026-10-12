@@ -15,6 +15,8 @@ ACCEPTED means only that an authorized person approved the decision. It does **n
 | D03 | M1, from 17 September to 17 October, focuses on detection and descriptive intelligence. **ACCEPTED** | Month-1 objective | Forecasting, recommendation, optimization, agents, and large infrastructure remain outside M1 |
 | D04 | Scholarly evidence is the starting domain; separate vision from current state and use an evidence hierarchy. **ACCEPTED** | M0 requirement | Do not select a provider by default; do not assume papers are the “best” source |
 
+Current status and accepted amendment: see §9; dated historical statements below remain preserved.
+
 ## 2. D05 — Evidence and Correctness
 
 **Status:** ACCEPTED — 20 September 2026, by the project owner.
@@ -62,7 +64,13 @@ This option matches the scholarly-evidence starting point directly and keeps the
 
 ## 4. D07 — Field, Data Source, and Corpus
 
-**Status:** PROPOSED.
+**Status:** ACCEPTED — 12 October 2026, Dyu20705, [owner record](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874); exact M1-R-20261010-v1.
+
+**Accepted choice:** One frozen arXiv current cs.SE observed-query population: 598 distinct works, exact v1 titles, January–June 2019 UTC v1-submission bins, current category membership and null public availability. No historical population claim; preserve all raw evidence and denominator members.
+
+See [F1 and Research Exit evidence](../research/17_RESEARCH_EXIT_20261012.md).
+
+**Historical proposal below (superseded for current scope):**
 
 **27 September evidence update:** [D07/D08 packet](../research/08_D07_D08_EXIT_PACKET.md) records an insufficient-evidence outcome, documented access failures and remaining temporal/sample gaps. No provider/corpus acceptance or evaluation freeze is recorded.
 
@@ -82,7 +90,13 @@ If a source lacks a field, first change the signal or narrow the corpus before a
 
 ## 5. D08 — Signals, Labels, and Evaluation
 
-**Status:** PROPOSED.
+**Status:** ACCEPTED — 12 October 2026, Dyu20705, [owner record](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874); exact M1-R-20261010-v1.
+
+**Accepted choice:** Exact versioned fuzzing title rule; n, N and n/N, mandatory support/null/bounds, all declared sensitivities, no directional labels. E2-R/E3-R limited demo route accepted; real independent quality NOT MEASURED. Original E3 NOT PASSED; product reviewer and budget measurements remain pending.
+
+See [F1 and Research Exit evidence](../research/17_RESEARCH_EXIT_20261012.md).
+
+**Historical proposal below (superseded for current scope):**
 
 **27 September evidence update:** [synthetic comparison and literature notes](../research/06_RESEARCH_EXIT_EVIDENCE.md) support further count/share investigation, not real-corpus quality. Support, labels and quality thresholds remain unresolved in the [packet](../research/08_D07_D08_EXIT_PACKET.md).
 
@@ -134,13 +148,21 @@ The following remain deferred:
 
 Earlier choices are not permanently prohibited; they are simply not inherited automatically.
 
-## 8. Owner scope direction — 10 October 2026
+## 8. Owner scope direction — 10 October 2026 — historical, superseded by §9
 
 **ACCEPTED direction, not D07/D08 acceptance:** [owner #70 decision](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689) accepts #65's completed negative investigation and development-only empirical evidence, selects retrospective-only M1 direction and authorizes a controlled exact amendment proposal. D05/D06 remain ACCEPTED; their original obligations remain until an exact amendment is accepted. Original E3 and #70 remain NOT PASSED. D07/D08/D09 statuses above remain PROPOSED.
 
 The [M1-R-20261010-v1 packet](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) proposes the exact estimand, clause impacts, D07/D08, separate E2-R/E3-R and freeze/quality choices. The owner's subsequent session instruction permits SIMULATED A/B/C and synthetic workflow testing; independent scientific quality stays NOT MEASURED. Permission to simulate is not scientific-reference acceptance or an implicit waiver at #70. No thresholds, freeze, architecture or Research Exit pass are recorded as accepted here.
 
-## 9. Updating the Log
+## 9. Exact amendment acceptance and verified Research Exit — 12 October 2026
+
+**Current authority — 12 October 2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) accepts A1/A2/A3/D07/D08/F1 in [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 remain ACCEPTED; only the specified M1/D05 temporal application and E2/E3 demo obligations are amended. The accepted output is retrospective lexical n/N/share for the frozen 598-work corpus; no trend labels or historical-as-of claim. Original E3 remains **NOT PASSED**; independent scientific quality **NOT MEASURED**.
+
+[Verified Research Exit](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 remains **PROPOSED**; #71 design is allowed, #72 build awaits separate owner acceptance. Deadline: **15 October 2026**.
+
+F1 verified under SHA-256 `bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a`. Owner acceptance is external to the unchanged packet-15 bytes. This supersedes the pending-decision statements in the historical entries above, without upgrading original E3 or scientific quality. No architecture, dependency or product gate is accepted by G70.
+
+## 10. Updating the Log
 
 Every status change must record:
 

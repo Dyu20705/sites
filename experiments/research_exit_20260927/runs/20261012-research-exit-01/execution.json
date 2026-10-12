@@ -1,0 +1,84 @@
+{
+  "clean_run": "New artifact directory and separate process, same author machine/runtime. Source Git objects read from original repository. Not independent reviewer/product replay.",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\verify_freeze.py",
+        "--manifest",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\runs\\20261012-research-exit-01\\freeze-v1.json",
+        "--expected-sha256",
+        "bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a",
+        "--root",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit",
+        "--repo",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit"
+      ],
+      "cwd": "C:\\Users\\Admin\\sites\\.worktrees\\research-exit",
+      "exit_code": 0,
+      "name": "freeze-verification",
+      "output": "freeze-verification.json",
+      "output_sha256": "0ad8857529c273a403add1dc38720b87eb07100813b64dd0a5aadf04e30c81a0",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "experiments\\research_exit_20260927",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Admin\\sites\\.worktrees\\research-exit",
+      "exit_code": 0,
+      "name": "regressions",
+      "output": "regressions.json",
+      "output_sha256": "b4ba12673cbed1a6b5424f5da9e830d424b33e76a678147ecc696974b3350dd0",
+      "stderr": "test_complete_acquisition (test_acquire.AcquisitionTests.test_complete_acquisition) ... ok\ntest_count_drift_since_access_stops (test_acquire.AcquisitionTests.test_count_drift_since_access_stops) ... ok\ntest_duplicate_works_stop_before_versions (test_acquire.AcquisitionTests.test_duplicate_works_stop_before_versions) ... ok\ntest_incomplete_page_stops (test_acquire.AcquisitionTests.test_incomplete_page_stops) ... ok\ntest_over_bound_stops_after_count (test_acquire.AcquisitionTests.test_over_bound_stops_after_count) ... ok\ntest_wrong_version_stops (test_acquire.AcquisitionTests.test_wrong_version_stops) ... ok\ntest_bad_feed_or_count_never_claims_success (test_acquire.DiagnosticTests.test_bad_feed_or_count_never_claims_success) ... ok\ntest_existing_manifest_is_preserved_without_request (test_acquire.DiagnosticTests.test_existing_manifest_is_preserved_without_request) ... ok\ntest_http_error_preserves_url_excerpt_and_hash (test_acquire.DiagnosticTests.test_http_error_preserves_url_excerpt_and_hash) ... ok\ntest_network_error_is_single_attempt (test_acquire.DiagnosticTests.test_network_error_is_single_attempt) ... ok\ntest_redirect_is_recorded_and_rate_limited (test_acquire.DiagnosticTests.test_redirect_is_recorded_and_rate_limited) ... ok\ntest_success_stops_after_count_and_hashes_raw (test_acquire.DiagnosticTests.test_success_stops_after_count_and_hashes_raw) ... ok\ntest_zero_count_is_access_success_only (test_acquire.DiagnosticTests.test_zero_count_is_access_success_only) ... ok\ntest_existing_evidence_is_preserved_without_running_checker (test_checks_cli_v2.PreservingChecksCliTests.test_existing_evidence_is_preserved_without_running_checker) ... ok\ntest_failed_checker_does_not_publish_a_report (test_checks_cli_v2.PreservingChecksCliTests.test_failed_checker_does_not_publish_a_report) ... ok\ntest_fresh_report_equals_frozen_result_and_repeat_is_refused (test_checks_cli_v2.PreservingChecksCliTests.test_fresh_report_equals_frozen_result_and_repeat_is_refused) ... ok\ntest_partial_preparation_failure_never_exposes_destination (test_checks_cli_v2.PreservingChecksCliTests.test_partial_preparation_failure_never_exposes_destination) ... ok\ntest_two_processes_race_only_after_both_reports_are_complete (test_checks_cli_v2.PreservingChecksCliTests.test_two_processes_race_only_after_both_reports_are_complete) ... ok\ntest_unsupported_hard_links_fail_closed_and_clean_up (test_checks_cli_v2.PreservingChecksCliTests.test_unsupported_hard_links_fail_closed_and_clean_up) ... ok\ntest_each_mandatory_section_cannot_be_omitted (test_freeze.FreezeTests.test_each_mandatory_section_cannot_be_omitted) ... ok\ntest_escape_path_rejected (test_freeze.FreezeTests.test_escape_path_rejected) ... ok\ntest_external_anchor_rejects_manifest_edit (test_freeze.FreezeTests.test_external_anchor_rejects_manifest_edit) ... ok\ntest_missing_or_corrupted_artifact_rejected (test_freeze.FreezeTests.test_missing_or_corrupted_artifact_rejected) ... ok\ntest_missing_reference_cannot_be_unhashed (test_freeze.FreezeTests.test_missing_reference_cannot_be_unhashed) ... ok\ntest_scope_escalation_and_scientific_claims_rejected (test_freeze.FreezeTests.test_scope_escalation_and_scientific_claims_rejected) ... ok\ntest_checksum_corruption_rejected (test_offline_audit.FieldAuditTests.test_checksum_corruption_rejected) ... ok\ntest_field_status_does_not_treat_missing_title_as_nonmatch (test_offline_audit.FieldAuditTests.test_field_status_does_not_treat_missing_title_as_nonmatch) ... ok\ntest_missing_and_invalid_dates_are_distinct (test_offline_audit.FieldAuditTests.test_missing_and_invalid_dates_are_distinct) ... ok\ntest_work_and_version_identity (test_offline_audit.FieldAuditTests.test_work_and_version_identity) ... ok\ntest_existing_report_is_preserved (test_offline_audit.ValidatorOutputTests.test_existing_report_is_preserved) ... ok\ntest_output_path_is_required (test_offline_audit.ValidatorOutputTests.test_output_path_is_required) ... ok\ntest_agreement_cannot_be_rewritten_by_adjudicator (test_reference_workflow.ReferenceWorkflowTests.test_agreement_cannot_be_rewritten_by_adjudicator) ... ok\ntest_complete_fixture_retains_raw_judgments_and_uncertainty (test_reference_workflow.ReferenceWorkflowTests.test_complete_fixture_retains_raw_judgments_and_uncertainty) ... ok\ntest_duplicate_cannot_inflate_support (test_reference_workflow.ReferenceWorkflowTests.test_duplicate_cannot_inflate_support) ... ok\ntest_invalid_role_label_or_rationale_is_rejected (test_reference_workflow.ReferenceWorkflowTests.test_invalid_role_label_or_rationale_is_rejected) ... ok\ntest_missing_evidence_is_not_negative (test_reference_workflow.ReferenceWorkflowTests.test_missing_evidence_is_not_negative) ... ok\ntest_real_id_or_reference_is_rejected (test_reference_workflow.ReferenceWorkflowTests.test_real_id_or_reference_is_rejected) ... ok\ntest_unresolved_disagreement_does_not_complete (test_reference_workflow.ReferenceWorkflowTests.test_unresolved_disagreement_does_not_complete) ... ok\ntest_all_ten_controlled_failures (test_signal_evaluator.SignalTests.test_all_ten_controlled_failures) ... ok\ntest_bimonth_is_ratio_of_sums (test_signal_evaluator.SignalTests.test_bimonth_is_ratio_of_sums) ... ok\ntest_conflicting_v1_fails (test_signal_evaluator.SignalTests.test_conflicting_v1_fails) ... ok\ntest_empty_vs_observed_zero (test_signal_evaluator.SignalTests.test_empty_vs_observed_zero) ... ok\ntest_identity_and_version_fails (test_signal_evaluator.SignalTests.test_identity_and_version_fails) ... ok\ntest_lineage_matches_and_nonmatches (test_signal_evaluator.SignalTests.test_lineage_matches_and_nonmatches) ... ok\ntest_missing_invalid_event_time_invalidates_denominator (test_signal_evaluator.SignalTests.test_missing_invalid_event_time_invalidates_denominator) ... ok\ntest_missing_invalid_titles_not_nonmatches (test_signal_evaluator.SignalTests.test_missing_invalid_titles_not_nonmatches) ... ok\ntest_order_and_identity_idempotency (test_signal_evaluator.SignalTests.test_order_and_identity_idempotency) ... ok\ntest_utc_binning_and_cutoff (test_signal_evaluator.SignalTests.test_utc_binning_and_cutoff) ... ok\ntest_word_boundary_and_stipulated_double_escape (test_signal_evaluator.SignalTests.test_word_boundary_and_stipulated_double_escape) ... ok\ntest_corruption_fails_even_with_doc_exception (test_verify_git_bytes.GitBytesTests.test_corruption_fails_even_with_doc_exception) ... ok\ntest_digest_only_uses_objects_even_if_artifact_corrupted (test_verify_git_bytes.GitBytesTests.test_digest_only_uses_objects_even_if_artifact_corrupted) ... ok\ntest_exact_hash_and_deterministic_read_only_comparison (test_verify_git_bytes.GitBytesTests.test_exact_hash_and_deterministic_read_only_comparison) ... ok\ntest_frozen_artifacts_cannot_opt_into_normalization (test_verify_git_bytes.GitBytesTests.test_frozen_artifacts_cannot_opt_into_normalization) ... ok\ntest_invalid_scope_and_revision_are_nonzero (test_verify_git_bytes.GitBytesTests.test_invalid_scope_and_revision_are_nonzero) ... ok\ntest_line_endings_require_explicit_documentation_exception (test_verify_git_bytes.GitBytesTests.test_line_endings_require_explicit_documentation_exception) ... ok\ntest_missing_artifact_and_missing_git_blob_fail (test_verify_git_bytes.GitBytesTests.test_missing_artifact_and_missing_git_blob_fail) ... ok\n\n----------------------------------------------------------------------\nRan 56 tests in 6.412s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\runs\\20261011-final-audit-01\\independent_verify.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\exit-temp\\raw-recount-20261012T073124.json"
+      ],
+      "cwd": "C:\\Users\\Admin\\sites\\.worktrees\\research-exit",
+      "exit_code": 0,
+      "name": "independent-verification",
+      "output": "independent-verification.json",
+      "output_sha256": "97993bdcfbcb5cdecadbc10928665dfa4b30be9794bf8973231c57e7941cffc1",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\exit-temp\\clean-artifact-tree-0v9sl6f4\\experiments\\research_exit_20260927\\verify_freeze.py",
+        "--manifest",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\exit-temp\\clean-artifact-tree-0v9sl6f4\\freeze-v1.json",
+        "--expected-sha256",
+        "bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a",
+        "--root",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\exit-temp\\clean-artifact-tree-0v9sl6f4",
+        "--repo",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit"
+      ],
+      "cwd": "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\exit-temp\\clean-artifact-tree-0v9sl6f4",
+      "exit_code": 0,
+      "name": "clean-freeze-verification",
+      "output": "clean-freeze-verification.json",
+      "output_sha256": "0ad8857529c273a403add1dc38720b87eb07100813b64dd0a5aadf04e30c81a0",
+      "stderr": ""
+    }
+  ],
+  "ended_utc": "2026-10-12T07:31:31.448740+00:00",
+  "frozen_inputs": "All manifest entries verified against exact bytes; research_source entries also against pinned Git commit",
+  "manifest_sha256": "bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a",
+  "network": "No acquisition/provider calls in these commands; no new July-December files accessed",
+  "started_utc": "2026-10-12T07:31:12.490827+00:00",
+  "status": "PASS"
+}

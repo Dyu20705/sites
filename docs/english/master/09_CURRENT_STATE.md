@@ -1,5 +1,15 @@
 # 09 — Verified Current State
 
+**Current authority — 12 October 2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) accepts A1/A2/A3/D07/D08/F1 in [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 remain ACCEPTED; only the specified M1/D05 temporal application and E2/E3 demo obligations are amended. The accepted output is retrospective lexical n/N/share for the frozen 598-work corpus; no trend labels or historical-as-of claim. Original E3 remains **NOT PASSED**; independent scientific quality **NOT MEASURED**.
+
+[Verified Research Exit](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 remains **PROPOSED**; #71 design is allowed, #72 build awaits separate owner acceptance. Deadline: **15 October 2026**.
+
+F1-M1-R-20261012-v1 SHA-256 `bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a`: 122 pinned files verified in the worktree and a fresh artifact directory; 56 unit tests PASS; 598-work raw XML recount and 13 frozen byte comparisons PASS. Research source `97bf499718c13166667a8e5da09b201065d9e117`; delivery commit is linked at #70. PR #75 remains OPEN/Draft. No new acquisition or holdout exposure. #64 handoff complete (issue OPEN), #65 completed, #69 search metadata still incomplete. WIP: #71 proposal only; #72/#73 not passed. Independent demo 0/7; reviewer replay/usability and measured E8 pending. Deadline risk remains HIGH.
+
+## Historical baseline — retained for comparison
+
+The text below records earlier decisions/plans. The exact accepted amendment and current section above supersede conflicting scope, status and execution dates; preserved obligations still apply.
+
 ## Critical-path verification — 12 October 2026
 
 Rechecked clean research worktree/remote at `7ef28119b125c6bcb9f0372516cc0ebe3200326d`, base `0a853636ef6d1be9d3bb85058f34faf368fcb6ce`. PR #75 remains OPEN/Draft; #65 CLOSED/completed; #64 OPEN/ready for owner review; #70 NOT PASSED. [Audit and proposed D09 handoff](../research/16_CRITICAL_PATH_HANDOFF_20261012.md) preserves packet-15 identity, reports live tracker checkbox contradictions, and reproduces 598 works / nine matches / 13 frozen byte comparisons. A new preserving legacy-check CLI has three regressions; current tool suite **40/40 PASS**. Frozen checker/evaluator/input/history remain unchanged. Missing-category behavior is contained by the frozen corpus but needs a separately versioned strict projection before broader reuse.
