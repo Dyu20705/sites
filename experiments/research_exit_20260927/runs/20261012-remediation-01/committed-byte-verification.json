@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "as_of_utc": "2026-10-12T06:57:42.409013+00:00",
+  "argv": [
+    "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "experiments\\research_exit_20260927\\verify_git_bytes.py",
+    "--repo",
+    "C:\\Users\\Admin\\sites\\.worktrees\\research-exit",
+    "--revision",
+    "6eb2d28b4815030d897b447e49c4ea4b9783eaf9",
+    "--compare-root",
+    "C:\\Users\\Admin\\sites\\.worktrees\\research-exit",
+    "--path",
+    "experiments/research_exit_20260927/README.md",
+    "--path",
+    "experiments/research_exit_20260927/checks_cli_v2.py",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/README.md",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/closeout-validation.json",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/documentation-eol-explicit-root.json",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/documentation-eol-verification.json",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/execution.json",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/failed-validation.json",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/final-package-validation.json",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/final-signal-validation.json",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/frozen-byte-verification.json",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/governance-corrections.json",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/historical-git-blobs.json",
+    "--path",
+    "experiments/research_exit_20260927/runs/20261012-remediation-01/independent-verification.json",
+    "--path",
+    "experiments/research_exit_20260927/test_checks_cli_v2.py",
+    "--path",
+    "experiments/research_exit_20260927/test_verify_git_bytes.py",
+    "--path",
+    "experiments/research_exit_20260927/verify_git_bytes.py"
+  ],
+  "exit_code": 0,
+  "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n",
+  "environment": {
+    "python": "3.14.7",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "verification": {
+    "allowed_documentation_eol": [],
+    "comparison": "artifact_bytes",
+    "files": [
+      {
+        "artifact_sha256": "93ca9c1763ff01f2191b6157f214ba8abbde008d83dd395ce110a8a2d764b771",
+        "committed_sha256": "93ca9c1763ff01f2191b6157f214ba8abbde008d83dd395ce110a8a2d764b771",
+        "path": "experiments/research_exit_20260927/README.md",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "5320641aceab3e6b3b75bb67896ab826dbe76e3c5520a67f095d271e0b578a0d",
+        "committed_sha256": "5320641aceab3e6b3b75bb67896ab826dbe76e3c5520a67f095d271e0b578a0d",
+        "path": "experiments/research_exit_20260927/checks_cli_v2.py",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "110e2c0ab517e88a73bd5f52cea8008f60e31f7585c473532ef84fc69b343f70",
+        "committed_sha256": "110e2c0ab517e88a73bd5f52cea8008f60e31f7585c473532ef84fc69b343f70",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/README.md",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "63e00ec0dd54ad31dcf68028f6e1ac75e0b9e05c66bde0e0f11d5c46299fd51c",
+        "committed_sha256": "63e00ec0dd54ad31dcf68028f6e1ac75e0b9e05c66bde0e0f11d5c46299fd51c",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/closeout-validation.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "5c53164684457fc7ef871b9a07939a980c0ec6b631d1cfb26a87f6ff4358743f",
+        "committed_sha256": "5c53164684457fc7ef871b9a07939a980c0ec6b631d1cfb26a87f6ff4358743f",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/documentation-eol-explicit-root.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "b70ab293606e05c63a39585bf21a3b767a92e289459c7f6d9ac2ce726e11c40c",
+        "committed_sha256": "b70ab293606e05c63a39585bf21a3b767a92e289459c7f6d9ac2ce726e11c40c",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/documentation-eol-verification.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "fa4b717925c811bcb4b4dcc154a4ed8ebaf33cea14e5da22e5645a034c156e92",
+        "committed_sha256": "fa4b717925c811bcb4b4dcc154a4ed8ebaf33cea14e5da22e5645a034c156e92",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/execution.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "aad16c9de5e7e24d8e44b7366f5a3daebab87135abc24e89e52cd4636bccd8c4",
+        "committed_sha256": "aad16c9de5e7e24d8e44b7366f5a3daebab87135abc24e89e52cd4636bccd8c4",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/failed-validation.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "22906758d9188c8765b7a8ff5c32d6e1d601530faf8acddb3ea773fa2cf81109",
+        "committed_sha256": "22906758d9188c8765b7a8ff5c32d6e1d601530faf8acddb3ea773fa2cf81109",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/final-package-validation.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "6d41795612cffb5bd3e6683c7c08cb5142dc2b5e4954a7ecf08cfdadb9cf3609",
+        "committed_sha256": "6d41795612cffb5bd3e6683c7c08cb5142dc2b5e4954a7ecf08cfdadb9cf3609",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/final-signal-validation.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "6c5b379d1810a5940352e5e7f72d4e77c5a492f9fe480b9959620d45d02e7561",
+        "committed_sha256": "6c5b379d1810a5940352e5e7f72d4e77c5a492f9fe480b9959620d45d02e7561",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/frozen-byte-verification.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "89cafbd8fee8f33fb96861204fbafafdfe773065121c377f105ffe8fa0688ccb",
+        "committed_sha256": "89cafbd8fee8f33fb96861204fbafafdfe773065121c377f105ffe8fa0688ccb",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/governance-corrections.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "b3649cde791b5669b19d3d7d84530cbf6ea2ca05361fd29bf0f63ce16cafdcdf",
+        "committed_sha256": "b3649cde791b5669b19d3d7d84530cbf6ea2ca05361fd29bf0f63ce16cafdcdf",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/historical-git-blobs.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "97993bdcfbcb5cdecadbc10928665dfa4b30be9794bf8973231c57e7941cffc1",
+        "committed_sha256": "97993bdcfbcb5cdecadbc10928665dfa4b30be9794bf8973231c57e7941cffc1",
+        "path": "experiments/research_exit_20260927/runs/20261012-remediation-01/independent-verification.json",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "4e9a8ab25d7af14eb593696daffd336687d3c8888c90e2229213a0118855fe53",
+        "committed_sha256": "4e9a8ab25d7af14eb593696daffd336687d3c8888c90e2229213a0118855fe53",
+        "path": "experiments/research_exit_20260927/test_checks_cli_v2.py",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "c915f4836f2b7054228e92b2df230925d9c6943b6e4432b32e6b7795a87b324f",
+        "committed_sha256": "c915f4836f2b7054228e92b2df230925d9c6943b6e4432b32e6b7795a87b324f",
+        "path": "experiments/research_exit_20260927/test_verify_git_bytes.py",
+        "state": "exact"
+      },
+      {
+        "artifact_sha256": "cb90af89a64aa945776b4fea85560de0d09c4b845d791be0f21d589f1c3f3dec",
+        "committed_sha256": "cb90af89a64aa945776b4fea85560de0d09c4b845d791be0f21d589f1c3f3dec",
+        "path": "experiments/research_exit_20260927/verify_git_bytes.py",
+        "state": "exact"
+      }
+    ],
+    "mismatched_paths": [],
+    "revision": "6eb2d28b4815030d897b447e49c4ea4b9783eaf9",
+    "status": "PASS"
+  },
+  "all_17_match_precommit_staged_sha256": true,
+  "scope": "Only the completed remediation commit is verified. This new report is not in its own scope and pins no future bytes. Same-host separate-process verification."
+}
