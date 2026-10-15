@@ -118,20 +118,20 @@ Không được suy ra emerging chỉ từ count tăng.
 
 ## 6. D09 — Cách triển khai tối thiểu
 
-**Trạng thái:** PROPOSED.
+**Trạng thái:** ACCEPTED — 12/10/2026, Dyu20705,
+[owner record](https://github.com/Dyu20705/sites/issues/71#issuecomment-6123995295);
+exact D09-M1-20261012-v1, SHA-256
+`a6c84f4b54523acd7f6121408c4889978003b9afc6c94dd4069fbd71b572cfbc`.
 
-Các lựa chọn cần cân nhắc:
+**Lựa chọn đã chấp thuận:** thư viện chuẩn CPython, file immutable, projection/
+query in-process nghiêm ngặt và HTML/SVG local sinh sẵn cho 21 window cố định.
+Không database, HTTP service, dependency bên thứ ba, JavaScript, ML/LLM, live
+provider access, hosted deployment hoặc âm thầm mở rộng khỏi M1 retrospective
+descriptive. Xem [contract demo as-built](../product/00_M1_OFFLINE_DEMO.md).
 
-- files vs embedded database vs database service;
-- in-process query vs HTTP API;
-- local dashboard vs hosted;
-- dictionary/rules vs learned model.
-
-**Nguyên tắc:** chọn phương án nhỏ nhất vẫn đáp ứng replay, truy vấn, dashboard và evaluation.
-
-Khuyến nghị hiện tại là local demo + in-process query nếu chưa có nhu cầu rõ cho network API.
-
-Framework, database, dashboard stack, deployment, identity và việc dùng ML/LLM **chưa được chấp thuận**.
+Acceptance làm PREIMPLEMENTATION-READY đạt và cho phép #72. Nó không làm
+FEATURE-READY, E7, E8, independent scientific quality, release hoặc deployment
+đạt.
 
 ## 7. D10 — Phần hoãn
 
@@ -158,9 +158,9 @@ Các lựa chọn cũ không bị cấm vĩnh viễn; chỉ không được kế
 
 **Thẩm quyền hiện tại — 12/10/2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) chấp thuận A1/A2/A3/D07/D08/F1 của [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 giữ ACCEPTED; chỉ sửa ứng dụng temporal M1/D05 và nghĩa vụ demo E2/E3 được nêu rõ. Output accepted là lexical n/N/share retrospective của corpus frozen 598 công trình; không có trend labels hoặc historical-as-of claim. E3 gốc giữ **NOT PASSED**; independent scientific quality **NOT MEASURED**.
 
-[Research Exit đã kiểm chứng](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 giữ **PROPOSED**; được làm thiết kế #71, build #72 chờ owner acceptance riêng. Deadline: **15/10/2026**.
+[Research Exit đã kiểm chứng](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 sau đó được chấp thuận riêng qua owner record #71 ở trên; PREIMPLEMENTATION-READY đã đạt và #72 được phép thực hiện. Deadline: **15/10/2026**.
 
-F1 đã kiểm chứng với SHA-256 `bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a`. Owner acceptance ở ngoài byte packet 15 được giữ nguyên. Mục này thay các phát biểu pending-decision lịch sử phía trên, không nâng E3 gốc hoặc scientific quality. G70 không chấp thuận architecture, dependency hay product gate.
+F1 đã kiểm chứng với SHA-256 `bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a`. Owner acceptance ở ngoài byte packet 15 được giữ nguyên. Mục này thay các phát biểu pending-decision lịch sử phía trên, không nâng E3 gốc hoặc scientific quality. Bản thân G70 không chấp thuận architecture, dependency hay product gate; record #71 riêng chỉ chấp thuận ranh giới D09 chính xác và preimplementation gate.
 
 ## 10. Nguyên tắc cập nhật log
 

@@ -118,20 +118,20 @@ A rising count alone must not be interpreted as emerging.
 
 ## 6. D09 — Minimum Implementation
 
-**Status:** PROPOSED.
+**Status:** ACCEPTED — 12 October 2026, Dyu20705,
+[owner record](https://github.com/Dyu20705/sites/issues/71#issuecomment-6123995295);
+exact D09-M1-20261012-v1, SHA-256
+`a6c84f4b54523acd7f6121408c4889978003b9afc6c94dd4069fbd71b572cfbc`.
 
-Options to consider:
+**Accepted choice:** CPython standard library, immutable files, strict
+in-process projection/query, and generated local HTML/SVG for the 21 fixed
+windows. No database, HTTP service, third-party dependency, JavaScript, ML/LLM,
+live provider access, hosted deployment, or silent expansion beyond the
+retrospective descriptive M1 scope. See the
+[as-built demo contract](../product/00_M1_OFFLINE_DEMO.md).
 
-- files versus an embedded database versus a database service;
-- in-process queries versus an HTTP API;
-- local versus hosted dashboard;
-- dictionary/rules versus a learned model.
-
-**Principle:** choose the smallest option that still supports replay, query, dashboard, and evaluation.
-
-The current recommendation is a local demo with in-process queries unless a clear need for a network API appears.
-
-The framework, database, dashboard stack, deployment, identity strategy, and use of ML or LLMs **have not been accepted**.
+Acceptance passed PREIMPLEMENTATION-READY and authorizes #72. It does not pass
+FEATURE-READY, E7, E8, independent scientific quality, release, or deployment.
 
 ## 7. D10 — Deferred Work
 
@@ -158,9 +158,9 @@ The [M1-R-20261010-v1 packet](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261
 
 **Current authority — 12 October 2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) accepts A1/A2/A3/D07/D08/F1 in [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 remain ACCEPTED; only the specified M1/D05 temporal application and E2/E3 demo obligations are amended. The accepted output is retrospective lexical n/N/share for the frozen 598-work corpus; no trend labels or historical-as-of claim. Original E3 remains **NOT PASSED**; independent scientific quality **NOT MEASURED**.
 
-[Verified Research Exit](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 remains **PROPOSED**; #71 design is allowed, #72 build awaits separate owner acceptance. Deadline: **15 October 2026**.
+[Verified Research Exit](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 was separately accepted later through the #71 owner record above; PREIMPLEMENTATION-READY passed and #72 was authorized. Deadline: **15 October 2026**.
 
-F1 verified under SHA-256 `bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a`. Owner acceptance is external to the unchanged packet-15 bytes. This supersedes the pending-decision statements in the historical entries above, without upgrading original E3 or scientific quality. No architecture, dependency or product gate is accepted by G70.
+F1 verified under SHA-256 `bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a`. Owner acceptance is external to the unchanged packet-15 bytes. This supersedes the pending-decision statements in the historical entries above, without upgrading original E3 or scientific quality. G70 itself did not accept an architecture, dependency, or product gate; the separate #71 record accepts only the exact D09 boundary and preimplementation gate.
 
 ## 10. Updating the Log
 

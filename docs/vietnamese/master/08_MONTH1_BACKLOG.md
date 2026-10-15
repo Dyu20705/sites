@@ -2,9 +2,9 @@
 
 **Thẩm quyền hiện tại — 12/10/2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) chấp thuận A1/A2/A3/D07/D08/F1 của [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 giữ ACCEPTED; chỉ sửa ứng dụng temporal M1/D05 và nghĩa vụ demo E2/E3 được nêu rõ. Output accepted là lexical n/N/share retrospective của corpus frozen 598 công trình; không có trend labels hoặc historical-as-of claim. E3 gốc giữ **NOT PASSED**; independent scientific quality **NOT MEASURED**.
 
-[Research Exit đã kiểm chứng](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 giữ **PROPOSED**; được làm thiết kế #71, build #72 chờ owner acceptance riêng. Deadline: **15/10/2026**.
+[Research Exit đã kiểm chứng](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. [D09-M1-20261012-v1](https://github.com/Dyu20705/sites/issues/71#issuecomment-6123995295) đã được **ACCEPTED** riêng và PREIMPLEMENTATION-READY đã đạt; #72 là implementation candidate đang hoạt động, #73 chưa đạt. Deadline: **15/10/2026**.
 
-**WIP hiện tại:** đề xuất giới hạn #71, tối đa hai execution items. Bàn giao investigation #64 hoàn thành, OPEN để administrative closure; #65 CLOSED/completed. #69 là tracker, còn thiếu search-provenance. Thứ tự: owner chấp thuận D09 → #72 một slice → #73 independent offline demo. Bảy independent-demo checks đều chưa đạt; không phân bổ công việc qua deadline 15/10.
+**WIP hiện tại:** implementation candidate #72 có giới hạn, tối đa hai execution items. #71 đã CLOSED sau D09 acceptance; bàn giao investigation #64 hoàn thành nhưng OPEN để administrative closure; #65 CLOSED/completed. #69 là tracker còn thiếu search-provenance. Thứ tự: hoàn tất/review #72 một slice → #73 independent offline demo. Human/browser độc lập và E8 đo thực tế còn incomplete; không phân bổ công việc qua deadline 15/10.
 
 ## Baseline lịch sử — giữ để đối chiếu
 

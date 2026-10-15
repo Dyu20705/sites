@@ -2,7 +2,7 @@
 
 **Thẩm quyền hiện tại — 12/10/2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) chấp thuận A1/A2/A3/D07/D08/F1 của [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 giữ ACCEPTED; chỉ sửa ứng dụng temporal M1/D05 và nghĩa vụ demo E2/E3 được nêu rõ. Output accepted là lexical n/N/share retrospective của corpus frozen 598 công trình; không có trend labels hoặc historical-as-of claim. E3 gốc giữ **NOT PASSED**; independent scientific quality **NOT MEASURED**.
 
-[Research Exit đã kiểm chứng](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 giữ **PROPOSED**; được làm thiết kế #71, build #72 chờ owner acceptance riêng. Deadline: **15/10/2026**.
+[Research Exit đã kiểm chứng](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. [D09-M1-20261012-v1](https://github.com/Dyu20705/sites/issues/71#issuecomment-6123995295) đã được **ACCEPTED** riêng và PREIMPLEMENTATION-READY đã đạt; #72 là implementation candidate đang hoạt động, #73 chưa đạt. Deadline: **15/10/2026**.
 
 **Gate allocation đã accepted:** G70 gồm quyết định owner, F1, corpus/số học/lineage frozen, synthetic workflow, controls và research E2-R/E3-R. Product E1/E3-R/E5/E6 integration, E2-R interpretation, E4 independent replay, E7 task năm/năm câu đúng và navigation, E8 đo thực tế vẫn là nghĩa vụ demo sau D09. Budget: ≤598 công trình, ≤60 giây, ≤256 MiB peak process memory, không live corpus request. Phải ghi identity/exposure/runtime reviewer trước task mới; chưa có reviewer result hoặc E8 đo thực tế.
 

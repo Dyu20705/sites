@@ -2,9 +2,9 @@
 
 **Current authority — 12 October 2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) accepts A1/A2/A3/D07/D08/F1 in [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 remain ACCEPTED; only the specified M1/D05 temporal application and E2/E3 demo obligations are amended. The accepted output is retrospective lexical n/N/share for the frozen 598-work corpus; no trend labels or historical-as-of claim. Original E3 remains **NOT PASSED**; independent scientific quality **NOT MEASURED**.
 
-[Verified Research Exit](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 remains **PROPOSED**; #71 design is allowed, #72 build awaits separate owner acceptance. Deadline: **15 October 2026**.
+[Verified Research Exit](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. [D09-M1-20261012-v1](https://github.com/Dyu20705/sites/issues/71#issuecomment-6123995295) is separately **ACCEPTED** and PREIMPLEMENTATION-READY passed; #72 is the active implementation candidate and #73 remains unpassed. Deadline: **15 October 2026**.
 
-**Current WIP:** #71 bounded proposal, at most two execution items. #64 investigation handoff complete, OPEN for administrative closure; #65 CLOSED/completed. #69 remains a tracker with an incomplete search-provenance field. Sequence: D09 owner acceptance → #72 one slice → #73 independent offline demo. All seven independent-demo checks remain incomplete; no allocation beyond the 15 October deadline.
+**Current WIP:** #72 bounded implementation candidate, at most two execution items. #71 is CLOSED after D09 acceptance; #64 investigation handoff is complete but OPEN for administrative closure; #65 is CLOSED/completed. #69 remains a tracker with an incomplete search-provenance field. Sequence: finish/review #72 one slice → #73 independent offline demo. Independent human/browser and measured E8 checks remain incomplete; no allocation beyond the 15 October deadline.
 
 ## Historical baseline — retained for comparison
 

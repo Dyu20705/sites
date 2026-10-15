@@ -2,7 +2,7 @@
 
 **Current authority — 12 October 2026:** [owner approval](https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874) accepts A1/A2/A3/D07/D08/F1 in [M1-R-20261010-v1](../research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). D05/D06 remain ACCEPTED; only the specified M1/D05 temporal application and E2/E3 demo obligations are amended. The accepted output is retrospective lexical n/N/share for the frozen 598-work corpus; no trend labels or historical-as-of claim. Original E3 remains **NOT PASSED**; independent scientific quality **NOT MEASURED**.
 
-[Verified Research Exit](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. D09 remains **PROPOSED**; #71 design is allowed, #72 build awaits separate owner acceptance. Deadline: **15 October 2026**.
+[Verified Research Exit](../research/17_RESEARCH_EXIT_20261012.md): **RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY**. [D09-M1-20261012-v1](https://github.com/Dyu20705/sites/issues/71#issuecomment-6123995295) is separately **ACCEPTED** and PREIMPLEMENTATION-READY passed; #72 is the active implementation candidate and #73 remains unpassed. Deadline: **15 October 2026**.
 
 **Gate allocation now accepted:** G70 covers owner decisions, F1, frozen corpus/arithmetic/lineage, synthetic workflow, controls and research E2-R/E3-R. Product E1/E3-R/E5/E6 integration, E2-R interpretation, E4 independent replay, E7 five-of-five task/navigation and measured E8 remain later demo obligations after D09. Budget: ≤598 works, ≤60 seconds, ≤256 MiB peak process memory, zero live corpus requests. Reviewer identity/exposure/runtime must be recorded before a new task; no reviewer result or measured E8 yet.
 

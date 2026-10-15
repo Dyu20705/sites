@@ -13,7 +13,7 @@ thu thập bằng chứng → theo dõi → khai phá → phát hiện xu hướ
 
 ## Trọng tâm hiện tại
 
-Repository đang trên **lộ trình Month 1 từ định nghĩa dự án tới một vertical slice có thể tái lập**. Nhánh hiện tại chưa chứa một phiên bản triển khai của sản phẩm hay bộ kiểm thử thực thi tương ứng.
+Repository đang trên **lộ trình Month 1 từ định nghĩa dự án tới một vertical slice có thể tái lập**. Nhánh #72 có implementation candidate offline và bộ product test đã được owner cho phép; independent demo và product-ready gate chưa đạt.
 
 Trong **Month 1 (17/09–17/10/2026)**, phạm vi cam kết được cố ý thu hẹp:
 
@@ -22,7 +22,7 @@ Trong **Month 1 (17/09–17/10/2026)**, phạm vi cam kết được cố ý thu
 - xây một luồng end-to-end nhỏ nhưng có thể tái lập;
 - chưa đưa forecasting, recommendation, optimization, autonomous agents hoặc hạ tầng quy mô lớn vào phạm vi M1, trừ khi có quyết định mới được chấp thuận rõ ràng.
 
-Nguyên tắc evidence/correctness D05 và người dùng D06 — researcher khảo sát một chủ đề kỹ thuật — đã được chấp thuận ngày 20/09/2026. Giá trị sử dụng vẫn chưa được kiểm chứng. Nguồn dữ liệu, corpus, định nghĩa chỉ báo và công nghệ triển khai vẫn cần bằng chứng và các điểm phê duyệt.
+D05/D06 và exact D07–D09 đã được chấp thuận cho slice retrospective có giới hạn. Giá trị sử dụng, hiệu quả reviewer độc lập, replay Windows/browser và E8 vẫn chưa được kiểm chứng; implementation candidate không thay đổi các ranh giới evidence này.
 
 ## Tài liệu
 
@@ -41,6 +41,7 @@ Bộ tài liệu định nghĩa M0/M1 tiếng Việt gồm:
 - [Nhật ký quyết định](master/07_DECISION_LOG.md)
 - [Kế hoạch Month 1](master/08_MONTH1_BACKLOG.md)
 - [Trạng thái hiện tại đã xác minh](master/09_CURRENT_STATE.md)
+- [Demo bằng chứng offline M1](product/00_M1_OFFLINE_DEMO.md)
 
 Chuẩn bị nghiên cứu:
 

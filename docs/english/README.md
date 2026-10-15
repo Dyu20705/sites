@@ -13,7 +13,7 @@ evidence acquisition → monitoring → mining → trend detection
 
 ## Current focus
 
-The repository is on the **Month-1 path from project definition to one reproducible vertical slice**. The current tree does not contain a product implementation or its executable test suite.
+The repository is on the **Month-1 path from project definition to one reproducible vertical slice**. The #72 branch contains an owner-authorized offline implementation candidate and executable product tests; it has not passed independent demo or product-ready gates.
 
 For **Month 1 (17 September–17 October 2026)**, the committed scope is intentionally narrow:
 
@@ -22,7 +22,7 @@ For **Month 1 (17 September–17 October 2026)**, the committed scope is intenti
 - build one small, reproducible end-to-end flow;
 - exclude forecasting, recommendation, optimization, autonomous agents, and large-scale infrastructure unless a later decision explicitly accepts them into M1.
 
-D05 evidence/correctness principles and D06's primary user—a researcher surveying a technical topic—were accepted on 20 September 2026. User value remains unvalidated. The data source, corpus, signal definition and implementation technology still require evidence and approval at the relevant decision gates.
+D05/D06 and exact D07–D09 are accepted for the bounded retrospective slice. User value, independent reviewer performance, Windows/browser replay, and E8 remain unvalidated; the implementation candidate does not change those evidence boundaries.
 
 ## Documentation
 
@@ -41,6 +41,7 @@ The English M0/M1 documentation set includes:
 - [Decision log](master/07_DECISION_LOG.md)
 - [Month-1 gate plan](master/08_MONTH1_BACKLOG.md)
 - [Verified current state](master/09_CURRENT_STATE.md)
+- [M1 offline evidence demo](product/00_M1_OFFLINE_DEMO.md)
 
 Research preparation:
 

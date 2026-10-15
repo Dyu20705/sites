@@ -2,13 +2,18 @@
 
 This directory contains the English and Vietnamese documentation for SITES, including the paired M0/M1 and Research Entry sets. Start research preparation at the [English checklist](english/research/05_RESEARCH_ENTRY_CHECKLIST.md) or [checklist tiếng Việt](vietnamese/research/05_RESEARCH_ENTRY_CHECKLIST.md). Research Entry does not mean the later research-ready gate has passed. The authoritative gate state is tracked by [#68](https://github.com/Dyu20705/sites/issues/68) for Research Entry and [#70](https://github.com/Dyu20705/sites/issues/70) for Research Exit; a branch-level checklist review is not by itself a default-branch gate pass.
 
+D09 is owner-accepted and the paired #72 as-built guide is available in
+[English](english/product/00_M1_OFFLINE_DEMO.md) and
+[Tiếng Việt](vietnamese/product/00_M1_OFFLINE_DEMO.md). This implementation
+candidate does not pass the independent #73/E7/E8/product-ready gates.
+
 ## Languages
 
-12 October critical-path audit and conditional D09 handoff: [full report EN](english/research/16_CRITICAL_PATH_HANDOFF_20261012.md) / [tóm tắt VI](vietnamese/research/16_CRITICAL_PATH_HANDOFF_20261012.md). Frozen arithmetic reproduced; current tool suite 40/40 PASS after a preserving legacy replay entry point. Original E3/#70 NOT PASSED; the exact owner packet is unchanged. Report 16 is maintained in English with an explicitly abridged Vietnamese companion.
+Historical pre-acceptance snapshot from the 12 October critical-path audit and conditional D09 handoff: [full report EN](english/research/16_CRITICAL_PATH_HANDOFF_20261012.md) / [tóm tắt VI](vietnamese/research/16_CRITICAL_PATH_HANDOFF_20261012.md). Frozen arithmetic was reproduced and the then-current tool suite was 40/40 PASS. Report 16 is maintained in English with an explicitly abridged Vietnamese companion.
 
-Owner selected retrospective-only direction; the exact unified amendment remains PROPOSED: [packet EN](english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) / [packet VI](vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). SIMULATED 27-fictional-work annotation workflow tested; independent scientific quality NOT MEASURED. D07/D08/D09 PROPOSED, original E3/#70 NOT PASSED.
+Historical proposal packet, later accepted exactly for D07/D08/F1 through #70: [packet EN](english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md) / [packet VI](vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). SIMULATED 27-fictional-work annotation workflow was tested; independent scientific quality remains NOT MEASURED and original E3 remains NOT PASSED.
 
-Latest critical-path evidence: [D08 development evaluation (EN)](english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md) / [thực nghiệm D08 (VI)](vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md). #65 investigation completed; real count/share measured; D07/D08/D09 still PROPOSED, E3/#70 NOT PASSED. Demo-ready deadline: 15 October 2026.
+Historical 10 October D08 development evidence: [English](english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md) / [Tiếng Việt](vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md). Its proposal-era gate language is superseded by the current records above.
 
 Research Exit evidence from 27 September is available in [English](english/research/08_D07_D08_EXIT_PACKET.md) and [Tiếng Việt](vietnamese/research/08_D07_D08_EXIT_PACKET.md), with shared [experiment artifacts](../experiments/research_exit_20260927/README.md). It records insufficient evidence; Research Entry has passed but research-ready has not.
 
