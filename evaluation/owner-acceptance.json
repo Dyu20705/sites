@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "decision": "D09",
+  "status": "ACCEPTED",
+  "owner": "Dyu20705 (project owner, current Codex task)",
+  "date": "2026-10-12",
+  "direct_user_instruction": "owner chấp thuận #71 tiếp tục #72",
+  "proposal_version": "D09-M1-20261012-v1",
+  "proposal_sha256": "a6c84f4b54523acd7f6121408c4889978003b9afc6c94dd4069fbd71b572cfbc",
+  "proposal_url": "https://github.com/Dyu20705/sites/issues/71#issuecomment-6123770080",
+  "acceptance_transcription_url": "https://github.com/Dyu20705/sites/issues/71#issuecomment-6123995295",
+  "preimplementation": "PASSED; issue 71 closed after owner acceptance and verification",
+  "research_delivery_commit": "0673903c7cf8e4c6725af8a13f2ca4e40a1457a9",
+  "freeze_sha256": "bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a",
+  "reviewer_direct_reply": "Tôi sẽ trực tiếp thực hiện với vai trò reviewer",
+  "reviewer_exposure_direct_reply": "Máy Windows hiện tại; đã xem kết quả, chưa đọc corpus/code",
+  "reviewer_execution": "NOT_MEASURED; replies identify a prospective human reviewer, not a completed task"
+}

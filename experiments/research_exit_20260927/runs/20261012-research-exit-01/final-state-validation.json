@@ -1,0 +1,162 @@
+{
+  "authority": "https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874",
+  "checks": [
+    {
+      "check": "manifest_external_anchor",
+      "detail": "bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a",
+      "status": "PASS"
+    },
+    {
+      "check": "all_122_frozen_artifacts_still_exact",
+      "detail": [],
+      "status": "PASS"
+    },
+    {
+      "check": "new_verification_commands",
+      "detail": "freeze, 56 tests, independent-method raw recount, clean artifact tree",
+      "status": "PASS"
+    },
+    {
+      "check": "execution_output_freeze-verification",
+      "detail": "freeze-verification.json",
+      "status": "PASS"
+    },
+    {
+      "check": "execution_output_regressions",
+      "detail": "regressions.json",
+      "status": "PASS"
+    },
+    {
+      "check": "execution_output_independent-verification",
+      "detail": "independent-verification.json",
+      "status": "PASS"
+    },
+    {
+      "check": "execution_output_clean-freeze-verification",
+      "detail": "clean-freeze-verification.json",
+      "status": "PASS"
+    },
+    {
+      "check": "historical_regression_replay",
+      "detail": "13 commands, 13 byte comparisons, pre-reconciliation state; overwrite refusal exit 2 is expected",
+      "status": "PASS"
+    },
+    {
+      "check": "corpus_metrics_lineage",
+      "detail": "14 raw inputs, 598 denominator refs, 9 numerator refs, 18 lexical boundaries, 5 variants and bimonthly ratios checked",
+      "status": "PASS"
+    },
+    {
+      "check": "simulation_scope",
+      "detail": "Fictional SYN workflow; real pilot stays null; no scientific-quality claim",
+      "status": "PASS"
+    },
+    {
+      "check": "english_decision_states",
+      "detail": {
+        "D05": "ACCEPTED",
+        "D06": "ACCEPTED",
+        "D07": "ACCEPTED",
+        "D08": "ACCEPTED",
+        "D09": "PROPOSED"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "english_owner_authority",
+      "detail": "Exact external owner record + F1 anchor",
+      "status": "PASS"
+    },
+    {
+      "check": "english/baseline/M1.md",
+      "detail": "Current accepted narrow gate precedes explicitly historical text; D09/product/scientific claims remain separate",
+      "status": "PASS"
+    },
+    {
+      "check": "english/master/06_EVALUATION_PROTOCOL.md",
+      "detail": "Current accepted narrow gate precedes explicitly historical text; D09/product/scientific claims remain separate",
+      "status": "PASS"
+    },
+    {
+      "check": "english/master/08_MONTH1_BACKLOG.md",
+      "detail": "Current accepted narrow gate precedes explicitly historical text; D09/product/scientific claims remain separate",
+      "status": "PASS"
+    },
+    {
+      "check": "english/master/09_CURRENT_STATE.md",
+      "detail": "Current accepted narrow gate precedes explicitly historical text; D09/product/scientific claims remain separate",
+      "status": "PASS"
+    },
+    {
+      "check": "vietnamese_decision_states",
+      "detail": {
+        "D05": "ACCEPTED",
+        "D06": "ACCEPTED",
+        "D07": "ACCEPTED",
+        "D08": "ACCEPTED",
+        "D09": "PROPOSED"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "vietnamese_owner_authority",
+      "detail": "Exact external owner record + F1 anchor",
+      "status": "PASS"
+    },
+    {
+      "check": "vietnamese/baseline/M1.md",
+      "detail": "Current accepted narrow gate precedes explicitly historical text; D09/product/scientific claims remain separate",
+      "status": "PASS"
+    },
+    {
+      "check": "vietnamese/master/06_EVALUATION_PROTOCOL.md",
+      "detail": "Current accepted narrow gate precedes explicitly historical text; D09/product/scientific claims remain separate",
+      "status": "PASS"
+    },
+    {
+      "check": "vietnamese/master/08_MONTH1_BACKLOG.md",
+      "detail": "Current accepted narrow gate precedes explicitly historical text; D09/product/scientific claims remain separate",
+      "status": "PASS"
+    },
+    {
+      "check": "vietnamese/master/09_CURRENT_STATE.md",
+      "detail": "Current accepted narrow gate precedes explicitly historical text; D09/product/scientific claims remain separate",
+      "status": "PASS"
+    },
+    {
+      "check": "documentation_local_links",
+      "detail": {
+        "broken": [],
+        "checked": 470
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "no_old_experiment_edits",
+      "detail": [
+        "docs/english/baseline/M1.md",
+        "docs/english/master/06_EVALUATION_PROTOCOL.md",
+        "docs/english/master/07_DECISION_LOG.md",
+        "docs/english/master/08_MONTH1_BACKLOG.md",
+        "docs/english/master/09_CURRENT_STATE.md",
+        "docs/vietnamese/baseline/M1.md",
+        "docs/vietnamese/master/06_EVALUATION_PROTOCOL.md",
+        "docs/vietnamese/master/07_DECISION_LOG.md",
+        "docs/vietnamese/master/08_MONTH1_BACKLOG.md",
+        "docs/vietnamese/master/09_CURRENT_STATE.md"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "holdout_and_product_boundary",
+      "detail": "Verification code inspected: local files/subprocesses only, no acquire.py execution; no sites_demo or #72/#73 implementation created. Independent demo remains 0/7.",
+      "status": "PASS"
+    }
+  ],
+  "contract": "M1-R-20261010-v1",
+  "limits": "No historical E3 pass, independent scientific quality, human validation, product demo, measured E8, new acquisition or holdout access",
+  "manifest_sha256": "bba628101ca0e2e0689c41dc364cbcbc4457dd90f187865373edc49b0a9d289a",
+  "research_gate": "RESEARCH-READY PASSED — RETROSPECTIVE DESCRIPTIVE SCOPE ONLY",
+  "status": "PASS",
+  "utc": "2026-10-12T07:38:36.946759+00:00"
+}

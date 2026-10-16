@@ -1,0 +1,25 @@
+{
+  "artifact_code_index_equals_working_bytes": true,
+  "markdown_CRLF_normalized_paths": [
+    "docs/README.md",
+    "docs/english/README.md",
+    "docs/english/baseline/M1.md",
+    "docs/english/master/06_EVALUATION_PROTOCOL.md",
+    "docs/english/master/07_DECISION_LOG.md",
+    "docs/english/master/08_MONTH1_BACKLOG.md",
+    "docs/vietnamese/README.md",
+    "docs/vietnamese/baseline/M1.md",
+    "docs/vietnamese/master/06_EVALUATION_PROTOCOL.md",
+    "docs/vietnamese/master/07_DECISION_LOG.md",
+    "docs/vietnamese/master/08_MONTH1_BACKLOG.md"
+  ],
+  "markdown_index_equals_LF_normalized_working": true,
+  "old_frozen_runs_config_evaluator_unchanged": true,
+  "packet_git_blob_sha256": {
+    "docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md": "da80e30a4fb07ad7722cf4d845ce0feb7da28a1b84336710697f358cd30b8122",
+    "docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md": "164535e1d50fd6f01e26aaadb639d7a89f67dadfc2dd4412b75d93bd05b677b0"
+  },
+  "reviewed_changed_files": 23,
+  "scope": "Final staged bytes review; document candidate hashes in workflow-verification.json identify working-copy bytes, final immutable packet identity uses Git blob bytes here.",
+  "status": "PASS"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "file": "preregistration.json",
+    "unchanged": true
+  },
+  {
+    "file": "acquisition.json",
+    "unchanged": true
+  },
+  {
+    "file": "accept-atom-diagnostic/acquisition.json",
+    "unchanged": true
+  },
+  {
+    "file": "results/validation.json",
+    "unchanged": true
+  }
+]

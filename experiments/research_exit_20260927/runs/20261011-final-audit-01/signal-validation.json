@@ -1,0 +1,32 @@
+{
+  "broken_links": [],
+  "config_literal_equals_executed_rule": true,
+  "correction_changed_measurements": false,
+  "decision_statuses": {
+    "english/D05": "ACCEPTED",
+    "english/D06": "ACCEPTED",
+    "english/D07": "PROPOSED",
+    "english/D08": "PROPOSED",
+    "english/D09": "PROPOSED",
+    "vietnamese/D05": "ACCEPTED",
+    "vietnamese/D06": "ACCEPTED",
+    "vietnamese/D07": "PROPOSED",
+    "vietnamese/D08": "PROPOSED",
+    "vietnamese/D09": "PROPOSED"
+  },
+  "distinct_denominator_ids_checked": 598,
+  "frozen_inputs_verified": 14,
+  "match_lineage_checked": 9,
+  "output_sha256": {
+    "controlled-checks.json": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c",
+    "measurements.json": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818"
+  },
+  "paired_monthly_tables_equal": true,
+  "raw_xml_records_checked": 598,
+  "reference_pilot_status": "PROPOSED_NOT_ANNOTATED",
+  "relative_links_checked": 394,
+  "replay_equal": true,
+  "scope": "Automated same-host agent verification; no independent scientific/human validation; external URLs/anchors and bilingual meaning require separate review.",
+  "status": "PASS",
+  "validator_code_sha256": "b62186867e375224f3a2b8442c49c1bf27b593953214789ae988424792cd980b"
+}

@@ -1,0 +1,19 @@
+{
+  "note": "Hand-specified synthetic expectations. These are arithmetic checks, not reference trend labels or observed provider records.",
+  "series": [
+    {"id":"increase","counts":[10,20],"totals":[100,100],"expected":[0.1,0.2]},
+    {"id":"decrease","counts":[20,10],"totals":[100,100],"expected":[0.2,0.1]},
+    {"id":"constant_share_corpus_growth","counts":[10,20],"totals":[100,200],"expected":[0.1,0.1]},
+    {"id":"denominator_drift","counts":[10,10],"totals":[100,200],"expected":[0.1,0.05]},
+    {"id":"zero_matches","counts":[0],"totals":[100],"expected":[0.0]},
+    {"id":"empty_denominator","counts":[0],"totals":[0],"expected":[null]},
+    {"id":"missing_bin","counts":[null],"totals":[null],"expected":[null]}
+  ],
+  "cutoff":"2019-06-30T23:59:59+00:00",
+  "vocabulary_available_at":"2018-12-01T00:00:00+00:00",
+  "records":[
+    {"id":"synthetic-a","version":1,"title":"Fuzzing software","event_at":"2019-01-01T00:00:00+00:00","available_at":"2019-01-02T00:00:00+00:00","membership_available_at":"2019-01-02T00:00:00+00:00"},
+    {"id":"synthetic-b","version":1,"title":"Software quality","event_at":"2019-01-02T00:00:00+00:00","available_at":"2019-01-03T00:00:00+00:00","membership_available_at":"2019-01-03T00:00:00+00:00"}
+  ],
+  "expected_base":{"count":1,"denominator":2,"share":0.5,"contributors":["synthetic-a"],"denominator_ids":["synthetic-a","synthetic-b"]}
+}

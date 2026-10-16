@@ -1,91 +1,45 @@
-# SITES agent operating contract
+# SITES — Agent operating contract
 
-This file governs AI/coding agents working in this repository. It complements the project documents; it does not replace accepted decisions or verified evidence.
+These repository rules apply to all AI and coding assistants. An agent's statement is not verification, scientific acceptance, or authorization to merge.
 
-## Current project boundary
+## Authoritative sources
 
-SITES is on the Month-1 path from project definition to one reproducible vertical slice. The committed direction is scholarly evidence -> descriptive trend intelligence -> evidence-backed query/dashboard demo.
+1. Inspect the actual task issue, the branch SHA, and the relevant current PR diff.
+2. Read [English project scope](docs/english/baseline/M1.md), [decision log](docs/english/master/07_DECISION_LOG.md), [evaluation protocol](docs/english/master/06_EVALUATION_PROTOCOL.md), and [current-state snapshot](docs/english/master/09_CURRENT_STATE.md).
+3. Follow [repository publication policy](docs/english/governance/REPOSITORY_POLICY.md) and the task-specific skill in `.agents/skills/`.
+4. Validate any dated status against GitHub issues and the checked-out commit. A historical document is not the current source of truth.
 
-Do not silently expand Month 1 into forecasting, recommendation, optimization, autonomous-agent product features, multi-source infrastructure, distributed systems, or production-scale operation.
+## Authority and decision gates
 
-Read these before material work:
+Human acceptance is required before modifying research questions, claim boundaries, D05–D09 contracts, corpus selection, metric/thresholds, temporal meaning, security boundaries, major architecture/dependencies, public distribution, or deployment. Do not infer acceptance from a checked box or an AI review.
 
-1. `docs/vietnamese/baseline/M1.md`
-2. `docs/vietnamese/master/07_DECISION_LOG.md`
-3. `docs/vietnamese/master/08_MONTH1_BACKLOG.md`
-4. `docs/vietnamese/master/09_CURRENT_STATE.md`
-5. the task-specific skill under `.agents/skills/`
+Permitted without a new decision: bounded, reversible improvements within an accepted task contract, tests, lint fixes, read-only research, draft proposals, and reproducibility improvements that preserve frozen bytes and scientific claims.
 
-The current-state document is a dated snapshot. When a state claim affects the task, verify repository/PR/issue state directly instead of treating an old snapshot as current.
+Never autonomously merge to `master`, force-push, rewrite shared history, publish releases, deploy, migrate irreversibly, expose secrets, impersonate a human reviewer, or mark a scientific gate passed.
 
-## Evidence and status discipline
+## Execution procedure
 
-Keep these categories distinct:
-
-- **FACT / VERIFIED**: supported by inspected source, executable evidence, or reproducible observation.
-- **ASSUMPTION**: adopted temporarily so work can proceed; state it explicitly.
-- **HYPOTHESIS**: claim to test, not a conclusion.
-- **PROPOSED**: recommendation awaiting acceptance.
-- **ACCEPTED**: explicitly approved in the decision log or by the project owner.
-- **REJECTED / DEFERRED / SUPERSEDED**: historical decision state; do not resurrect silently.
-
-Evidence priority for project claims:
-
-```text
-reproducible experiment / directly inspected primary evidence
-> verified implementation + tests
-> accepted decision/spec
-> active issue/PR
-> discussion
-> assumption
-```
-
-Git history is historical evidence, not the current architecture.
-
-## Human decision gates
-
-Do not change the status of D05-D09, or make equivalent high-impact choices, without explicit human acceptance.
-
-This includes material choices about:
-
-- project/research scope and target user;
-- data provider/corpus and temporal semantics;
-- metric/threshold/reference-label protocol;
-- architecture, physical data model, database/framework/dashboard/deployment;
-- security boundary, new runtime dependency, irreversible migration, release, or production operation.
-
-You may research, prototype, benchmark, or prepare a reversible proposal before acceptance. Label the result **PROPOSED** and stop before dependent implementation that would implicitly lock the decision.
-
-## Execution boundaries
-
-- WIP limit for SITES: at most 2 active work items.
-- Prefer the smallest end-to-end artifact that advances the current gate.
-- Never merge to the default branch, publish a release, deploy to production, rewrite Git history, force-push shared branches, handle real secrets, or perform destructive/irreversible migrations autonomously.
-- Batch repository changes into logical commits and avoid repeated remote commit/push churn.
-- Generated code, research synthesis, and reviews are unverified until checked.
-- Do not claim tests, benchmarks, citations, or user validation that were not actually performed.
-- For implementation tasks, define interfaces/invariants and acceptance checks before large code generation.
+- Maintain at most two active execution work items; governance trackers and future epics are not extra implementation lanes.
+- State the input contracts, invariants, expected outputs, risks and tests before modifying code.
+- Keep research evidence provenance; prohibit leakage from future observations into historical-as-of claims.
+- Do not modify or delete hash-pinned evidence without a separately accepted packaging and replay migration.
+- Work on a review branch; batch logical changes and publish once rather than repeated push churn.
+- Record verified test command, environment, result and remaining gaps; never fabricate CI runs or independent human observations.
+- Do not turn a passing unit test into a claim of E3, E7, E8, scientific accuracy, or Product-ready status.
+- Keep published English docs concise, factual, discoverable, and free of temporary agent handoffs.
 
 ## Skill routing
 
-Use the narrowest relevant skill:
+- `sites-research-evidence`: prior art, method critique and novelty checks.
+- `sites-source-audit`: provider/field/corpus/temporal evidence.
+- `sites-decision-gate`: impactful choices requiring an owner decision.
+- `sites-review`: PR and scientific/engineering evidence review.
+- `sites-security-review`: security boundaries and defensive review.
+- `sites-implementation-verification`: code, tests, reproducibility and runtime acceptance.
+- `sites-publication-review`: code/docs/evidence curation before PR or release.
 
-- `sites-research-evidence`: literature/prior-art, methodology, novelty/gap, evidence synthesis.
-- `sites-source-audit`: scholarly provider/API/corpus feasibility, field coverage, temporal availability, sampling and replay.
-- `sites-decision-gate`: architecture/product/research choices that can lock scope or implementation.
-- `sites-review`: PR/diff/docs/research/code review and gate verification.
-- `sites-security-review`: defensive security guidance and review. Full vulnerability-audit workflows remain explicit opt-in work and require sandbox controls.
+Review [the skills index](.agents/README.md). Use only the skills necessary for a task.
 
-See `.agents/README.md` for provenance, deferred integrations, and activation guidance.
+## Definition of done
 
-## Definition of useful completion
-
-A task is complete only when its output is inspectable and its validation is stated.
-
-For research: cite primary sources where possible and identify unresolved uncertainty.
-For data/source work: record query/snapshot/cutoff/coverage/missingness and known bias.
-For implementation: run the smallest relevant tests/checks and report exact results.
-For review: account for reviewed scope and distinguish confirmed defects from unverified concerns.
-For decisions: record alternatives, trade-offs, evidence, recommendation, and the explicit acceptance still required.
-
-When the task is educationally important, explain the mechanism or decision rationale rather than only providing an artifact.
+Every completed task links to the exact changed files and verification. Separate VERIFIED, ACCEPTED, PROPOSED, UNKNOWN, NOT MEASURED, and NOT PASSED. An unresolved major defect or a missing mandatory gate means BLOCKED, not READY.

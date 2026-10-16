@@ -1,0 +1,39 @@
+{
+  "id": "HA-20261010-01",
+  "status": "PREREGISTERED_BOUNDED_SOURCE_SCREEN",
+  "registered_at": "2026-10-10T11:57:07.414Z",
+  "baseline_commit": "670bcee8bc0f5a8883ff56979666fb614a1b5d44",
+  "cutoff": "2019-06-30T23:59:59Z",
+  "development_query": "cat:cs.SE AND submittedDate:[201901010000 TO 201906302359]",
+  "intent": "Screen historical announcement and category membership evidence; do not reacquire the 598-work corpus.",
+  "record_page_budget": 9,
+  "record_ids": [
+    "1907.00143",
+    "1907.00172",
+    "1907.00282",
+    "1907.00298",
+    "1907.00376",
+    "1907.00468",
+    "1907.00677",
+    "1907.03773",
+    "1908.04451"
+  ],
+  "requests_allowed": "At most one official abstract page per anomalous work; official help documentation and at most four targeted search queries. No API/OAI harvest, monthly corpus download, PDF, holdout or provider switch.",
+  "documentation_already_inspected": [
+    "arxiv_identifier",
+    "availability",
+    "oa/index",
+    "bulk_data",
+    "cross",
+    "rss",
+    "api/user-manual"
+  ],
+  "acceptance_checks": [
+    "Per-ID evidence must distinguish submission timestamp from first public announcement; unresolved exact availability stays null.",
+    "Population proof must cover all historical cs.SE members, including ones absent from the 2026 query; nine positive cases cannot prove completeness.",
+    "A dated snapshot or announcement archive must have capture provenance, coverage through cutoff, documented membership semantics and reproducible checksums before any dependent acquisition.",
+    "Current metadata last-modified datestamps and replay hashes are not historical-public-availability evidence."
+  ],
+  "stop_rule": "If screened official interfaces expose current state/version submission history without a verified historical category capture, report INSUFFICIENT_EVIDENCE and present owner alternatives; do not silently lower E3.",
+  "gate_effect": "None; E3/#70 remain NOT_PASSED; D07-D09 remain PROPOSED."
+}

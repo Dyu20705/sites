@@ -1,0 +1,546 @@
+{
+  "source_head": "ed2a21f36b8b0b05efd889279717b61dbe777eda",
+  "changed_existing_paths": [
+    "docs/english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md",
+    "docs/vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md",
+    "experiments/research_exit_20260927/README.md",
+    "experiments/research_exit_20260927/test_offline_audit.py",
+    "experiments/research_exit_20260927/validate.py"
+  ],
+  "historical_run_and_result_files_checked": 70,
+  "exact_git_bytes_except_text_normalization": [
+    "experiments/research_exit_20260927/runs/20261010-development-01/tool-tests.txt"
+  ],
+  "initial_strict_comparison": "failed on historical tool-tests.txt CRLF working copy versus LF Git blob; no content change; no evidence edited",
+  "packet_git_blob_sha256": {
+    "english": "da80e30a4fb07ad7722cf4d845ce0feb7da28a1b84336710697f358cd30b8122",
+    "vietnamese": "164535e1d50fd6f01e26aaadb639d7a89f67dadfc2dd4412b75d93bd05b677b0"
+  },
+  "pr_file_inventory": [
+    {
+      "path": "README.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/README.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/README.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/baseline/M1.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/master/06_EVALUATION_PROTOCOL.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/master/07_DECISION_LOG.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/master/08_MONTH1_BACKLOG.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/master/09_CURRENT_STATE.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/research/01_EVIDENCE_LEDGER.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/research/06_RESEARCH_EXIT_EVIDENCE.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/research/07_PROVIDER_AUDIT_RESULTS.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/research/08_D07_D08_EXIT_PACKET.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/research/09_RESEARCH_MASTER_20261010.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/research/10_CONDITIONAL_DESIGN_HANDOFF.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/english/research/11_REAL_CORPUS_AUDIT_20261010.md",
+      "review_depth": "paired EN/VI content and claim audit"
+    },
+    {
+      "path": "docs/english/research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md",
+      "review_depth": "paired EN/VI content and claim audit"
+    },
+    {
+      "path": "docs/english/research/13_ISSUE65_REVIEW_HANDOFF_20261010.md",
+      "review_depth": "paired EN/VI content and claim audit"
+    },
+    {
+      "path": "docs/english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md",
+      "review_depth": "paired EN/VI content and claim audit"
+    },
+    {
+      "path": "docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md",
+      "review_depth": "paired EN/VI content and claim audit"
+    },
+    {
+      "path": "docs/vietnamese/README.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/baseline/M1.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/master/06_EVALUATION_PROTOCOL.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/master/07_DECISION_LOG.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/master/08_MONTH1_BACKLOG.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/master/09_CURRENT_STATE.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/research/01_EVIDENCE_LEDGER.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/research/06_RESEARCH_EXIT_EVIDENCE.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/research/07_PROVIDER_AUDIT_RESULTS.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/research/08_D07_D08_EXIT_PACKET.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/research/09_RESEARCH_MASTER_20261010.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/research/10_CONDITIONAL_DESIGN_HANDOFF.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "docs/vietnamese/research/11_REAL_CORPUS_AUDIT_20261010.md",
+      "review_depth": "paired EN/VI content and claim audit"
+    },
+    {
+      "path": "docs/vietnamese/research/12_HISTORICAL_AVAILABILITY_SCREEN_20261010.md",
+      "review_depth": "paired EN/VI content and claim audit"
+    },
+    {
+      "path": "docs/vietnamese/research/13_ISSUE65_REVIEW_HANDOFF_20261010.md",
+      "review_depth": "paired EN/VI content and claim audit"
+    },
+    {
+      "path": "docs/vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md",
+      "review_depth": "paired EN/VI content and claim audit"
+    },
+    {
+      "path": "docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md",
+      "review_depth": "paired EN/VI content and claim audit"
+    },
+    {
+      "path": "experiments/research_exit_20260927/.gitattributes",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/.gitignore",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/README.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/accept-atom-diagnostic/acquisition.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/acquire.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/acquisition.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/amendments.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/checks.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/crosscheck.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/dblp-access.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/fixtures.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/http-endpoint-diagnostic/acquisition.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/http-endpoint-diagnostic/raw/count.xml",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/offline_audit.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/preregistration.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/probe_snapshot.py",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/results/run-1.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/results/run-2.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/results/validation.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-amendment-01/frozen-evidence-verification.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-amendment-01/index-byte-verification.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-amendment-01/simulated-workflow.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-amendment-01/workflow-verification.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/acquisition.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/crosscheck.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/historical-preservation.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/index-byte-verification.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/inputs/acquire.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/inputs/am02-acquisition.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/inputs/am02-count.xml",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/inputs/preregistration.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/package-validation.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/count.xml",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/current-0000.xml",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/current-0500.xml",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0000.xml",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0100.xml",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0200.xml",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0300.xml",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0400.xml",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0500.xml",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/audit.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/normalized-records.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/replay-2/audit.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/replay-2/normalized-records.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/replay-verification.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/review.md",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/audit.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/crosscheck.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/normalized-records.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/verification.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/tool-tests.txt",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-development-01/verification-local.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-historical-screen-01/package-validation.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-historical-screen-01/source-screen-plan.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-historical-screen-01/source-screen-results.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-preflight-01/development-plan.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-preflight-01/dns.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-preflight-01/execution-hashes.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-preflight-01/offline-audit-contract.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-preflight-01/preflight.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-review-response-01/future-search-execution-template.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-review-response-01/package-validation.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-review-response-01/review-response.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/controlled-checks.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/execution.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/controlled-checks.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/execution.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/measurements.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/declaration-corrected.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/declaration.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-crosscheck.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-verification.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/index-byte-verification.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/legacy-checks.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/reference-pilot-plan.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/controlled-checks.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/execution.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/measurements.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/controlled-checks.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/execution.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/measurements.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/self-review.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/source-inspection.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/runs/20261010-signal-01/verification.json",
+      "review_depth": "artifact integrity/replay/field or reference checks; not independent semantic annotation"
+    },
+    {
+      "path": "experiments/research_exit_20260927/search-log.json",
+      "review_depth": "context/inventory only; no exhaustive per-file review (outside focused #64 final audit)"
+    },
+    {
+      "path": "experiments/research_exit_20260927/signal_evaluator.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/simulate_reference_workflow.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/test_acquire.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/test_offline_audit.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/test_reference_workflow.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/test_signal_evaluator.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/validate.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    },
+    {
+      "path": "experiments/research_exit_20260927/validate_signal.py",
+      "review_depth": "source reviewed; relevant offline tests/replay executed; no live acquisition"
+    }
+  ],
+  "git_diff_check_exit_code": 0
+}

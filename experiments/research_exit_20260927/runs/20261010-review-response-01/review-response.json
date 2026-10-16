@@ -1,0 +1,51 @@
+{
+  "status": "REVIEW_RESPONSE_PENDING_ACK_AND_OWNER",
+  "baseline_commit": "436f3ae6cb8a185a420ff6ae03c5f3697166604f",
+  "recorded_at": "2026-10-10T12:12:32.965Z",
+  "findings": [
+    {
+      "priority": "P0",
+      "finding": "Historical population unresolved",
+      "disposition": "OPEN_SCIENTIFIC_BLOCKER",
+      "historical_denominator": null,
+      "E3": "NOT_PASSED",
+      "action": "Retain retrospective corpus; no new acquisition or signal computation."
+    },
+    {
+      "priority": "P1",
+      "finding": "Search execution metadata incomplete",
+      "disposition": "ACKNOWLEDGED_PROSPECTIVE_TEMPLATE_PREPARED",
+      "historical_service_record": null,
+      "historical_exact_timestamps": null,
+      "historical_filters": null,
+      "historical_results_screened_count": null,
+      "historical_result_URL_inventory": null,
+      "action": "Preserve original log; do not backfill unsupported timestamps/counts. Template for next execution is NOT_EXECUTED."
+    },
+    {
+      "priority": "P1",
+      "finding": "B to A acknowledgment absent",
+      "disposition": "HANDOFF_SENT_ACK_PENDING",
+      "handoff_url": "https://github.com/Dyu20705/sites/issues/64#issuecomment-6097343828",
+      "acknowledgment_url": null,
+      "action": "Ask A to confirm receipt and identify fields unfit for D08 as-of; do not impersonate A acknowledgment."
+    },
+    {
+      "priority": "P2",
+      "finding": "No independent preregistration timing evidence",
+      "disposition": "LIMITATION_ACKNOWLEDGED",
+      "independent_pre_exposure_timestamp_evidence": null,
+      "action": "Future confirmatory plan must be committed before execution or have a timestamped immutable record; owner freeze still required for holdout."
+    }
+  ],
+  "owner_decisions": {
+    "investigation_outcome": "PENDING",
+    "close_65": "NOT_AUTHORIZED_PENDING_ACK_AND_OWNER",
+    "research_scope": "PENDING_EXPLICIT_DECISION",
+    "D07": "PROPOSED",
+    "D08": "PROPOSED",
+    "D09": "PROPOSED",
+    "research_exit_70": "NOT_PASSED"
+  },
+  "validation_boundary": "Documentation/provenance response only; no new tests, replay, provider queries, external research screen, or independent reviewer execution."
+}

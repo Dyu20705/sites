@@ -1,0 +1,113 @@
+{
+  "frozen_original_changes": 0,
+  "json_blobs_checked": 21,
+  "rows": [
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/controlled-checks.json",
+      "git_index_blob": "473106241df768585744ba6ec3fb4163697d4904",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/execution.json",
+      "git_index_blob": "cbfbec4c35c4b3f38e5061233a0013ce3dabbf92",
+      "sha256": "66202578ce8406789e9b59989667aa95db5e98ea698bf2ced787abfdb594a611"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json",
+      "git_index_blob": "e5bbba5117de28c391d4d55105a52f541294be2b",
+      "sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/controlled-checks.json",
+      "git_index_blob": "473106241df768585744ba6ec3fb4163697d4904",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/execution.json",
+      "git_index_blob": "dc6237fe842f54ccb70a7ba641febe3a3cad6bd5",
+      "sha256": "d11ffdf3bfe0f529b3f2b18486a26fce9b31c89dd3393f9746bcfd7dcb4f6c10"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/measurements.json",
+      "git_index_blob": "e5bbba5117de28c391d4d55105a52f541294be2b",
+      "sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/declaration-corrected.json",
+      "git_index_blob": "09c335df034ce43f83c923f1d0d866306924bb0f",
+      "sha256": "9764e840c97cc3b49bf5356f434a19a50ff0c37ba4b803ab263879ebc0e33043"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/declaration.json",
+      "git_index_blob": "487e15234bcfbdcec5f4b8aaf5b9543c67395562",
+      "sha256": "24284285e3ff9a3b13770b7647e84e97e8efd81ba09b139e345a0b088c50d600"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-crosscheck.json",
+      "git_index_blob": "c21037641172bf34eb4ce084ceabdc4f0b4052df",
+      "sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-verification.json",
+      "git_index_blob": "e67ecc4140fc73ccd28bb15f6ba981cc7ce8a370",
+      "sha256": "3b5654d622fe62a5eedadb8082e3accb1f08311715e9d789a46aba91d433d8e8"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/legacy-checks.json",
+      "git_index_blob": "d1d60a0fd0955e3ac016dd1bc69b7a35138a94b7",
+      "sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/reference-pilot-plan.json",
+      "git_index_blob": "e9b1a03e160cb3d9144ef62471d62e8cfa1b675e",
+      "sha256": "58421ee544e7d8afc8744aa35eba2543b1b65bf23a1c24092b25a6146dbbcd5c"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/controlled-checks.json",
+      "git_index_blob": "473106241df768585744ba6ec3fb4163697d4904",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/execution.json",
+      "git_index_blob": "9c923d69f233e17e105ab6f4796c268dbe2b8baa",
+      "sha256": "ac122f3a4a375d5367033dcc1506ca73366014c89b72b6d5a02edc9d9dcd4db0"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/measurements.json",
+      "git_index_blob": "ef0df59b81b3b1fceb898e190b274bd8387de51b",
+      "sha256": "0e36c5a25271c562ead1cf271ffca90c8316b48abd5f403f33d775b8e503e67c"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/controlled-checks.json",
+      "git_index_blob": "473106241df768585744ba6ec3fb4163697d4904",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/execution.json",
+      "git_index_blob": "acc365bbd478b23bca039293e406b78fdde6e184",
+      "sha256": "782b69706b797563c2b3a172d41ccb980d5f7bb4b548dcf74eebc18b70bff844"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/measurements.json",
+      "git_index_blob": "ef0df59b81b3b1fceb898e190b274bd8387de51b",
+      "sha256": "0e36c5a25271c562ead1cf271ffca90c8316b48abd5f403f33d775b8e503e67c"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/self-review.json",
+      "git_index_blob": "1a81e997a69604bff435c8cd5d435a82529d1351",
+      "sha256": "d9b9b66de3059954834d49ed1ec2bc8429f43f7b0b6969570192cccf3ce146d9"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/source-inspection.json",
+      "git_index_blob": "d4aac31bf5dee05e17cb011c06d235fade81b6bf",
+      "sha256": "251aa261a411cb6757a2bd3bdeb687371e5db4fff79d0a6d75689fb3981b755c"
+    },
+    {
+      "file": "experiments/research_exit_20260927/runs/20261010-signal-01/verification.json",
+      "git_index_blob": "28d5f35e2110e914003cf5ab4f4f7e0de1c5856b",
+      "sha256": "0a95feab52cd1b72deddb7f2b1db453b6bce1104e9932a13f5e019c688cd6a2a"
+    }
+  ],
+  "scope": "New JSON index blobs match unfiltered working bytes; original development/config/results unchanged; this report excludes itself.",
+  "status": "PASS"
+}

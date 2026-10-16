@@ -1,0 +1,49 @@
+{
+  "status": "LIMITATION_CONFIRMED",
+  "fixture": {
+    "work_id": "1901.00000",
+    "version_id": "1901.00000v1",
+    "title_v1": "Fuzzing",
+    "published_at": "2019-01-10T12:00:00Z",
+    "categories_v1": [
+      "cs.SE"
+    ],
+    "available_at": null,
+    "source_ref": {
+      "v1": {
+        "synthetic": true
+      }
+    },
+    "retrospective_exclusions": []
+  },
+  "observed_january": {
+    "month": "2019-01",
+    "eligible_works": 0,
+    "assigned_works": 0,
+    "known_matches": 0,
+    "count": 0,
+    "share": null,
+    "title_missing": 0,
+    "title_invalid": 0,
+    "unknown_title_ids": [],
+    "share_bounds": [
+      null,
+      null
+    ],
+    "status": "UNDEFINED_EMPTY_BIN",
+    "denominator_ids": [],
+    "matched_ids": []
+  },
+  "excluded": [
+    {
+      "work_id": "1901.00000",
+      "reasons": [
+        "outside_current_query_category"
+      ]
+    }
+  ],
+  "partial_acquisition_rejected": "Complete acquisition required; failed/partial input is not a corpus",
+  "finding": "Standalone helper maps unknown current membership to exclusion/empty bin; not a general fail-closed input interface.",
+  "impact": "No effect on fixed hash-pinned 598 works: all current membership fields valid and cs.SE. Do not reuse helper on new inputs under the proposed unknown-field guarantee.",
+  "disposition": "Preserve frozen implementation; require a separately versioned guard/correction and regression before any broader input contract. No estimand or owner acceptance changed."
+}

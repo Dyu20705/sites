@@ -1,0 +1,69 @@
+{
+  "schema": "SITES prospective research execution record",
+  "status": "TEMPLATE_NOT_EXECUTED",
+  "instruction": "Copy to a new run and populate during execution; null means unrecorded, never infer missing historical timestamps or result counts.",
+  "plan": {
+    "id": null,
+    "commit_sha": null,
+    "sha256": null,
+    "freeze_record_url": null,
+    "freeze_record_created_at_utc": null,
+    "freeze_verified_before_execution": null,
+    "owner_freeze_acceptance_url": null,
+    "purpose": null,
+    "query_budget": null,
+    "request_budget": null,
+    "byte_budget": null,
+    "stop_rule": null
+  },
+  "execution": {
+    "service_name": null,
+    "tool_name": null,
+    "tool_version_if_exposed": null,
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "exact_query": null,
+    "filters": {
+      "domains": null,
+      "date_range": null,
+      "language": null,
+      "recency": null,
+      "other": null
+    },
+    "requested_result_limit": null,
+    "results_returned_count": null,
+    "result_count_semantics": null,
+    "results_screened_count": null,
+    "results_opened_count": null,
+    "returned_results": [],
+    "screened_results": [],
+    "result_fields_required": [
+      "rank_if_exposed",
+      "url",
+      "title",
+      "screening_disposition",
+      "reason",
+      "opened_at_utc_if_opened",
+      "access_depth",
+      "source_location_or_section",
+      "capture_or_tool_response_reference",
+      "cache_or_access_limitation"
+    ],
+    "access_errors": [],
+    "raw_response_capture_path_if_permitted": null,
+    "raw_response_sha256_if_captured": null
+  },
+  "interpretation": {
+    "finding": null,
+    "counterevidence": null,
+    "unresolved": null,
+    "scope_limit": null
+  },
+  "rules": [
+    "Record explicit empty/no-filter values when known; distinguish unknown from none.",
+    "If a service does not expose total result count, record unavailable and count only the returned/screened list.",
+    "Capture each actual screened URL and disposition; pagination/order differences can prevent exact search replay even with complete metadata.",
+    "For confirmatory exposure, commit the complete plan before execution and record a verifiable pre-execution freeze; prefer an independently timestamped immutable anchor. A local timestamp or post-execution push is insufficient evidence of independent timing.",
+    "Do not execute holdout or dependent confirmatory work before the required owner-approved D07/D08 experiment freeze."
+  ]
+}

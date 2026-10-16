@@ -1,0 +1,446 @@
+{
+  "blinding": "This selection manifest is organizer-only. Strip strata/month/match information, randomize order and show permitted paper evidence to two owner-designated independent researchers. No researcher assigned or annotation performed.",
+  "claim_boundary": "Error-discovery pilot; not full recall estimate or independent trend quality. Ground truth cannot derive from signal.",
+  "created_at_utc": "2026-10-10T12:42:50.013734+00:00",
+  "minimum_support_for_trend_labels": "UNRESOLVED; no labels allowed",
+  "prior_signal_exposure": true,
+  "quality_threshold": "UNRESOLVED; requires pilot evidence and owner acceptance",
+  "records": [
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-01",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1901.01500v1",
+        "entry_index": 52,
+        "file": "raw/v1-0000.xml",
+        "sha256": "17efe9c3dbe5a0dc693c96cc69f0f19166d33e3a49acb4f9794a89b170eada1f"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1901.01500v1",
+      "work_id": "1901.01500"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-01",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1901.09511v1",
+        "entry_index": 95,
+        "file": "raw/v1-0000.xml",
+        "sha256": "17efe9c3dbe5a0dc693c96cc69f0f19166d33e3a49acb4f9794a89b170eada1f"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1901.09511v1",
+      "work_id": "1901.09511"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-01",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1901.10579v1",
+        "entry_index": 37,
+        "file": "raw/v1-0000.xml",
+        "sha256": "17efe9c3dbe5a0dc693c96cc69f0f19166d33e3a49acb4f9794a89b170eada1f"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1901.10579v1",
+      "work_id": "1901.10579"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-02",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1902.05594v1",
+        "entry_index": 66,
+        "file": "raw/v1-0100.xml",
+        "sha256": "3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1902.05594v1",
+      "work_id": "1902.05594"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-02",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1902.08303v1",
+        "entry_index": 87,
+        "file": "raw/v1-0100.xml",
+        "sha256": "3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1902.08303v1",
+      "work_id": "1902.08303"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-02",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1902.04627v1",
+        "entry_index": 65,
+        "file": "raw/v1-0100.xml",
+        "sha256": "3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1902.04627v1",
+      "work_id": "1902.04627"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-03",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1903.10614v1",
+        "entry_index": 88,
+        "file": "raw/v1-0200.xml",
+        "sha256": "2980129ca1ab896bb24f6fb7cb6317e481de085646f8da237016475eade1ef1d"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1903.10614v1",
+      "work_id": "1903.10614"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-03",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1904.03257v1",
+        "entry_index": 58,
+        "file": "raw/v1-0200.xml",
+        "sha256": "2980129ca1ab896bb24f6fb7cb6317e481de085646f8da237016475eade1ef1d"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1904.03257v1",
+      "work_id": "1904.03257"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-03",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1904.01001v1",
+        "entry_index": 84,
+        "file": "raw/v1-0200.xml",
+        "sha256": "2980129ca1ab896bb24f6fb7cb6317e481de085646f8da237016475eade1ef1d"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1904.01001v1",
+      "work_id": "1904.01001"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-04",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1904.11968v1",
+        "entry_index": 23,
+        "file": "raw/v1-0300.xml",
+        "sha256": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1904.11968v1",
+      "work_id": "1904.11968"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-04",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1904.04749v1",
+        "entry_index": 38,
+        "file": "raw/v1-0300.xml",
+        "sha256": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1904.04749v1",
+      "work_id": "1904.04749"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-04",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1904.04706v1",
+        "entry_index": 35,
+        "file": "raw/v1-0300.xml",
+        "sha256": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1904.04706v1",
+      "work_id": "1904.04706"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-05",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1905.06782v1",
+        "entry_index": 9,
+        "file": "raw/v1-0300.xml",
+        "sha256": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1905.06782v1",
+      "work_id": "1905.06782"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-05",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1905.05322v1",
+        "entry_index": 74,
+        "file": "raw/v1-0400.xml",
+        "sha256": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1905.05322v1",
+      "work_id": "1905.05322"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-05",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1905.09137v1",
+        "entry_index": 11,
+        "file": "raw/v1-0400.xml",
+        "sha256": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1905.09137v1",
+      "work_id": "1905.09137"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-06",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1906.08351v1",
+        "entry_index": 8,
+        "file": "raw/v1-0500.xml",
+        "sha256": "ed474590509a8e8461ab327de09f6790a96d0ffaac5aa39178b5616435ef33bf"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1906.08351v1",
+      "work_id": "1906.08351"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-06",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1906.11017v1",
+        "entry_index": 71,
+        "file": "raw/v1-0500.xml",
+        "sha256": "ed474590509a8e8461ab327de09f6790a96d0ffaac5aa39178b5616435ef33bf"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1906.11017v1",
+      "work_id": "1906.11017"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "nonmatch_2019-06",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1906.11607v1",
+        "entry_index": 67,
+        "file": "raw/v1-0500.xml",
+        "sha256": "ed474590509a8e8461ab327de09f6790a96d0ffaac5aa39178b5616435ef33bf"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1906.11607v1",
+      "work_id": "1906.11607"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "lexical_match",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1902.09334v1",
+        "entry_index": 43,
+        "file": "raw/v1-0100.xml",
+        "sha256": "3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1902.09334v1",
+      "work_id": "1902.09334"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "lexical_match",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1903.02981v1",
+        "entry_index": 59,
+        "file": "raw/v1-0100.xml",
+        "sha256": "3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1903.02981v1",
+      "work_id": "1903.02981"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "lexical_match",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1903.08483v1",
+        "entry_index": 67,
+        "file": "raw/v1-0200.xml",
+        "sha256": "2980129ca1ab896bb24f6fb7cb6317e481de085646f8da237016475eade1ef1d"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1903.08483v1",
+      "work_id": "1903.08483"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "lexical_match",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1904.07280v1",
+        "entry_index": 37,
+        "file": "raw/v1-0300.xml",
+        "sha256": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1904.07280v1",
+      "work_id": "1904.07280"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "lexical_match",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1905.01405v1",
+        "entry_index": 87,
+        "file": "raw/v1-0300.xml",
+        "sha256": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1905.01405v1",
+      "work_id": "1905.01405"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "lexical_match",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1905.06944v1",
+        "entry_index": 98,
+        "file": "raw/v1-0400.xml",
+        "sha256": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1905.06944v1",
+      "work_id": "1905.06944"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "lexical_match",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1905.07147v1",
+        "entry_index": 4,
+        "file": "raw/v1-0400.xml",
+        "sha256": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1905.07147v1",
+      "work_id": "1905.07147"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "lexical_match",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1905.10499v1",
+        "entry_index": 13,
+        "file": "raw/v1-0400.xml",
+        "sha256": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1905.10499v1",
+      "work_id": "1905.10499"
+    },
+    {
+      "adjudication": null,
+      "annotator_a": null,
+      "annotator_b": null,
+      "evidence_refs": [],
+      "selection_stratum": "lexical_match",
+      "source_ref": {
+        "entry_id": "http://arxiv.org/abs/1906.00621v1",
+        "entry_index": 31,
+        "file": "raw/v1-0400.xml",
+        "sha256": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9"
+      },
+      "status": "NOT_ANNOTATED",
+      "version_id": "1906.00621v1",
+      "work_id": "1906.00621"
+    }
+  ],
+  "reference_status": "NOT_MEASURED",
+  "seed": "D08-REF-20261010-01",
+  "selection": "9 matched works + 3 nonmatches/month in SHA256(seed:work_id) ascending order",
+  "status": "PROPOSED_PILOT_NOT_EXECUTED"
+}

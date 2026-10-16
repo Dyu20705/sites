@@ -1,98 +1,37 @@
-<!--
-Keep the description proportional to the change. Replace prompts with concrete details.
-Use N/A with a short reason for sections that do not apply; remove optional sections if unused.
-Check only completed items. Remove inapplicable checklist items and explain any outstanding checks.
-For documentation-only PRs, validate content, links, and consistency; do not claim unrun tests.
--->
+## Problem and scope
 
-## Why
+What outcome does this change deliver? Link the issue, accepted contract/decision, and exact baseline SHA. State **non-goals** and implementation boundaries.
 
-<!-- Describe the problem or research question, who it affects, and the intended outcome. -->
+## Change summary
 
-## Related issues & references
+Describe behavior and relevant files, without agent logs or promotional language.
 
-<!-- Use "Closes #123" only if this PR resolves the issue; otherwise use "Related to #123".
-Link relevant tickets, source documents, evidence, or prior discussions. -->
+## Evidence and verification
 
-## What changed
+| Requirement / check | Exact command or evidence | Result | Environment / limitations |
+| --- | --- | --- | --- |
+| Repository policy | `python tools/check_repository.py` | PENDING | |
+| Unit/integration tests | | PENDING | |
+| Research freeze / regression (if relevant) | | PENDING | |
+| Documentation and security review | | PENDING | |
+| Human evaluation / E7 / E8 (if relevant) | | NOT MEASURED | |
 
-<!-- Summarize the substantive changes and any scope boundaries or tradeoffs.
-For behavior changes, describe the before/after result. -->
+Only mark PASS for an executed test on the stated commit. A simulated reviewer, synthetic fixture or same-host replay is not an independent evaluation.
 
--
+## Risks, scientific claims and compatibility
 
-## Decisions & review focus
+Include source/temporal semantics, hashes and frozen artifacts affected; security impact; migrations/rollback; correctness or resource limitations; and any unmatched baseline. Clearly separate VERIFIED, PROPOSED, UNKNOWN, NOT PASSED and NOT MEASURED.
 
-<!-- Identify decisions proposed for review, alternatives considered, and unresolved questions.
-Distinguish verified evidence, accepted decisions, proposals, and hypotheses.
-Do not present a proposed scope or architecture change as already accepted or implemented. -->
+## Review decision gates
 
-## Validation
+- [ ] I inspected the complete final diff and confirmed the selected baseline.
+- [ ] The change does not silently alter accepted D05–D09/F1 contracts or evidence bytes.
+- [ ] Canonical user-facing documentation is in English; special immutable evidence exceptions are explicit.
+- [ ] Required checks have run on the final commit; failing/missing checks are disclosed.
+- [ ] No secrets, personal reviewer material, temporary outputs or unsupported capability claims are published.
+- [ ] Any major product/research/security decision has explicit owner approval.
+- [ ] No BLOCKER or MAJOR correctness/evidence finding remains unresolved.
 
-<!-- Record checks actually performed and their results, with evidence where available.
-For docs/research: check sources, links, terminology, scope, and consistency with related documents.
-For code/data: include exact commands, relevant environment or dataset, and observed results.
-State what was not checked, why, and any limitations of the evidence. -->
+## Review and delivery
 
-| Check | Result / evidence |
-| --- | --- |
-| | |
-
-## How to test or review
-
-<!-- Give reproducible steps and expected outcomes, including prerequisites if needed.
-For docs-only changes, point reviewers to the affected sections and what to verify.
-Reference Validation above when it already provides sufficient instructions. -->
-
-1.
-
-## Screenshots / recordings (optional)
-
-<!-- Attach labeled before/after visuals for visible changes when useful.
-Remove sensitive information from attachments. -->
-
-## Risks & breaking changes
-
-<!-- State "None" if applicable. Otherwise describe affected users, interfaces, data,
-or workflows; compatibility impact; and required migration or follow-up actions. -->
-
-## Deployment & rollback
-
-<!-- Use N/A for changes with no deployment impact.
-Otherwise describe rollout steps, dependencies/configuration, and how to verify success.
-Explain rollback steps and any irreversible changes or data recovery requirements. -->
-
-## Author checklist
-
-### Scope & documentation
-
-- [ ] I reviewed the diff and kept it within the stated scope.
-- [ ] Related documentation and references are consistent with this change.
-- [ ] Claims and decisions are supported by evidence or clearly labeled by status.
-
-### Validation
-
-- [ ] I recorded the checks performed, their results, and any gaps above.
-- [ ] Review or test instructions include expected outcomes.
-
-### Code quality & testing (if applicable)
-
-- [ ] The change follows existing conventions and handles relevant error cases.
-- [ ] Appropriate tests and available lint/build checks passed; any exceptions are documented.
-
-### Database & migration (if applicable)
-
-- [ ] Schema or data changes include migration, compatibility, and recovery instructions.
-
-### Security & compliance (if applicable)
-
-- [ ] The change does not expose credentials, secrets, or private data.
-- [ ] Relevant access controls, input handling, and data/source usage permissions were checked.
-
-### Deployment (if applicable)
-
-- [ ] Configuration, dependencies, breaking changes, and rollout/rollback steps are documented.
-
-## Follow-ups (optional)
-
-<!-- Link deferred work and identify an owner where known. Call out anything that blocks merge. -->
+Explain reviewer focus, how to reproduce results, what remains blocked, and whether this is a **draft**, merge candidate or release candidate. Do not auto-merge, force-push or close a gate merely because the PR template was completed.
