@@ -19,3 +19,6 @@ dist/
 
 # Local review artifacts
 docs/local/
+
+# Local full demo runs; selected execution evidence is stored under evaluation/reviews.
+evaluation/runs/

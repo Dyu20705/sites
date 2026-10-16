@@ -1,0 +1,8 @@
+# Hash-pinned artifacts must retain Git blob bytes even with core.autocrlf=true.
+sites_demo/** -text
+tests/** -text
+evaluation/** -text
+experiments/research_exit_20260927/** -text
+docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md -text
+docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md -text
+runs.ps1 -text
