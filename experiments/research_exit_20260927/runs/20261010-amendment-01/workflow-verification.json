@@ -1,0 +1,29 @@
+{
+  "baseline_commit": "64da78be17f0b89bbd008f5033192742fd663046",
+  "designed_adjudications": 9,
+  "designed_agreements": 18,
+  "designed_disagreements": 9,
+  "final_designed_counts": {
+    "NEGATIVE": 9,
+    "POSITIVE": 9,
+    "UNCERTAIN": 9
+  },
+  "fixture_sha256": "5a0ed5522881496648a6d1b71f6cb2b52184e77b52b6558f20d6a528b5a4bc56",
+  "independent_scientific_quality": "NOT_MEASURED",
+  "new_workflow_tests": 7,
+  "packet_candidate_sha256": {
+    "docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md": "da80e30a4fb07ad7722cf4d845ce0feb7da28a1b84336710697f358cd30b8122",
+    "docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md": "164535e1d50fd6f01e26aaadb639d7a89f67dadfc2dd4412b75d93bd05b677b0"
+  },
+  "python_version": "3.14.7",
+  "raw_simulated_judgments": 54,
+  "real_corpus_works_annotated": 0,
+  "scope": "Same-host agent verification of synthetic workflow and document markers; no independent scientific quality, product correctness, owner acceptance or Research Exit pass.",
+  "simulation_code_sha256": "ddd25597c17009281f1d97b02d59f65afecd4bf3374d40918036a3d903940c16",
+  "status": "PASS",
+  "synthetic_output_sha256": "15d84a09bb0dd597018a030768d5fe22240fdca406e3f71265b24408a60fbbfd",
+  "synthetic_replay_byte_equal": true,
+  "synthetic_works": 27,
+  "unit_tests_actually_run": 35,
+  "verified_at_utc": "2026-10-10T13:13:59.427485+00:00"
+}

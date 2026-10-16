@@ -1,0 +1,42 @@
+{
+  "started_at": "2026-10-10T11:23:14.052Z",
+  "branch": "research/exit-evidence-20260927",
+  "baseline": "3c23a44ce0f11e243b0e0ecafef2faa93866d123",
+  "inputs": {
+    "acquire.py": "3cb9449cccb083fa1dc13fd0ed06d0b177bb7ba041d80018a3940ce571d20d07",
+    "preregistration.json": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7"
+  },
+  "dns": {
+    "success": true,
+    "artifact": "dns.json"
+  },
+  "sandbox_tcp": [
+    {
+      "port": 80,
+      "connected": false,
+      "error": "EACCES",
+      "message": "",
+      "duration_ms": 276
+    },
+    {
+      "port": 443,
+      "connected": false,
+      "error": "EACCES",
+      "message": "",
+      "duration_ms": 1
+    }
+  ],
+  "host_preflight": {
+    "dns_success": true,
+    "tcp_80": true,
+    "tcp_443": true,
+    "python": "3.14.7",
+    "git": "2.55.0.windows.5",
+    "remote_divergence": {
+      "ahead": 0,
+      "behind": 0
+    },
+    "method": "Escalated PowerShell Resolve-DnsName / Test-NetConnection; py --version; git fetch origin and rev-list"
+  },
+  "interpretation": "Sandbox TCP EACCES is a local access restriction, superseded for host connectivity by successful escalated preflight. No provider HTTP response observed yet."
+}

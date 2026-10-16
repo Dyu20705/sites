@@ -1,0 +1,93 @@
+{
+  "archived_literal_pattern": "\\bfuzz(?:ing|er|ers)?\\b",
+  "baseline_sha": "53a50ec806b2d6d5fee4112554a6826aeaea852b",
+  "binning": "UTC calendar month by v1 submission; retrospective only",
+  "concept": "fuzzing",
+  "confounders": [
+    "current membership and removed members unknown",
+    "vocabulary/alias semantics",
+    "title-only construct",
+    "submission not public time",
+    "six-bin sparse series",
+    "provider/query selection",
+    "revisions/categories"
+  ],
+  "construct": "Observed lexical prevalence in titles within a bounded scholarly corpus; not emergence, impact, adoption or causal change",
+  "controlled_tests": [
+    "corpus growth",
+    "denominator drift",
+    "duplicates/revisions",
+    "missing/invalid concept text",
+    "sparse/small/empty bins",
+    "alias drift",
+    "delayed availability",
+    "query selection bias",
+    "category mutation",
+    "cutoff leakage"
+  ],
+  "counting_unit": "distinct scholarly work; explicit v1 title",
+  "cutoff": "2019-06-30T23:59:59Z",
+  "declared_at_utc": "2026-10-10T12:35:09.607945+00:00",
+  "denominator": "All eligible distinct works including title unknowns and nonmatches; never concept-selected",
+  "evaluation_criteria_proposed": "Exact hand-calculated fixture agreement, null/identity/cutoff behavior, complete raw lineage, two-process semantic/hash replay; no detection-quality claim",
+  "exclusion": "Non-v1 rows; out-of-period or outside-current-category; conflicts fail closed; missing/invalid event leaves monthly N unresolved",
+  "execution_pattern": "\\bfuzz(?:ing|er|ers)?\\b",
+  "frozen_inputs": {
+    "acquisition.json": "64646536afd87e272eab90601c326a67d8146b7741785ae312f86d21d17b5fc7",
+    "inputs/acquire.py": "cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9",
+    "inputs/am02-acquisition.json": "7379a40b6c2a8c18806facae7ff0c1ea9d4eab4e1a19189909d7efdbe692f34d",
+    "inputs/am02-count.xml": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+    "inputs/preregistration.json": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7",
+    "raw/count.xml": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+    "raw/current-0000.xml": "abf8034f6deea3294749102eda98e3adcff7fe760c2c805f5694296b10139932",
+    "raw/current-0500.xml": "3436230d717a31bef2cd2b4de43ea4f8e50141e31aeaae66564d1ef1c3d2a473",
+    "raw/v1-0000.xml": "17efe9c3dbe5a0dc693c96cc69f0f19166d33e3a49acb4f9794a89b170eada1f",
+    "raw/v1-0100.xml": "3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497",
+    "raw/v1-0200.xml": "2980129ca1ab896bb24f6fb7cb6317e481de085646f8da237016475eade1ef1d",
+    "raw/v1-0300.xml": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb",
+    "raw/v1-0400.xml": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9",
+    "raw/v1-0500.xml": "ed474590509a8e8461ab327de09f6790a96d0ffaac5aa39178b5616435ef33bf"
+  },
+  "frozen_run": "experiments/research_exit_20260927/runs/20261010-development-01",
+  "gate_status": {
+    "70": "NOT_PASSED",
+    "D07": "PROPOSED",
+    "D08": "PROPOSED",
+    "D09": "PROPOSED",
+    "E3": "NOT_PASSED"
+  },
+  "holdout": "No Jul-Dec query/read/write/evaluation; old candidate split unaccepted; only frozen Jan-Jun run admitted",
+  "id": "D08-DEV-20261010-01",
+  "inclusion": "Complete frozen current cs.SE query; valid distinct ID and v1 event within Jan-Jun; include all nonmatches; respect audit exclusions",
+  "min_support": "UNRESOLVED_FOR_LABELS; report exact support without labels",
+  "missingness": "Unknown titles stay in N; n/p=null; known-match lower count and bounds retained. Empty N -> p=null. Invalid event cannot be assigned -> all monthly denominators unresolved.",
+  "period": "2019-01-01 through 2019-06-30",
+  "population": "observed retrospective cs.SE development-query corpus; not historical complete cs.SE",
+  "preoutput_amendment": {
+    "original_sha256": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7",
+    "reason": "Frozen JSON decodes to two backslashes at each boundary; existing checks.PATTERN and documents use one. A synthetic title demonstrates literal mismatch before real signal execution. Execute both interpretations, keep archive immutable. No synonym/case/threshold tuning.",
+    "status": "PROPOSED_TRANSPORT_CORRECTION_NOT_ACCEPTED"
+  },
+  "prior_exposure": [
+    "598 records/audit/normalized metadata inspected in B and A reviews; no independently provable pre-output timing",
+    "existing synthetic arithmetic outputs inspected",
+    "fuzzing selected from 2018 survey context before reported real output; no expected direction",
+    "nine late-ID development-query works exposed; reconcile overlap before any future freeze"
+  ],
+  "provenance_status": "Local declaration before execution; will be pushed with results, not independently preregistered",
+  "quality_threshold": "UNRESOLVED_FOR_INDEPENDENT_QUALITY; no accepted threshold",
+  "query": "cat:cs.SE AND submittedDate:[201901010000 TO 201906302359]",
+  "reference_labels": "NOT_MEASURED",
+  "regex_flags": "IGNORECASE",
+  "research_question": "What do count and normalized share describe under the existing fuzzing title rule in the frozen observed retrospective query, and which observation artifacts defeat that interpretation?",
+  "rule_version": "RE-20260927-01-documented-word-boundary-v1",
+  "sensitivity": [
+    "archived literal transport diagnostic",
+    "exact fuzzing only",
+    "current title diagnostic",
+    "v1 category subset",
+    "exclude nine late IDs diagnostic without as-of claim",
+    "adjacent Jan-Feb / Mar-Apr / May-Jun ratio of sums"
+  ],
+  "status": "DEVELOPMENT_ONLY_EXPLORATORY_NOT_ACCEPTED"
+}

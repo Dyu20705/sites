@@ -1,41 +1,30 @@
-# SITES — Scholar Intelligent Trend Evolution System
+# SITES — Scholarly Intelligence for Technology Evolution
 
-[Tiếng Việt](docs/vietnamese/README.md)
+SITES is an evidence-first research system for inspecting concept prevalence in scholarly literature. It provides an offline, reproducible **retrospective lexical** case study, not a validated emerging-technology detector or forecast.
 
-**SITES** is a research project that studies how scientific and technological concepts change over time using evidence that can be inspected and reproduced.
+The M1 reference slice analyzes **598 frozen arXiv works** (cs.SE, January–June 2019 event bins, data observed in October 2026). The documented title rule has nine matches; results provide exact n/N counts, source-lineage evidence and explicit limitations.
 
-The project begins with scholarly literature. Its longer-term direction may extend to other evidence sources and more advanced analytical or decision-support capabilities, but those capabilities are not part of the current implementation commitment.
+## Navigate
 
-~~~text
-evidence acquisition → monitoring → mining → trend detection
-→ forecasting → recommendation / decision support → automation / optimization
-~~~
+- [Documentation](docs/english/README.md) — scope, research decisions, architecture and evaluation.
+- [Offline replay guide](evaluation/REPLAY.md) — Windows reference environment, frozen input and CLI.
+- [Research evidence](experiments/research_exit_20260927/README.md) — manifest, source snapshots, verifier and negative findings.
+- [Repository policy](docs/english/governance/REPOSITORY_POLICY.md) — publication, provenance, immutable evidence.
+- [Agent contract](AGENTS.md) — owner decision gates, reproducibility and code review.
+- [Five-year roadmap](https://github.com/Dyu20705/sites/issues/78) — proposals, not implemented functionality.
 
-## Current focus
+## Run and verify
 
-SITES is currently on the **Month-1 path from project definition to one reproducible vertical slice**. The active repository does not yet contain a current product implementation or executable product test suite.
+Uses CPython standard library only. A formal replay needs a **prospectively anchored evaluation manifest** matching the accepted F1/D09 and runtime; it is not generated or silently approved by this repository. See the [replay protocol](evaluation/REPLAY.md) and [implementation notes](evaluation/AS_BUILT.md). For development regression tests:
 
-For **Month 1 (17 September–17 October 2026)**, the accepted direction is deliberately narrow:
+```sh
+python -m unittest discover -s tests -p 'test_*.py' -v
+python -m unittest discover -s experiments/research_exit_20260927 -p 'test_*.py' -v
+python tools/check_repository.py
+```
 
-- begin with scholarly evidence;
-- focus on detection and descriptive trend intelligence;
-- build one small, reproducible end-to-end slice;
-- keep forecasting, recommendation, optimization, autonomous agents, and large-scale infrastructure outside the committed M1 scope unless a later accepted decision changes that boundary.
+## Claims and status
 
-D05 evidence/correctness principles and D06's primary user—a researcher surveying a technical topic—were accepted on 20 September 2026. User value remains unvalidated. The data provider, corpus, signal definition and implementation technology remain subject to evidence and explicit decision gates.
+**Research-ready:** accepted only for this bounded retrospective descriptive claim. Original historical-as-of E3: **NOT PASSED**. Scientific semantic accuracy: **NOT MEASURED**. Independent final reviewer interpretation, browser E7 and full E8 are tracked under [#73](https://github.com/Dyu20705/sites/issues/73); source/tests alone do not establish Product-ready or Production-ready status.
 
-## Documentation
-
-The complete English documentation starts at [docs/english/README.md](docs/english/README.md). It includes the Month-1 definition, project charter, research questions, conceptual design, evaluation protocol, decision log, backlog, and verified current state.
-
-The [Research Entry checklist](docs/english/research/05_RESEARCH_ENTRY_CHECKLIST.md) links the research protocol, evidence ledger, source audit plan, case selection rules and signal candidates. Research Entry is preparation for investigation; it is distinct from the later research-ready gate.
-
-For the Vietnamese introduction and documentation, see [docs/vietnamese/README.md](docs/vietnamese/README.md). Translation rules and document-set status are recorded in the [documentation index](docs/README.md).
-
-## Repository status and history
-
-Historical code, design documents, and issues remain available through Git history. They are useful evidence and design material, but they do not define the current architecture or roadmap.
-
-An earlier implementation, provider choice, schema, metric, or technology stack may be reused only after it has been evaluated against the current requirements and evidence.
-
-See [PR #62](https://github.com/Dyu20705/sites/pull/62) for the M0 repository reset and documentation review.
+Development and scientific evidence are distinct from a release decision. Follow the [PR template](.github/pull_request_template.md); do not merge, change frozen data, or deploy without explicit owner approval.

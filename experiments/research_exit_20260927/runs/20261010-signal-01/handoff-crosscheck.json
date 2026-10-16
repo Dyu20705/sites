@@ -1,0 +1,101 @@
+{
+  "E3": "NOT_PASSED",
+  "interpretation": "Observed ID month after cutoff while published precedes cutoff. Public-availability conflict inferred using official arXiv ID-month policy; no exact announcement timestamp inferred.",
+  "late_id_month_count": 9,
+  "late_id_month_records": [
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-29T04:32:14Z",
+      "source_ref": {
+        "entry_index": 9,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00143"
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-29T09:37:34Z",
+      "source_ref": {
+        "entry_index": 78,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00172"
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-29T21:39:03Z",
+      "source_ref": {
+        "entry_index": 49,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00282"
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-29T23:53:22Z",
+      "source_ref": {
+        "entry_index": 10,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00298"
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-30T13:04:27Z",
+      "source_ref": {
+        "entry_index": 31,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00376"
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-30T21:29:48Z",
+      "source_ref": {
+        "entry_index": 84,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00468"
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-28T07:21:51Z",
+      "source_ref": {
+        "entry_index": 3,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.00677"
+    },
+    {
+      "id_month": "2019-07",
+      "published_at": "2019-06-27T18:44:14Z",
+      "source_ref": {
+        "entry_index": 11,
+        "file": "raw/v1-0500.xml"
+      },
+      "work_id": "1907.03773"
+    },
+    {
+      "id_month": "2019-08",
+      "published_at": "2019-03-07T08:37:23Z",
+      "source_ref": {
+        "entry_index": 16,
+        "file": "raw/v1-0100.xml"
+      },
+      "work_id": "1908.04451"
+    }
+  ],
+  "method": "Direct ElementTree parse; no acquire/offline_audit imports",
+  "months": {
+    "2019-01": 91,
+    "2019-02": 79,
+    "2019-03": 97,
+    "2019-04": 103,
+    "2019-05": 122,
+    "2019-06": 106
+  },
+  "policy": "https://info.arxiv.org/help/availability.html",
+  "raw_files_hashed": 9,
+  "records_checked": 598,
+  "status": "PASS"
+}

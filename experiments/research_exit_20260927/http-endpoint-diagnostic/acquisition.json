@@ -1,0 +1,34 @@
+{
+  "started_at": "2026-10-10T11:26:06.511199+00:00",
+  "preregistration_sha256": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7",
+  "acquire_sha256": "331e07aeff70096fea36c877a8e226e2434431514fe4f910ac93a2316855c9bc",
+  "requests": [
+    {
+      "url": "http://export.arxiv.org/api/query?search_query=cat%3Acs.SE+AND+submittedDate%3A%5B201901010000+TO+201906302359%5D&sortBy=submittedDate&sortOrder=ascending&start=0&max_results=1",
+      "started_at": "2026-10-10T11:26:06.511451+00:00",
+      "file": "raw/count.xml",
+      "redirects": [
+        {
+          "url": "http://export.arxiv.org/api/query?search_query=cat%3Acs.SE+AND+submittedDate%3A%5B201901010000+TO+201906302359%5D&sortBy=submittedDate&sortOrder=ascending&start=0&max_results=1",
+          "status": 301,
+          "location": "https://export.arxiv.org/api/query?search_query=cat%3Acs.SE+AND+submittedDate%3A%5B201901010000+TO+201906302359%5D&sortBy=submittedDate&sortOrder=ascending&start=0&max_results=1"
+        }
+      ],
+      "request_headers": {
+        "User-Agent": "SITES-research-audit/0.1 (https://github.com/Dyu20705/sites)"
+      },
+      "status": 200,
+      "final_url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.SE+AND+submittedDate%3A%5B201901010000+TO+201906302359%5D&sortBy=submittedDate&sortOrder=ascending&start=0&max_results=1",
+      "content_type": "application/atom+xml; charset=utf-8",
+      "sha256": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+      "bytes": 2910,
+      "ended_at": "2026-10-10T11:26:11.153522+00:00"
+    }
+  ],
+  "status": "HTTP_ENDPOINT_DIAGNOSTIC_SUCCEEDED",
+  "unique_bound": 2000,
+  "amendment": "AM-02",
+  "reported_total": 598,
+  "final_url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.SE+AND+submittedDate%3A%5B201901010000+TO+201906302359%5D&sortBy=submittedDate&sortOrder=ascending&start=0&max_results=1",
+  "ended_at": "2026-10-10T11:26:11.154557+00:00"
+}

@@ -1,0 +1,1356 @@
+{
+  "artifact_roles": {
+    "config": "experiments/research_exit_20260927/runs/20261010-development-01/inputs/preregistration.json",
+    "contract_en": "docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md",
+    "contract_vi": "docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md",
+    "controls": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/controlled-checks.json",
+    "declaration": "experiments/research_exit_20260927/runs/20261010-signal-01/declaration-corrected.json",
+    "independent_verifier": "experiments/research_exit_20260927/runs/20261011-final-audit-01/independent_verify.py",
+    "measurements": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json",
+    "normalized": "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/normalized-records.json",
+    "owner_approval": "experiments/research_exit_20260927/runs/20261012-research-exit-01/owner-approval.json",
+    "pilot": "experiments/research_exit_20260927/runs/20261010-signal-01/reference-pilot-plan.json",
+    "replay_harness": "experiments/research_exit_20260927/runs/20261011-final-audit-01/run_checks.py",
+    "simulation": "experiments/research_exit_20260927/runs/20261010-amendment-01/simulated-workflow.json",
+    "verifier": "experiments/research_exit_20260927/verify_freeze.py"
+  },
+  "budget": {
+    "live_corpus_requests": 0,
+    "max_works": 598,
+    "measured_product_E8": false,
+    "peak_process_MiB": 256,
+    "replay_wall_seconds": 60,
+    "status": "Prospective engineering limits from accepted packet; post-development exposure; measure product/reviewer boundary after D09, no scalability claim",
+    "target_laptop_RAM_GiB": 16
+  },
+  "contract": {
+    "identity": "Exact EN/VI Git blobs pinned under contract_en/contract_vi; old PROPOSED text is historical and is not rewritten",
+    "status": "ACCEPTED_EXTERNALLY",
+    "version": "M1-R-20261010-v1"
+  },
+  "corpus": {
+    "bias": [
+      "Current index membership and removals unknown",
+      "Title vocabulary and alias coverage",
+      "Sparse monthly support",
+      "Selection and submission/public-availability delay"
+    ],
+    "boundary": "Only these 598 exact hashed records are admitted. Frozen evaluator is not a general fail-closed importer; missing current-category hazard is contained by verified complete fields. New inputs require separately versioned strict validation after D09.",
+    "denominator": "All eligible distinct works, including unknown titles; never concept-filtered",
+    "exclusion": "Outside event window/current cs.SE or non-v1 observations; conflicts fail closed. Invalid event leaves monthly denominator unresolved, never silently drops a work.",
+    "inclusion": "Distinct work with exact v1, valid v1 event inside accepted six UTC months, in frozen current cs.SE query; all nonmatches included",
+    "population": "Observed frozen 2026 current cs.SE query; not historically complete cs.SE",
+    "provider": "arXiv",
+    "query": "cat:cs.SE AND submittedDate:[201901010000 TO 201906302359]",
+    "retention": "Metadata/raw Atom only; no paper PDFs or inferred full-text redistribution rights",
+    "works": 598
+  },
+  "created_utc": "2026-10-12T07:29:46.289455+00:00",
+  "criteria": {
+    "D09": "PROPOSED",
+    "E2_R_research": "Fixed fuzzing case; constant-share control; all declared sensitivities; synthetic workflow correctness",
+    "E3_R_research": "Exact offline population/v1/event/window/config; out-of-window/future event exclusion; no availability claim",
+    "independent_reference_retained_for_G70": false,
+    "original_E3": "NOT_PASSED",
+    "product_pending": {
+      "E1": "Integrated fixtures",
+      "E2_R": "Independent reviewer interpretation",
+      "E3_R": "Integrated demo replay",
+      "E4": "Author plus independent reviewer replay",
+      "E5": "Displayed evidence navigation",
+      "E6": "Integrated idempotency",
+      "E7": "Five of five interpretation answers, one match and one nonmatch opened; no code edits",
+      "E8": "Measure bounded wall time and peak process memory on recorded reviewer environment"
+    },
+    "research_gate": [
+      "Explicit A1/A2/A3/D07/D08/F1 approval",
+      "All F1 references and runtime match external SHA256 anchor",
+      "598 distinct exact-v1 works and 100% raw lineage",
+      "Zero arithmetic/replay/identity mismatches",
+      "All fixed case/control, boundary and sensitivity checks reproduced",
+      "SYN-only workflow and zero real annotations",
+      "Limits, exposure and null/abstention explicit; original E3 not passed"
+    ],
+    "scientific_quality": "NOT_MEASURED; no precision/recall/trend threshold or scientific novelty claim"
+  },
+  "exposure": {
+    "development_version_ids": [
+      "1901.00324v1",
+      "1901.00589v1",
+      "1901.00644v1",
+      "1901.00891v1",
+      "1901.01005v1",
+      "1901.01062v1",
+      "1901.01092v1",
+      "1901.01292v1",
+      "1901.01327v1",
+      "1901.01344v1",
+      "1901.01450v1",
+      "1901.01500v1",
+      "1901.01538v1",
+      "1901.01541v1",
+      "1901.01621v1",
+      "1901.01726v1",
+      "1901.01811v1",
+      "1901.01867v1",
+      "1901.01915v1",
+      "1901.01930v1",
+      "1901.02077v1",
+      "1901.02188v1",
+      "1901.02426v1",
+      "1901.02533v1",
+      "1901.02633v1",
+      "1901.02710v1",
+      "1901.02819v1",
+      "1901.03302v1",
+      "1901.03363v1",
+      "1901.03768v1",
+      "1901.03865v1",
+      "1901.03984v1",
+      "1901.04011v1",
+      "1901.04016v1",
+      "1901.04020v1",
+      "1901.04169v1",
+      "1901.04217v1",
+      "1901.04243v1",
+      "1901.04472v1",
+      "1901.04545v1",
+      "1901.04942v1",
+      "1901.04946v1",
+      "1901.05130v1",
+      "1901.05233v1",
+      "1901.05392v1",
+      "1901.05604v1",
+      "1901.05680v1",
+      "1901.05692v1",
+      "1901.05754v1",
+      "1901.05771v1",
+      "1901.06024v1",
+      "1901.06261v1",
+      "1901.06524v1",
+      "1901.06677v1",
+      "1901.06881v1",
+      "1901.07024v1",
+      "1901.07142v1",
+      "1901.07440v1",
+      "1901.07700v1",
+      "1901.07861v1",
+      "1901.07910v1",
+      "1901.08130v1",
+      "1901.08173v1",
+      "1901.08414v1",
+      "1901.08429v1",
+      "1901.08441v1",
+      "1901.08718v1",
+      "1901.09050v1",
+      "1901.09062v1",
+      "1901.09102v1",
+      "1901.09388v1",
+      "1901.09474v1",
+      "1901.09511v1",
+      "1901.09781v1",
+      "1901.09850v1",
+      "1901.10062v1",
+      "1901.10220v1",
+      "1901.10579v1",
+      "1901.10926v1",
+      "1901.11100v1",
+      "1901.11219v1",
+      "1901.11249v1",
+      "1901.11334v1",
+      "1901.11476v1",
+      "1901.11479v1",
+      "1901.11499v1",
+      "1902.00231v1",
+      "1902.00397v1",
+      "1902.00476v1",
+      "1902.00526v1",
+      "1902.00549v1",
+      "1902.00883v1",
+      "1902.00910v1",
+      "1902.00991v1",
+      "1902.01084v1",
+      "1902.01580v1",
+      "1902.01821v1",
+      "1902.01822v1",
+      "1902.01838v1",
+      "1902.01954v1",
+      "1902.02467v1",
+      "1902.02470v1",
+      "1902.02595v1",
+      "1902.02605v1",
+      "1902.02610v1",
+      "1902.02703v1",
+      "1902.02997v1",
+      "1902.03096v1",
+      "1902.03147v1",
+      "1902.03222v1",
+      "1902.03331v1",
+      "1902.03387v1",
+      "1902.03520v1",
+      "1902.03574v1",
+      "1902.03608v1",
+      "1902.03776v1",
+      "1902.04060v1",
+      "1902.04618v1",
+      "1902.04627v1",
+      "1902.04694v1",
+      "1902.04844v1",
+      "1902.05311v1",
+      "1902.05436v1",
+      "1902.05462v1",
+      "1902.05537v1",
+      "1902.05594v1",
+      "1902.05835v1",
+      "1902.05974v1",
+      "1902.05983v1",
+      "1902.06111v1",
+      "1902.06140v1",
+      "1902.06146v1",
+      "1902.06171v1",
+      "1902.06282v1",
+      "1902.06320v1",
+      "1902.07093v1",
+      "1902.07244v1",
+      "1902.07499v1",
+      "1902.07704v1",
+      "1902.08303v1",
+      "1902.08482v1",
+      "1902.08879v1",
+      "1902.08942v1",
+      "1902.09090v1",
+      "1902.09140v1",
+      "1902.09334v1",
+      "1902.09464v1",
+      "1902.09589v1",
+      "1902.09718v1",
+      "1902.09729v1",
+      "1902.10056v1",
+      "1902.10278v1",
+      "1902.10514v1",
+      "1902.10517v1",
+      "1902.10590v1",
+      "1902.11159v1",
+      "1902.11160v1",
+      "1902.11278v1",
+      "1903.00040v1",
+      "1903.00065v1",
+      "1903.00185v1",
+      "1903.00334v1",
+      "1903.00661v1",
+      "1903.00712v1",
+      "1903.00718v1",
+      "1903.00732v1",
+      "1903.00884v1",
+      "1903.00894v1",
+      "1903.01220v1",
+      "1903.01221v1",
+      "1903.01222v1",
+      "1903.01263v1",
+      "1903.01742v1",
+      "1903.01866v1",
+      "1903.01889v1",
+      "1903.01899v1",
+      "1903.01900v1",
+      "1903.01977v1",
+      "1903.02062v1",
+      "1903.02063v1",
+      "1903.02079v1",
+      "1903.02436v1",
+      "1903.02443v1",
+      "1903.02691v1",
+      "1903.02981v1",
+      "1903.03162v1",
+      "1903.03163v1",
+      "1903.03277v1",
+      "1903.03323v1",
+      "1903.03358v1",
+      "1903.03375v1",
+      "1903.03399v1",
+      "1903.03426v1",
+      "1903.03610v1",
+      "1903.03676v1",
+      "1903.04055v1",
+      "1903.04159v1",
+      "1903.04165v1",
+      "1903.04583v1",
+      "1903.04771v1",
+      "1903.04909v1",
+      "1903.04969v1",
+      "1903.05170v1",
+      "1903.05277v1",
+      "1903.05333v1",
+      "1903.05361v1",
+      "1903.05387v1",
+      "1903.05394v1",
+      "1903.05432v1",
+      "1903.05734v1",
+      "1903.05783v1",
+      "1903.05912v1",
+      "1903.05941v1",
+      "1903.06039v1",
+      "1903.06089v1",
+      "1903.06241v1",
+      "1903.06320v1",
+      "1903.06348v1",
+      "1903.06725v1",
+      "1903.06772v1",
+      "1903.06895v1",
+      "1903.06930v1",
+      "1903.06965v1",
+      "1903.07217v1",
+      "1903.07381v1",
+      "1903.07383v1",
+      "1903.07468v1",
+      "1903.07539v1",
+      "1903.07662v1",
+      "1903.07712v1",
+      "1903.08113v1",
+      "1903.08409v1",
+      "1903.08483v1",
+      "1903.08531v1",
+      "1903.09174v1",
+      "1903.09413v1",
+      "1903.09427v1",
+      "1903.09477v1",
+      "1903.09522v1",
+      "1903.09525v1",
+      "1903.09528v1",
+      "1903.10180v1",
+      "1903.10214v1",
+      "1903.10614v1",
+      "1903.10822v1",
+      "1903.10892v1",
+      "1903.10893v1",
+      "1903.10913v1",
+      "1903.11242v1",
+      "1903.11665v1",
+      "1903.11768v1",
+      "1903.11854v1",
+      "1903.12075v1",
+      "1903.12113v1",
+      "1903.12247v1",
+      "1903.12282v1",
+      "1903.12386v1",
+      "1903.12468v1",
+      "1904.00001v1",
+      "1904.00462v1",
+      "1904.00478v1",
+      "1904.00661v1",
+      "1904.00720v1",
+      "1904.00721v1",
+      "1904.00935v1",
+      "1904.00946v1",
+      "1904.01001v1",
+      "1904.01221v1",
+      "1904.01287v1",
+      "1904.01518v1",
+      "1904.01727v1",
+      "1904.01736v1",
+      "1904.01754v1",
+      "1904.01861v1",
+      "1904.01873v1",
+      "1904.02184v1",
+      "1904.02414v1",
+      "1904.02439v1",
+      "1904.02444v1",
+      "1904.02451v1",
+      "1904.02457v1",
+      "1904.02460v1",
+      "1904.02465v1",
+      "1904.02466v1",
+      "1904.02468v1",
+      "1904.02469v1",
+      "1904.02472v1",
+      "1904.02477v1",
+      "1904.02546v1",
+      "1904.02724v1",
+      "1904.02818v1",
+      "1904.02956v1",
+      "1904.02960v1",
+      "1904.03027v1",
+      "1904.03031v1",
+      "1904.03061v1",
+      "1904.03085v1",
+      "1904.03257v1",
+      "1904.03948v1",
+      "1904.03990v1",
+      "1904.04104v1",
+      "1904.04348v1",
+      "1904.04706v1",
+      "1904.04748v1",
+      "1904.04749v1",
+      "1904.04750v1",
+      "1904.05794v1",
+      "1904.05795v1",
+      "1904.05816v1",
+      "1904.05842v1",
+      "1904.05843v1",
+      "1904.05844v1",
+      "1904.06152v1",
+      "1904.06163v1",
+      "1904.06284v1",
+      "1904.06285v1",
+      "1904.06499v1",
+      "1904.06668v1",
+      "1904.06929v1",
+      "1904.07011v1",
+      "1904.07072v1",
+      "1904.07075v1",
+      "1904.07083v1",
+      "1904.07280v1",
+      "1904.07348v1",
+      "1904.07463v1",
+      "1904.07480v1",
+      "1904.08007v1",
+      "1904.08164v1",
+      "1904.08239v1",
+      "1904.08337v1",
+      "1904.09225v1",
+      "1904.09416v1",
+      "1904.09768v1",
+      "1904.09818v1",
+      "1904.09820v1",
+      "1904.09954v1",
+      "1904.09972v1",
+      "1904.10066v1",
+      "1904.10386v1",
+      "1904.10606v1",
+      "1904.11062v1",
+      "1904.11164v1",
+      "1904.11540v1",
+      "1904.11541v1",
+      "1904.11741v1",
+      "1904.11753v1",
+      "1904.11755v1",
+      "1904.11812v1",
+      "1904.11851v1",
+      "1904.11968v1",
+      "1904.12098v1",
+      "1904.12131v1",
+      "1904.12309v1",
+      "1904.12314v1",
+      "1904.12371v1",
+      "1904.12437v1",
+      "1904.12470v1",
+      "1904.12501v1",
+      "1904.12538v1",
+      "1904.12540v1",
+      "1904.12583v1",
+      "1904.12607v1",
+      "1904.12636v1",
+      "1904.12742v1",
+      "1904.13195v1",
+      "1905.00357v1",
+      "1905.00402v1",
+      "1905.00494v1",
+      "1905.00499v1",
+      "1905.00799v1",
+      "1905.01051v1",
+      "1905.01071v1",
+      "1905.01213v1",
+      "1905.01302v1",
+      "1905.01405v1",
+      "1905.01467v1",
+      "1905.01517v1",
+      "1905.01518v1",
+      "1905.01659v1",
+      "1905.01695v1",
+      "1905.01719v1",
+      "1905.01833v1",
+      "1905.01928v1",
+      "1905.02050v1",
+      "1905.02066v1",
+      "1905.02228v1",
+      "1905.02245v1",
+      "1905.02258v1",
+      "1905.02427v1",
+      "1905.02597v1",
+      "1905.03490v1",
+      "1905.03593v1",
+      "1905.03813v1",
+      "1905.03883v1",
+      "1905.03915v1",
+      "1905.03989v1",
+      "1905.04223v1",
+      "1905.04482v1",
+      "1905.04642v1",
+      "1905.04648v1",
+      "1905.04752v1",
+      "1905.04777v1",
+      "1905.04780v1",
+      "1905.05179v1",
+      "1905.05222v1",
+      "1905.05238v1",
+      "1905.05322v1",
+      "1905.05358v1",
+      "1905.05786v1",
+      "1905.06169v1",
+      "1905.06192v1",
+      "1905.06237v1",
+      "1905.06390v1",
+      "1905.06437v1",
+      "1905.06438v1",
+      "1905.06545v1",
+      "1905.06604v1",
+      "1905.06625v1",
+      "1905.06707v1",
+      "1905.06732v1",
+      "1905.06734v1",
+      "1905.06746v1",
+      "1905.06768v1",
+      "1905.06777v1",
+      "1905.06782v1",
+      "1905.06847v1",
+      "1905.06872v1",
+      "1905.06944v1",
+      "1905.06991v1",
+      "1905.07019v1",
+      "1905.07147v1",
+      "1905.07228v1",
+      "1905.07314v1",
+      "1905.07671v1",
+      "1905.07831v1",
+      "1905.07997v1",
+      "1905.08192v1",
+      "1905.08240v1",
+      "1905.08297v1",
+      "1905.08505v1",
+      "1905.08833v1",
+      "1905.08914v1",
+      "1905.08942v1",
+      "1905.09137v1",
+      "1905.09364v1",
+      "1905.09375v1",
+      "1905.09458v1",
+      "1905.09760v1",
+      "1905.10065v1",
+      "1905.10171v1",
+      "1905.10173v1",
+      "1905.10361v1",
+      "1905.10499v1",
+      "1905.10531v1",
+      "1905.10532v1",
+      "1905.10643v1",
+      "1905.10676v1",
+      "1905.10677v1",
+      "1905.10728v1",
+      "1905.10889v1",
+      "1905.10999v1",
+      "1905.11040v1",
+      "1905.11044v1",
+      "1905.11070v1",
+      "1905.11123v1",
+      "1905.11127v1",
+      "1905.11198v1",
+      "1905.11365v1",
+      "1905.11366v1",
+      "1905.11699v1",
+      "1905.11863v1",
+      "1905.11973v1",
+      "1905.12111v1",
+      "1905.12195v1",
+      "1905.12454v1",
+      "1905.12630v1",
+      "1905.12763v1",
+      "1905.12841v1",
+      "1905.12922v1",
+      "1905.12959v1",
+      "1905.13062v1",
+      "1905.13334v1",
+      "1905.13455v1",
+      "1905.13529v1",
+      "1905.13674v1",
+      "1906.00239v1",
+      "1906.00245v1",
+      "1906.00299v1",
+      "1906.00307v1",
+      "1906.00367v1",
+      "1906.00621v1",
+      "1906.00673v1",
+      "1906.00690v1",
+      "1906.00715v1",
+      "1906.00772v1",
+      "1906.00815v1",
+      "1906.00861v1",
+      "1906.00937v1",
+      "1906.01032v1",
+      "1906.01388v1",
+      "1906.01419v1",
+      "1906.01420v1",
+      "1906.01430v1",
+      "1906.01463v1",
+      "1906.01553v1",
+      "1906.01577v1",
+      "1906.01778v1",
+      "1906.01961v1",
+      "1906.02061v1",
+      "1906.02068v1",
+      "1906.02349v1",
+      "1906.02533v1",
+      "1906.02591v1",
+      "1906.02888v1",
+      "1906.02906v1",
+      "1906.02970v1",
+      "1906.03018v1",
+      "1906.03256v1",
+      "1906.03304v1",
+      "1906.03447v1",
+      "1906.03488v1",
+      "1906.03835v1",
+      "1906.03957v1",
+      "1906.04357v1",
+      "1906.04424v1",
+      "1906.04593v1",
+      "1906.04604v1",
+      "1906.04622v1",
+      "1906.04702v1",
+      "1906.04765v1",
+      "1906.04903v1",
+      "1906.04924v1",
+      "1906.05013v1",
+      "1906.05092v1",
+      "1906.05220v1",
+      "1906.05234v1",
+      "1906.05276v1",
+      "1906.05676v1",
+      "1906.05881v1",
+      "1906.06117v1",
+      "1906.06144v1",
+      "1906.06403v1",
+      "1906.06614v1",
+      "1906.06754v1",
+      "1906.07083v1",
+      "1906.07107v1",
+      "1906.07154v1",
+      "1906.07327v1",
+      "1906.07328v1",
+      "1906.07339v1",
+      "1906.07535v1",
+      "1906.07812v1",
+      "1906.07900v1",
+      "1906.07993v1",
+      "1906.08058v1",
+      "1906.08076v1",
+      "1906.08085v1",
+      "1906.08094v1",
+      "1906.08142v1",
+      "1906.08351v1",
+      "1906.08520v1",
+      "1906.08557v1",
+      "1906.08592v1",
+      "1906.08600v1",
+      "1906.08691v1",
+      "1906.08895v1",
+      "1906.08903v1",
+      "1906.09179v1",
+      "1906.09463v1",
+      "1906.10366v1",
+      "1906.10468v1",
+      "1906.10502v1",
+      "1906.10710v1",
+      "1906.10742v1",
+      "1906.10963v1",
+      "1906.11015v1",
+      "1906.11017v1",
+      "1906.11072v1",
+      "1906.11147v1",
+      "1906.11157v1",
+      "1906.11351v1",
+      "1906.11432v1",
+      "1906.11456v1",
+      "1906.11607v1",
+      "1906.11715v1",
+      "1906.11914v1",
+      "1906.11940v1",
+      "1906.12066v1",
+      "1907.00143v1",
+      "1907.00172v1",
+      "1907.00282v1",
+      "1907.00298v1",
+      "1907.00376v1",
+      "1907.00468v1",
+      "1907.00677v1",
+      "1907.03773v1",
+      "1908.04451v1"
+    ],
+    "independent_preregistration": false,
+    "late_work_ids": [
+      "1907.00143",
+      "1907.00172",
+      "1907.00282",
+      "1907.00298",
+      "1907.00376",
+      "1907.00468",
+      "1907.00677",
+      "1907.03773",
+      "1908.04451"
+    ],
+    "pilot_version_ids": [
+      "1901.01500v1",
+      "1901.09511v1",
+      "1901.10579v1",
+      "1902.04627v1",
+      "1902.05594v1",
+      "1902.08303v1",
+      "1902.09334v1",
+      "1903.02981v1",
+      "1903.08483v1",
+      "1903.10614v1",
+      "1904.01001v1",
+      "1904.03257v1",
+      "1904.04706v1",
+      "1904.04749v1",
+      "1904.07280v1",
+      "1904.11968v1",
+      "1905.01405v1",
+      "1905.05322v1",
+      "1905.06782v1",
+      "1905.06944v1",
+      "1905.07147v1",
+      "1905.09137v1",
+      "1905.10499v1",
+      "1906.00621v1",
+      "1906.08351v1",
+      "1906.11017v1",
+      "1906.11607v1"
+    ],
+    "prospective_only": "Freeze unchanged replay and future disclosed reviewer tasks, not untouched scientific validation",
+    "statement": "All 598 development metadata, bins, counts/shares, sensitivities and nine late-ID cases inspected before this freeze. Local declaration and post-output metadata correction preserved. No rule/value change."
+  },
+  "files": {
+    "docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md": {
+      "origin": "research_source",
+      "sha256": "da80e30a4fb07ad7722cf4d845ce0feb7da28a1b84336710697f358cd30b8122"
+    },
+    "docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md": {
+      "origin": "research_source",
+      "sha256": "164535e1d50fd6f01e26aaadb639d7a89f67dadfc2dd4412b75d93bd05b677b0"
+    },
+    "experiments/research_exit_20260927/accept-atom-diagnostic/acquisition.json": {
+      "origin": "research_source",
+      "sha256": "e267eabcb172210c7252c84051152825fa4381035fbbeffe130afebe00b78fe3"
+    },
+    "experiments/research_exit_20260927/acquire.py": {
+      "origin": "research_source",
+      "sha256": "cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9"
+    },
+    "experiments/research_exit_20260927/acquisition.json": {
+      "origin": "research_source",
+      "sha256": "48226d2c87a604cb2f3b8275b44ffbeb29007a3dbb134a01f16613d68ffc9269"
+    },
+    "experiments/research_exit_20260927/checks.py": {
+      "origin": "research_source",
+      "sha256": "3ad3d13b6de01e16d87674f8fc81fa5cb0dc1bd13bff52662803ab048de13625"
+    },
+    "experiments/research_exit_20260927/checks_cli_v2.py": {
+      "origin": "research_source",
+      "sha256": "5320641aceab3e6b3b75bb67896ab826dbe76e3c5520a67f095d271e0b578a0d"
+    },
+    "experiments/research_exit_20260927/crosscheck.py": {
+      "origin": "research_source",
+      "sha256": "78b58b8ad2f603e15f1a08b7d1467f8f0d214f7be25972b39063aa1b772919dc"
+    },
+    "experiments/research_exit_20260927/dblp-access.json": {
+      "origin": "research_source",
+      "sha256": "839a52ee156aa172c4fbd7a34ab39000075e4990c7e60cd7169bbec4cbc5ada4"
+    },
+    "experiments/research_exit_20260927/fixtures.json": {
+      "origin": "research_source",
+      "sha256": "c605ee9ec1e0e43f928106682752c93e63e8881a0b7b6ffc02705b87ec300b5d"
+    },
+    "experiments/research_exit_20260927/http-endpoint-diagnostic/acquisition.json": {
+      "origin": "research_source",
+      "sha256": "7379a40b6c2a8c18806facae7ff0c1ea9d4eab4e1a19189909d7efdbe692f34d"
+    },
+    "experiments/research_exit_20260927/http-endpoint-diagnostic/raw/count.xml": {
+      "origin": "research_source",
+      "sha256": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f"
+    },
+    "experiments/research_exit_20260927/offline_audit.py": {
+      "origin": "research_source",
+      "sha256": "d26cdc19ac5cb9c3c49da8bb6f92ab7d37d3ee76ffc5829c26140fcb7833a7a2"
+    },
+    "experiments/research_exit_20260927/preregistration.json": {
+      "origin": "research_source",
+      "sha256": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7"
+    },
+    "experiments/research_exit_20260927/probe_snapshot.py": {
+      "origin": "research_source",
+      "sha256": "6d9aaa4f0263cd7e9b7b63d57a52b7280c3ada651273fad60dfafb35874cfc80"
+    },
+    "experiments/research_exit_20260927/results/run-1.json": {
+      "origin": "research_source",
+      "sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109"
+    },
+    "experiments/research_exit_20260927/results/run-2.json": {
+      "origin": "research_source",
+      "sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109"
+    },
+    "experiments/research_exit_20260927/results/validation.json": {
+      "origin": "research_source",
+      "sha256": "d6350bb9b372bcb925323e3c10d51947d791bca855305e41b0f4c33d1272ec8a"
+    },
+    "experiments/research_exit_20260927/runs/20261010-amendment-01/frozen-evidence-verification.json": {
+      "origin": "research_source",
+      "sha256": "2f60b55995f64ace911a48d36eeee81a907f17547c5d3b23469265e161e7f04b"
+    },
+    "experiments/research_exit_20260927/runs/20261010-amendment-01/index-byte-verification.json": {
+      "origin": "research_source",
+      "sha256": "a659cd0a607d77ae2c26d3c9b815ebef037ebdac79d698f9b8a2f0eb3cf91088"
+    },
+    "experiments/research_exit_20260927/runs/20261010-amendment-01/simulated-workflow.json": {
+      "origin": "research_source",
+      "sha256": "15d84a09bb0dd597018a030768d5fe22240fdca406e3f71265b24408a60fbbfd"
+    },
+    "experiments/research_exit_20260927/runs/20261010-amendment-01/workflow-verification.json": {
+      "origin": "research_source",
+      "sha256": "dab3e9cc66b36bcd4f5452f30096447dbdccfce1073625ec0c37525189d37f33"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/acquisition.json": {
+      "origin": "research_source",
+      "sha256": "64646536afd87e272eab90601c326a67d8146b7741785ae312f86d21d17b5fc7"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/crosscheck.json": {
+      "origin": "research_source",
+      "sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/historical-preservation.json": {
+      "origin": "research_source",
+      "sha256": "eff2d2d83eec864ce949365ab47e768c989c0800f1944d91dc91992dac919800"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/index-byte-verification.json": {
+      "origin": "research_source",
+      "sha256": "392e3564ed72a3e8502a0d10a72b95f5bba763b4e4f2601849015ca4db53ef2f"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/inputs/acquire.py": {
+      "origin": "research_source",
+      "sha256": "cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/inputs/am02-acquisition.json": {
+      "origin": "research_source",
+      "sha256": "7379a40b6c2a8c18806facae7ff0c1ea9d4eab4e1a19189909d7efdbe692f34d"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/inputs/am02-count.xml": {
+      "origin": "research_source",
+      "sha256": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/inputs/preregistration.json": {
+      "origin": "research_source",
+      "sha256": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/package-validation.json": {
+      "origin": "research_source",
+      "sha256": "ce7f23fd953ca48fa056119a809851d70b7aa52986d043404203565e9508406b"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/raw/count.xml": {
+      "origin": "research_source",
+      "sha256": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/raw/current-0000.xml": {
+      "origin": "research_source",
+      "sha256": "abf8034f6deea3294749102eda98e3adcff7fe760c2c805f5694296b10139932"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/raw/current-0500.xml": {
+      "origin": "research_source",
+      "sha256": "3436230d717a31bef2cd2b4de43ea4f8e50141e31aeaae66564d1ef1c3d2a473"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0000.xml": {
+      "origin": "research_source",
+      "sha256": "17efe9c3dbe5a0dc693c96cc69f0f19166d33e3a49acb4f9794a89b170eada1f"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0100.xml": {
+      "origin": "research_source",
+      "sha256": "3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0200.xml": {
+      "origin": "research_source",
+      "sha256": "2980129ca1ab896bb24f6fb7cb6317e481de085646f8da237016475eade1ef1d"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0300.xml": {
+      "origin": "research_source",
+      "sha256": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0400.xml": {
+      "origin": "research_source",
+      "sha256": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/raw/v1-0500.xml": {
+      "origin": "research_source",
+      "sha256": "ed474590509a8e8461ab327de09f6790a96d0ffaac5aa39178b5616435ef33bf"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/audit.json": {
+      "origin": "research_source",
+      "sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/normalized-records.json": {
+      "origin": "research_source",
+      "sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/replay-2/audit.json": {
+      "origin": "research_source",
+      "sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/replay-2/normalized-records.json": {
+      "origin": "research_source",
+      "sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/replay-verification.json": {
+      "origin": "research_source",
+      "sha256": "fbbd8de7958bb1ba0394af4646dc09b2ba18083f0e877761e12198f45cd888eb"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/audit.json": {
+      "origin": "research_source",
+      "sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/crosscheck.json": {
+      "origin": "research_source",
+      "sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/normalized-records.json": {
+      "origin": "research_source",
+      "sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/verification.json": {
+      "origin": "research_source",
+      "sha256": "87fb2f6d099922b062fd808ab45d731502fa6ecb6daf4eb44ce70d626a6fbe0d"
+    },
+    "experiments/research_exit_20260927/runs/20261010-development-01/verification-local.json": {
+      "origin": "research_source",
+      "sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109"
+    },
+    "experiments/research_exit_20260927/runs/20261010-historical-screen-01/package-validation.json": {
+      "origin": "research_source",
+      "sha256": "927e65f99c9142948c0e7d9ecfc50f2caf4499add6bd5c7ac0751385578f9832"
+    },
+    "experiments/research_exit_20260927/runs/20261010-historical-screen-01/source-screen-plan.json": {
+      "origin": "research_source",
+      "sha256": "7aa0adcf63f2e23dbd16abf49db99e028181f7b6a43e6b9f3192d5ed4df00b60"
+    },
+    "experiments/research_exit_20260927/runs/20261010-historical-screen-01/source-screen-results.json": {
+      "origin": "research_source",
+      "sha256": "b4239453fb147f2df7ad73f585bec782749cda95575efff5dbc0e656fe80ee43"
+    },
+    "experiments/research_exit_20260927/runs/20261010-preflight-01/development-plan.json": {
+      "origin": "research_source",
+      "sha256": "43fa3ec2ff078e9aa51792dae86f8cbb4a2c5eb3efb5632c13faab436de38f40"
+    },
+    "experiments/research_exit_20260927/runs/20261010-preflight-01/dns.json": {
+      "origin": "research_source",
+      "sha256": "7f7b74b305333319978f6120b230003f6034468e1aee0d2fedd26d3528cc6ad3"
+    },
+    "experiments/research_exit_20260927/runs/20261010-preflight-01/execution-hashes.json": {
+      "origin": "research_source",
+      "sha256": "32f38e8e84d43de989be7b5881dc60cf542dbf6ab05959306b85cea23c8c72f6"
+    },
+    "experiments/research_exit_20260927/runs/20261010-preflight-01/offline-audit-contract.json": {
+      "origin": "research_source",
+      "sha256": "6b8ccd98e4b46e9b274add3561e9e232ba59e60b31a6567e1573a630e3876442"
+    },
+    "experiments/research_exit_20260927/runs/20261010-preflight-01/preflight.json": {
+      "origin": "research_source",
+      "sha256": "996f35feb65a24fe9cb531d83d1c892e465cfea5d50529bd15d7e97cd2f505eb"
+    },
+    "experiments/research_exit_20260927/runs/20261010-review-response-01/future-search-execution-template.json": {
+      "origin": "research_source",
+      "sha256": "3f11ca8162f2d3c94ced8db854b0fa67bf17b3807d81920feafc11141923c04d"
+    },
+    "experiments/research_exit_20260927/runs/20261010-review-response-01/package-validation.json": {
+      "origin": "research_source",
+      "sha256": "25e40f581e90228337badd9114bbfaf1b1f6f1c8434e6e9e675cadc4fc94d7e0"
+    },
+    "experiments/research_exit_20260927/runs/20261010-review-response-01/review-response.json": {
+      "origin": "research_source",
+      "sha256": "4ac167db64cb2f553d7e0ae7528139a786d5be858681b64846a70f13d09e427f"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/controlled-checks.json": {
+      "origin": "research_source",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/execution.json": {
+      "origin": "research_source",
+      "sha256": "66202578ce8406789e9b59989667aa95db5e98ea698bf2ced787abfdb594a611"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json": {
+      "origin": "research_source",
+      "sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/controlled-checks.json": {
+      "origin": "research_source",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/execution.json": {
+      "origin": "research_source",
+      "sha256": "d11ffdf3bfe0f529b3f2b18486a26fce9b31c89dd3393f9746bcfd7dcb4f6c10"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/measurements.json": {
+      "origin": "research_source",
+      "sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/declaration-corrected.json": {
+      "origin": "research_source",
+      "sha256": "9764e840c97cc3b49bf5356f434a19a50ff0c37ba4b803ab263879ebc0e33043"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/declaration.json": {
+      "origin": "research_source",
+      "sha256": "24284285e3ff9a3b13770b7647e84e97e8efd81ba09b139e345a0b088c50d600"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-crosscheck.json": {
+      "origin": "research_source",
+      "sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-verification.json": {
+      "origin": "research_source",
+      "sha256": "3b5654d622fe62a5eedadb8082e3accb1f08311715e9d789a46aba91d433d8e8"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/index-byte-verification.json": {
+      "origin": "research_source",
+      "sha256": "7b3de84da6b0bac6e9b0ab75b1272949632d997f6f0ceef4ce0377cfcd320152"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/legacy-checks.json": {
+      "origin": "research_source",
+      "sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/reference-pilot-plan.json": {
+      "origin": "research_source",
+      "sha256": "58421ee544e7d8afc8744aa35eba2543b1b65bf23a1c24092b25a6146dbbcd5c"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/controlled-checks.json": {
+      "origin": "research_source",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/execution.json": {
+      "origin": "research_source",
+      "sha256": "ac122f3a4a375d5367033dcc1506ca73366014c89b72b6d5a02edc9d9dcd4db0"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/measurements.json": {
+      "origin": "research_source",
+      "sha256": "0e36c5a25271c562ead1cf271ffca90c8316b48abd5f403f33d775b8e503e67c"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/controlled-checks.json": {
+      "origin": "research_source",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/execution.json": {
+      "origin": "research_source",
+      "sha256": "782b69706b797563c2b3a172d41ccb980d5f7bb4b548dcf74eebc18b70bff844"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/measurements.json": {
+      "origin": "research_source",
+      "sha256": "0e36c5a25271c562ead1cf271ffca90c8316b48abd5f403f33d775b8e503e67c"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/self-review.json": {
+      "origin": "research_source",
+      "sha256": "d9b9b66de3059954834d49ed1ec2bc8429f43f7b0b6969570192cccf3ce146d9"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/source-inspection.json": {
+      "origin": "research_source",
+      "sha256": "251aa261a411cb6757a2bd3bdeb687371e5db4fff79d0a6d75689fb3981b755c"
+    },
+    "experiments/research_exit_20260927/runs/20261010-signal-01/verification.json": {
+      "origin": "research_source",
+      "sha256": "0a95feab52cd1b72deddb7f2b1db453b6bce1104e9932a13f5e019c688cd6a2a"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/boundary-probe.json": {
+      "origin": "research_source",
+      "sha256": "b145f0409fee14c3d3afd8dc48c9a583fc252f0b98dbe1fb49902283bc9bfc59"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/boundary_probe.py": {
+      "origin": "research_source",
+      "sha256": "e40400d27775f99f2724338c04c97eda493dfa1397c57e2452c6cdd170ac0ce2"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/context.json": {
+      "origin": "research_source",
+      "sha256": "ad9b95d1e959e8909a4827ece2faaf89a254ccac929f728d5f388bde43f444e1"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/execution.json": {
+      "origin": "research_source",
+      "sha256": "651c5c2df56374e35df8f26bac1ec58dadfaaf37453aa7f33e8f07c24740dd18"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/final-execution.json": {
+      "origin": "research_source",
+      "sha256": "a4eec459053d6641e530803c7ae26c318a1c794d2275321f785f443f92075596"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/final-package-validation.json": {
+      "origin": "research_source",
+      "sha256": "dfe399fadc73c27f775c48d86f425f61e4a1e8b120aafd3214e972c14d3fed37"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/independent-verification.json": {
+      "origin": "research_source",
+      "sha256": "97993bdcfbcb5cdecadbc10928665dfa4b30be9794bf8973231c57e7941cffc1"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/independent_verify.py": {
+      "origin": "research_source",
+      "sha256": "c9558f3ad3edd83bae69a8c8592dd4e52c06633e84206a28979643b64957f8b8"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/package-validation.json": {
+      "origin": "research_source",
+      "sha256": "be46527e0c9f1ca19c1a7340061d089eb2520637f58ff1ec766ef66712a357ac"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/preservation-and-scope.json": {
+      "origin": "research_source",
+      "sha256": "625c8922653a11f471731c36248f5b4b7096c14e384352104cdd07403a210658"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/run_checks.py": {
+      "origin": "research_source",
+      "sha256": "f5d4ba2902db706ddb7c117a9de4f8f8c04eb09de9ea57ab6c228d4eca2e3046"
+    },
+    "experiments/research_exit_20260927/runs/20261011-final-audit-01/signal-validation.json": {
+      "origin": "research_source",
+      "sha256": "2f60b55995f64ace911a48d36eeee81a907f17547c5d3b23469265e161e7f04b"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/boundary-probe.json": {
+      "origin": "research_source",
+      "sha256": "b145f0409fee14c3d3afd8dc48c9a583fc252f0b98dbe1fb49902283bc9bfc59"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/commit-byte-verification.json": {
+      "origin": "research_source",
+      "sha256": "282f67b7b7e96f22de49752c5ce05f9d3756aa80b37649baf724eee477ffd99a"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/correction-validation.json": {
+      "origin": "research_source",
+      "sha256": "ba3d503311257d686f8b9eea716a4aef5426a9fde705dab1e1f40e6e3d273068"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/execution.json": {
+      "origin": "research_source",
+      "sha256": "ff022cb9f33c4384fb56ef8d698dbd84da7055dba31664951065bafa0df82dff"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/final-package-validation.json": {
+      "origin": "research_source",
+      "sha256": "f26a2e0e33b9abc0e6109b35a2088765bf85270856470b8227a5b48cff13f6f6"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/final-signal-validation.json": {
+      "origin": "research_source",
+      "sha256": "fe43aca305d25d4bbadea33d70be9106cde887554862c8ae8fb4b458c8ceab72"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/final-validation.json": {
+      "origin": "research_source",
+      "sha256": "ed4ad1b32653787716ed7a3874c8d52c2f0bf42dd3321a0f533a56fdb54519cc"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/independent-verification.json": {
+      "origin": "research_source",
+      "sha256": "97993bdcfbcb5cdecadbc10928665dfa4b30be9794bf8973231c57e7941cffc1"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/legacy-overwrite-probe.json": {
+      "origin": "research_source",
+      "sha256": "a63c5336f0f216f8f7c3720fd2d8c1aea580a5b2a547564037eb6db67561a9ee"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/preservation-and-scope.json": {
+      "origin": "research_source",
+      "sha256": "a32c4c7de1234b13c23ee3bb1d80fb55b741d597ad25d34ffb59ec6226bf4e0e"
+    },
+    "experiments/research_exit_20260927/runs/20261012-critical-path-01/review-context.json": {
+      "origin": "research_source",
+      "sha256": "656e137d3e856d81fba3c7d384f43fd6c595074862772a6d6302cf9c861d38d6"
+    },
+    "experiments/research_exit_20260927/runs/20261012-research-exit-01/create_freeze.py": {
+      "origin": "freeze_support",
+      "sha256": "924061cbfa974f2ef6bdb6f95158c4b2908eb185a8e36592ea120dd4900d574f"
+    },
+    "experiments/research_exit_20260927/runs/20261012-research-exit-01/owner-approval.json": {
+      "origin": "freeze_support",
+      "sha256": "28f531677d7ae578de8db3283b3c2322e8b17ea3c62d2f02dc87a67632423ca9"
+    },
+    "experiments/research_exit_20260927/search-log.json": {
+      "origin": "research_source",
+      "sha256": "201f3d47afaf7bb8f67bd771ae3e0e7164848a92f52d8c6bbd411a2c6a08b9b4"
+    },
+    "experiments/research_exit_20260927/signal_evaluator.py": {
+      "origin": "research_source",
+      "sha256": "0c6da9cc55cac176ad30a9989f2f09bcc1dbeaa3a55cb1a80b96c3659175cb32"
+    },
+    "experiments/research_exit_20260927/simulate_reference_workflow.py": {
+      "origin": "research_source",
+      "sha256": "ddd25597c17009281f1d97b02d59f65afecd4bf3374d40918036a3d903940c16"
+    },
+    "experiments/research_exit_20260927/test_acquire.py": {
+      "origin": "research_source",
+      "sha256": "3856e5470f1203fa852ed9942607543e2a934ef006e028e1437b98a5b9b810fd"
+    },
+    "experiments/research_exit_20260927/test_checks_cli_v2.py": {
+      "origin": "research_source",
+      "sha256": "4e9a8ab25d7af14eb593696daffd336687d3c8888c90e2229213a0118855fe53"
+    },
+    "experiments/research_exit_20260927/test_freeze.py": {
+      "origin": "freeze_support",
+      "sha256": "7a63f0e4c405c4d11af77125a19370b3eea8f01ab45270922ec82b6b8f352dc6"
+    },
+    "experiments/research_exit_20260927/test_offline_audit.py": {
+      "origin": "research_source",
+      "sha256": "a8fe5c81151271e75d19735c9529a838045eaf2e7a8d3ecfbebcca024effe4d6"
+    },
+    "experiments/research_exit_20260927/test_reference_workflow.py": {
+      "origin": "research_source",
+      "sha256": "9611b3ed3f168052bba674baeafd61ede67f94b6b834a79c16d7625c27213fa1"
+    },
+    "experiments/research_exit_20260927/test_signal_evaluator.py": {
+      "origin": "research_source",
+      "sha256": "383cd73cbff2e4d3510ade1ecf3d8920affa7be4024acf17ea5a49516dd88c0e"
+    },
+    "experiments/research_exit_20260927/test_verify_git_bytes.py": {
+      "origin": "research_source",
+      "sha256": "c915f4836f2b7054228e92b2df230925d9c6943b6e4432b32e6b7795a87b324f"
+    },
+    "experiments/research_exit_20260927/validate.py": {
+      "origin": "research_source",
+      "sha256": "314deb4d4d6c83af669016842f812623c034f81002cf6e9fefda5958a7f0041a"
+    },
+    "experiments/research_exit_20260927/validate_signal.py": {
+      "origin": "research_source",
+      "sha256": "b62186867e375224f3a2b8442c49c1bf27b593953214789ae988424792cd980b"
+    },
+    "experiments/research_exit_20260927/verify_freeze.py": {
+      "origin": "freeze_support",
+      "sha256": "755650f353b079b45710470d55eb8e30e7b9be74eb9d91c52bc96483ed43ae28"
+    },
+    "experiments/research_exit_20260927/verify_git_bytes.py": {
+      "origin": "research_source",
+      "sha256": "cb90af89a64aa945776b4fea85560de0d09c4b845d791be0f21d589f1c3f3dec"
+    }
+  },
+  "freeze_id": "F1-M1-R-20261012-v1",
+  "future_evaluation": {
+    "authorization": "Separate owner approval required before acquisition",
+    "overlap": "Reconcile exact work AND version identity against all 598, 27 pilot and nine late IDs; quarantine overlap; record prior source-evidence exposure",
+    "predeclare": [
+      "Separately accepted population/query/event semantics",
+      "Semantic reference, thresholds and vocabulary",
+      "Personnel and exposure",
+      "Code/config/input/runtime identities",
+      "Criteria and resource budgets"
+    ],
+    "unknown_untouched_status": "Label development, never holdout"
+  },
+  "holdout": {
+    "authorized": false,
+    "period": "July-December 2019",
+    "policy": "No query/read/write/acquisition/evaluation under this authorization. Existing nine late IDs remain exposed development, not a new holdout read."
+  },
+  "immutability": {
+    "anchor": "Manifest SHA256 recorded outside manifest in receipt and G70; new bundle commit recorded externally to avoid self-hash cycle",
+    "policy": "Never edit this version or old development evidence. New version explicitly supersedes with reason, exposure and external approval/digest.",
+    "reopen": [
+      "Any digest/identity conflict",
+      "Invalid denominator",
+      "Owner requires historical-as-of or scientific detection quality",
+      "Reviewer misinterpretation",
+      "New input/rule/runtime/scope requires prospective change"
+    ],
+    "source_split": "research_source entries verified against exact source commit; freeze_support entries are newly created and pinned by manifest, then bundle commit"
+  },
+  "owner_approval": {
+    "G70": "Conditional on verified F1 and all accepted research criteria; not automatic",
+    "accepted": [
+      "A1",
+      "A2",
+      "A3",
+      "D07",
+      "D08",
+      "F1 contract"
+    ],
+    "owner": "Dyu20705",
+    "url": "https://github.com/Dyu20705/sites/issues/70#issuecomment-6119490874",
+    "utc": "2026-10-12T07:10:14Z"
+  },
+  "research_source_commit": "97bf499718c13166667a8e5da09b201065d9e117",
+  "reviewers": {
+    "author": "Codex producing agent; same-host verification, not independent human",
+    "future_task": "Five correct answers: n/N, share, 2026 observed vs 2019 event, lexical vs semantic, no trend/as-of inference; open match/nonmatch; replay without code edits; preserve raw answers/failures; disclose retest exposure",
+    "independent_reviewer": null,
+    "independent_scientific_quality": "NOT_MEASURED",
+    "real_annotations": 0,
+    "reviewer_exposure": "UNASSIGNED; disclose identity, prior exposure and environment before product task",
+    "simulation": "SIMULATED_A/B/C on SYN-001..SYN-027; 54 judgments, 18 agreements, 9 adjudications, final 9/9/9 are designed fixtures"
+  },
+  "runtime": {
+    "cache_tag": "cpython-314",
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "method": "Sorted [relative POSIX path,SHA256] compact UTF-8 JSON over Lib and DLLs .py/.pyd/.dll/.zip; exclude site-packages and __pycache__; root .exe/.dll separately. OS, caches and system DLLs are not hermetically frozen.",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pointer_bits": 64,
+    "python": "3.14.7",
+    "root_binaries_sha256": {
+      "python.exe": "4942b86a6597e5aee0128daa00050ed79bc21f6e709a78eb19cbfeb0c2f39ac9",
+      "python3.dll": "6c45910e7c82617ca6360820de861699cc99f9efee434df290aa4c6e38f39886",
+      "python314.dll": "0f9857ffdfe010fe6b99328d58c2e3c7472ce75f336bf9c2ad9bd5bca3bce700",
+      "pythonw.exe": "c197268f7e7cf2848b8c1ae59bbd0e0c14defe668a2d365302137ea929b47769",
+      "vcruntime140.dll": "d1f4225df2cd877dbf130d5668a021dce3f94118455ff5ec952061c30afc9ce7",
+      "vcruntime140_1.dll": "a7146c08f89fe5b04541ab507cdb59ff7b44534d4ba3c668a426c6450a03434e"
+    },
+    "stdlib_native_file_count": 752,
+    "stdlib_native_tree_sha256": "441ae6290ef5dc29022a8661939cd4de136776c9e7d7caeaa20e2e03a94cb466"
+  },
+  "runtime_scope": {
+    "base_prefix": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314",
+    "dependencies": "Python standard library; Git for object verification; no new package",
+    "evaluation": "Author same-host offline integrity/replay verification. Not independent reviewer replay or a hermetic OS image.",
+    "executable": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "git": "git version 2.55.0.windows.5",
+    "new_reviewer_runtime": "Before a new product evaluation, append a separately versioned runtime/task/personnel record; do not mutate this author inventory."
+  },
+  "schema_version": 1,
+  "sensitivities": [
+    "exact fuzzing",
+    "current title",
+    "v1 category subset",
+    "exclude nine late IDs as perturbation only",
+    "adjacent Jan-Feb/Mar-Apr/May-Jun ratio of sums",
+    "decoded-pattern equality/literal transport diagnostic"
+  ],
+  "signal": {
+    "N": [
+      91,
+      79,
+      97,
+      103,
+      122,
+      106
+    ],
+    "counting_unit": "distinct work",
+    "field": "title_v1",
+    "flags": "Python re.IGNORECASE, Unicode",
+    "formula": "N=eligible distinct works; n=sum of title-rule matches; p=n/N if defined. Aggregate windows use ratio of sums.",
+    "labels": "NONE at every support value; no growth/emergence/decline or scientific relevance claim",
+    "n": [
+      0,
+      1,
+      2,
+      1,
+      4,
+      1
+    ],
+    "null_policy": "Unknown/invalid title stays in N; n/p=null; retain known-match count and bounds. Invalid event makes monthly N unresolved. Empty N makes share null.",
+    "pattern": "\\bfuzz(?:ing|er|ers)?\\b",
+    "rule_id": "RE-20260927-01-documented-word-boundary-v1",
+    "support": "n>=0; defined share needs N>=1 and known required fields; not a statistical-adequacy threshold",
+    "total_N": 598,
+    "total_n": 9
+  },
+  "temporal": {
+    "available_at": null,
+    "bins": [
+      "2019-01",
+      "2019-02",
+      "2019-03",
+      "2019-04",
+      "2019-05",
+      "2019-06"
+    ],
+    "distinct_times": "Acquisition, v1 submission, version update and public availability must never be conflated",
+    "end_utc": "2019-06-30T23:59:59Z",
+    "event": "v1 submission UTC calendar month",
+    "historical_as_of_claim": false,
+    "retrieved_utc": [
+      "2026-10-10T11:27:47Z",
+      "2026-10-10T11:28:24Z"
+    ],
+    "start_utc": "2019-01-01T00:00:00Z"
+  },
+  "verification_commands": [
+    "python experiments/research_exit_20260927/verify_freeze.py --manifest <freeze-v1.json> --expected-sha256 <external-G70-digest> --root <absolute-artifact-root> --repo <source-Git-repo>",
+    "python -m unittest discover -s experiments/research_exit_20260927 -p test_*.py -v",
+    "python experiments/research_exit_20260927/runs/20261011-final-audit-01/independent_verify.py --output <new-path>",
+    "Historical run_checks.py validates original PROPOSED status docs: run against source commit export. New accepted decision state is verified separately."
+  ]
+}

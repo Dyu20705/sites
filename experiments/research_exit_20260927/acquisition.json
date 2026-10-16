@@ -1,0 +1,18 @@
+{
+  "started_at": "2026-09-27T12:46:11.505556+00:00",
+  "preregistration_sha256": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7",
+  "requests": [
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.SE+AND+submittedDate%3A%5B201901010000+TO+201906302359%5D&sortBy=submittedDate&sortOrder=ascending&start=0&max_results=1",
+      "started_at": "2026-09-27T12:46:11.506226+00:00",
+      "file": "raw/count.xml",
+      "error": "HTTPError: HTTP Error 406: Not Acceptable",
+      "ended_at": "2026-09-27T12:46:12.132396+00:00",
+      "status": 406
+    }
+  ],
+  "status": "ACCESS_OR_RESPONSE_FAILURE",
+  "unique_bound": 2000,
+  "error": "HTTPError: HTTP Error 406: Not Acceptable",
+  "ended_at": "2026-09-27T12:46:12.135013+00:00"
+}

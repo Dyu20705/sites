@@ -1,0 +1,47 @@
+{
+  "python": "3.14.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "markdown_files_checked": 54,
+  "relative_links_checked": 220,
+  "broken_relative_links": [],
+  "json_files_parsed": [
+    "experiments/research_exit_20260927/accept-atom-diagnostic/acquisition.json",
+    "experiments/research_exit_20260927/acquisition.json",
+    "experiments/research_exit_20260927/dblp-access.json",
+    "experiments/research_exit_20260927/fixtures.json",
+    "experiments/research_exit_20260927/preregistration.json",
+    "experiments/research_exit_20260927/results/run-1.json",
+    "experiments/research_exit_20260927/results/run-2.json",
+    "experiments/research_exit_20260927/search-log.json"
+  ],
+  "paired_evidence_ids": [
+    {
+      "name": "06_RESEARCH_EXIT_EVIDENCE.md",
+      "evidence_ids_match": true
+    },
+    {
+      "name": "07_PROVIDER_AUDIT_RESULTS.md",
+      "evidence_ids_match": true
+    },
+    {
+      "name": "08_D07_D08_EXIT_PACKET.md",
+      "evidence_ids_match": true
+    }
+  ],
+  "decision_statuses": {
+    "english/D05": "ACCEPTED",
+    "english/D06": "ACCEPTED",
+    "english/D07": "PROPOSED",
+    "english/D08": "PROPOSED",
+    "english/D09": "PROPOSED",
+    "vietnamese/D05": "ACCEPTED",
+    "vietnamese/D06": "ACCEPTED",
+    "vietnamese/D07": "PROPOSED",
+    "vietnamese/D08": "PROPOSED",
+    "vietnamese/D09": "PROPOSED"
+  },
+  "replay_equal": true,
+  "replay_sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109",
+  "stale_input_hashes": [],
+  "scope": "Relative target existence, JSON/Python parsing, evidence-ID pairing, decision statuses and offline replay integrity. External links/anchors and translation semantics are not automatically validated."
+}

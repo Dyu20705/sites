@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-12T01:01:19.221769+00:00",
+  "ended_utc": "2026-10-12T01:01:26.771066+00:00",
+  "python": "3.14.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "executable": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+  "head_before": "7ef28119b125c6bcb9f0372516cc0ebe3200326d",
+  "temporary_directory": "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68",
+  "TEMP_and_TMP": "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "experiments\\research_exit_20260927",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\ntest_complete_acquisition (test_acquire.AcquisitionTests.test_complete_acquisition) ... ok\ntest_count_drift_since_access_stops (test_acquire.AcquisitionTests.test_count_drift_since_access_stops) ... ok\ntest_duplicate_works_stop_before_versions (test_acquire.AcquisitionTests.test_duplicate_works_stop_before_versions) ... ok\ntest_incomplete_page_stops (test_acquire.AcquisitionTests.test_incomplete_page_stops) ... ok\ntest_over_bound_stops_after_count (test_acquire.AcquisitionTests.test_over_bound_stops_after_count) ... ok\ntest_wrong_version_stops (test_acquire.AcquisitionTests.test_wrong_version_stops) ... ok\ntest_bad_feed_or_count_never_claims_success (test_acquire.DiagnosticTests.test_bad_feed_or_count_never_claims_success) ... ok\ntest_existing_manifest_is_preserved_without_request (test_acquire.DiagnosticTests.test_existing_manifest_is_preserved_without_request) ... ok\ntest_http_error_preserves_url_excerpt_and_hash (test_acquire.DiagnosticTests.test_http_error_preserves_url_excerpt_and_hash) ... ok\ntest_network_error_is_single_attempt (test_acquire.DiagnosticTests.test_network_error_is_single_attempt) ... ok\ntest_redirect_is_recorded_and_rate_limited (test_acquire.DiagnosticTests.test_redirect_is_recorded_and_rate_limited) ... ok\ntest_success_stops_after_count_and_hashes_raw (test_acquire.DiagnosticTests.test_success_stops_after_count_and_hashes_raw) ... ok\ntest_zero_count_is_access_success_only (test_acquire.DiagnosticTests.test_zero_count_is_access_success_only) ... ok\ntest_checksum_corruption_rejected (test_offline_audit.FieldAuditTests.test_checksum_corruption_rejected) ... ok\ntest_field_status_does_not_treat_missing_title_as_nonmatch (test_offline_audit.FieldAuditTests.test_field_status_does_not_treat_missing_title_as_nonmatch) ... ok\ntest_missing_and_invalid_dates_are_distinct (test_offline_audit.FieldAuditTests.test_missing_and_invalid_dates_are_distinct) ... ok\ntest_work_and_version_identity (test_offline_audit.FieldAuditTests.test_work_and_version_identity) ... ok\ntest_existing_report_is_preserved (test_offline_audit.ValidatorOutputTests.test_existing_report_is_preserved) ... ok\ntest_output_path_is_required (test_offline_audit.ValidatorOutputTests.test_output_path_is_required) ... ok\ntest_agreement_cannot_be_rewritten_by_adjudicator (test_reference_workflow.ReferenceWorkflowTests.test_agreement_cannot_be_rewritten_by_adjudicator) ... ok\ntest_complete_fixture_retains_raw_judgments_and_uncertainty (test_reference_workflow.ReferenceWorkflowTests.test_complete_fixture_retains_raw_judgments_and_uncertainty) ... ok\ntest_duplicate_cannot_inflate_support (test_reference_workflow.ReferenceWorkflowTests.test_duplicate_cannot_inflate_support) ... ok\ntest_invalid_role_label_or_rationale_is_rejected (test_reference_workflow.ReferenceWorkflowTests.test_invalid_role_label_or_rationale_is_rejected) ... ok\ntest_missing_evidence_is_not_negative (test_reference_workflow.ReferenceWorkflowTests.test_missing_evidence_is_not_negative) ... ok\ntest_real_id_or_reference_is_rejected (test_reference_workflow.ReferenceWorkflowTests.test_real_id_or_reference_is_rejected) ... ok\ntest_unresolved_disagreement_does_not_complete (test_reference_workflow.ReferenceWorkflowTests.test_unresolved_disagreement_does_not_complete) ... ok\ntest_all_ten_controlled_failures (test_signal_evaluator.SignalTests.test_all_ten_controlled_failures) ... ok\ntest_bimonth_is_ratio_of_sums (test_signal_evaluator.SignalTests.test_bimonth_is_ratio_of_sums) ... ok\ntest_conflicting_v1_fails (test_signal_evaluator.SignalTests.test_conflicting_v1_fails) ... ok\ntest_empty_vs_observed_zero (test_signal_evaluator.SignalTests.test_empty_vs_observed_zero) ... ok\ntest_identity_and_version_fails (test_signal_evaluator.SignalTests.test_identity_and_version_fails) ... ok\ntest_lineage_matches_and_nonmatches (test_signal_evaluator.SignalTests.test_lineage_matches_and_nonmatches) ... ok\ntest_missing_invalid_event_time_invalidates_denominator (test_signal_evaluator.SignalTests.test_missing_invalid_event_time_invalidates_denominator) ... ok\ntest_missing_invalid_titles_not_nonmatches (test_signal_evaluator.SignalTests.test_missing_invalid_titles_not_nonmatches) ... ok\ntest_order_and_identity_idempotency (test_signal_evaluator.SignalTests.test_order_and_identity_idempotency) ... ok\ntest_utc_binning_and_cutoff (test_signal_evaluator.SignalTests.test_utc_binning_and_cutoff) ... ok\ntest_word_boundary_and_stipulated_double_escape (test_signal_evaluator.SignalTests.test_word_boundary_and_stipulated_double_escape) ... ok\n\n----------------------------------------------------------------------\nRan 37 tests in 0.725s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\checks.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\legacy-1.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\ntest_alias_limitation_is_visible (__main__.Checks.test_alias_limitation_is_visible) ... ok\ntest_conflicting_version_fails (__main__.Checks.test_conflicting_version_fails) ... ok\ntest_future_observation_isolated (__main__.Checks.test_future_observation_isolated) ... ok\ntest_hand_calculated_series (__main__.Checks.test_hand_calculated_series) ... ok\ntest_idempotency (__main__.Checks.test_idempotency) ... ok\ntest_invalid_count (__main__.Checks.test_invalid_count) ... ok\ntest_late_availability_isolated (__main__.Checks.test_late_availability_isolated) ... ok\ntest_lineage_and_expected (__main__.Checks.test_lineage_and_expected) ... ok\ntest_missing_title (__main__.Checks.test_missing_title) ... ok\ntest_order_independence (__main__.Checks.test_order_independence) ... ok\ntest_revision_not_double_counted (__main__.Checks.test_revision_not_double_counted) ... ok\ntest_timezone_required (__main__.Checks.test_timezone_required) ... ok\ntest_unknown_availability_not_zero (__main__.Checks.test_unknown_availability_not_zero) ... ok\ntest_unknown_coverage (__main__.Checks.test_unknown_coverage) ... ok\ntest_vocabulary_cutoff (__main__.Checks.test_vocabulary_cutoff) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\offline_audit.py",
+        "--run",
+        "experiments\\research_exit_20260927\\runs\\20261010-development-01",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\audit-1"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"status\": \"RETROSPECTIVE_AUDIT_ONLY\", \"records\": 598, \"E3\": \"NOT_PASSED\"}\n",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\signal_evaluator.py",
+        "--declaration",
+        "experiments\\research_exit_20260927\\runs\\20261010-signal-01\\declaration-corrected.json",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\signal-1"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"monthly\": [[0, 91, 0.0], [1, 79, 0.012658227848101266], [2, 97, 0.020618556701030927], [1, 103, 0.009708737864077669], [4, 122, 0.03278688524590164], [1, 106, 0.009433962264150943]], \"matches\": 9, \"controlled_cases\": 10}\n",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\simulate_reference_workflow.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\workflow-1.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"adjudications\": 9,\n  \"agreements\": 18,\n  \"claim_boundary\": \"Synthetic workflow checks only; no human or real-paper judgments\",\n  \"code_sha256\": \"ddd25597c17009281f1d97b02d59f65afecd4bf3374d40918036a3d903940c16\",\n  \"disagreements\": 9,\n  \"final_label_counts\": {\n    \"NEGATIVE\": 9,\n    \"POSITIVE\": 9,\n    \"UNCERTAIN\": 9\n  },\n  \"fixture_sha256\": \"5a0ed5522881496648a6d1b71f6cb2b52184e77b52b6558f20d6a528b5a4bc56\",\n  \"independent_scientific_quality\": \"NOT_MEASURED\",\n  \"mode\": \"SIMULATED\",\n  \"raw_judgment_count\": 54,\n  \"real_corpus_works_annotated\": 0,\n  \"status\": \"WORKFLOW_COMPLETED\",\n  \"work_count\": 27\n}\n\n",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\checks.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\legacy-2.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\ntest_alias_limitation_is_visible (__main__.Checks.test_alias_limitation_is_visible) ... ok\ntest_conflicting_version_fails (__main__.Checks.test_conflicting_version_fails) ... ok\ntest_future_observation_isolated (__main__.Checks.test_future_observation_isolated) ... ok\ntest_hand_calculated_series (__main__.Checks.test_hand_calculated_series) ... ok\ntest_idempotency (__main__.Checks.test_idempotency) ... ok\ntest_invalid_count (__main__.Checks.test_invalid_count) ... ok\ntest_late_availability_isolated (__main__.Checks.test_late_availability_isolated) ... ok\ntest_lineage_and_expected (__main__.Checks.test_lineage_and_expected) ... ok\ntest_missing_title (__main__.Checks.test_missing_title) ... ok\ntest_order_independence (__main__.Checks.test_order_independence) ... ok\ntest_revision_not_double_counted (__main__.Checks.test_revision_not_double_counted) ... ok\ntest_timezone_required (__main__.Checks.test_timezone_required) ... ok\ntest_unknown_availability_not_zero (__main__.Checks.test_unknown_availability_not_zero) ... ok\ntest_unknown_coverage (__main__.Checks.test_unknown_coverage) ... ok\ntest_vocabulary_cutoff (__main__.Checks.test_vocabulary_cutoff) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\offline_audit.py",
+        "--run",
+        "experiments\\research_exit_20260927\\runs\\20261010-development-01",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\audit-2"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"status\": \"RETROSPECTIVE_AUDIT_ONLY\", \"records\": 598, \"E3\": \"NOT_PASSED\"}\n",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\signal_evaluator.py",
+        "--declaration",
+        "experiments\\research_exit_20260927\\runs\\20261010-signal-01\\declaration-corrected.json",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\signal-2"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"monthly\": [[0, 91, 0.0], [1, 79, 0.012658227848101266], [2, 97, 0.020618556701030927], [1, 103, 0.009708737864077669], [4, 122, 0.03278688524590164], [1, 106, 0.009433962264150943]], \"matches\": 9, \"controlled_cases\": 10}\n",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\simulate_reference_workflow.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\workflow-2.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"adjudications\": 9,\n  \"agreements\": 18,\n  \"claim_boundary\": \"Synthetic workflow checks only; no human or real-paper judgments\",\n  \"code_sha256\": \"ddd25597c17009281f1d97b02d59f65afecd4bf3374d40918036a3d903940c16\",\n  \"disagreements\": 9,\n  \"final_label_counts\": {\n    \"NEGATIVE\": 9,\n    \"POSITIVE\": 9,\n    \"UNCERTAIN\": 9\n  },\n  \"fixture_sha256\": \"5a0ed5522881496648a6d1b71f6cb2b52184e77b52b6558f20d6a528b5a4bc56\",\n  \"independent_scientific_quality\": \"NOT_MEASURED\",\n  \"mode\": \"SIMULATED\",\n  \"raw_judgment_count\": 54,\n  \"real_corpus_works_annotated\": 0,\n  \"status\": \"WORKFLOW_COMPLETED\",\n  \"work_count\": 27\n}\n\n",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\crosscheck.py",
+        "--run",
+        "experiments\\research_exit_20260927\\runs\\20261010-development-01",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\crosscheck.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"records_checked\": 598, \"raw_files_hashed\": 9, \"late_id_month_count\": 9}\n",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\validate_signal.py",
+        "--run",
+        "experiments\\research_exit_20260927\\runs\\20261010-signal-01",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\signal-validation.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"frozen_inputs_verified\": 14,\n  \"output_sha256\": {\n    \"measurements.json\": \"214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818\",\n    \"controlled-checks.json\": \"3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c\"\n  },\n  \"replay_equal\": true,\n  \"raw_xml_records_checked\": 598,\n  \"match_lineage_checked\": 9,\n  \"distinct_denominator_ids_checked\": 598,\n  \"correction_changed_measurements\": false,\n  \"config_literal_equals_executed_rule\": true,\n  \"relative_links_checked\": 446,\n  \"broken_links\": [],\n  \"decision_statuses\": {\n    \"english/D05\": \"ACCEPTED\",\n    \"english/D06\": \"ACCEPTED\",\n    \"english/D07\": \"PROPOSED\",\n    \"english/D08\": \"PROPOSED\",\n    \"english/D09\": \"PROPOSED\",\n    \"vietnamese/D05\": \"ACCEPTED\",\n    \"vietnamese/D06\": \"ACCEPTED\",\n    \"vietnamese/D07\": \"PROPOSED\",\n    \"vietnamese/D08\": \"PROPOSED\",\n    \"vietnamese/D09\": \"PROPOSED\"\n  },\n  \"paired_monthly_tables_equal\": true,\n  \"reference_pilot_status\": \"PROPOSED_NOT_ANNOTATED\",\n  \"validator_code_sha256\": \"b62186867e375224f3a2b8442c49c1bf27b593953214789ae988424792cd980b\",\n  \"scope\": \"Automated same-host agent verification; no independent scientific/human validation; external URLs/anchors and bilingual meaning require separate review.\"\n}\n",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\validate.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\package-validation.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"python\": \"3.14.7\",\n  \"platform\": \"Windows-11-10.0.26200-SP0\",\n  \"markdown_files_checked\": 69,\n  \"relative_links_checked\": 446,\n  \"broken_relative_links\": [],\n  \"json_files_parsed\": [\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/audit-1/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/audit-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/audit-2/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/audit-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/crosscheck.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/legacy-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/legacy-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-1/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-1/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-2/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-2/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/signal-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/workflow-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-niq44h68/workflow-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/audit-1/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/audit-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/audit-2/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/audit-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/crosscheck.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/legacy-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/legacy-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/package-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-1/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-1/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-2/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-2/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/signal-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/workflow-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-ny2epf5b/workflow-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/audit-1/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/audit-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/audit-2/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/audit-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/crosscheck.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/legacy-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/legacy-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/package-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-1/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-1/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-2/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-2/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/signal-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/workflow-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-txzmbomu/workflow-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/additional-execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/audit-1/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/audit-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/audit-2/audit.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/audit-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/boundary.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/crosscheck.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/independent.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/legacy-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/legacy-2.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/package-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-1/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-1/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-2/execution.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-2/measurements.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/signal-validation.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/workflow-1.json\",\n    \"experiments/research_exit_20260927/__pycache__/audit-temp/verification-zza1jcl3/workflow-2.json\",\n    \"experiments/research_exit_20260927/accept-atom-diagnostic/acquisition.json\",\n    \"experiments/research_exit_20260927/acquisition.json\",\n    \"experiments/research_exit_20260927/dblp-access.json\",\n    \"experiments/research_exit_20260927/fixtures.json\",\n    \"experiments/research_exit_20260927/http-endpoint-diagnostic/acquisition.json\",\n    \"experiments/research_exit_20260927/preregistration.json\",\n    \"experiments/research_exit_20260927/results/run-1.json\",\n    \"experiments/research_exit_20260927/results/run-2.json\",\n    \"experiments/research_exit_20260927/runs/20261010-amendment-01/frozen-evidence-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-amendment-01/index-byte-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-amendment-01/simulated-workflow.json\",\n    \"experiments/research_exit_20260927/runs/20261010-amendment-01/workflow-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/acquisition.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/crosscheck.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/historical-preservation.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/index-byte-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/inputs/am02-acquisition.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/inputs/preregistration.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/replay-1/audit.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/replay-1/normalized-records.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/replay-2/audit.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/replay-2/normalized-records.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/replay-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/audit.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/crosscheck.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/normalized-records.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/reviewer-replay-20261010-115331/verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-development-01/verification-local.json\",\n    \"experiments/research_exit_20260927/runs/20261010-historical-screen-01/package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261010-historical-screen-01/source-screen-plan.json\",\n    \"experiments/research_exit_20260927/runs/20261010-historical-screen-01/source-screen-results.json\",\n    \"experiments/research_exit_20260927/runs/20261010-preflight-01/development-plan.json\",\n    \"experiments/research_exit_20260927/runs/20261010-preflight-01/dns.json\",\n    \"experiments/research_exit_20260927/runs/20261010-preflight-01/execution-hashes.json\",\n    \"experiments/research_exit_20260927/runs/20261010-preflight-01/offline-audit-contract.json\",\n    \"experiments/research_exit_20260927/runs/20261010-preflight-01/preflight.json\",\n    \"experiments/research_exit_20260927/runs/20261010-review-response-01/future-search-execution-template.json\",\n    \"experiments/research_exit_20260927/runs/20261010-review-response-01/package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261010-review-response-01/review-response.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/measurements.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/declaration-corrected.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/declaration.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/handoff-crosscheck.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/handoff-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/index-byte-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/legacy-checks.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/reference-pilot-plan.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/controlled-checks.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/measurements.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/controlled-checks.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/measurements.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/self-review.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/source-inspection.json\",\n    \"experiments/research_exit_20260927/runs/20261010-signal-01/verification.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/boundary-probe.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/context.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/execution.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/final-execution.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/final-package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/independent-verification.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/package-validation.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/preservation-and-scope.json\",\n    \"experiments/research_exit_20260927/runs/20261011-final-audit-01/signal-validation.json\",\n    \"experiments/research_exit_20260927/search-log.json\"\n  ],\n  \"paired_evidence_ids\": [\n    {\n      \"name\": \"06_RESEARCH_EXIT_EVIDENCE.md\",\n      \"evidence_ids_match\": true\n    },\n    {\n      \"name\": \"07_PROVIDER_AUDIT_RESULTS.md\",\n      \"evidence_ids_match\": true\n    },\n    {\n      \"name\": \"08_D07_D08_EXIT_PACKET.md\",\n      \"evidence_ids_match\": true\n    }\n  ],\n  \"decision_statuses\": {\n    \"english/D05\": \"ACCEPTED\",\n    \"english/D06\": \"ACCEPTED\",\n    \"english/D07\": \"PROPOSED\",\n    \"english/D08\": \"PROPOSED\",\n    \"english/D09\": \"PROPOSED\",\n    \"vietnamese/D05\": \"ACCEPTED\",\n    \"vietnamese/D06\": \"ACCEPTED\",\n    \"vietnamese/D07\": \"PROPOSED\",\n    \"vietnamese/D08\": \"PROPOSED\",\n    \"vietnamese/D09\": \"PROPOSED\"\n  },\n  \"replay_equal\": true,\n  \"replay_sha256\": \"a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109\",\n  \"stale_input_hashes\": [],\n  \"scope\": \"Relative target existence, JSON/Python parsing, evidence-ID pairing, decision statuses and offline replay integrity. External links/anchors and translation semantics are not automatically validated.\"\n}\n",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "experiments\\research_exit_20260927\\validate.py",
+        "--output",
+        "C:\\Users\\Admin\\sites\\.worktrees\\research-exit\\experiments\\research_exit_20260927\\__pycache__\\audit-temp\\verification-niq44h68\\package-validation.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "stdout": "",
+      "stderr": "Failed to find real location of C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\nusage: validate.py [-h] --output OUTPUT\nvalidate.py: error: Output already exists; choose a new report path\n"
+    }
+  ],
+  "byte_comparisons": {
+    "legacy-1.json": {
+      "equals_frozen": "experiments/research_exit_20260927/results/run-1.json",
+      "sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109"
+    },
+    "legacy-2.json": {
+      "equals_frozen": "experiments/research_exit_20260927/results/run-2.json",
+      "sha256": "a10e4fc82f55a3e1177602dd960a2fc7adb23374ccbed83abcafbd56ad2da109"
+    },
+    "audit-1/audit.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/audit.json",
+      "sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8"
+    },
+    "audit-2/audit.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-development-01/replay-2/audit.json",
+      "sha256": "53a5aff1d8ea577e5789c7dc96a784f9f3c46339495e38ea78d266b41158dbd8"
+    },
+    "audit-1/normalized-records.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-development-01/replay-1/normalized-records.json",
+      "sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1"
+    },
+    "audit-2/normalized-records.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-development-01/replay-2/normalized-records.json",
+      "sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1"
+    },
+    "signal-1/measurements.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json",
+      "sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818"
+    },
+    "signal-2/measurements.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/measurements.json",
+      "sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818"
+    },
+    "signal-1/controlled-checks.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/controlled-checks.json",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    "signal-2/controlled-checks.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/controlled-checks.json",
+      "sha256": "3c3156d6d7f25c041c616dd3d763d015d6ffb6c4b92aaac3c00e2d392e41653c"
+    },
+    "workflow-1.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-amendment-01/simulated-workflow.json",
+      "sha256": "15d84a09bb0dd597018a030768d5fe22240fdca406e3f71265b24408a60fbbfd"
+    },
+    "workflow-2.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-amendment-01/simulated-workflow.json",
+      "sha256": "15d84a09bb0dd597018a030768d5fe22240fdca406e3f71265b24408a60fbbfd"
+    },
+    "crosscheck.json": {
+      "equals_frozen": "experiments/research_exit_20260927/runs/20261010-development-01/crosscheck.json",
+      "sha256": "0664d7dcd1ad3d1fd570696b47b254ce54329ffcc56c9b6416482830379c6591"
+    }
+  },
+  "scope": "Same-host separate processes; no network, holdout, independent human validation or product benchmark"
+}

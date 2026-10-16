@@ -1,0 +1,7 @@
+# Preserve exact F1, runtime and evaluation protocol bytes on all platforms.
+experiments/research_exit_20260927/** -text
+sites_demo/** -text
+tests/** -text
+evaluation/** -text
+docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md -text
+docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md -text

@@ -1,0 +1,57 @@
+{
+  "denominator_lineage_records": 598,
+  "frozen_inputs_and_git_bytes": {
+    "acquisition.json": "64646536afd87e272eab90601c326a67d8146b7741785ae312f86d21d17b5fc7",
+    "inputs/acquire.py": "cf46527ec6b034afad7d531cb50ffc799ca5accc6ef959694a90fc16e0d4d5e9",
+    "inputs/am02-acquisition.json": "7379a40b6c2a8c18806facae7ff0c1ea9d4eab4e1a19189909d7efdbe692f34d",
+    "inputs/am02-count.xml": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+    "inputs/preregistration.json": "f4ed7d7bca9c9665a9cb03437c79306f282e15ebb5ad9520bf6126deff61f1f7",
+    "raw/count.xml": "5bbdec306856327b4bd5ae2892c9b08c4fefa6dedd1185f43975278863cdc80f",
+    "raw/current-0000.xml": "abf8034f6deea3294749102eda98e3adcff7fe760c2c805f5694296b10139932",
+    "raw/current-0500.xml": "3436230d717a31bef2cd2b4de43ea4f8e50141e31aeaae66564d1ef1c3d2a473",
+    "raw/v1-0000.xml": "17efe9c3dbe5a0dc693c96cc69f0f19166d33e3a49acb4f9794a89b170eada1f",
+    "raw/v1-0100.xml": "3fefa45ebdcfa820d2a80640c07569d6c452568e16dc3d3e42995a32866c4497",
+    "raw/v1-0200.xml": "2980129ca1ab896bb24f6fb7cb6317e481de085646f8da237016475eade1ef1d",
+    "raw/v1-0300.xml": "0a94185b6d00d9007ff44a5d43c7591d1c0dc34990ecd742abfd9c0553c718fb",
+    "raw/v1-0400.xml": "3661dfe982ca3e9b1ee1fc6c8e68bc7fa6d6844cdeafb0b422433767f2ca4af9",
+    "raw/v1-0500.xml": "ed474590509a8e8461ab327de09f6790a96d0ffaac5aa39178b5616435ef33bf"
+  },
+  "late_ids": [
+    "1907.00143",
+    "1907.00172",
+    "1907.00282",
+    "1907.00298",
+    "1907.00376",
+    "1907.00468",
+    "1907.00677",
+    "1907.03773",
+    "1908.04451"
+  ],
+  "lexical_boundary_cases": 18,
+  "measurement_sha256": "214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818",
+  "method": "Direct Atom parse plus Unicode token-set membership; no project imports",
+  "monthly_N": [
+    91,
+    79,
+    97,
+    103,
+    122,
+    106
+  ],
+  "monthly_n": [
+    0,
+    1,
+    2,
+    1,
+    4,
+    1
+  ],
+  "normalized_sha256": "a3aff4868b176dcbb30622563d61241c5850eff2b9350d94443af281b2bee6f1",
+  "numerator_lineage_records": 9,
+  "pilot_selection_reproduced": 27,
+  "real_annotations": 0,
+  "scope": "Independent calculation method on same host; not independent reviewer/scientific validation",
+  "script_sha256": "c9558f3ad3edd83bae69a8c8592dd4e52c06633e84206a28979643b64957f8b8",
+  "sensitivity_variants_verified": 5,
+  "status": "PASS"
+}

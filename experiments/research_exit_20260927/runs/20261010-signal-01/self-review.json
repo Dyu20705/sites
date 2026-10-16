@@ -1,0 +1,89 @@
+{
+  "baseline": "53a50ec806b2d6d5fee4112554a6826aeaea852b",
+  "code_commit": "24181f819f312343accf32f89ea72a71c201e8d6",
+  "confirmed_code_blockers": [],
+  "limitations": [
+    "initial synthetic future fixture collided with an existing ID, corrected before real execution",
+    "initial nested-JSON escaping interpretation was wrong; original metadata retained and corrected post-exposure without changing measured outputs",
+    "first link validation found not-yet-written self-referenced output; verifier permits only its exact designated output target"
+  ],
+  "needs_validation": [
+    "independent human replay",
+    "independent researcher reference annotations",
+    "user task value",
+    "population completeness outside current query"
+  ],
+  "remaining_scientific_gate_blockers": [
+    "historical field/public availability/membership/vocabulary",
+    "independent reference quality and justified support/quality threshold",
+    "explicit scope/D07/D08/freeze acceptance at #70"
+  ],
+  "replicas_omitted_after_hash_verification": [
+    "handoff-replay/audit.json",
+    "handoff-replay/normalized-records.json"
+  ],
+  "reviewed_dimensions": [
+    "identity/version/date/null/denominator invariants",
+    "determinism/source lineage/raw hashes",
+    "declared lexical variants and all sensitivity outputs",
+    "real-data vs controlled synthetic evidence",
+    "paired EN/VI counts/formulas/claims/statuses/reference protocol/scope options",
+    "historical snapshot status vs current state",
+    "no new runtime dependency/product infrastructure/holdout",
+    "original frozen evidence unchanged"
+  ],
+  "reviewed_files": [
+    "docs/README.md",
+    "docs/english/README.md",
+    "docs/english/baseline/M1.md",
+    "docs/english/master/08_MONTH1_BACKLOG.md",
+    "docs/english/master/09_CURRENT_STATE.md",
+    "docs/english/research/08_D07_D08_EXIT_PACKET.md",
+    "docs/english/research/09_RESEARCH_MASTER_20261010.md",
+    "docs/english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md",
+    "docs/vietnamese/README.md",
+    "docs/vietnamese/baseline/M1.md",
+    "docs/vietnamese/master/08_MONTH1_BACKLOG.md",
+    "docs/vietnamese/master/09_CURRENT_STATE.md",
+    "docs/vietnamese/research/08_D07_D08_EXIT_PACKET.md",
+    "docs/vietnamese/research/09_RESEARCH_MASTER_20261010.md",
+    "docs/vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md",
+    "experiments/research_exit_20260927/README.md",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/controlled-checks.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/execution.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-1/measurements.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/controlled-checks.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/execution.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/corrected-replay-2/measurements.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/declaration-corrected.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/declaration.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-crosscheck.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-replay/audit.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-replay/normalized-records.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/handoff-verification.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/legacy-checks.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/reference-pilot-plan.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/controlled-checks.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/execution.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-1/measurements.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/controlled-checks.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/execution.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/replay-2/measurements.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/source-inspection.json",
+    "experiments/research_exit_20260927/runs/20261010-signal-01/verification.json",
+    "experiments/research_exit_20260927/signal_evaluator.py",
+    "experiments/research_exit_20260927/test_signal_evaluator.py",
+    "experiments/research_exit_20260927/validate_signal.py"
+  ],
+  "reviewer": "A-side producing agent; not independent human",
+  "skipped_scope": "No broad audit of unchanged repo, external freshness/anchors, provider infrastructure, holdout or product runtime. Relevant carried literature claims retain original access depth.",
+  "status": "SELF_REVIEW_COMPLETE_WITH_SCIENTIFIC_GATE_BLOCKERS",
+  "timestamp_utc": "2026-10-10T12:47:38.842917+00:00",
+  "validation_refs": [
+    "verification.json",
+    "handoff-verification.json",
+    "legacy-checks.json",
+    "corrected-replay-1/execution.json",
+    "corrected-replay-2/execution.json"
+  ]
+}

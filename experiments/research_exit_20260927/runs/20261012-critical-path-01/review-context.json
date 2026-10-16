@@ -1,0 +1,192 @@
+{
+  "recorded_utc": "2026-10-12T01:14:59.828292+00:00",
+  "review_checkpoint": "7ef28119b125c6bcb9f0372516cc0ebe3200326d",
+  "base": "0a853636ef6d1be9d3bb85058f34faf368fcb6ce",
+  "branch": "research/exit-evidence-20260927",
+  "origin_head": "7ef28119b125c6bcb9f0372516cc0ebe3200326d",
+  "pr": {
+    "url": "https://github.com/Dyu20705/sites/pull/75",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "base_sha": "0a853636ef6d1be9d3bb85058f34faf368fcb6ce",
+    "head_sha": "7ef28119b125c6bcb9f0372516cc0ebe3200326d",
+    "changed_files": 143,
+    "commits": 14
+  },
+  "issues": [
+    {
+      "number": 64,
+      "url": "https://github.com/Dyu20705/sites/issues/64",
+      "state": "open",
+      "state_reason": null,
+      "updated_at": "2026-10-12T00:56:14Z",
+      "comment_count": 7,
+      "title": "research: establish D08 signal and evaluation evidence",
+      "body_text_sha256": "5da5bd11c9b8e603f6c58e764c07bbaa44d9962191744816769cc3eb7d847d75",
+      "checked_boxes": 21,
+      "unchecked_boxes": 1,
+      "reconciliation_verbatim": " the six unchecked items below are PARTIAL under their original wording, not silently satisfied by proposed E2-R/E3-R. Search execution metadata is incomplete; real provider-coverage/history and scientific confounder effects remain unmeasured despite reproducible controls; independent pre-output case/control provenance is limited; the real 27-work pilot has no judgments, and scientific quality/support thresholds plus the full confirmatory freeze are unresolved. The uncertainty protocol and fictional SYN workflow are present, not executed human reference evidence. Checked items record completed investigation steps only, not accepted decisions or product/scientific validation. See the [frozen DoD audit](https://github.com/Dyu20705/sites/blob/7ef28119b125c6bcb9f0372516cc0ebe3200326d/docs/english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md#final-64-dod-audit--11-october-2026) and [exact proposed packet](https://github.com/Dyu20705/sites/blob/7ef28119b125c6bcb9f0372516cc0ebe3200326d/docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md). These partial original requirements can support the issue's insufficient-evidence investigation outcome; they are not a Research Exit pass.",
+      "checkbox_lines_verbatim": [
+        "- [x] Define the construct being measured and its claim boundary. Keep scholarly activity/change distinct from stronger claims such as emergence, importance, impact, or causality.",
+        "- [ ] Record exact search queries/services/dates, inspected source locations, access depth, population/period, method, counterevidence, transfer limitations, and unresolved items in the ledger.",
+        "- [x] Inspect primary evidence for material claims where available. Do not upgrade an abstract, title, review citation, or secondhand claim into full-text evidence.",
+        "- [x] Do not claim novelty without a targeted prior-art search for the proposed contribution and close synonyms.",
+        "- [x] Compare deterministic **count/share** baselines under the same stated unit, bin/window, cutoff, concept definition, and corpus assumptions.",
+        "- [x] Test the confounders that matter to M1: corpus growth, denominator drift, provider coverage change, alias/vocabulary change, sampling/query effects, duplicates/revisions, missing bins, and publication/indexing delay.",
+        "- [x] Investigate burst/persistence only if the evidence identifies a material gap the simpler baseline cannot answer.",
+        "- [x] Investigate citation dynamics only if #65 establishes historical citation observations that were actually available at the relevant cutoff.",
+        "- [x] Retain negative results. Distinguish tests actually run from checks that remain planned.",
+        "- [x] Select candidate historical case/control using independent context **before** inspecting signal attractiveness; retain the candidate/exclusion and prior-exposure log.",
+        "- [x] Propose development vs holdout separation and record any prior output exposure. Previously inspected output cannot later be called unseen holdout.",
+        "- [x] Prepare the pre-holdout freeze proposal: case/control, query/corpus/snapshot, period/cutoff, vocabulary/version, unit/denominator, formula/bin/window, minimum support, reference-label method, quality threshold, sensitivity ranges, and applicable software/config references.",
+        "- [x] Preserve disagreement/uncertainty in reference evidence; do not derive the reference label from the signal being evaluated.",
+        "- [x] State the proposed construct, exact formula, counting unit, denominator, bin/window, cutoff, minimum support, labels or insufficient-evidence behavior, reference-label method, quality threshold, and sensitivity protocol.",
+        "- [x] For each material choice, link supporting ledger records and empirical evidence; separate **VERIFIED**, **ASSUMPTION**, and **UNKNOWN**.",
+        "- [x] State the serious alternative considered, why it was not selected under current evidence, and what evidence would reverse the proposal.",
+        "- [x] Record residual uncertainty and what remains unvalidated.",
+        "- [x] No threshold/formula/case was tuned using holdout output.",
+        "- [x] No unsupported causal, novelty, or “emerging technology” conclusion is asserted.",
+        "- [x] Planned checks are not reported as executed.",
+        "- [x] All material conclusions trace to ledger/source/sample evidence.",
+        "- [x] D08 remains **PROPOSED** until explicit owner acceptance."
+      ]
+    },
+    {
+      "number": 65,
+      "url": "https://github.com/Dyu20705/sites/issues/65",
+      "state": "closed",
+      "state_reason": "completed",
+      "updated_at": "2026-10-10T12:32:05Z",
+      "comment_count": 9,
+      "title": "research: audit D07 source and corpus feasibility",
+      "body_text_sha256": "f910e4c064055689193b492df6d56c6b1cc6f3110db346473840d86626a57893",
+      "checked_boxes": 0,
+      "unchecked_boxes": 31
+    },
+    {
+      "number": 66,
+      "url": "https://github.com/Dyu20705/sites/issues/66",
+      "state": "open",
+      "state_reason": null,
+      "updated_at": "2026-10-12T00:59:40Z",
+      "comment_count": 1,
+      "title": "[CONTROL TOWER] Month-1 execution, gates, scope and WIP control",
+      "body_text_sha256": "34ab8558fd6e391b038e1eec01095ef3953765639a91ea1bb961e90bda7712bd",
+      "checked_boxes": 7,
+      "unchecked_boxes": 0,
+      "demo_section_verbatim": " — manual checklist, not automated proof\n\n- [x] Real corpus audited and frozen\n- [x] Count/share computed on the real corpus\n- [x] Independent evaluation with explicit claim limits\n- [x] Each displayed conclusion traces to source records\n- [x] Minimal working trend/evidence interface\n- [x] Independent replay from frozen inputs passes\n- [x] Clean-environment demonstration works **without live external API**\n\nStatus on 10 October: **0/7 independently verified as demo-complete**. Synthetic tests reported in PR #75 are useful engineering evidence, not substitutes for these seven checks.\n\n"
+    },
+    {
+      "number": 67,
+      "url": "https://github.com/Dyu20705/sites/issues/67",
+      "state": "open",
+      "state_reason": null,
+      "updated_at": "2026-10-10T11:11:30Z",
+      "comment_count": 0,
+      "title": "[ROADMAP] Critical path — real-evidence demo ready by 15 Oct 2026",
+      "body_text_sha256": "6aa213c2e1ed2fde5b06deea773545def20e2f1bcd1100431537714817c7d04f",
+      "checked_boxes": 0,
+      "unchecked_boxes": 0
+    },
+    {
+      "number": 69,
+      "url": "https://github.com/Dyu20705/sites/issues/69",
+      "state": "open",
+      "state_reason": null,
+      "updated_at": "2026-10-12T01:00:26Z",
+      "comment_count": 0,
+      "title": "[RESEARCH / PRIOR ART] Build the evidence map for M1 trend detection",
+      "body_text_sha256": "f62c65aefea60b3e58c7536c6de0deaf10bb1a28604f096198d4798f90a21df5",
+      "checked_boxes": 13,
+      "unchecked_boxes": 0,
+      "evidence_discipline_verbatim": "\n\nFor material claims:\n\n- [x] record exact search query/service/date;\n- [x] prefer primary papers/official primary sources;\n- [x] record whether full text, abstract, metadata, or secondary citation was actually inspected;\n- [x] capture population, period, method, result, limitations, counterevidence, and transfer risk to SITES;\n- [x] distinguish VERIFIED / ASSUMPTION / UNKNOWN;\n- [x] do not claim novelty without targeted searches for the proposed contribution and close synonyms;\n- [x] retain negative evidence and methods that do not transfer cleanly to M1.\n\n"
+    },
+    {
+      "number": 70,
+      "url": "https://github.com/Dyu20705/sites/issues/70",
+      "state": "open",
+      "state_reason": null,
+      "updated_at": "2026-10-11T05:28:23Z",
+      "comment_count": 6,
+      "title": "[GATE] Research Exit — decide D07/D08 and freeze the M1 experiment contract",
+      "body_text_sha256": "2c9c9a52de92e4e99fcfcffe1171d85542585cf8105340f1b09fb3624c767ce8",
+      "checked_boxes": 3,
+      "unchecked_boxes": 5
+    },
+    {
+      "number": 71,
+      "url": "https://github.com/Dyu20705/sites/issues/71",
+      "state": "open",
+      "state_reason": null,
+      "updated_at": "2026-09-21T01:05:20Z",
+      "comment_count": 0,
+      "title": "[DESIGN / GATE] Decide D09 and establish the minimal preimplementation contract",
+      "body_text_sha256": "da39fe15c4d6f4cc2baa0007b2e7d73f53e0616f46a7fffbba1658c5bd495591",
+      "checked_boxes": 0,
+      "unchecked_boxes": 16
+    },
+    {
+      "number": 72,
+      "url": "https://github.com/Dyu20705/sites/issues/72",
+      "state": "open",
+      "state_reason": null,
+      "updated_at": "2026-09-21T01:05:22Z",
+      "comment_count": 0,
+      "title": "[BUILD] Implement the accepted M1 end-to-end vertical slice",
+      "body_text_sha256": "6514fa850980a4a1436ae3f4abbaa5e602e35a2cdcf6cea67932e5d1687444ae",
+      "checked_boxes": 0,
+      "unchecked_boxes": 21
+    },
+    {
+      "number": 73,
+      "url": "https://github.com/Dyu20705/sites/issues/73",
+      "state": "open",
+      "state_reason": null,
+      "updated_at": "2026-10-10T11:11:33Z",
+      "comment_count": 0,
+      "title": "[DEMO GATE] Validate and freeze offline-replayable M1 demo by 15 Oct",
+      "body_text_sha256": "7f74935c027e4ab5462839ba79ea98c754f177173879d849baf029d08fa00ae3",
+      "checked_boxes": 0,
+      "unchecked_boxes": 18
+    }
+  ],
+  "review_count": 0,
+  "review_thread_count": 0,
+  "pr_comment_count": 0,
+  "commit_statuses": {
+    "statuses": []
+  },
+  "workflow_runs": {
+    "workflow_runs": []
+  },
+  "gh_status_check_rollup": [],
+  "authority_comments": [
+    {
+      "id": 6104422817,
+      "url": "https://github.com/Dyu20705/sites/issues/64#issuecomment-6104422817",
+      "body": "## Final evidence audit — 11 October 2026\n\n**#64 READY FOR OWNER REVIEW** as a bounded descriptive proposal with explicit insufficient-evidence outcomes. **This does not close #64 or pass #70. Original E3/#70 remain NOT PASSED.**\n\nOne local commit and one non-force push on `research/exit-evidence-20260927`: `ed2a21f36b8b0b05efd889279717b61dbe777eda` → `7ef28119b125c6bcb9f0372516cc0ebe3200326d`. Existing [Draft PR #75](https://github.com/Dyu20705/sites/pull/75) updated; working tree clean.\n\n[DoD matrix/findings/owner choices — EN](https://github.com/Dyu20705/sites/blob/7ef28119b125c6bcb9f0372516cc0ebe3200326d/docs/english/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md#final-64-dod-audit--11-october-2026) · [VI](https://github.com/Dyu20705/sites/blob/7ef28119b125c6bcb9f0372516cc0ebe3200326d/docs/vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md#final-64-dod-audit--11102026).\n\n**Verified offline:** independent raw-Atom/token-set calculation (no project evaluator/parser imports) reproduces all 598 denominator contributions, nine matches, source identities, five sensitivity variants, nine late-ID anomalies and the exact post-output 27-work pilot selection. N=91/79/97/103/122/106; n=0/1/2/1/4/1. [Recount evidence](https://github.com/Dyu20705/sites/blob/7ef28119b125c6bcb9f0372516cc0ebe3200326d/experiments/research_exit_20260927/runs/20261011-final-audit-01/independent-verification.json). Measurement SHA-256 remains `214c103f82784665907f76925ea56763fd2e46644ce52ccf6950b08e807cc818`.\n\n**Validation:** 37/37 unit tests; 15/15 legacy checks in each of two processes; 10/10 controls per signal replay; separate corpus/signal/synthetic-workflow replays; 13 byte comparisons equal frozen artifacts. 446 relative links, zero broken/stale hashes; staged diff check passed. [Exact commands/environment/exit codes/replay hashes](https://github.com/Dyu20705/sites/blob/7ef28119b125c6bcb9f0372516cc0ebe3200326d/experiments/research_exit_20260927/runs/20261011-final-audit-01/final-execution.json). Initial default-temp run had 27 PermissionErrors across 35 tests; workspace-local TEMP/TMP fixed the environment and reruns passed. Same-host agent verification is not independent human/second-machine validation.\n\n**Bounded correction:** legacy validator now requires an explicit new output and refuses overwriting historical evidence; two regressions cover preservation/missing output. README commands use new paths. Original corpus/config/evaluator/declarations/measurements and packet 15 remain unchanged.\n\n**Residual implementation limit:** [missing-membership probe](https://github.com/Dyu20705/sites/blob/7ef28119b125c6bcb9f0372516cc0ebe3200326d/experiments/research_exit_20260927/runs/20261011-final-audit-01/boundary-probe.json) confirms standalone `evaluate()` excludes an unknown current-category record as an empty bin. This does not affect the fixed hash-pinned corpus, whose 598 memberships are all valid. Do not reuse that helper for broader inputs under a general fail-closed claim without a separately versioned guard/correction and regression. Frozen evaluator preserved.\n\n**Scientific gaps:** zero real annotations or designated qualified reviewers; quality/recall/agreement NOT MEASURED; scientific thresholds UNRESOLVED. SYN-001…027 and SIMULATED_A/B/C establish workflow behavior only. Historical public availability/population/vocabulary remain unresolved; no claim of field growth, emergence, semantic recall, causality or research novelty. No holdout access or new corpus acquisition.\n\n**Smallest next action:** owner reviews unchanged `M1-R-20261010-v1` plus this audit, separately decides A1 estimand, A2 E2-R/E3-R substitutions, A3 limited descriptive versus retained independent-reference acceptance, D07, D08 and F1 prospective immutable freeze, then records G70 only against accepted criteria with evidence. If independent scientific reference remains required, designate humans and justify/freeze criteria before evaluation. Proposed task/budget thresholds remain unaccepted and unmeasured. D09/product gates stay separate.\n\nNo issue closure, gate acceptance, merge, release, deployment or product implementation performed."
+    },
+    {
+      "id": 6097713689,
+      "url": "https://github.com/Dyu20705/sites/issues/70#issuecomment-6097713689",
+      "body": "## OWNER SCOPE DIRECTION — retrospective-only M1 (10/10/2026)\n\nThe owner reviewed the completed #65 investigation and #64 development-only evidence and confirmed **“chốt OK”** in the SITES control conversation after the [agent's execution report](https://github.com/Dyu20705/sites/issues/70#issuecomment-6097673774).\n\n### Decision now recorded\n\n1. **ACCEPT the completed #65 investigation outcome** (insufficient historical/as-of evidence) and the measured **D08 development-only exploratory research package** as a reviewable research result, *not* as evidence that the indicator detects technology trends or passes the product gate.\n2. **SELECT Option B — retrospective-only as the M1 scope direction**, based on current feasibility evidence and the 15 October demo-ready target. **Authorize preparation of a controlled, explicit scope/estimand amendment and decision-ready D07/D08 packet for owner signature.** Do not pursue open-ended as-of reconstruction as the immediate M1 critical path. Future historical reconstruction remains an independently gated research direction.\n3. **Preserve accepted D05/D06 and original E3 semantics until the exact amendment is reviewed and explicitly accepted.** This direction is **not** approval to declare the original E3 PASSED, silently replace it, or treat the 2026 current-query corpus as the complete June-2019 public state.\n\n### Grounded review evidence\n\n- [PR #75 @ 64da78b](https://github.com/Dyu20705/sites/commit/64da78be17f0b89bbd008f5033192742fd663046) remains Draft.\n- [D08 report](https://github.com/Dyu20705/sites/blob/64da78be17f0b89bbd008f5033192742fd663046/docs/vietnamese/research/14_D08_DEVELOPMENT_EVALUATION_20261010.md): January–June 2019 observed current-query, 598 distinct work/v1 title records; `N = 91/79/97/103/122/106`, `n = 0/1/2/1/4/1`, pooled 9/598 (1.5050%). An additional independent reaggregation of the committed normalized JSON confirmed the six denominators, numerators and all nine matched work IDs.\n- [Verification](https://github.com/Dyu20705/sites/blob/64da78be17f0b89bbd008f5033192742fd663046/experiments/research_exit_20260927/runs/20261010-signal-01/verification.json) reports 28 tool tests, 15 legacy synthetic checks, 10 controlled cases, two same-host corrected replays, 598 denominator ID checks, 9 source references. This review independently recalculated the result **from committed normalized JSON**, not a fresh second-machine raw-XML replay.\n- Extremely sparse support (`0–4` title matches per month); historical public availability/category population and cutoff-valid vocabulary unresolved; independent reference annotation, minimum support, semantic detection quality and numerical quality threshold **NOT MEASURED / UNRESOLVED**. No growth/decline/emergence label has been validated. No holdout was viewed.\n\n### Next conditional owner gate\n\nPrepare a **single proposed retrospective amendment** spelling out:\n- changed research target/estimand and claim boundary, with line-by-line impacts on D05, M1, original E3 and E1–E8; explicitly keep as-of statements prohibited;\n- proposed D07 population = frozen observed `cs.SE` query (retrieved in 2026), v1-submission UTC bins, provenance, denominator and sampling/coverage limits;\n- proposed D08 = v1 title lexical count plus normalized share, documented regex/version, no unsupported direction/emergence labels, support/abstention behavior;\n- independent blinded 27-work semantic pilot protocol with owner-designated humans and disclosed post-output selection; this pilot is not yet executed and cannot establish trend-level accuracy;\n- predeclared reference/quality/support criteria, exposure register, holdout overlap reconciliation and immutable freeze procedure, **before any future confirmatory evaluation**;\n- residual risk, one bounded next test, and an explicit owner acceptance/rejection checklist.\n\n**NOT ACCEPTED BY THIS COMMENT:** exact D07/D08 contract or threshold, experimental/holdout freeze, historical E3 pass, Research Exit #70 pass, D09 stack, implementation/deployment, PR merge. No automatic status change for D05–D09. **#64 and #70 remain OPEN; #65 remains completed; PR #75 remains Draft** until subsequent review. The direction approval should reduce decision latency, not substitute for scientific validation."
+    }
+  ],
+  "all_read_comment_ids": [
+    5754089310,
+    5795802108,
+    6097343828,
+    6097520949,
+    6097669466,
+    6097908418,
+    6104422817,
+    6096798950,
+    6096887546,
+    6097377480,
+    6097673774,
+    6097713689,
+    6097914035
+  ],
+  "scope": "Read-only current GitHub snapshot. Checkboxes do not establish acceptance. No issue/PR body or comment mutated."
+}
