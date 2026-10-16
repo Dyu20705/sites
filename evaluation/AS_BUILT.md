@@ -1,6 +1,6 @@
 # M1 offline slice — as built
 
-Research dependency: exact `0673903c7cf8e4c6725af8a13f2ca4e40a1457a9`, supplied by Draft PR #75. Implementation branch `codex/m1-offline-slice` is stacked against `research/exit-evidence-20260927`; master does not implicitly supply these files. No merge or release is part of this work package.
+Research dependency: exact `0673903c7cf8e4c6725af8a13f2ca4e40a1457a9`, supplied by Draft PR #75. The curated reference implementation selects the exact product source/test bytes from `codex/m1-offline-code@0d3e5ab` (derived from implementation commit `6c08a956`), with accepted Research Exit artifacts retained. The separate `codex/m1-offline-slice` / PR #76 is a divergent implementation and was not combined. This document records as-built behavior; it does not imply independent reviewer approval. No merge or release is part of this work package.
 
 D09 was accepted by the owner on 12 October 2026: [record](https://github.com/Dyu20705/sites/issues/71#issuecomment-6123995295), [exact proposal](D09-M1-20261012-v1.md), [machine-readable transcription](owner-acceptance.json). The proposal's historical PROPOSED text remains byte-identical; its acceptance is external.
 

@@ -49,10 +49,21 @@ def check_paths(errors: list[str]) -> None:
         if not (ROOT / path).is_file():
             fail(f"missing required file: {path}", errors)
     for path in tracked_files():
+        if path.parts[:2] == ("docs", "vietnamese") and path.as_posix() != (
+            "docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md"
+        ):
+            fail(f"noncanonical Vietnamese document: {path}", errors)
         parts = set(path.parts)
         if parts & BANNED_PARTS or path.name in BANNED_NAMES or path.suffix in {".pyc", ".pyo"}:
             fail(f"forbidden tracked output/secret-like file: {path}", errors)
-    for entry in LINK_SOURCES:
+    for entry in sorted(set(LINK_SOURCES) | {
+        path.as_posix() for path in tracked_files()
+        if path.suffix == ".md" and (
+            path.parts[:2] == ("docs", "english")
+            or path.parts[:1] == ("evaluation",)
+            or path.as_posix() == "experiments/research_exit_20260927/README.md"
+        )
+    }):
         source = ROOT / entry
         if not source.exists():
             continue

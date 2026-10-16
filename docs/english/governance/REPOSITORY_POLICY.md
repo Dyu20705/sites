@@ -1,6 +1,6 @@
 # Repository Publication and Evidence Policy
 
-Status: **PROPOSED implementation policy — 16 October 2026**. This document constrains the quality-preparation branch; it does not retroactively change accepted scientific contracts.
+Status: **Owner-accepted repository publication policy — 16 October 2026**. This policy governs the curated public tree; it does not retroactively change accepted scientific contracts, research gate outcomes, or frozen evidence.
 
 ## Purpose
 
