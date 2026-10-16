@@ -1,0 +1,6 @@
+# Preserve exact bytes for frozen research artifacts and code identity across OSes.
+experiments/research_exit_20260927/** -text
+sites_demo/** -text
+tests/** -text
+docs/english/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md -text
+docs/vietnamese/research/15_RETROSPECTIVE_SCOPE_AMENDMENT_20261010.md -text
